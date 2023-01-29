@@ -1,0 +1,5 @@
+{
+	"Name": "GPS Terragroup",
+	"ShortName": "GPS TG",
+	"Description": "Cette balise est utilisée afin de localisé les membres des groupes d'assault de Terragroup. Elle ne permet cependant que d'avoir un emplacement approximatif de cette balise GPS, et non précis."
+}

@@ -1,0 +1,11 @@
+{
+	"_id": "terragroupSpecialist_ETHProduction",
+	"areaType": 20,
+	"requirements": [],
+	"productionTime": 99580,
+	"boosters": null,
+	"endProduct": "terragroupSpecialist_ethCoin",
+	"continuous": true,
+	"count": 1,
+	"productionLimitCount": 5
+}

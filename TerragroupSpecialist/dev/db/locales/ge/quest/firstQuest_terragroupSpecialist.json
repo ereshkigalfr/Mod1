@@ -1,0 +1,17 @@
+{
+	"conditions": {
+		"firstQuest_terragroupSpecialist_FirstRequir": "Finde und eliminiere Gluhar",
+		"firstQuest_terragroupSpecialist_FirstRequir2": "Finde und eliminiere eine Assault-Wache",
+		"firstQuest_terragroupSpecialist_FirstRequir3": "Finde und eliminiere eine Scout-Wache",
+		"firstQuest_terragroupSpecialist_FirstRequir4": "Finde und eliminiere eine Security-Wache",
+		"firstQuest_terragroupSpecialist_FindItem": "Finde und entschlüssle das Gerät",
+		"firstQuest_terragroupSpecialist_Handover": "Übergebe das entschlüsselte Gerät"
+	},
+	"name": "Labormysterien",
+	"description": "firstQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "firstQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "firstQuest_terragroupSpecialist_mail",
+	"location": "5704e5fad2720bc05b8b4567"
+}

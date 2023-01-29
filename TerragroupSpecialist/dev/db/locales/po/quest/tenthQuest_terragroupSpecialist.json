@@ -1,0 +1,14 @@
+{
+	"conditions": {
+		"tenthQuest_terragroupSpecialist_Req1": "Kill 30 raiders in the Lab. You must be wearing a GP-5 gasmask",
+		"tenthQuest_terragroupSpecialist_FirstRequir": "Survive in the Lab for at least 10 minutes and extract",
+		"tenthQuest_terragroupSpecialist_FailCounter": "Do not die or extract under 10 minutes in the Lab"
+	},
+	"name": "Night raid",
+	"description": "tenthQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "tenthQuest_terragroupSpecialist_failed",
+	"startedMessageText": "tenthQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "tenthQuest_terragroupSpecialist_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

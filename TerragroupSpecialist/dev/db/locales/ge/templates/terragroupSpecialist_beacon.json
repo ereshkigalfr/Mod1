@@ -1,0 +1,5 @@
+{
+	"Name": "MS2000 Markierer",
+	"ShortName": "MS2000",
+	"Description": "Der Markierer wird im Rahmen von Nachtoperationen verwendet. Er strahlt ein Signal im IR-Bereich aus, das durch Nachtsichgeräte sichtbar wird. Er verwendet einen speziellen Filter, wen im IR-Modus betrieben. Wenn der Filter entfernt wird, taucht er als heller Blitz im sichtbaren Spektrum auf. Im erweiterten Modus arbeitet er mit einem blauen Blitz."
+}

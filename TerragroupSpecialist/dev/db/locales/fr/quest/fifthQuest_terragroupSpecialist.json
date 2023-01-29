@@ -1,0 +1,23 @@
+{
+	"conditions": {
+		"fifthQuest_terragroupSpecialist_FirstRequir1": "Trouvez en raid: Fusil d'assault M4A1",
+		"fifthQuest_terragroupSpecialist_FirstRequir2": "Trouvez en raid: Poignée de colt A2",
+		"fifthQuest_terragroupSpecialist_FirstRequir3": "Trouvez en raid: PMAG GEN M3 30 FDE",
+		"fifthQuest_terragroupSpecialist_FirstRequir4": "Trouvez en raid: Boitier supérieur de M4",
+		"fifthQuest_terragroupSpecialist_FirstRequir5": "Trouvez en raid: Tube de crosse CST",
+		"fifthQuest_terragroupSpecialist_FirstRequir6": "Trouvez en raid: LA AR-15",
+		"fifthQuest_terragroupSpecialist_FirstRequir7": "Trouvez en raid: Canon de 18 pouces pour AR15",
+		"fifthQuest_terragroupSpecialist_FirstRequir8": "Trouvez en raid: URX 3.1 10,75 pouces pour AR15",
+		"fifthQuest_terragroupSpecialist_FirstRequir9": "Trouvez en raid: Poignée de transport AR15",
+		"fifthQuest_terragroupSpecialist_FirstRequir10": "Trouvez en raid: Crosse M4SS",
+		"fifthQuest_terragroupSpecialist_FirstRequir11": "Trouvez en raid: MK12",
+		"fifthQuest_terragroupSpecialist_FirstRequir12": "Survivez à un raid dans : Laboratoire"
+	},
+	"name": "Armement",
+	"description": "fifthQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "fifthQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "fifthQuest_terragroupSpecialist_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

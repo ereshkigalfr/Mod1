@@ -1,0 +1,8 @@
+Weapons:
+5.7 AR Weapon
+300 win magnum
+-> Petro falkor
+300 blackout
+
+Add more unique equipment for TG bots only (bag,vests, helmets, armors)
+public bool IgnoreMaxBots;

@@ -1,0 +1,10 @@
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\bin\Debug\EnumPatcherApp.exe.config
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\bin\Debug\EnumPatcherApp.exe
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\bin\Debug\EnumPatcherApp.pdb
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\bin\Debug\dnlib.dll
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\bin\Debug\dnlib.xml
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\obj\Debug\EnumPatcherApp.csproj.SuggestedBindingRedirects.cache
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\obj\Debug\EnumPatcherApp.csproj.CoreCompileInputs.cache
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\obj\Debug\EnumPatcherApp.csproj.CopyComplete
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\obj\Debug\EnumPatcherApp.exe
+D:\Git\Org_EreshkigalMods\TerragroupSpecialist\Client patches\EnumPatcher\EnumPatcherApp\obj\Debug\EnumPatcherApp.pdb

@@ -1,0 +1,11 @@
+{
+	"name": "TerragroupSpecialist",
+	"author": "Ereshkigal",
+	"version": "6.0.0",
+	"akiVersion": ">2.3.0",
+	"license": "AGPL-3.0",
+	"dependencies": {
+        "CoreMod": "2.2.2"
+    },
+	"main": "package.js"
+}

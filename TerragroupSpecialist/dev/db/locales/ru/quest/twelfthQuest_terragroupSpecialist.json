@@ -1,0 +1,13 @@
+{
+	"conditions": {
+		"twelfthQuest_terragroupSpecialist_FirstRequir": "Убить 30 рейдеров в Лесу, используя найденное снаряжение.",
+		"twelfthQuest_terragroupSpecialist_FirstRequir2": "Выжить и выйти с локации Лес."
+	},
+	"name": "Не лучшие вести",
+	"description": "twelfthQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "twelfthQuest_terragroupSpecialist_failedMail",
+	"startedMessageText": "twelfthQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "twelfthQuest_terragroupSpecialist_mail",
+	"location": "5714dbc024597771384a510d"
+}

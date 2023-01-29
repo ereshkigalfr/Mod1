@@ -1,0 +1,14 @@
+{
+	"conditions": {
+		"fourthQuest_terragroupSpecialist_FirstRequir1": "Finde den chemischen Behälter",
+		"fourthQuest_terragroupSpecialist_FirstRequir2": "Übergebe den chemischen Behälter",
+		"fourthQuest_terragroupSpecialist_FirstRequir3": "Überlebe und verlasse das Gebiet, während du eine GP-5 Gasmaske trägst"
+	},
+	"name": "Ein neues Material",
+	"description": "fourthQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "fourthQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "fourthQuest_terragroupSpecialist_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

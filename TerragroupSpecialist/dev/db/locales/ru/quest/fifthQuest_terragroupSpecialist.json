@@ -1,0 +1,23 @@
+{
+	"conditions": {
+		"fifthQuest_terragroupSpecialist_FirstRequir1": "Найти в рейде штурмовую винтовку M4A1",
+		"fifthQuest_terragroupSpecialist_FirstRequir2": "Найти в рейде рукоятку Colt A2",
+		"fifthQuest_terragroupSpecialist_FirstRequir3": "Найти в рейде PMAG GEN M3 30 FDE",
+		"fifthQuest_terragroupSpecialist_FirstRequir4": "Найти в рейде верхний ресивер Colt M4A1",
+		"fifthQuest_terragroupSpecialist_FirstRequir5": "Найти в рейде трубу приклада Colt",
+		"fifthQuest_terragroupSpecialist_FirstRequir6": "Найти в рейде рукоять заряжания Colt AR-15",
+		"fifthQuest_terragroupSpecialist_FirstRequir7": "Найти в рейде ствол 508мм для AR-15 5.56x45",
+		"fifthQuest_terragroupSpecialist_FirstRequir8": "Найти в рейде URX 3.1 10.75 дюймов",
+		"fifthQuest_terragroupSpecialist_FirstRequir9": "Найти в рейде рукоятку для переноски AR-15",
+		"fifthQuest_terragroupSpecialist_FirstRequir10": "Найти в рейде приклад High Standard M4SS",
+		"fifthQuest_terragroupSpecialist_FirstRequir11": "Найти в рейде газблок MK12 низкопрофильный",
+		"fifthQuest_terragroupSpecialist_FirstRequir12": "Выжить и выйти с локации Лаборатория"
+	},
+	"name": "Вооружение",
+	"description": "fifthQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "fifthQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "fifthQuest_terragroupSpecialist_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

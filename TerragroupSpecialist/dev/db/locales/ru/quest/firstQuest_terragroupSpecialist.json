@@ -1,0 +1,17 @@
+{
+	"conditions": {
+		"firstQuest_terragroupSpecialist_FirstRequir": "Найти и убить Глухаря",
+		"firstQuest_terragroupSpecialist_FirstRequir2": "Найти и убить последователя-штурмовика",
+		"firstQuest_terragroupSpecialist_FirstRequir3": "Найти и убить последователя-разведчика",
+		"firstQuest_terragroupSpecialist_FirstRequir4": "Найти и убить последователя-телохранителя",
+		"firstQuest_terragroupSpecialist_FindItem": "Найти зашифрованное устройство",
+		"firstQuest_terragroupSpecialist_Handover": "Передать зашифрованное устройство"
+	},
+	"name": "Тайны лаборатории",
+	"description": "firstQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "firstQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "firstQuest_terragroupSpecialist_mail",
+	"location": "5704e5fad2720bc05b8b4567"
+}

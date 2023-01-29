@@ -1,0 +1,13 @@
+{
+	"conditions": {
+		"eleventhQuest_terragroupSpecialist_FindItem": "Trouve la caisses et récupérez le marqueur",
+		"eleventhQuest_terragroupSpecialist_Handover": "Donnez le marqueur"
+	},
+	"name": "Des tests grandeur nature",
+	"description": "eleventhQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "eleventhQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "eleventhQuest_terragroupSpecialist_mail",
+	"location": "5714dbc024597771384a510d"
+}

@@ -1,0 +1,14 @@
+{
+	"conditions": {
+		"twelfthQuest_terragroupSpecialist_FirstRequir3": "Find the dead raider GPS device.",
+		"twelfthQuest_terragroupSpecialist_FirstRequir": "Kill 30 raiders in Woods with the dead raider equipment.",
+		"twelfthQuest_terragroupSpecialist_FirstRequir2": "Survive on Woods."
+	},
+	"name": "We got some bad news",
+	"description": "twelfthQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "twelfthQuest_terragroupSpecialist_failedMail",
+	"startedMessageText": "twelfthQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "twelfthQuest_terragroupSpecialist_mail",
+	"location": "5714dbc024597771384a510d"
+}

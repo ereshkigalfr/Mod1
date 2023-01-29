@@ -1,0 +1,12 @@
+{
+	"conditions": {
+		"secondQuest_terragroupSpecialist_FirstRequir": "Выжить и выйти с локации Лаборатория 3 раза"
+	},
+	"name": "Первая встреча",
+	"description": "secondQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "secondQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "secondQuest_terragroupSpecialist_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

@@ -1,0 +1,15 @@
+{
+	"conditions": {
+		"seventhQuest_terragroupSpecialist_FindItem": "Finde den 6.5x39mm GRENDEL Munitions-Prototypen",
+		"seventhQuest_terragroupSpecialist_Handover": "Übergebe den Munitions-Prototypen an den Spezialisten",
+		"seventhQuest_terragroupSpecialist_seventhRequir1": "Überlebe und extrahiere aus dem Labor"
+
+	},
+	"name": "Ein wunderschönes Kaliber",
+	"description": "seventhQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "seventhQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "seventhQuest_terragroupSpecialist_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

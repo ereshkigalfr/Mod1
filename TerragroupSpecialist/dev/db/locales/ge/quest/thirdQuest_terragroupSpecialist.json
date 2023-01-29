@@ -1,0 +1,14 @@
+{
+	"conditions": {
+		"thirdQuest_terragroupSpecialist_FirstRequir1": "Entferne die elektronischen Störsender von den Servern",
+		"thirdQuest_terragroupSpecialist_FirstRequir2": "Übergebe die elektronischen Störsender",
+		"thirdQuest_terragroupSpecialist_FirstRequir3": "Überlebe und extrahiere aus dem Labor"
+	},
+	"name": "Neustart des Systems",
+	"description": "thirdQuest_terragroupSpecialist_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "thirdQuest_terragroupSpecialist_StartedMail",
+	"successMessageText": "thirdQuest_terragroupSpecialist_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}
