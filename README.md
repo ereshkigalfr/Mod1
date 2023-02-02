@@ -1,4 +1,4 @@
-# Welcome to the TerraGroupSpecialist mod readme.
+# Welcome to the Terragroup Knight mod readme.
 
 ## What do the mod ?
 
