@@ -19,15 +19,21 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+var VFS = require("vfs")
 
 "use strict";
 
 class Merging
 {
+    constructor()
+    {
+        mergeFiles()
+    }
+
     static mergeFiles()
     {
-        const mod = require("../package.json");
-        const db = Merging.LoopThroughThatBith(`${ModLoader.getModPath(`${mod.author}-${mod.name}`)}/dev/db/`);
+        const mod = require("../Terragroup Knight/TerragroupKnight/package.json");
+        const db = Merging.LoopThroughThatBith(`./db/`);
 
         let localeOneFile = {};
         //Adding translations

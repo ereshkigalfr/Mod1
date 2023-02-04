@@ -1,0 +1,35 @@
+{
+    "QuestName": "Unknown Contact",
+    "side": "Pmc",
+    "_id": "TGS_Quest1",
+    "description": "TGS_Quest1 description",
+    "name": "TGS_Quest1 name",
+    "note": "TGS_Quest1 note",
+    "questStatus": {},
+    "traderId": "5ac3b934156ae10c4430e83c",
+    "location": "any",
+    "image": "/files/quest/icon/5ae4a74386f7744748710d72.jpg",
+    "type": "Merchant",
+    "isKey": false,
+    "restartable": false,
+    "instantComplete": false,
+    "secretQuest": false,
+    "failMessageText": "TGS_Quest1 failMessageText",
+    "startedMessageText": "TGS_Quest1 startedMessageText",
+    "successMessageText": "TGS_Quest1 successMessageText",
+    "canShowNotificationsInGame": true,
+    "acceptPlayerMessage": "TGS_Quest1 acceptPlayerMessage",
+    "changeQuestMessageText": "TGS_Quest1 changeQuestMessageText",
+    "completePlayerMessage": "TGS_Quest1 completePlayerMessage",
+    "templateId": "TGS_Quest1",
+    "rewards": {
+      "Started": [],
+      "Success": [],
+      "Fail": [],
+    "conditions": {
+        "AvailableForFinish": [],
+        "AvailableForStart": [],
+        "Fail": []
+        }
+    }
+}

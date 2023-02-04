@@ -1,212 +1,39 @@
 {
-	"_id": "eightQuest_tgs",
-	"traderId": "TerraGroup_Specialist",
-	"location": "Laboratory",
-	"image": "/files/quest/icon/eightQuest_tgs.jpg",
-	"type": "Elimination",
-	"isKey": false,
-	"restartable": true,
-	"min_level": 0,
-	"canShowNotificationsInGame": true,
-	"rewards": {
-		"Started": [
-			{
-				"target": "eightQuest_tgs_StartingGear_id",
-				"value": "30",
-				"id": "eightQuest_tgs_StartingGear",
-				"type": "Item",
-				"index": 0,
-				"items": [
-					{
-						"_id": "eightQuest_tgs_StartingGear_id",
-						"_tpl": "tgs_65x39mm_grendel",
-						"upd": {
-							"StackObjectsCount": 30
-						}
-					}
-				]
-			}
-		],
-		"Success": [
-			{
-				"value": "65000",
-				"id": "ExperienceID",
-				"type": "Experience",
-				"index": 0
-			},
-			{
-				"target": "TerraGroup_Specialist",
-				"value": "0.08",
-				"id": "eightQuest_tgs_eightReward",
-				"type": "TraderStanding",
-				"index": 1
-			},
-			{
-				"target": "eightQuest_tgs_eightReward_id",
-				"value": "5",
-				"id": "eightQuest_tgs_eightReward",
-				"type": "Item",
-				"index": 2,
-				"items": [
-					{
-						"_id": "eightQuest_tgs_eightReward_id",
-						"_tpl": "tgs_grendel_intelligence"
-					},
-					{
-						"_id": "eightQuest_tgs_eightReward_id2",
-						"_tpl": "tgs_grendel_intelligence"
-					},
-					{
-						"_id": "eightQuest_tgs_eightReward_id3",
-						"_tpl": "tgs_grendel_intelligence"
-					},
-					{
-						"_id": "eightQuest_tgs_eightReward_id4",
-						"_tpl": "tgs_grendel_intelligence"
-					},
-					{
-						"_id": "eightQuest_tgs_eightReward_id5",
-						"_tpl": "tgs_grendel_intelligence"
-					}
-				]
-			}
-		],
-		"Fail": []
-	},
-	"conditions": {
-		"AvailableForStart": [
-			{
-				"_parent": "Level",
-				"_props": {
-					"compareMethod": ">=",
-					"value": "38",
-					"index": 0,
-					"parentId": "",
-					"id": "eightQuest_tgs_levelRequir"
-				}
-			},
-			{
-				"_parent": "Quest",
-				"_props": {
-					"target": "seventhQuest_tgs",
-					"status": [4],
-					"index": 1,
-					"parentId": "",
-					"id": ""
-				}
-			}
-		],
-		"AvailableForFinish": [
-			{
-				"_parent": "CounterCreator",
-				"_props": {
-					"value": "15",
-					"type": "Elimination",
-					"counter": {
-						"id": "eightQuest_tgs_counter1",
-						"conditions": [
-							{
-								"_parent": "Location",
-								"_props": {
-									"target": [
-										"laboratory"
-									],
-									"save": "pmcBot_counter",
-									"form_id": "QuestManager-QuestSubConditionAddForm_pmcBot",
-									"token": "tgs_token",
-									"id": "eightQuest_tgs_condition1"
-								}
-							},
-							{
-								"_parent": "Kills",
-								"_props": {
-									"target": "Terragroup",
-									"compareMethod": ">=",
-									"value": "1",
-									"weapon": [
-										"tgs_prototype_m16"
-									],
-									"resetOnSessionEnd": true,
-									"id": "eightQuest_tgs_condition2"
-								}
-							}
-						]
-					},
-					"index": 0,
-					"parentId": "",
-					"id": "eightQuest_tgs_Req1"
-				}
-			},
-			{
-				"_parent": "CounterCreator",
-				"_props": {
-					"value": "1",
-					"type": "Completion",
-					"counter": {
-						"id": "eightQuest_tgs_counter",
-						"conditions": [
-							{
-								"_parent": "Location",
-								"_props": {
-									"target": [
-										"laboratory"
-									],
-									"id": "eightQuest_tgs_location"
-								}
-							},
-							{
-								"_parent": "ExitStatus",
-								"_props": {
-									"status": [
-										"Survived"
-									],
-									"id": "eightQuest_tgs_exitStatus"
-								}
-							}
-						]
-					},
-					"index": 1,
-					"parentId": "",
-					"id": "eightQuest_tgs_FirstRequir"
-				}
-			}
-		],
-		"Fail": [
-			{
-				"_parent": "CounterCreator",
-				"_props": {
-					"value": "1",
-					"type": "Exploration",
-					"counter": {
-						"id": "5c0d4f46d09282029f539215",
-						"conditions": [
-							{
-								"_parent": "ExitStatus",
-								"_props": {
-									"status": [
-										"Killed",
-										"Left",
-										"MissingInAction"
-									],
-									"id": "5c13990686f7743b056e2aab"
-								}
-							},
-							{
-								"_parent": "Location",
-								"_props": {
-									"target": [
-										"laboratory"
-									],
-									"id": "5c13992486f774365a69cc4e"
-								}
-							}
-						]
-					},
-					"index": 0,
-					"parentId": "",
-					"id": "5c0d4f46d09282029f539216"
-				}
-			}
-		]
-	}
+
+"TGS_Quest1": {
+    "QuestName": "Only business",
+    "side": "Pmc",
+    "_id": "5ae448a386f7744d3730fff0",
+    "description": "5ae448a386f7744d3730fff0 description",
+    "name": "5ae448a386f7744d3730fff0 name",
+    "note": "5ae448a386f7744d3730fff0 note",
+    "questStatus": {},
+    "traderId": "5ac3b934156ae10c4430e83c",
+    "location": "any",
+    "image": "/files/quest/icon/5ae4a74386f7744748710d72.jpg",
+    "type": "Merchant",
+    "isKey": false,
+    "restartable": false,
+    "instantComplete": false,
+    "secretQuest": false,
+    "failMessageText": "5ae448a386f7744d3730fff0 failMessageText",
+    "startedMessageText": "5ae448a386f7744d3730fff0 startedMessageText",
+    "successMessageText": "5ae448a386f7744d3730fff0 successMessageText",
+    "canShowNotificationsInGame": true,
+    "acceptPlayerMessage": "5ae448a386f7744d3730fff0 acceptPlayerMessage",
+    "changeQuestMessageText": "5ae448a386f7744d3730fff0 changeQuestMessageText",
+    "completePlayerMessage": "5ae448a386f7744d3730fff0 completePlayerMessage",
+    "templateId": "5ae448a386f7744d3730fff0",
+    "rewards": {
+      "Started": [],
+      "Success": [],
+      "Fail": [],
+    "conditions": {
+        "AvailableForFinish": [],
+        "AvailableForStart": [],
+        "Fail": []
+        }
+    }
+  }
+
 }
