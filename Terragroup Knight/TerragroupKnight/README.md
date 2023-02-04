@@ -2,10 +2,6 @@
 
 ## What do the mod ?
 
-
-## I don't find the encrypted device for the first quest
-That's normal buddy ! Who said that you will get it at the first try ? Hehe.
-
 ## What now ?
 
 ## Known bugs :
