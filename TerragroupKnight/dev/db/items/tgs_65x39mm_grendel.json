@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_65x39mm_grendel",
-	"_name": "terragroupSpecialist_65x39mm_grendel",
+	"_id": "tgs_65x39mm_grendel",
+	"_name": "tgs_65x39mm_grendel",
 	"_parent": "5485a8684bdc2da71d8b4567",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_65x39mm_grendel",
-		"ShortName": "terragroupSpecialist_65x39mm_grendel",
-		"Description": "terragroupSpecialist_65x39mm_grendel",
+		"Name": "tgs_65x39mm_grendel",
+		"ShortName": "tgs_65x39mm_grendel",
+		"Description": "tgs_65x39mm_grendel",
 		"Weight": 0.006,
 		"BackgroundColor": "violet",
 		"Width": 1,

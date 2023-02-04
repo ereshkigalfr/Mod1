@@ -1,6 +1,6 @@
 {
-	"_id": "terragroupSpecialist_Blaze_Dogtags",
-	"_name": "terragroupSpecialist_Blaze_Dogtags",
+	"_id": "tgs_Blaze_Dogtags",
+	"_name": "tgs_Blaze_Dogtags",
 	"_parent": "590c745b86f7743cc433c5f2",
 	"_type": "Item",
 	"_props": {

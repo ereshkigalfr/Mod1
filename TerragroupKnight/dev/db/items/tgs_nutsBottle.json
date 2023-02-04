@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_nutsBottle",
-	"_name": "terragroupSpecialist_nutsBottle",
+	"_id": "tgs_nutsBottle",
+	"_name": "tgs_nutsBottle",
 	"_parent": "590c745b86f7743cc433c5f2",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_nutsBottle",
-		"ShortName": "terragroupSpecialist_nutsBottle",
-		"Description": "terragroupSpecialist_nutsBottle",
+		"Name": "tgs_nutsBottle",
+		"ShortName": "tgs_nutsBottle",
+		"Description": "tgs_nutsBottle",
 		"Weight": 0.3,
 		"BackgroundColor": "violet",
 		"Width": 1,

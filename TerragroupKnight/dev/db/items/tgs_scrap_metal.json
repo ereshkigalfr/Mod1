@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_scrap_metal",
-	"_name": "terragroupSpecialist_scrap_metal",
+	"_id": "tgs_scrap_metal",
+	"_name": "tgs_scrap_metal",
 	"_parent": "590c745b86f7743cc433c5f2",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_scrap_metal",
-		"ShortName": "terragroupSpecialist_scrap_metal",
-		"Description": "terragroupSpecialist_scrap_metal",
+		"Name": "tgs_scrap_metal",
+		"ShortName": "tgs_scrap_metal",
+		"Description": "tgs_scrap_metal",
 		"Weight": 0.56,
 		"BackgroundColor": "blue",
 		"Width": 2,

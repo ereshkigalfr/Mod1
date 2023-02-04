@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_338_badnews",
-	"_name": "terragroupSpecialist_338_badnews",
+	"_id": "tgs_338_badnews",
+	"_name": "tgs_338_badnews",
 	"_parent": "5447b6194bdc2d67278b4567",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_338_badnews",
-		"ShortName": "terragroupSpecialist_338_badnews",
-		"Description": "terragroupSpecialist_338_badnews",
+		"Name": "tgs_338_badnews",
+		"ShortName": "tgs_338_badnews",
+		"Description": "tgs_338_badnews",
 		"Weight": 1,
 		"BackgroundColor": "blue",
 		"Width": 1,
@@ -63,7 +63,7 @@
 			{
 				"_name": "mod_pistol_grip",
 				"_id": "5df8ce05b11454561e39243d",
-				"_parent": "terragroupSpecialist_338_badnews",
+				"_parent": "tgs_338_badnews",
 				"_props": {
 					"filters": [
 						{
@@ -81,7 +81,7 @@
 			{
 				"_name": "mod_magazine",
 				"_id": "5df8ce05b11454561e39243e",
-				"_parent": "terragroupSpecialist_338_badnews",
+				"_parent": "tgs_338_badnews",
 				"_props": {
 					"filters": [
 						{
@@ -99,13 +99,13 @@
 			{
 				"_name": "mod_stock",
 				"_id": "5df8ce05b11454561e39243f",
-				"_parent": "terragroupSpecialist_338_badnews",
+				"_parent": "tgs_338_badnews",
 				"_props": {
 					"filters": [
 						{
 							"Shift": 0,
 							"Filter": [
-								"terragroupSpecialist_338_badnews_buffer"
+								"tgs_338_badnews_buffer"
 							]
 						}
 					]
@@ -117,13 +117,13 @@
 			{
 				"_name": "mod_reciever",
 				"_id": "5df926b94a9f347bc92edcac",
-				"_parent": "terragroupSpecialist_338_badnews",
+				"_parent": "tgs_338_badnews",
 				"_props": {
 					"filters": [
 						{
 							"Shift": 0,
 							"Filter": [
-								"terragroupSpecialist_338_badnews_receiver"
+								"tgs_338_badnews_receiver"
 							]
 						}
 					]
@@ -135,7 +135,7 @@
 			{
 				"_name": "mod_charge",
 				"_id": "5df926e28b6c4240ba265260",
-				"_parent": "terragroupSpecialist_338_badnews",
+				"_parent": "tgs_338_badnews",
 				"_props": {
 					"filters": [
 						{

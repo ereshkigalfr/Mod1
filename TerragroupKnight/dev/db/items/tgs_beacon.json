@@ -1,27 +1,27 @@
 {
-	"_id": "terragroupSpecialist_chemical",
-	"_name": "terragroupSpecialist_chemical",
-	"_parent": "590c745b86f7743cc433c5f2",
+	"_id": "tgs_beacon",
+	"_name": "tgs_beacon",
+	"_parent": "5447e0e74bdc2d3c308b4567",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_chemical",
-		"ShortName": "terragroupSpecialist_chemical",
-		"Description": "terragroupSpecialist_chemical",
-		"Weight": 0.1,
-		"BackgroundColor": "green",
+		"Name": "tgs_beacon",
+		"ShortName": "tgs_beacon",
+		"Description": "tgs_beacon",
+		"Weight": 0.5,
+		"BackgroundColor": "red",
 		"Width": 1,
 		"Height": 1,
 		"StackMaxSize": 1,
-		"Rarity": "Not_exist",
-		"SpawnChance": 1,
-		"CreditsPrice": 2150,
+		"Rarity": "Superrare",
+		"SpawnChance": 5,
+		"CreditsPrice": 13923,
 		"ItemSound": "generic",
 		"Prefab": {
-			"path": "assets/content/items/quest/item_quest_chemcontainer/item_quest_chemcontainer.bundle",
+			"path": "assets/content/items/spec/item_spec_irbeacon/item_spec_irbeacon.bundle",
 			"rcid": ""
 		},
 		"UsePrefab": {
-			"path": "",
+			"path": "assets/content/weapons/usable_items/item_ms2000/item_ms2000_container.bundle",
 			"rcid": ""
 		},
 		"StackObjectsCount": 1,
@@ -45,9 +45,9 @@
 		"ExtraSizeDown": 0,
 		"ExtraSizeForceAdd": false,
 		"MergesWithChildren": false,
-		"CanSellOnRagfair": false,
-		"CanRequireOnRagfair": false,
-		"BannedFromRagfair": true,
+		"CanSellOnRagfair": true,
+		"CanRequireOnRagfair": true,
+		"BannedFromRagfair": false,
 		"ConflictingItems": [],
 		"FixedPrice": false,
 		"Unlootable": false,
@@ -58,9 +58,8 @@
 		"SendToClient": false,
 		"AnimationVariantsNumber": 0,
 		"DiscardingBlock": false,
-		"MaxResource": 0,
-		"Resource": 0,
-		"DogTagQualities": false
+		"apResource": 0,
+		"krResource": 0
 	},
-	"_proto": "59e3606886f77417674759a5"
+	"_proto": "544fb5454bdc2df8738b456a"
 }

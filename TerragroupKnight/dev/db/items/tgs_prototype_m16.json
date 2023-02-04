@@ -1,5 +1,5 @@
 {
-	"_id": "terragroupSpecialist_prototype_m16",
+	"_id": "tgs_prototype_m16",
 	"_name": "P-M16A4",
 	"_parent": "5447b5f14bdc2d61278b4567",
 	"_type": "Item",
@@ -63,7 +63,7 @@
 			{
 				"_name": "mod_pistol_grip",
 				"_id": "55d354084bdc2d8c2f8b4568",
-				"_parent": "terragroupSpecialist_prototype_m16",
+				"_parent": "tgs_prototype_m16",
 				"_props": {
 					"filters": [
 						{
@@ -81,7 +81,7 @@
 			{
 				"_name": "mod_magazine",
 				"_id": "55d3555c4bdc2d962f8b4568",
-				"_parent": "terragroupSpecialist_prototype_m16",
+				"_parent": "tgs_prototype_m16",
 				"_props": {
 					"filters": [
 						{
@@ -99,13 +99,13 @@
 			{
 				"_name": "mod_reciever",
 				"_id": "55d5a2ec4bdc2d972f8b4575",
-				"_parent": "terragroupSpecialist_prototype_m16",
+				"_parent": "tgs_prototype_m16",
 				"_props": {
 					"filters": [
 						{
 							"Shift": 0,
 							"Filter": [
-								"terragroupSpecialist_prototype_m16_upper"
+								"tgs_prototype_m16_upper"
 							]
 						}
 					]
@@ -117,7 +117,7 @@
 			{
 				"_name": "mod_stock",
 				"_id": "55d5a3074bdc2d61338b4574",
-				"_parent": "terragroupSpecialist_prototype_m16",
+				"_parent": "tgs_prototype_m16",
 				"_props": {
 					"filters": [
 						{
@@ -135,7 +135,7 @@
 			{
 				"_name": "mod_charge",
 				"_id": "55d5a30f4bdc2d882f8b4574",
-				"_parent": "terragroupSpecialist_prototype_m16",
+				"_parent": "tgs_prototype_m16",
 				"_props": {
 					"filters": [
 						{

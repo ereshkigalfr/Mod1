@@ -106,7 +106,7 @@
         "equipment": {
             "Headwear": [
                 "5f60b34a41e30a4ab12a6947",
-                "terragroupSpecialist_helmet_prototype"
+                "tgs_helmet_prototype"
             ],
             "Earpiece": [
                 "5645bcc04bdc2d363b8b4572",
@@ -124,7 +124,7 @@
                 "5c0e655586f774045612eeb2",
                 "5fd4c474dd870108a754b241",
                 "545cdb794bdc2d3a198b456a",
-                "terragroupSpecialist_powerArmor"
+                "tgs_powerArmor"
             ],
             "Eyewear": [
                 "5d6d2ef3a4b93618084f58bd"
@@ -156,8 +156,8 @@
             "SpecialLoot": [],
             "Pockets": [
                 "5c94bbff86f7747ee735c08f",
-                "terragroupSpecialist_chemical_meds",
-                "terragroupSpecialist_chemical_meds2",
+                "tgs_chemical_meds",
+                "tgs_chemical_meds2",
                 "5fca13ca637ee0341a484f46",
                 "5c0e531d86f7747fa23f4d42",
                 "5c0e531286f7747fa54205c2",
@@ -179,8 +179,8 @@
             ],
             "TacticalVest": [
                 "5ed515ece452db0eb56fc028",
-                "terragroupSpecialist_chemical_meds2",
-                "terragroupSpecialist_chemical_meds",
+                "tgs_chemical_meds2",
+                "tgs_chemical_meds",
                 "5ed5160a87bb8443d10680b5",
                 "590c678286f77426c9660122",
                 "5e8488fa988a8701445df1e4",

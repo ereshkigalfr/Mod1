@@ -1,27 +1,27 @@
 {
-	"_id": "terragroupSpecialist_tgBeacon",
-	"_name": "terragroupSpecialist_tgBeacon",
-	"_parent": "5447e0e74bdc2d3c308b4567",
+	"_id": "tgs_chemical_meds",
+	"_name": "tgs_chemical_meds",
+	"_parent": "5448f3a64bdc2d60728b456a",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_tgBeacon",
-		"ShortName": "terragroupSpecialist_tgBeacon",
-		"Description": "terragroupSpecialist_tgBeacon",
-		"Weight": 0.5,
-		"BackgroundColor": "violet",
+		"Name": "tgs_chemical_meds",
+		"ShortName": "tgs_chemical_meds",
+		"Description": "tgs_chemical_meds",
+		"Weight": 0.03,
+		"BackgroundColor": "orange",
 		"Width": 1,
 		"Height": 1,
 		"StackMaxSize": 1,
 		"Rarity": "Superrare",
-		"SpawnChance": 5,
-		"CreditsPrice": 13923,
-		"ItemSound": "generic",
+		"SpawnChance": 4,
+		"CreditsPrice": 24200,
+		"ItemSound": "med_stimulator",
 		"Prefab": {
-			"path": "assets/content/items/spec/item_spec_irbeacon/item_spec_irbeacon.bundle",
+			"path": "assets/content/weapons/usable_items/item_syringe/item_stimulator_adrenaline_loot.bundle",
 			"rcid": ""
 		},
 		"UsePrefab": {
-			"path": "assets/content/weapons/usable_items/item_ms2000/item_ms2000_container.bundle",
+			"path": "assets/content/weapons/usable_items/item_syringe/item_stimulator_adrenaline_container.bundle",
 			"rcid": ""
 		},
 		"StackObjectsCount": 1,
@@ -33,9 +33,9 @@
 		"IsUnbuyable": false,
 		"IsUngivable": false,
 		"IsLockedafterEquip": false,
-		"QuestItem": true,
+		"QuestItem": false,
 		"LootExperience": 20,
-		"ExamineExperience": 10,
+		"ExamineExperience": 8,
 		"HideEntrails": false,
 		"RepairCost": 0,
 		"RepairSpeed": 0,
@@ -58,8 +58,14 @@
 		"SendToClient": false,
 		"AnimationVariantsNumber": 0,
 		"DiscardingBlock": false,
-		"apResource": 0,
-		"krResource": 0
+		"medUseTime": 2,
+		"medEffectType": "duringUse",
+		"MaxHpResource": 0,
+		"hpResourceRate": 0,
+		"StimulatorBuffs": "terragroupSpecialist_ChemicalBuff",
+		"effects_health": {},
+		"effects_damage": [],
+		"Buffs": []
 	},
-	"_proto": "544fb5454bdc2df8738b456a"
+	"_proto": "544fb3f34bdc2d03748b456a"
 }

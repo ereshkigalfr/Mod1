@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_genm3_fde",
-	"_name": "terragroupSpecialist_genm3_fde",
+	"_id": "tgs_genm3_fde",
+	"_name": "tgs_genm3_fde",
 	"_parent": "5448bc234bdc2d3c308b4569",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_genm3_fde",
-		"ShortName": "terragroupSpecialist_genm3_fde",
-		"Description": "terragroupSpecialist_genm3_fde",
+		"Name": "tgs_genm3_fde",
+		"ShortName": "tgs_genm3_fde",
+		"Description": "tgs_genm3_fde",
 		"Weight": 0.112,
 		"BackgroundColor": "violet",
 		"Width": 1,

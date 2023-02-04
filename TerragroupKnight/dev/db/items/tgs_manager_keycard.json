@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_manager_keycard",
-	"_name": "terragroupSpecialist_manager_keycard",
+	"_id": "tgs_manager_keycard",
+	"_name": "tgs_manager_keycard",
 	"_parent": "5c164d2286f774194c5e69fa",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_manager_keycard",
-		"ShortName": "terragroupSpecialist_manager_keycard",
-		"Description": "terragroupSpecialist_manager_keycard",
+		"Name": "tgs_manager_keycard",
+		"ShortName": "tgs_manager_keycard",
+		"Description": "tgs_manager_keycard",
 		"Weight": 0.01,
 		"BackgroundColor": "red",
 		"Width": 1,

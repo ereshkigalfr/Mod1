@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_prototype_m16_upper",
-	"_name": "terragroupSpecialist_prototype_m16_upper",
+	"_id": "tgs_prototype_m16_upper",
+	"_name": "tgs_prototype_m16_upper",
 	"_parent": "55818a304bdc2db5418b457d",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_prototype_m16_upper",
-		"ShortName": "terragroupSpecialist_prototype_m16_upper",
-		"Description": "terragroupSpecialist_prototype_m16_upper",
+		"Name": "tgs_prototype_m16_upper",
+		"ShortName": "tgs_prototype_m16_upper",
+		"Description": "tgs_prototype_m16_upper",
 		"Weight": 0.27,
 		"BackgroundColor": "violet",
 		"Width": 2,
@@ -63,7 +63,7 @@
 			{
 				"_name": "mod_scope",
 				"_id": "55d357484bdc2d882f8b456a",
-				"_parent": "terragroupSpecialist_prototype_m16_upper",
+				"_parent": "tgs_prototype_m16_upper",
 				"_props": {
 					"filters": [
 						{
@@ -124,7 +124,7 @@
 			{
 				"_name": "mod_barrel",
 				"_id": "55d35d0c4bdc2d892f8b456c",
-				"_parent": "terragroupSpecialist_prototype_m16_upper",
+				"_parent": "tgs_prototype_m16_upper",
 				"_props": {
 					"filters": [
 						{
@@ -142,7 +142,7 @@
 			{
 				"_name": "mod_handguard",
 				"_id": "55d35d754bdc2d882f8b456b",
-				"_parent": "terragroupSpecialist_prototype_m16_upper",
+				"_parent": "tgs_prototype_m16_upper",
 				"_props": {
 					"filters": [
 						{
@@ -160,7 +160,7 @@
 			{
 				"_name": "mod_sight_rear",
 				"_id": "55d35e074bdc2d882f8b456c",
-				"_parent": "terragroupSpecialist_prototype_m16_upper",
+				"_parent": "tgs_prototype_m16_upper",
 				"_props": {
 					"filters": [
 						{

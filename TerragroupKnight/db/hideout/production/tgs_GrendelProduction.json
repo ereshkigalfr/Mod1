@@ -1,5 +1,5 @@
 {
-	"_id": "terragroupSpecialistGrendelProduction",
+	"_id": "tgs_GrendelProduction",
 	"areaType": 11,
 	"requirements": [
 		{
@@ -8,7 +8,7 @@
 			"type": "Area"
 		},
 		{
-			"templateId": "terragroupSpecialist_grendel_intelligence",
+			"templateId": "tgs_grendel_intelligence",
 			"count": 1,
 			"isFunctional": false,
 			"type": "Item"
@@ -29,7 +29,7 @@
 	"continuous": false,
 	"productionTime": 10,
 	"boosters": null,
-	"endProduct": "terragroupSpecialist_65x39mm_grendel",
+	"endProduct": "tgs_65x39mm_grendel",
 	"count": 90,
 	"productionLimitCount": 0
 }

@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_powerArmor",
-	"_name": "terragroupSpecialist_powerArmor",
+	"_id": "tgs_powerArmor",
+	"_name": "tgs_powerArmor",
 	"_parent": "5448e54d4bdc2dcc718b4568",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_powerArmor",
-		"ShortName": "terragroupSpecialist_powerArmor",
-		"Description": "terragroupSpecialist_powerArmor",
+		"Name": "tgs_powerArmor",
+		"ShortName": "tgs_powerArmor",
+		"Description": "tgs_powerArmor",
 		"Weight": 22.8,
 		"BackgroundColor": "orange",
 		"Width": 4,

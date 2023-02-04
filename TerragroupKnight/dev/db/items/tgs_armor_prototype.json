@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_armor_prototype",
-	"_name": "terragroupSpecialist_armor_prototype",
+	"_id": "tgs_armor_prototype",
+	"_name": "tgs_armor_prototype",
 	"_parent": "5448e54d4bdc2dcc718b4568",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_armor_prototype",
-		"ShortName": "terragroupSpecialist_armor_prototype",
-		"Description": "terragroupSpecialist_armor_prototype",
+		"Name": "tgs_armor_prototype",
+		"ShortName": "tgs_armor_prototype",
+		"Description": "tgs_armor_prototype",
 		"Weight": 6.7,
 		"BackgroundColor": "violet",
 		"Width": 3,

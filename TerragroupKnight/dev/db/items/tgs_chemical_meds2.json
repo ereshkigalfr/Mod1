@@ -1,6 +1,6 @@
 {
-    "_id": "terragroupSpecialist_chemical_meds2",
-    "_name": "terragroupSpecialist_chemical_meds2",
+    "_id": "tgs_chemical_meds2",
+    "_name": "tgs_chemical_meds2",
     "_parent": "5448f3a64bdc2d60728b456a",
     "_type": "Item",
     "_props": {

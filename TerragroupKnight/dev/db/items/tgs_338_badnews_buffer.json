@@ -1,12 +1,12 @@
 {
-	"_id": "terragroupSpecialist_338_badnews_buffer",
-	"_name": "terragroupSpecialist_338_badnews_buffer",
+	"_id": "tgs_338_badnews_buffer",
+	"_name": "tgs_338_badnews_buffer",
 	"_parent": "55818a594bdc2db9688b456a",
 	"_type": "Item",
 	"_props": {
-		"Name": "terragroupSpecialist_338_badnews_buffer",
-		"ShortName": "terragroupSpecialist_338_badnews_buffer",
-		"Description": "terragroupSpecialist_338_badnews_buffer.",
+		"Name": "tgs_338_badnews_buffer",
+		"ShortName": "tgs_338_badnews_buffer",
+		"Description": "tgs_338_badnews_buffer.",
 		"Weight": 0.162,
 		"BackgroundColor": "blue",
 		"Width": 2,
@@ -63,7 +63,7 @@
 			{
 				"_name": "mod_stock_000",
 				"_id": "5649dbce4bdc2d9d198b456c",
-				"_parent": "terragroupSpecialist_338_badnews_buffer",
+				"_parent": "tgs_338_badnews_buffer",
 				"_props": {
 					"filters": [
 						{
