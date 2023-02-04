@@ -1,13 +1,13 @@
 {
 	"conditions": {
-		"eleventhQuest_terragroupSpecialist_FindItem": "Find the crate and collect the marker at the Interchange",
-		"eleventhQuest_terragroupSpecialist_Handover": "Hand over the marker from the crate"
+		"eleventhQuest_tgs_FindItem": "Find the crate and collect the marker at the Interchange",
+		"eleventhQuest_tgs_Handover": "Hand over the marker from the crate"
 	},
 	"name": "Life-size tests",
-	"description": "eleventhQuest_terragroupSpecialist_description",
+	"description": "eleventhQuest_tgs_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "eleventhQuest_terragroupSpecialist_StartedMail",
-	"successMessageText": "eleventhQuest_terragroupSpecialist_mail",
+	"startedMessageText": "eleventhQuest_tgs_StartedMail",
+	"successMessageText": "eleventhQuest_tgs_mail",
 	"location": "5714dbc024597771384a510d"
 }

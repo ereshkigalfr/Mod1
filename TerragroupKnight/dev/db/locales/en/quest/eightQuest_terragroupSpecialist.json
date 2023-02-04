@@ -1,14 +1,14 @@
 {
 	"conditions": {
-		"eightQuest_terragroupSpecialist_Req1": "Eliminate 15 Raiders in the Laboratory with the P-M4A1 assault rifle in a single raid",
-		"eightQuest_terragroupSpecialist_FirstRequir": "Survive and extract from the Laboratory"
+		"eightQuest_tgs_Req1": "Eliminate 15 Raiders in the Laboratory with the P-M4A1 assault rifle in a single raid",
+		"eightQuest_tgs_FirstRequir": "Survive and extract from the Laboratory"
 
 	},
 	"name": "Preservation",
-	"description": "eightQuest_terragroupSpecialist_description",
+	"description": "eightQuest_tgs_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "eightQuest_terragroupSpecialist_StartedMail",
-	"successMessageText": "eightQuest_terragroupSpecialist_mail",
+	"startedMessageText": "eightQuest_tgs_StartedMail",
+	"successMessageText": "eightQuest_tgs_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

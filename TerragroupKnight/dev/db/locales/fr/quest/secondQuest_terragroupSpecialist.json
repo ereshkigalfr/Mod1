@@ -1,12 +1,12 @@
 {
 	"conditions": {
-		"secondQuest_terragroupSpecialist_FirstRequir": "Survivez 3 fois dans le laboratoire terragroup"
+		"secondQuest_tgs_FirstRequir": "Survivez 3 fois dans le laboratoire terragroup"
 	},
 	"name": "Contact avec le garde",
-	"description": "secondQuest_terragroupSpecialist_description",
+	"description": "secondQuest_tgs_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "secondQuest_terragroupSpecialist_StartedMail",
-	"successMessageText": "secondQuest_terragroupSpecialist_mail",
+	"startedMessageText": "secondQuest_tgs_StartedMail",
+	"successMessageText": "secondQuest_tgs_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

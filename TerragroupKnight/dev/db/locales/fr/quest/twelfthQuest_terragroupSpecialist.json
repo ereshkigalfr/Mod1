@@ -1,14 +1,14 @@
 {
     "conditions": {
-        "twelfthQuest_terragroupSpecialist_FirstRequir3": "Trouvez le GPS de l'équipement.",
-        "twelfthQuest_terragroupSpecialist_FirstRequir": "Eliminez 30 raiders dans les bois avec l'équipement trouvé.",
-        "twelfthQuest_terragroupSpecialist_FirstRequir2": "Survivez à un raid sur Woods."
+        "twelfthQuest_tgs_FirstRequir3": "Trouvez le GPS de l'équipement.",
+        "twelfthQuest_tgs_FirstRequir": "Eliminez 30 raiders dans les bois avec l'équipement trouvé.",
+        "twelfthQuest_tgs_FirstRequir2": "Survivez à un raid sur Woods."
     },
     "name": "Des nouvelles pas très bonnes",
-    "description": "twelfthQuest_terragroupSpecialist_description",
+    "description": "twelfthQuest_tgs_description",
     "note": "",
-    "failMessageText": "twelfthQuest_terragroupSpecialist_failedMail",
-    "startedMessageText": "twelfthQuest_terragroupSpecialist_StartedMail",
-    "successMessageText": "twelfthQuest_terragroupSpecialist_mail",
+    "failMessageText": "twelfthQuest_tgs_failedMail",
+    "startedMessageText": "twelfthQuest_tgs_StartedMail",
+    "successMessageText": "twelfthQuest_tgs_mail",
     "location": "5714dbc024597771384a510d"
 }

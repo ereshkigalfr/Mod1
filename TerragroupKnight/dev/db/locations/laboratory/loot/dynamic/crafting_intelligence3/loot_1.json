@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "crafting_intelligence_position3",
-			"_tpl": "terragroupSpecialist_grendel_intelligence"
+			"_tpl": "tgs_grendel_intelligence"
 		}
 	]
 }

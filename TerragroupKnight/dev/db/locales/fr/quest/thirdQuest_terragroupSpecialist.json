@@ -1,14 +1,14 @@
 {
 	"conditions": {
-		"thirdQuest_terragroupSpecialist_FirstRequir1": "Retirez les brouilleurs électroniques des serveurs du laboratoire",
-		"thirdQuest_terragroupSpecialist_FirstRequir2": "Donnez les brouilleurs électroniques",
-		"thirdQuest_terragroupSpecialist_FirstRequir3": "Survivez"
+		"thirdQuest_tgs_FirstRequir1": "Retirez les brouilleurs électroniques des serveurs du laboratoire",
+		"thirdQuest_tgs_FirstRequir2": "Donnez les brouilleurs électroniques",
+		"thirdQuest_tgs_FirstRequir3": "Survivez"
 	},
 	"name": "Remise en route",
-	"description": "thirdQuest_terragroupSpecialist_description",
+	"description": "thirdQuest_tgs_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "thirdQuest_terragroupSpecialist_StartedMail",
-	"successMessageText": "thirdQuest_terragroupSpecialist_mail",
+	"startedMessageText": "thirdQuest_tgs_StartedMail",
+	"successMessageText": "thirdQuest_tgs_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

@@ -146,28 +146,28 @@ class TradersInit
         CoreMod.CreateTraderAssort(HashUtil.generate(), "569668774bdc2da2298b4568", traderID, 133, "RUB", 1, true, 999999);
         //Grendel Ammo
         id = HashUtil.generate();
-        CoreMod.CreateTraderAssort(id, "terragroupSpecialist_65x39mm_grendel", traderID, 49, "EUR", 1, true, 999999, 400);
-        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "seventhQuest_terragroupSpecialist");
+        CoreMod.CreateTraderAssort(id, "tgs_65x39mm_grendel", traderID, 49, "EUR", 1, true, 999999, 400);
+        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "seventhQuest_tgs");
         //chemical med 1
-        CoreMod.CreateTraderAssort(HashUtil.generate(), "terragroupSpecialist_chemical_meds", traderID, 1500, "EUR", 1, false, 200, 3);
+        CoreMod.CreateTraderAssort(HashUtil.generate(), "tgs_chemical_meds", traderID, 1500, "EUR", 1, false, 200, 3);
         //chemical med 2
         id = HashUtil.generate();
-        CoreMod.CreateTraderAssort(id, "terragroupSpecialist_chemical_meds2", traderID, 1500, "EUR", 1, false, 200, 3);
-        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "eleventhQuest_terragroupSpecialist");
+        CoreMod.CreateTraderAssort(id, "tgs_chemical_meds2", traderID, 1500, "EUR", 1, false, 200, 3);
+        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "eleventhQuest_tgs");
         //Gen M3 6,5x39 mag
-        CoreMod.CreateTraderAssort(HashUtil.generate(), "terragroupSpecialist_genm3_fde", traderID, 2500, "EUR", 1, false, 500, 10);
+        CoreMod.CreateTraderAssort(HashUtil.generate(), "tgs_genm3_fde", traderID, 2500, "EUR", 1, false, 500, 10);
         //Lapua magnum mag
         id = HashUtil.generate();
-        CoreMod.CreateTraderAssort(id, "terragroupSpecialist_338_LM_20rnd_mag", traderID, 1250, "EUR", 1, false, 500, 10);
-        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "twelfthQuest_terragroupSpecialist");
+        CoreMod.CreateTraderAssort(id, "tgs_338_LM_20rnd_mag", traderID, 1250, "EUR", 1, false, 500, 10);
+        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "twelfthQuest_tgs");
         //M16A4 Preset
         id = HashUtil.generate();
         CoreMod.CreateTraderAssortWithPreset(id, "P-M16A4", traderID, 6500, "EUR", 1, false, 10, 3);
-        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "sixthQuest_terragroupSpecialist");
+        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "sixthQuest_tgs");
         //M16A4 Preset
         id = HashUtil.generate();
         CoreMod.CreateTraderAssortWithPreset(id, "BadNews", traderID, 8000, "EUR", 1, false, 10, 3);
-        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "twelfthQuest_terragroupSpecialist");
+        CoreMod.CreateTraderAssortUnlock(traderID, "success", id, "twelfthQuest_tgs");
         log.development("Assort generation done");
     }
 

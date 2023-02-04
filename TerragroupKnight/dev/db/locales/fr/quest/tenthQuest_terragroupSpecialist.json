@@ -1,14 +1,14 @@
 {
 	"conditions": {
-		"tenthQuest_terragroupSpecialist_Req1": "Tuez 30 raiders en portant un masque à gaz GP-5 sur laboratoire",
-		"tenthQuest_terragroupSpecialist_FirstRequir": "Survivez 10 minutes dans laboratoire et sortez en vie",
-		"tenthQuest_terragroupSpecialist_FailCounter": "Sortir avant 10 minutes ou mourir dans le laboratoire"
+		"tenthQuest_tgs_Req1": "Tuez 30 raiders en portant un masque à gaz GP-5 sur laboratoire",
+		"tenthQuest_tgs_FirstRequir": "Survivez 10 minutes dans laboratoire et sortez en vie",
+		"tenthQuest_tgs_FailCounter": "Sortir avant 10 minutes ou mourir dans le laboratoire"
 	},
 	"name": "Raid nocturne",
-	"description": "tenthQuest_terragroupSpecialist_description",
+	"description": "tenthQuest_tgs_description",
 	"note": "",
-	"failMessageText": "tenthQuest_terragroupSpecialist_failed",
-	"startedMessageText": "tenthQuest_terragroupSpecialist_StartedMail",
-	"successMessageText": "tenthQuest_terragroupSpecialist_mail",
+	"failMessageText": "tenthQuest_tgs_failed",
+	"startedMessageText": "tenthQuest_tgs_StartedMail",
+	"successMessageText": "tenthQuest_tgs_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

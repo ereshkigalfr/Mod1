@@ -32,7 +32,7 @@ class callbackUtils
             bot.Info.Side = "Terragroup";
             bot.Inventory.items.push({
                 _id: HashUtil.generate(),
-                _tpl: "terragroupSpecialist_Blaze_Dogtags",
+                _tpl: "tgs_Blaze_Dogtags",
                 parentId: bot.Inventory.equipment,
                 slotId: "Dogtag",
                 upd: {

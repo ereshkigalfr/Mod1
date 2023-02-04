@@ -1,13 +1,13 @@
 {
 	"conditions": {
-		"sixthQuest_terragroupSpecialist_FirstRequir1": "Montez l'arme et donnez la"
+		"sixthQuest_tgs_FirstRequir1": "Montez l'arme et donnez la"
 
 	},
 	"name": "Prototype Terragroup",
-	"description": "sixthQuest_terragroupSpecialist_description",
+	"description": "sixthQuest_tgs_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "sixthQuest_terragroupSpecialist_StartedMail",
-	"successMessageText": "sixthQuest_terragroupSpecialist_mail",
+	"startedMessageText": "sixthQuest_tgs_StartedMail",
+	"successMessageText": "sixthQuest_tgs_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

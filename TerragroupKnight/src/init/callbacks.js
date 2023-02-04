@@ -80,7 +80,7 @@ class callbacksInit
         const mapName = SaveServer.profiles[sessionID].inraid.location.toLowerCase();
         const config = require("../../config/config.json");
 
-        if (QuestController.questStatus(profile, "twelfthQuest_terragroupSpecialist") === "Started" && mapName === "woods")
+        if (QuestController.questStatus(profile, "twelfthQuest_tgs") === "Started" && mapName === "woods")
         {
             for (let type in info.conditions)
             {
@@ -126,7 +126,7 @@ class callbacksInit
         const profile = ProfileController.getPmcProfile(sessionID);
         const mapName = SaveServer.profiles[sessionID].inraid.location.toLowerCase();
 
-        if (QuestController.questStatus(profile, "twelfthQuest_terragroupSpecialist") === "Started" && mapName === "woods")
+        if (QuestController.questStatus(profile, "twelfthQuest_tgs") === "Started" && mapName === "woods")
         {
             DatabaseServer.tables.locations["woods"]["loot"]["forced"].push(value.WoodsForcedLoot);
         }
@@ -148,64 +148,64 @@ class callbacksInit
             HttpServer.sendFile(resp, `${filepath}trader/terragroup_specialist.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/firstQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/firstQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/firstQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/firstQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/secondQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/secondQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/secondQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/secondQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/thirdQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/thirdQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/thirdQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/thirdQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/fourthQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/fourthQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/fourthQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/fourthQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/fifthQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/fifthQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/fifthQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/fifthQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/sixthQuest_terragroupSpecialist.jpg"))
+        else if (req.url.includes("/files/quest/icon/sixthQuest_tgs.jpg"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/sixthQuest_terragroupSpecialist.jpg`);
+            HttpServer.sendFile(resp, `${filepath}quests/sixthQuest_tgs.jpg`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/seventhQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/seventhQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/seventhQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/seventhQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/eightQuest_terragroupSpecialist.jpg"))
+        else if (req.url.includes("/files/quest/icon/eightQuest_tgs.jpg"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/eightQuest_terragroupSpecialist.jpg`);
+            HttpServer.sendFile(resp, `${filepath}quests/eightQuest_tgs.jpg`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/ninthQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/ninthQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/ninthQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/ninthQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/tenthQuest_terragroupSpecialist.jpg"))
+        else if (req.url.includes("/files/quest/icon/tenthQuest_tgs.jpg"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/tenthQuest_terragroupSpecialist.jpg`);
+            HttpServer.sendFile(resp, `${filepath}quests/tenthQuest_tgs.jpg`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/eleventhQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/eleventhQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/eleventhQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/eleventhQuest_tgs.png`);
             return;
         }
-        else if (req.url.includes("/files/quest/icon/twelfthQuest_terragroupSpecialist.png"))
+        else if (req.url.includes("/files/quest/icon/twelfthQuest_tgs.png"))
         {
-            HttpServer.sendFile(resp, `${filepath}quests/twelfthQuest_terragroupSpecialist.png`);
+            HttpServer.sendFile(resp, `${filepath}quests/twelfthQuest_tgs.png`);
             return;
         }
 

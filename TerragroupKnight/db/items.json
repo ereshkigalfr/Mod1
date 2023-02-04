@@ -1,6 +1,6 @@
 {
-    "terragroupSpecialist_ethCoin": {
-        "_id": "terragroupSpecialist_ethCoin",
+    "tgs_ethCoin": {
+        "_id": "tgs_ethCoin",
         "_name": "item_barter_valuable_eth",
         "_parent": "57864a3d24597754843f8721",
         "_props": {
@@ -65,15 +65,15 @@
         "_proto": "573474f924597738002c6174",
         "_type": "Item"
     },
-    "terragroupSpecialist_65x39mm_grendel_prototype": {
-        "_id": "terragroupSpecialist_65x39mm_grendel_prototype",
-        "_name": "terragroupSpecialist_65x39mm_grendel_prototype",
+    "tgs_65x39mm_grendel_prototype": {
+        "_id": "tgs_65x39mm_grendel_prototype",
+        "_name": "tgs_65x39mm_grendel_prototype",
         "_parent": "5485a8684bdc2da71d8b4567",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_65x39mm_grendel_prototype",
-            "ShortName": "terragroupSpecialist_65x39mm_grendel_prototype",
-            "Description": "terragroupSpecialist_65x39mm_grendel_prototype",
+            "Name": "tgs_65x39mm_grendel_prototype",
+            "ShortName": "tgs_65x39mm_grendel_prototype",
+            "Description": "tgs_65x39mm_grendel_prototype",
             "Weight": 0.006,
             "BackgroundColor": "black",
             "Width": 1,
@@ -173,15 +173,15 @@
         },
         "_proto": "54527ac44bdc2d36668b4567"
     },
-    "terragroupSpecialist_65x39mm_grendel": {
-        "_id": "terragroupSpecialist_65x39mm_grendel",
-        "_name": "terragroupSpecialist_65x39mm_grendel",
+    "tgs_65x39mm_grendel": {
+        "_id": "tgs_65x39mm_grendel",
+        "_name": "tgs_65x39mm_grendel",
         "_parent": "5485a8684bdc2da71d8b4567",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_65x39mm_grendel",
-            "ShortName": "terragroupSpecialist_65x39mm_grendel",
-            "Description": "terragroupSpecialist_65x39mm_grendel",
+            "Name": "tgs_65x39mm_grendel",
+            "ShortName": "tgs_65x39mm_grendel",
+            "Description": "tgs_65x39mm_grendel",
             "Weight": 0.006,
             "BackgroundColor": "violet",
             "Width": 1,
@@ -281,15 +281,15 @@
         },
         "_proto": "54527ac44bdc2d36668b4567"
     },
-    "terragroupSpecialist_338_badnews_buffer": {
-        "_id": "terragroupSpecialist_338_badnews_buffer",
-        "_name": "terragroupSpecialist_338_badnews_buffer",
+    "tgs_338_badnews_buffer": {
+        "_id": "tgs_338_badnews_buffer",
+        "_name": "tgs_338_badnews_buffer",
         "_parent": "55818a594bdc2db9688b456a",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_338_badnews_buffer",
-            "ShortName": "terragroupSpecialist_338_badnews_buffer",
-            "Description": "terragroupSpecialist_338_badnews_buffer.",
+            "Name": "tgs_338_badnews_buffer",
+            "ShortName": "tgs_338_badnews_buffer",
+            "Description": "tgs_338_badnews_buffer.",
             "Weight": 0.162,
             "BackgroundColor": "blue",
             "Width": 2,
@@ -346,7 +346,7 @@
                 {
                     "_name": "mod_stock_000",
                     "_id": "5649dbce4bdc2d9d198b456c",
-                    "_parent": "terragroupSpecialist_338_badnews_buffer",
+                    "_parent": "tgs_338_badnews_buffer",
                     "_props": {
                         "filters": [
                             {
@@ -385,15 +385,15 @@
         },
         "_proto": "5649b2314bdc2d79388b4576"
     },
-    "terragroupSpecialist_338_badnews_receiver": {
-        "_id": "terragroupSpecialist_338_badnews_receiver",
-        "_name": "terragroupSpecialist_338_badnews_receiver",
+    "tgs_338_badnews_receiver": {
+        "_id": "tgs_338_badnews_receiver",
+        "_name": "tgs_338_badnews_receiver",
         "_parent": "55818a304bdc2db5418b457d",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_338_badnews_receiver",
-            "ShortName": "terragroupSpecialist_338_badnews_receiver",
-            "Description": "terragroupSpecialist_338_badnews_receiver",
+            "Name": "tgs_338_badnews_receiver",
+            "ShortName": "tgs_338_badnews_receiver",
+            "Description": "tgs_338_badnews_receiver",
             "Weight": 0.65,
             "BackgroundColor": "blue",
             "Width": 2,
@@ -450,7 +450,7 @@
                 {
                     "_name": "mod_scope",
                     "_id": "5df8e4080b92095fd441e596",
-                    "_parent": "terragroupSpecialist_338_badnews_receiver",
+                    "_parent": "tgs_338_badnews_receiver",
                     "_props": {
                         "filters": [
                             {
@@ -511,7 +511,7 @@
                 {
                     "_name": "mod_barrel",
                     "_id": "5df8e4080b92095fd441e597",
-                    "_parent": "terragroupSpecialist_338_badnews_receiver",
+                    "_parent": "tgs_338_badnews_receiver",
                     "_props": {
                         "filters": [
                             {
@@ -529,7 +529,7 @@
                 {
                     "_name": "mod_handguard",
                     "_id": "5df8e4080b92095fd441e598",
-                    "_parent": "terragroupSpecialist_338_badnews_receiver",
+                    "_parent": "tgs_338_badnews_receiver",
                     "_props": {
                         "filters": [
                             {
@@ -547,7 +547,7 @@
                 {
                     "_name": "mod_sight_rear",
                     "_id": "5df8e4080b92095fd441e599",
-                    "_parent": "terragroupSpecialist_338_badnews_receiver",
+                    "_parent": "tgs_338_badnews_receiver",
                     "_props": {
                         "filters": [
                             {
@@ -590,15 +590,15 @@
         },
         "_proto": "55d355e64bdc2d962f8b4569"
     },
-    "terragroupSpecialist_338_badnews": {
-        "_id": "terragroupSpecialist_338_badnews",
-        "_name": "terragroupSpecialist_338_badnews",
+    "tgs_338_badnews": {
+        "_id": "tgs_338_badnews",
+        "_name": "tgs_338_badnews",
         "_parent": "5447b6194bdc2d67278b4567",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_338_badnews",
-            "ShortName": "terragroupSpecialist_338_badnews",
-            "Description": "terragroupSpecialist_338_badnews",
+            "Name": "tgs_338_badnews",
+            "ShortName": "tgs_338_badnews",
+            "Description": "tgs_338_badnews",
             "Weight": 1,
             "BackgroundColor": "blue",
             "Width": 1,
@@ -655,7 +655,7 @@
                 {
                     "_name": "mod_pistol_grip",
                     "_id": "5df8ce05b11454561e39243d",
-                    "_parent": "terragroupSpecialist_338_badnews",
+                    "_parent": "tgs_338_badnews",
                     "_props": {
                         "filters": [
                             {
@@ -673,13 +673,13 @@
                 {
                     "_name": "mod_magazine",
                     "_id": "5df8ce05b11454561e39243e",
-                    "_parent": "terragroupSpecialist_338_badnews",
+                    "_parent": "tgs_338_badnews",
                     "_props": {
                         "filters": [
                             {
                                 "AnimationIndex": -1,
                                 "Filter": [
-                                    "terragroupSpecialist_338_LM_20rnd_mag"
+                                    "tgs_338_LM_20rnd_mag"
                                 ]
                             }
                         ]
@@ -691,13 +691,13 @@
                 {
                     "_name": "mod_stock",
                     "_id": "5df8ce05b11454561e39243f",
-                    "_parent": "terragroupSpecialist_338_badnews",
+                    "_parent": "tgs_338_badnews",
                     "_props": {
                         "filters": [
                             {
                                 "Shift": 0,
                                 "Filter": [
-                                    "terragroupSpecialist_338_badnews_buffer"
+                                    "tgs_338_badnews_buffer"
                                 ]
                             }
                         ]
@@ -709,13 +709,13 @@
                 {
                     "_name": "mod_reciever",
                     "_id": "5df926b94a9f347bc92edcac",
-                    "_parent": "terragroupSpecialist_338_badnews",
+                    "_parent": "tgs_338_badnews",
                     "_props": {
                         "filters": [
                             {
                                 "Shift": 0,
                                 "Filter": [
-                                    "terragroupSpecialist_338_badnews_receiver"
+                                    "tgs_338_badnews_receiver"
                                 ]
                             }
                         ]
@@ -727,7 +727,7 @@
                 {
                     "_name": "mod_charge",
                     "_id": "5df926e28b6c4240ba265260",
-                    "_parent": "terragroupSpecialist_338_badnews",
+                    "_parent": "tgs_338_badnews",
                     "_props": {
                         "filters": [
                             {
@@ -844,15 +844,15 @@
         },
         "_proto": "5447a9cd4bdc2dbd208b4567"
     },
-    "terragroupSpecialist_338_LM_20rnd_mag": {
-        "_id": "terragroupSpecialist_338_LM_20rnd_mag",
-        "_name": "terragroupSpecialist_338_LM_20rnd_mag",
+    "tgs_338_LM_20rnd_mag": {
+        "_id": "tgs_338_LM_20rnd_mag",
+        "_name": "tgs_338_LM_20rnd_mag",
         "_parent": "5448bc234bdc2d3c308b4569",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_338_LM_20rnd_mag",
-            "ShortName": "terragroupSpecialist_338_LM_20rnd_mag",
-            "Description": "terragroupSpecialist_338_LM_20rnd_mag",
+            "Name": "tgs_338_LM_20rnd_mag",
+            "ShortName": "tgs_338_LM_20rnd_mag",
+            "Description": "tgs_338_LM_20rnd_mag",
             "Weight": 0.12,
             "BackgroundColor": "yellow",
             "Width": 1,
@@ -927,7 +927,7 @@
                 {
                     "_name": "cartridges",
                     "_id": "5d25a7b88abbc3054f3e60be",
-                    "_parent": "terragroupSpecialist_338_LM_20rnd_mag",
+                    "_parent": "tgs_338_LM_20rnd_mag",
                     "_max_count": 10,
                     "_props": {
                         "filters": [
@@ -955,15 +955,15 @@
         },
         "_proto": "559ba5b34bdc2d1f1a8b4582"
     },
-    "terragroupSpecialist_armor_prototype": {
-        "_id": "terragroupSpecialist_armor_prototype",
-        "_name": "terragroupSpecialist_armor_prototype",
+    "tgs_armor_prototype": {
+        "_id": "tgs_armor_prototype",
+        "_name": "tgs_armor_prototype",
         "_parent": "5448e54d4bdc2dcc718b4568",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_armor_prototype",
-            "ShortName": "terragroupSpecialist_armor_prototype",
-            "Description": "terragroupSpecialist_armor_prototype",
+            "Name": "tgs_armor_prototype",
+            "ShortName": "tgs_armor_prototype",
+            "Description": "tgs_armor_prototype",
             "Weight": 6.7,
             "BackgroundColor": "violet",
             "Width": 3,
@@ -1049,15 +1049,15 @@
         },
         "_proto": "545cdb794bdc2d3a198b456a"
     },
-    "terragroupSpecialist_beacon": {
-        "_id": "terragroupSpecialist_beacon",
-        "_name": "terragroupSpecialist_beacon",
+    "tgs_beacon": {
+        "_id": "tgs_beacon",
+        "_name": "tgs_beacon",
         "_parent": "5447e0e74bdc2d3c308b4567",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_beacon",
-            "ShortName": "terragroupSpecialist_beacon",
-            "Description": "terragroupSpecialist_beacon",
+            "Name": "tgs_beacon",
+            "ShortName": "tgs_beacon",
+            "Description": "tgs_beacon",
             "Weight": 0.5,
             "BackgroundColor": "violet",
             "Width": 1,
@@ -1114,9 +1114,9 @@
         },
         "_proto": "544fb5454bdc2df8738b456a"
     },
-    "terragroupSpecialist_Blaze_Dogtags": {
-        "_id": "terragroupSpecialist_Blaze_Dogtags",
-        "_name": "terragroupSpecialist_Blaze_Dogtags",
+    "tgs_Blaze_Dogtags": {
+        "_id": "tgs_Blaze_Dogtags",
+        "_name": "tgs_Blaze_Dogtags",
         "_parent": "590c745b86f7743cc433c5f2",
         "_type": "Item",
         "_props": {
@@ -1180,15 +1180,15 @@
         },
         "_proto": "544fb5454bdc2df8738b456a"
     },
-    "terragroupSpecialist_chemical_meds": {
-        "_id": "terragroupSpecialist_chemical_meds",
-        "_name": "terragroupSpecialist_chemical_meds",
+    "tgs_chemical_meds": {
+        "_id": "tgs_chemical_meds",
+        "_name": "tgs_chemical_meds",
         "_parent": "5448f3a64bdc2d60728b456a",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_chemical_meds",
-            "ShortName": "terragroupSpecialist_chemical_meds",
-            "Description": "terragroupSpecialist_chemical_meds",
+            "Name": "tgs_chemical_meds",
+            "ShortName": "tgs_chemical_meds",
+            "Description": "tgs_chemical_meds",
             "Weight": 0.03,
             "BackgroundColor": "orange",
             "Width": 1,
@@ -1244,16 +1244,16 @@
             "medEffectType": "duringUse",
             "MaxHpResource": 0,
             "hpResourceRate": 0,
-            "StimulatorBuffs": "terragroupSpecialist_ChemicalBuff",
+            "StimulatorBuffs": "tgs_ChemicalBuff",
             "effects_health": {},
             "effects_damage": [],
             "Buffs": []
         },
         "_proto": "544fb3f34bdc2d03748b456a"
     },
-    "terragroupSpecialist_chemical_meds2": {
-        "_id": "terragroupSpecialist_chemical_meds2",
-        "_name": "terragroupSpecialist_chemical_meds2",
+    "tgs_chemical_meds2": {
+        "_id": "tgs_chemical_meds2",
+        "_name": "tgs_chemical_meds2",
         "_parent": "5448f3a64bdc2d60728b456a",
         "_type": "Item",
         "_props": {
@@ -1317,21 +1317,21 @@
             "medEffectType": "duringUse",
             "MaxHpResource": 0,
             "hpResourceRate": 0,
-            "StimulatorBuffs": "terragroupSpecialist_ChemicalBuff2",
+            "StimulatorBuffs": "tgs_ChemicalBuff2",
             "effects_health": [],
             "effects_damage": []
         },
         "_proto": "544fb3f34bdc2d03748b456a"
     },
-    "terragroupSpecialist_chemical": {
-        "_id": "terragroupSpecialist_chemical",
-        "_name": "terragroupSpecialist_chemical",
+    "tgs_chemical": {
+        "_id": "tgs_chemical",
+        "_name": "tgs_chemical",
         "_parent": "590c745b86f7743cc433c5f2",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_chemical",
-            "ShortName": "terragroupSpecialist_chemical",
-            "Description": "terragroupSpecialist_chemical",
+            "Name": "tgs_chemical",
+            "ShortName": "tgs_chemical",
+            "Description": "tgs_chemical",
             "Weight": 0.1,
             "BackgroundColor": "green",
             "Width": 1,
@@ -1389,15 +1389,15 @@
         },
         "_proto": "59e3606886f77417674759a5"
     },
-    "terragroupSpecialist_faceshield_prototype": {
-        "_id": "terragroupSpecialist_faceshield_prototype",
-        "_name": "terragroupSpecialist_faceshield_prototype",
+    "tgs_faceshield_prototype": {
+        "_id": "tgs_faceshield_prototype",
+        "_name": "tgs_faceshield_prototype",
         "_parent": "57bef4c42459772e8d35a53b",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_faceshield_prototype",
-            "ShortName": "terragroupSpecialist_faceshield_prototype",
-            "Description": "terragroupSpecialist_faceshield_prototype",
+            "Name": "tgs_faceshield_prototype",
+            "ShortName": "tgs_faceshield_prototype",
+            "Description": "tgs_faceshield_prototype",
             "Weight": 0.9,
             "BackgroundColor": "green",
             "Width": 2,
@@ -1530,15 +1530,15 @@
         },
         "_proto": "5645bc214bdc2d363b8b4571"
     },
-    "terragroupSpecialist_genm3_fde": {
-        "_id": "terragroupSpecialist_genm3_fde",
-        "_name": "terragroupSpecialist_genm3_fde",
+    "tgs_genm3_fde": {
+        "_id": "tgs_genm3_fde",
+        "_name": "tgs_genm3_fde",
         "_parent": "5448bc234bdc2d3c308b4569",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_genm3_fde",
-            "ShortName": "terragroupSpecialist_genm3_fde",
-            "Description": "terragroupSpecialist_genm3_fde",
+            "Name": "tgs_genm3_fde",
+            "ShortName": "tgs_genm3_fde",
+            "Description": "tgs_genm3_fde",
             "Weight": 0.112,
             "BackgroundColor": "violet",
             "Width": 1,
@@ -1619,7 +1619,7 @@
                         "filters": [
                             {
                                 "Filter": [
-                                    "terragroupSpecialist_65x39mm_grendel"
+                                    "tgs_65x39mm_grendel"
                                 ]
                             }
                         ]
@@ -1638,15 +1638,15 @@
         },
         "_proto": "55802d5f4bdc2dac148b458e"
     },
-    "terragroupSpecialist_grendel_intelligence": {
-        "_id": "terragroupSpecialist_grendel_intelligence",
-        "_name": "terragroupSpecialist_grendel_intelligence",
+    "tgs_grendel_intelligence": {
+        "_id": "tgs_grendel_intelligence",
+        "_name": "tgs_grendel_intelligence",
         "_parent": "5448ecbe4bdc2d60728b4568",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_grendel_intelligence",
-            "ShortName": "terragroupSpecialist_grendel_intelligence",
-            "Description": "terragroupSpecialist_grendel_intelligence",
+            "Name": "tgs_grendel_intelligence",
+            "ShortName": "tgs_grendel_intelligence",
+            "Description": "tgs_grendel_intelligence",
             "Weight": 0.2,
             "BackgroundColor": "violet",
             "Width": 2,
@@ -1703,15 +1703,15 @@
         },
         "_proto": "56742c324bdc2d150f8b456d"
     },
-    "terragroupSpecialist_helmet_prototype": {
-        "_id": "terragroupSpecialist_helmet_prototype",
-        "_name": "terragroupSpecialist_helmet_prototype",
+    "tgs_helmet_prototype": {
+        "_id": "tgs_helmet_prototype",
+        "_name": "tgs_helmet_prototype",
         "_parent": "5a341c4086f77401f2541505",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_helmet_prototype",
-            "ShortName": "terragroupSpecialist_helmet_prototype",
-            "Description": "terragroupSpecialist_helmet_prototype",
+            "Name": "tgs_helmet_prototype",
+            "ShortName": "tgs_helmet_prototype",
+            "Description": "tgs_helmet_prototype",
             "Weight": 1.5,
             "BackgroundColor": "green",
             "Width": 2,
@@ -1767,7 +1767,7 @@
                 {
                     "_name": "mod_equipment_000",
                     "_id": "5a17e402fcdbcb00165aa6d1",
-                    "_parent": "terragroupSpecialist_helmet_prototype",
+                    "_parent": "tgs_helmet_prototype",
                     "_props": {
                         "filters": [
                             {
@@ -1787,13 +1787,13 @@
                 {
                     "_name": "mod_nvg",
                     "_id": "5a17e449fcdbcbcae6687268",
-                    "_parent": "terragroupSpecialist_helmet_prototype",
+                    "_parent": "tgs_helmet_prototype",
                     "_props": {
                         "filters": [
                             {
                                 "Shift": 0,
                                 "Filter": [
-                                    "terragroupSpecialist_faceshield_prototype",
+                                    "tgs_faceshield_prototype",
                                     "5c0558060db834001b735271",
                                     "5a16b8a9fcdbcb00165aa6ca"
                                 ]
@@ -1807,7 +1807,7 @@
                 {
                     "_name": "mod_mount",
                     "_id": "5a17e484fcdbcb0017581848",
-                    "_parent": "terragroupSpecialist_helmet_prototype",
+                    "_parent": "tgs_helmet_prototype",
                     "_props": {
                         "filters": [
                             {
@@ -1826,7 +1826,7 @@
                 {
                     "_name": "mod_equipment_001",
                     "_id": "5a214f4086f774545d34fe5c",
-                    "_parent": "terragroupSpecialist_helmet_prototype",
+                    "_parent": "tgs_helmet_prototype",
                     "_props": {
                         "filters": [
                             {
@@ -1844,7 +1844,7 @@
                 {
                     "_name": "mod_equipment_002",
                     "_id": "5c0e6a91d174af029e696b31",
-                    "_parent": "terragroupSpecialist_helmet_prototype",
+                    "_parent": "tgs_helmet_prototype",
                     "_props": {
                         "filters": [
                             {
@@ -1896,15 +1896,15 @@
         },
         "_proto": "5645bc214bdc2d363b8b4571"
     },
-    "terragroupSpecialist_jammer": {
-        "_id": "terragroupSpecialist_jammer",
-        "_name": "terragroupSpecialist_jammer",
+    "tgs_jammer": {
+        "_id": "tgs_jammer",
+        "_name": "tgs_jammer",
         "_parent": "5447e0e74bdc2d3c308b4567",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_jammer",
-            "ShortName": "terragroupSpecialist_jammer",
-            "Description": "terragroupSpecialist_jammer",
+            "Name": "tgs_jammer",
+            "ShortName": "tgs_jammer",
+            "Description": "tgs_jammer",
             "Weight": 0.5,
             "BackgroundColor": "orange",
             "Width": 1,
@@ -1961,15 +1961,15 @@
         },
         "_proto": "544fb5454bdc2df8738b456a"
     },
-    "terragroupSpecialist_manager_keycard": {
-        "_id": "terragroupSpecialist_manager_keycard",
-        "_name": "terragroupSpecialist_manager_keycard",
+    "tgs_manager_keycard": {
+        "_id": "tgs_manager_keycard",
+        "_name": "tgs_manager_keycard",
         "_parent": "5c164d2286f774194c5e69fa",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_manager_keycard",
-            "ShortName": "terragroupSpecialist_manager_keycard",
-            "Description": "terragroupSpecialist_manager_keycard",
+            "Name": "tgs_manager_keycard",
+            "ShortName": "tgs_manager_keycard",
+            "Description": "tgs_manager_keycard",
             "Weight": 0.01,
             "BackgroundColor": "red",
             "Width": 1,
@@ -2025,15 +2025,15 @@
         },
         "_proto": "5448ba0b4bdc2d02308b456c"
     },
-    "terragroupSpecialist_nutsBottle": {
-        "_id": "terragroupSpecialist_nutsBottle",
-        "_name": "terragroupSpecialist_nutsBottle",
+    "tgs_nutsBottle": {
+        "_id": "tgs_nutsBottle",
+        "_name": "tgs_nutsBottle",
         "_parent": "590c745b86f7743cc433c5f2",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_nutsBottle",
-            "ShortName": "terragroupSpecialist_nutsBottle",
-            "Description": "terragroupSpecialist_nutsBottle",
+            "Name": "tgs_nutsBottle",
+            "ShortName": "tgs_nutsBottle",
+            "Description": "tgs_nutsBottle",
             "Weight": 0.3,
             "BackgroundColor": "violet",
             "Width": 1,
@@ -2091,15 +2091,15 @@
         },
         "_proto": "573475fb24597737fb1379e1"
     },
-    "terragroupSpecialist_powerArmor": {
-        "_id": "terragroupSpecialist_powerArmor",
-        "_name": "terragroupSpecialist_powerArmor",
+    "tgs_powerArmor": {
+        "_id": "tgs_powerArmor",
+        "_name": "tgs_powerArmor",
         "_parent": "5448e54d4bdc2dcc718b4568",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_powerArmor",
-            "ShortName": "terragroupSpecialist_powerArmor",
-            "Description": "terragroupSpecialist_powerArmor",
+            "Name": "tgs_powerArmor",
+            "ShortName": "tgs_powerArmor",
+            "Description": "tgs_powerArmor",
             "Weight": 22.8,
             "BackgroundColor": "orange",
             "Width": 4,
@@ -2190,15 +2190,15 @@
         },
         "_proto": "545cdb794bdc2d3a198b456a"
     },
-    "terragroupSpecialist_prototype_m16_upper": {
-        "_id": "terragroupSpecialist_prototype_m16_upper",
-        "_name": "terragroupSpecialist_prototype_m16_upper",
+    "tgs_prototype_m16_upper": {
+        "_id": "tgs_prototype_m16_upper",
+        "_name": "tgs_prototype_m16_upper",
         "_parent": "55818a304bdc2db5418b457d",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_prototype_m16_upper",
-            "ShortName": "terragroupSpecialist_prototype_m16_upper",
-            "Description": "terragroupSpecialist_prototype_m16_upper",
+            "Name": "tgs_prototype_m16_upper",
+            "ShortName": "tgs_prototype_m16_upper",
+            "Description": "tgs_prototype_m16_upper",
             "Weight": 0.27,
             "BackgroundColor": "violet",
             "Width": 2,
@@ -2255,7 +2255,7 @@
                 {
                     "_name": "mod_scope",
                     "_id": "55d357484bdc2d882f8b456a",
-                    "_parent": "terragroupSpecialist_prototype_m16_upper",
+                    "_parent": "tgs_prototype_m16_upper",
                     "_props": {
                         "filters": [
                             {
@@ -2316,7 +2316,7 @@
                 {
                     "_name": "mod_barrel",
                     "_id": "55d35d0c4bdc2d892f8b456c",
-                    "_parent": "terragroupSpecialist_prototype_m16_upper",
+                    "_parent": "tgs_prototype_m16_upper",
                     "_props": {
                         "filters": [
                             {
@@ -2334,13 +2334,13 @@
                 {
                     "_name": "mod_handguard",
                     "_id": "55d35d754bdc2d882f8b456b",
-                    "_parent": "terragroupSpecialist_prototype_m16_upper",
+                    "_parent": "tgs_prototype_m16_upper",
                     "_props": {
                         "filters": [
                             {
                                 "Shift": 0,
                                 "Filter": [
-                                    "terragroupSpecialist_urx_31_10_handguard"
+                                    "tgs_urx_31_10_handguard"
                                 ]
                             }
                         ]
@@ -2352,7 +2352,7 @@
                 {
                     "_name": "mod_sight_rear",
                     "_id": "55d35e074bdc2d882f8b456c",
-                    "_parent": "terragroupSpecialist_prototype_m16_upper",
+                    "_parent": "tgs_prototype_m16_upper",
                     "_props": {
                         "filters": [
                             {
@@ -2394,8 +2394,8 @@
             "SightingRange": 0
         }
     },
-    "terragroupSpecialist_prototype_m16": {
-        "_id": "terragroupSpecialist_prototype_m16",
+    "tgs_prototype_m16": {
+        "_id": "tgs_prototype_m16",
         "_name": "P-M16A4",
         "_parent": "5447b5f14bdc2d61278b4567",
         "_type": "Item",
@@ -2459,7 +2459,7 @@
                 {
                     "_name": "mod_pistol_grip",
                     "_id": "55d354084bdc2d8c2f8b4568",
-                    "_parent": "terragroupSpecialist_prototype_m16",
+                    "_parent": "tgs_prototype_m16",
                     "_props": {
                         "filters": [
                             {
@@ -2477,13 +2477,13 @@
                 {
                     "_name": "mod_magazine",
                     "_id": "55d3555c4bdc2d962f8b4568",
-                    "_parent": "terragroupSpecialist_prototype_m16",
+                    "_parent": "tgs_prototype_m16",
                     "_props": {
                         "filters": [
                             {
                                 "AnimationIndex": -1,
                                 "Filter": [
-                                    "terragroupSpecialist_genm3_fde"
+                                    "tgs_genm3_fde"
                                 ]
                             }
                         ]
@@ -2495,13 +2495,13 @@
                 {
                     "_name": "mod_reciever",
                     "_id": "55d5a2ec4bdc2d972f8b4575",
-                    "_parent": "terragroupSpecialist_prototype_m16",
+                    "_parent": "tgs_prototype_m16",
                     "_props": {
                         "filters": [
                             {
                                 "Shift": 0,
                                 "Filter": [
-                                    "terragroupSpecialist_prototype_m16_upper"
+                                    "tgs_prototype_m16_upper"
                                 ]
                             }
                         ]
@@ -2513,7 +2513,7 @@
                 {
                     "_name": "mod_stock",
                     "_id": "55d5a3074bdc2d61338b4574",
-                    "_parent": "terragroupSpecialist_prototype_m16",
+                    "_parent": "tgs_prototype_m16",
                     "_props": {
                         "filters": [
                             {
@@ -2531,7 +2531,7 @@
                 {
                     "_name": "mod_charge",
                     "_id": "55d5a30f4bdc2d882f8b4574",
-                    "_parent": "terragroupSpecialist_prototype_m16",
+                    "_parent": "tgs_prototype_m16",
                     "_props": {
                         "filters": [
                             {
@@ -2594,7 +2594,7 @@
                         "filters": [
                             {
                                 "Filter": [
-                                    "terragroupSpecialist_65x39mm_grendel"
+                                    "tgs_65x39mm_grendel"
                                 ]
                             }
                         ]
@@ -2650,15 +2650,15 @@
             "ManualBoltCatch": false
         }
     },
-    "terragroupSpecialist_scrap_metal": {
-        "_id": "terragroupSpecialist_scrap_metal",
-        "_name": "terragroupSpecialist_scrap_metal",
+    "tgs_scrap_metal": {
+        "_id": "tgs_scrap_metal",
+        "_name": "tgs_scrap_metal",
         "_parent": "590c745b86f7743cc433c5f2",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_scrap_metal",
-            "ShortName": "terragroupSpecialist_scrap_metal",
-            "Description": "terragroupSpecialist_scrap_metal",
+            "Name": "tgs_scrap_metal",
+            "ShortName": "tgs_scrap_metal",
+            "Description": "tgs_scrap_metal",
             "Weight": 0.56,
             "BackgroundColor": "blue",
             "Width": 2,
@@ -2716,9 +2716,9 @@
         },
         "_proto": "573476d324597737da2adc13"
     },
-    "terragroupSpecialist_ssdDrive": {
-        "_id": "terragroupSpecialist_ssdDrive",
-        "_name": "terragroupSpecialist_ssdDrive",
+    "tgs_ssdDrive": {
+        "_id": "tgs_ssdDrive",
+        "_name": "tgs_ssdDrive",
         "_parent": "5448ecbe4bdc2d60728b4568",
         "_type": "Item",
         "_props": {
@@ -2779,15 +2779,15 @@
         },
         "_proto": "56742c324bdc2d150f8b456d"
     },
-    "terragroupSpecialist_tgBeacon": {
-        "_id": "terragroupSpecialist_tgBeacon",
-        "_name": "terragroupSpecialist_tgBeacon",
+    "tgs_tgBeacon": {
+        "_id": "tgs_tgBeacon",
+        "_name": "tgs_tgBeacon",
         "_parent": "5447e0e74bdc2d3c308b4567",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_tgBeacon",
-            "ShortName": "terragroupSpecialist_tgBeacon",
-            "Description": "terragroupSpecialist_tgBeacon",
+            "Name": "tgs_tgBeacon",
+            "ShortName": "tgs_tgBeacon",
+            "Description": "tgs_tgBeacon",
             "Weight": 0.5,
             "BackgroundColor": "violet",
             "Width": 1,
@@ -2844,15 +2844,15 @@
         },
         "_proto": "544fb5454bdc2df8738b456a"
     },
-    "terragroupSpecialist_urx_31_10_handguard": {
-        "_id": "terragroupSpecialist_urx_31_10_handguard",
-        "_name": "terragroupSpecialist_urx_31_10_handguard",
+    "tgs_urx_31_10_handguard": {
+        "_id": "tgs_urx_31_10_handguard",
+        "_name": "tgs_urx_31_10_handguard",
         "_parent": "55818a104bdc2db9688b4569",
         "_type": "Item",
         "_props": {
-            "Name": "terragroupSpecialist_urx_31_10_handguard",
-            "ShortName": "terragroupSpecialist_urx_31_10_handguard",
-            "Description": "terragroupSpecialist_urx_31_10_handguard",
+            "Name": "tgs_urx_31_10_handguard",
+            "ShortName": "tgs_urx_31_10_handguard",
+            "Description": "tgs_urx_31_10_handguard",
             "Weight": 0.32,
             "BackgroundColor": "violet",
             "Width": 2,
@@ -2909,7 +2909,7 @@
                 {
                     "_name": "mod_mount_000",
                     "_id": "5d122e7dd7ad1a07102d6d81",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -2930,7 +2930,7 @@
                 {
                     "_name": "mod_mount_001",
                     "_id": "5d122e7dd7ad1a07102d6d82",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -2951,7 +2951,7 @@
                 {
                     "_name": "mod_scope",
                     "_id": "5d122e7dd7ad1a07102d6d83",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -2969,7 +2969,7 @@
                 {
                     "_name": "mod_foregrip",
                     "_id": "5d122e7dd7ad1a07102d6d84",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -2989,7 +2989,7 @@
                 {
                     "_name": "mod_sight_front",
                     "_id": "5d122e7dd7ad1a07102d6d85",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -3012,7 +3012,7 @@
                 {
                     "_name": "mod_tactical_000",
                     "_id": "5d122e7dd7ad1a07102d6d87",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -3035,7 +3035,7 @@
                 {
                     "_name": "mod_tactical_001",
                     "_id": "5d122e7dd7ad1a07102d6d88",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -3066,7 +3066,7 @@
                 {
                     "_name": "mod_tactical_002",
                     "_id": "5d122e7dd7ad1a07102d6d89",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {
@@ -3097,7 +3097,7 @@
                 {
                     "_name": "mod_tactical_003",
                     "_id": "5d122e7dd7ad1a07102d6d8a",
-                    "_parent": "terragroupSpecialist_urx_31_10_handguard",
+                    "_parent": "tgs_urx_31_10_handguard",
                     "_props": {
                         "filters": [
                             {

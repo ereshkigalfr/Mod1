@@ -1,14 +1,14 @@
 {
 	"conditions": {
-		"eightQuest_terragroupSpecialist_Req1": "Eliminez 15 raiders dans une même session avec la P-M16A4",
-		"eightQuest_terragroupSpecialist_FirstRequir": "Survivez à un raid dans le laboratoire"
+		"eightQuest_tgs_Req1": "Eliminez 15 raiders dans une même session avec la P-M16A4",
+		"eightQuest_tgs_FirstRequir": "Survivez à un raid dans le laboratoire"
 
 	},
 	"name": "Protection",
-	"description": "eightQuest_terragroupSpecialist_description",
+	"description": "eightQuest_tgs_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "eightQuest_terragroupSpecialist_StartedMail",
-	"successMessageText": "eightQuest_terragroupSpecialist_mail",
+	"startedMessageText": "eightQuest_tgs_StartedMail",
+	"successMessageText": "eightQuest_tgs_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

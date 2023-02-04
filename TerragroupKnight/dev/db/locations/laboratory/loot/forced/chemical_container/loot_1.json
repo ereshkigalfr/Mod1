@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "chemical_position",
-			"_tpl": "terragroupSpecialist_chemical"
+			"_tpl": "tgs_chemical"
 		}
 	]
 }

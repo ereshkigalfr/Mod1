@@ -64,7 +64,7 @@
         "medEffectType": "duringUse",
         "MaxHpResource": 0,
         "hpResourceRate": 0,
-        "StimulatorBuffs": "terragroupSpecialist_ChemicalBuff2",
+        "StimulatorBuffs": "tgs_ChemicalBuff2",
         "effects_health": [],
         "effects_damage": []
     },

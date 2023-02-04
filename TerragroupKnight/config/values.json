@@ -1,6 +1,6 @@
 {
     "BuffToAdd": {
-        "terragroupSpecialist_ChemicalBuff": [
+        "tgs_ChemicalBuff": [
             {
                 "BuffType": "SkillRate",
                 "Chance": 1,
@@ -65,7 +65,7 @@
                 "SkillName": "Health"
             }
         ],
-        "terragroupSpecialist_ChemicalBuff2": [
+        "tgs_ChemicalBuff2": [
             {
                 "BuffType": "DamageModifier",
                 "Chance": 1,
@@ -144,7 +144,7 @@
         {
             "Name": "M16",
             "Templates": [
-                "terragroupSpecialist_prototype_m16"
+                "tgs_prototype_m16"
             ],
             "Level2": 1000,
             "Level3": 3000
@@ -152,7 +152,7 @@
         {
             "Name": "Bad News",
             "Templates": [
-                "terragroupSpecialist_338_badnews"
+                "tgs_338_badnews"
             ],
             "Level2": 1000,
             "Level3": 3000
@@ -182,7 +182,7 @@
                 "Items": [
                     {
                         "_id": "730a86c22979e92af3c54921",
-                        "_tpl": "terragroupSpecialist_338_LM_20rnd_mag",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
                         "parentId": "57482d90c5ef4ce7c077e21f",
                         "slotId": "main",
                         "location": {
@@ -197,7 +197,7 @@
                     },
                     {
                         "_id": "440307a699147ad4005978da",
-                        "_tpl": "terragroupSpecialist_338_LM_20rnd_mag",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
                         "parentId": "57482d90c5ef4ce7c077e21f",
                         "slotId": "main",
                         "location": {
@@ -212,7 +212,7 @@
                     },
                     {
                         "_id": "5ab0283805cd61b6d075765e",
-                        "_tpl": "terragroupSpecialist_338_LM_20rnd_mag",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
                         "parentId": "57482d90c5ef4ce7c077e21f",
                         "slotId": "main",
                         "location": {
@@ -227,7 +227,7 @@
                     },
                     {
                         "_id": "026a8d27873ae19e09dd2a14",
-                        "_tpl": "terragroupSpecialist_338_LM_20rnd_mag",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
                         "parentId": "57482d90c5ef4ce7c077e21f",
                         "slotId": "main",
                         "location": {
@@ -242,7 +242,7 @@
                     },
                     {
                         "_id": "6728940c18f9b6e93a351052",
-                        "_tpl": "terragroupSpecialist_338_LM_20rnd_mag",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
                         "parentId": "57482d90c5ef4ce7c077e21f",
                         "slotId": "main",
                         "location": {
@@ -312,7 +312,7 @@
                     },
                     {
                         "_id": "8a5217499fbcbb1c058dfbc7",
-                        "_tpl": "terragroupSpecialist_338_LM_20rnd_mag",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
                         "parentId": "57482d90c5ef4ce7c077e21f",
                         "slotId": "main",
                         "location": {
@@ -324,13 +324,13 @@
                     },
                     {
                         "_id": "420998bd67eb3fb2532eaf25",
-                        "_tpl": "terragroupSpecialist_338_badnews_buffer",
+                        "_tpl": "tgs_338_badnews_buffer",
                         "parentId": "ca6f510f191c63c61c59b425",
                         "slotId": "mod_stock"
                     },
                     {
                         "_id": "72d575c5eb712e9ff928f26e",
-                        "_tpl": "terragroupSpecialist_338_badnews_receiver",
+                        "_tpl": "tgs_338_badnews_receiver",
                         "parentId": "ca6f510f191c63c61c59b425",
                         "slotId": "mod_reciever"
                     },
@@ -406,7 +406,7 @@
                     },
                     {
                         "_id": "ca6f510f191c63c61c59b425",
-                        "_tpl": "terragroupSpecialist_338_badnews",
+                        "_tpl": "tgs_338_badnews",
                         "parentId": "57482d90c5ef4ce7c077e21f",
                         "slotId": "main",
                         "upd": {
@@ -428,7 +428,7 @@
                     },
                     {
                         "_id": "faac8f521abd51fe3be931d9",
-                        "_tpl": "terragroupSpecialist_338_LM_20rnd_mag",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
                         "parentId": "ca6f510f191c63c61c59b425",
                         "slotId": "mod_magazine",
                         "upd": {
@@ -437,7 +437,7 @@
                     },
                     {
 						"_id": "77505fdec5e91fa8bf6119ae",
-						"_tpl": "terragroupSpecialist_tgBeacon",
+						"_tpl": "tgs_tgBeacon",
 						"parentId": "57482d90c5ef4ce7c077e21f",
 						"slotId": "main",
 						"location": {

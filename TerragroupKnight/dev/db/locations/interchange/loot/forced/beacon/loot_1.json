@@ -19,7 +19,7 @@
     "Items": [
         {
             "_id": "beacon_position",
-            "_tpl": "terragroupSpecialist_beacon"
+            "_tpl": "tgs_beacon"
         }
     ]
 }

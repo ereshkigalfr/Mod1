@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "jammer_position6",
-			"_tpl": "terragroupSpecialist_jammer"
+			"_tpl": "tgs_jammer"
 		}
 	]
 }

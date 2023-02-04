@@ -103,8 +103,8 @@ class DatabaseInit
         //Maybe it's supposed to work now ? 
 
         
-        const eth_prod = require('../../db/hideout/production/terragroupSpecialist_ETHProduction.json');
-        const grendelProd = require('../../db/hideout/production/terragroupSpecialistGrendelProduction.json')
+        const eth_prod = require('../../db/hideout/production/tgs_ETHProduction.json');
+        const grendelProd = require('../../db/hideout/production/tgsGrendelProduction.json')
         
         Hideout.production.push(eth_prod,grendelProd)
 

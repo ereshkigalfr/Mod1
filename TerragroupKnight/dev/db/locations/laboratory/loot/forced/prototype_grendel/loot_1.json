@@ -76,7 +76,7 @@
 	"Items": [
 		{
 			"_id": "prototype_grendel_pos1",
-			"_tpl": "terragroupSpecialist_65x39mm_grendel_prototype"
+			"_tpl": "tgs_65x39mm_grendel_prototype"
 		}
 	]
 }

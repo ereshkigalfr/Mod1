@@ -1,8 +1,8 @@
 {
-	"_id": "eightQuest_terragroupSpecialist",
+	"_id": "eightQuest_tgs",
 	"traderId": "TerraGroup_Specialist",
 	"location": "Laboratory",
-	"image": "/files/quest/icon/eightQuest_terragroupSpecialist.jpg",
+	"image": "/files/quest/icon/eightQuest_tgs.jpg",
 	"type": "Elimination",
 	"isKey": false,
 	"restartable": true,
@@ -11,15 +11,15 @@
 	"rewards": {
 		"Started": [
 			{
-				"target": "eightQuest_terragroupSpecialist_StartingGear_id",
+				"target": "eightQuest_tgs_StartingGear_id",
 				"value": "30",
-				"id": "eightQuest_terragroupSpecialist_StartingGear",
+				"id": "eightQuest_tgs_StartingGear",
 				"type": "Item",
 				"index": 0,
 				"items": [
 					{
-						"_id": "eightQuest_terragroupSpecialist_StartingGear_id",
-						"_tpl": "terragroupSpecialist_65x39mm_grendel",
+						"_id": "eightQuest_tgs_StartingGear_id",
+						"_tpl": "tgs_65x39mm_grendel",
 						"upd": {
 							"StackObjectsCount": 30
 						}
@@ -37,36 +37,36 @@
 			{
 				"target": "TerraGroup_Specialist",
 				"value": "0.08",
-				"id": "eightQuest_terragroupSpecialist_eightReward",
+				"id": "eightQuest_tgs_eightReward",
 				"type": "TraderStanding",
 				"index": 1
 			},
 			{
-				"target": "eightQuest_terragroupSpecialist_eightReward_id",
+				"target": "eightQuest_tgs_eightReward_id",
 				"value": "5",
-				"id": "eightQuest_terragroupSpecialist_eightReward",
+				"id": "eightQuest_tgs_eightReward",
 				"type": "Item",
 				"index": 2,
 				"items": [
 					{
-						"_id": "eightQuest_terragroupSpecialist_eightReward_id",
-						"_tpl": "terragroupSpecialist_grendel_intelligence"
+						"_id": "eightQuest_tgs_eightReward_id",
+						"_tpl": "tgs_grendel_intelligence"
 					},
 					{
-						"_id": "eightQuest_terragroupSpecialist_eightReward_id2",
-						"_tpl": "terragroupSpecialist_grendel_intelligence"
+						"_id": "eightQuest_tgs_eightReward_id2",
+						"_tpl": "tgs_grendel_intelligence"
 					},
 					{
-						"_id": "eightQuest_terragroupSpecialist_eightReward_id3",
-						"_tpl": "terragroupSpecialist_grendel_intelligence"
+						"_id": "eightQuest_tgs_eightReward_id3",
+						"_tpl": "tgs_grendel_intelligence"
 					},
 					{
-						"_id": "eightQuest_terragroupSpecialist_eightReward_id4",
-						"_tpl": "terragroupSpecialist_grendel_intelligence"
+						"_id": "eightQuest_tgs_eightReward_id4",
+						"_tpl": "tgs_grendel_intelligence"
 					},
 					{
-						"_id": "eightQuest_terragroupSpecialist_eightReward_id5",
-						"_tpl": "terragroupSpecialist_grendel_intelligence"
+						"_id": "eightQuest_tgs_eightReward_id5",
+						"_tpl": "tgs_grendel_intelligence"
 					}
 				]
 			}
@@ -82,13 +82,13 @@
 					"value": "38",
 					"index": 0,
 					"parentId": "",
-					"id": "eightQuest_terragroupSpecialist_levelRequir"
+					"id": "eightQuest_tgs_levelRequir"
 				}
 			},
 			{
 				"_parent": "Quest",
 				"_props": {
-					"target": "seventhQuest_terragroupSpecialist",
+					"target": "seventhQuest_tgs",
 					"status": [4],
 					"index": 1,
 					"parentId": "",
@@ -103,7 +103,7 @@
 					"value": "15",
 					"type": "Elimination",
 					"counter": {
-						"id": "eightQuest_terragroupSpecialist_counter1",
+						"id": "eightQuest_tgs_counter1",
 						"conditions": [
 							{
 								"_parent": "Location",
@@ -113,8 +113,8 @@
 									],
 									"save": "pmcBot_counter",
 									"form_id": "QuestManager-QuestSubConditionAddForm_pmcBot",
-									"token": "terragroupSpecialist_token",
-									"id": "eightQuest_terragroupSpecialist_condition1"
+									"token": "tgs_token",
+									"id": "eightQuest_tgs_condition1"
 								}
 							},
 							{
@@ -124,17 +124,17 @@
 									"compareMethod": ">=",
 									"value": "1",
 									"weapon": [
-										"terragroupSpecialist_prototype_m16"
+										"tgs_prototype_m16"
 									],
 									"resetOnSessionEnd": true,
-									"id": "eightQuest_terragroupSpecialist_condition2"
+									"id": "eightQuest_tgs_condition2"
 								}
 							}
 						]
 					},
 					"index": 0,
 					"parentId": "",
-					"id": "eightQuest_terragroupSpecialist_Req1"
+					"id": "eightQuest_tgs_Req1"
 				}
 			},
 			{
@@ -143,7 +143,7 @@
 					"value": "1",
 					"type": "Completion",
 					"counter": {
-						"id": "eightQuest_terragroupSpecialist_counter",
+						"id": "eightQuest_tgs_counter",
 						"conditions": [
 							{
 								"_parent": "Location",
@@ -151,7 +151,7 @@
 									"target": [
 										"laboratory"
 									],
-									"id": "eightQuest_terragroupSpecialist_location"
+									"id": "eightQuest_tgs_location"
 								}
 							},
 							{
@@ -160,14 +160,14 @@
 									"status": [
 										"Survived"
 									],
-									"id": "eightQuest_terragroupSpecialist_exitStatus"
+									"id": "eightQuest_tgs_exitStatus"
 								}
 							}
 						]
 					},
 					"index": 1,
 					"parentId": "",
-					"id": "eightQuest_terragroupSpecialist_FirstRequir"
+					"id": "eightQuest_tgs_FirstRequir"
 				}
 			}
 		],
