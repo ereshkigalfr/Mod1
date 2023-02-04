@@ -149,3 +149,96 @@ Rewards:
 * 50.000 EXP
 * 4.000 €
 * Unlocks craft of: 6.5x39mm Grendel ammo at Workbench LL2
+
+### 9th quest
+Name: Night raid
+Available at: Terragroup Knight
+Requirement:
+* Quest "Research projects" completed
+* Quest available after 12 hours once required quest is completed
+* PMC Must be level 30
+* Must be completed in maximum 24 hours
+
+Objectives:
+* Kill 20 raiders in Laboratory
+* Survive and extract from Laboratory
+
+Rewards:
+* +0.05 rep
+* 50.000 EXP
+* 4.000 €
+
+In case of failure:
+* -0.05 rep
+* Permanently changes the bots that spawn on Laboratory by the TG Raiders
+
+### 10th quest
+Name: Laboratory liberation
+Available at: Fence
+Requirement:
+* Quest "Night raid" failed
+
+Objectives:
+* Kill 50 raiders on Laboratory
+
+Rewards:
+* +0.02 rep
+* Receive Tasmanian Tiger SK plate carrier (Multicam black)
+
+### 11th quest
+Name: Computing hacking
+Available at: Terragroup Knight
+Requirement:
+* Quest "Night raid" completed
+* PMC Must be level 35
+
+Objectives:
+* Find in raid: Military flash drive
+* Find the computer to hack on Laboratory
+* Connect the Military flash drive to the computer
+* Survive and extract from Laboratory
+
+Rewards:
+* +0.05 rep
+* 55.000 EXP
+* 2.500 €
+* Receive Hexatac HPC Plate Carrier (Multicam Black)
+* Receive MSA Gallet TC 800 High Cut combat helmet
+
+### 12th quest
+Name: What's on the laptop
+Available at: Terragroup Knight
+Requirement:
+* Quest "Computing hacking" completed
+* PMC Must be level 35
+
+Objectives:
+* Find in raid: Confidential laptop
+* Handover Confidential laptop
+* Survive and extract from Laboratory
+
+Rewards:
+* +0.02 rep
+* 50.000 EXP
+* 2.500 €
+* Receive Hexatac HPC Plate Carrier (Multicam Black)
+* Receive MSA Gallet TC 800 High Cut combat helmet
+
+### 13th quest
+Name:
+Available at: Terragroup Knight
+Requirement:
+* Quest "What's on the laptop" completed
+* PMC Must be level 35
+
+Objectives:
+* Find in raid: Confidential laptop
+* Handover Confidential laptop
+* Survive and extract from Laboratory
+
+Rewards:
+* +0.05 rep
+* 50.000 EXP
+* 2.500 €
+* Receive Hexatac HPC Plate Carrier (Multicam Black)
+* Receive MSA Gallet TC 800 High Cut combat helmet
