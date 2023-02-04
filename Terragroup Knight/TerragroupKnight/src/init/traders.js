@@ -56,7 +56,7 @@ class TradersInit
 
         //Loyalty levels
         traderData.base.loyaltyLevels[0] = {
-            "minLevel": 35,
+            "minLevel": 30,
             "minSalesSum": 0,
             "minStanding": 0,
             "buy_price_coef": 80,
@@ -66,9 +66,9 @@ class TradersInit
             "heal_price_coef": 0
         };
         traderData.base.loyaltyLevels[1] = {
-            "minLevel": 38,
+            "minLevel": 30,
             "minSalesSum": 0,
-            "minStanding": 0.3,
+            "minStanding": 0.2,
             "buy_price_coef": 60,
             "repair_price_coef": 0,
             "insurance_price_coef": 60,
@@ -76,9 +76,9 @@ class TradersInit
             "heal_price_coef": 0
         };
         traderData.base.loyaltyLevels[2] = {
-            "minLevel": 42,
+            "minLevel": 35,
             "minSalesSum": 550000,
-            "minStanding": 0.9,
+            "minStanding": 0.5,
             "buy_price_coef": 50,
             "repair_price_coef": 0,
             "insurance_price_coef": 50,
@@ -86,7 +86,7 @@ class TradersInit
             "heal_price_coef": 0
         };
         traderData.base.loyaltyLevels[3] = {
-            "minLevel": 47,
+            "minLevel": 40,
             "minSalesSum": 1000000,
             "minStanding": 1.5,
             "buy_price_coef": 40,
