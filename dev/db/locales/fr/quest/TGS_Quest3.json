@@ -1,0 +1,15 @@
+{
+	"conditions": {
+		"TGS_Quest3_req": "Trouvez la salle des serveur dans le laboratoire",
+		"TGS_Quest3_req2": "Eliminez 10 raiders",
+		"TGS_Quest3_req3": "Survivez et échappez vous du laboratoire"
+
+	},
+	"name": "Premier contact",
+	"description": "TGS_Quest3_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "TGS_Quest3_StartedMail",
+	"successMessageText": "TGS_Quest3_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

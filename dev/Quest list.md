@@ -221,11 +221,12 @@ Rewards:
 * +0.02 rep
 * 50.000 EXP
 * 2.500 €
-* Receive Hexatac HPC Plate Carrier (Multicam Black)
-* Receive MSA Gallet TC 800 High Cut combat helmet
+* Receive x1 CPU
+* Receive x2 RAM
+* Receive x1 Printed circuit board
 
 ### 13th quest
-Name:
+Name: Confidential informations
 Available at: Terragroup Knight
 Requirement:
 * Quest "What's on the laptop" completed
@@ -242,3 +243,81 @@ Rewards:
 * 2.500 €
 * Receive Hexatac HPC Plate Carrier (Multicam Black)
 * Receive MSA Gallet TC 800 High Cut combat helmet
+
+### 14th quest
+Name: XXX
+Available at: Terragroup Knight
+Requirement:
+* Quest "Confidential informations" completed
+* PMC Must be level 38
+
+Objectives:
+* Find in raid: x2 SSD drive
+* Find in raid: x2 SAS Drive
+* Find in raid: x2 Secured magnetic tape cassette
+
+Rewards:
+* +0.02 rep
+* 60.000 EXP
+* 3.000 €
+* Receive x1 Military COFDM Wireless Signal Transmitter
+* Receive x1 Weapon repair kit
+* Receive x1 Body armor repair kit
+
+### 15th quest
+Name: Unknown supplies
+Available at: Terragroup Knight
+Requirement:
+* Quest "XXX" completed
+* PMC Must be level 38
+
+Objectives:
+* Mark the first box on Interchange
+* Mark the second box on Interchange
+* Mark the third box on Customs
+* Mark the fourth box on Streets of Tarkov
+
+Rewards:
+* +0.04 rep
+* 45.000 EXP
+* 2.500 $
+* Receive x2 gas-mask GP5
+* Receive x5 Bottle of saline solution
+* Receive x2 Disposable syringe
+
+### 16th quest
+Name: Dangerous squads
+Available at: Terragroup Knight
+Requirement:
+* Quest "Unknown supplies" completed
+* PMC Must be level 38
+
+Objectives:
+* Kill 15 Terragroup raiders on interchange with a GP-5 Gas mask
+* Kill 10 Terragroup raiders on Customs with a GP-5 Gas mask
+* Kill 20 Terragroup raiders on Laboratory with a GP-5 Gas mask
+
+Rewards:
+* +0.08 rep
+* 120.000 EXP
+* 15.000 $
+* Receive x1 Crye Precision CPC plate carrier (Goons Edition)
+* Receive x1 S&S Precision PlateFrame plate carrier (Goons Edition)
+
+### 17th quest
+Name: Unknown substances
+Available at: Terragroup Knight
+Requirement:
+* Quest available 3 days after "Research projects" is completed
+* PMC Must be level 40
+
+Objectives:
+* Find in raid: x10 Terragroup blue folder
+* Find in raid: x5 Military flashdrive
+* Find on Laboratory: Unknown samples
+
+Rewards:
+* +0.08 rep
+* 55.000 EXP
+* 3.500 €
+* X

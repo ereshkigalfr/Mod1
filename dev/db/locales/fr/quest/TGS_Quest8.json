@@ -1,0 +1,15 @@
+{
+	"conditions": {
+		"TGS_Quest8_req": "Eliminez Gluhkar",
+		"TGS_Quest8_req2": "Récupérer le téléphone crypté",
+		"TGS_Quest8_req3": "Donnez le téléphone à Fence"
+
+	},
+	"name": "Contact inconnu",
+	"description": "TGS_Quest8_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "TGS_Quest8_StartedMail",
+	"successMessageText": "TGS_Quest8_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}
