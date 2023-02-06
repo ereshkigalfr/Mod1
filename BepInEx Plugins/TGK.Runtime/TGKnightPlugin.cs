@@ -1,6 +1,7 @@
 ﻿using System;
 using BepInEx;
 using HarmonyLib;
+using TGK.Runtime.Exceptions;
 using TGK.Runtime.Patches;
 
 namespace TGK.Runtime
@@ -16,7 +17,27 @@ namespace TGK.Runtime
             {
                 var harmony = new Harmony("com.terragroupknight.main");
 
-                new BotSettingsRepoPatches().ApplyPatches(harmony);
+                IRuntimePatch[] patchClasses =
+                {
+                    new BotSettingsRepoPatches(),
+                    new BotFollowerControllerPatches(),
+                };
+
+                patchClasses.ExecuteForEach(patchClass =>
+                {
+                    Logger.LogInfo($"Applying {patchClass.GetType().Name}");
+                    patchClass.ApplyPatches(harmony, Logger);
+                });
+            }
+            catch (CustomPatchException ex)
+            {
+                // For custom patch exceptions, we want to check the Halt flag
+                Logger.LogError(ex);
+
+                if (ex.ShouldHaltAllPatchExecution)
+                {
+                    throw;
+                }
             }
             catch (Exception ex)
             {

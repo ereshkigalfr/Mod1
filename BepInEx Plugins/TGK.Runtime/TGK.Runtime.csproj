@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
+    <PackageId>TerragroupKnight.Runtime</PackageId>
+    <Authors>Amelia-FR, TerkoizLT</Authors>
+    <Product>Terragroup Knight Runtime Patches</Product>
+    <Description>Terragroup Knight</Description>
+    <PackageProjectUrl>https://github.com/Amelia-FR/Mod1</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Amelia-FR/Mod1</RepositoryUrl>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
