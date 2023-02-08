@@ -21,6 +21,7 @@ namespace TGK.Runtime
                 {
                     new BotSettingsRepoPatches(),
                     new BotFollowerControllerPatches(),
+                    new BotBrainClassPatches(),
                 };
 
                 patchClasses.ExecuteForEach(patchClass =>
