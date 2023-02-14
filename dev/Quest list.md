@@ -7,10 +7,28 @@ He now wants to get terragroup activities to become public and throw out their i
 
 
 ### Quest list
+
+#### Introduction
+Name: Hidden place
+Available at: Skier
+Requirement:
+* Overpopulation completed
+* Lvl 25
+
+Objectives:
+* Find clues about a secret terragroup laboratory on streets (near sewer extraction)
+* Find a place to have a loot beyond the streets of tarkov snipers to the north
+* Find documents mentionning terragroup activity x5
+
+Rewards:
+* 25.000 EXP
+* 150.000 roubles
+
 #### 1st quest
 Name: Unknown contact
 Available at: Fence
 Requirement:
+* Quest Hidden place completed
 * Quest Overpopulation completed
 * PMC Must be level 25
 
@@ -23,6 +41,7 @@ Objectives:
 Rewards:
 * 30.000 EXP
 * 1.000 €
+* Unlocks Laboratory
 
 ### 2nd quest
 Name: Get in touch
@@ -67,8 +86,8 @@ Requirement:
 * PMC Must be level 28
 
 Objectives:
-* Remove the jammers from the servers room
-* Handover 10 jammers
+* Remove the 16 jammers from the servers room
+* Handover 16 jammers
 * Survive and extract from Laboratory
 
 Rewards:

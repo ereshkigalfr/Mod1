@@ -1,15 +1,15 @@
-{
+{   
 	"Id": "jammer_1",
 	"IsStatic": false,
 	"useGravity": false,
 	"randomRotation": false,
 	"Position": {
-		"x": -33.8026,
-		"y": 3.222335,
-		"z": -322.227
+		"x": -133.8058,
+		"y": 3.2329,
+		"z": -322.265
 	},
 	"Rotation": {
-		"x": 90,
+		"x": 0,
 		"y": 0,
 		"z": 0
 	},

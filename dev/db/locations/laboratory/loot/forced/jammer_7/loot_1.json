@@ -4,12 +4,12 @@
 	"useGravity": false,
 	"randomRotation": false,
 	"Position": {
-		"x": -122.9394,
-		"y": 3.240253,
-		"z": -315.794
+		"x": -122.9555,
+		"y": 3.2329,
+		"z": -319.0148
 	},
 	"Rotation": {
-		"x": 90,
+		"x": 0,
 		"y": 0,
 		"z": 0
 	},

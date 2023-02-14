@@ -4,22 +4,22 @@
 	"useGravity": false,
 	"randomRotation": false,
 	"Position": {   
-		"x": -172.2145,
-		"y": 0.0659,
-		"z": -370.2152
+		"x": -162.7915,
+		"y": 4.7855,
+		"z": -342.5674
 	},
 	"Rotation": {
 		"x": 0,
-		"y": 70,
+		"y": 120,
 		"z": 0
 	},
 	"IsGroupPosition": false,
 	"GroupPositions": [],
-	"Root": "chemical_position",
+	"Root": "labs_man_keycard",
 	"Items": [
 		{
-			"_id": "chemical_position",
-			"_tpl": "tgs_chemical"
+			"_id": "labs_man_keycard",
+			"_tpl": "tgs_manager_keycard"
 		}
 	]
 }
