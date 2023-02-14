@@ -3,14 +3,14 @@
 	"IsStatic": false,
 	"useGravity": false,
 	"randomRotation": false,
-	"Position": {
-		"x": -262.6016,
-		"y": 5.433016,
-		"z": -323.5055
+	"Position": {  
+		"x": -262.5802,
+		"y": 5.7973,
+		"z": -323.6582
 	},
 	"Rotation": {
 		"x": 0,
-		"y": 0,
+		"y": 85,
 		"z": 0
 	},
 	"IsGroupPosition": false,

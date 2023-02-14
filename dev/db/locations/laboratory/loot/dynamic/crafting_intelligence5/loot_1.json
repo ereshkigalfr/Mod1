@@ -3,10 +3,10 @@
 	"IsStatic": false,
 	"useGravity": false,
 	"randomRotation": false,
-	"Position": {
-		"x": 253.5691,
-		"y": 5.34582,
-		"z": -321.2131
+	"Position": {   
+		"x": -262.5802,
+		"y": 4.2373,
+		"z": -323.6582
 	},
 	"Rotation": {
 		"x": 0,

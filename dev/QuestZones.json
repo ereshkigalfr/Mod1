@@ -1,0 +1,89 @@
+[
+  {
+  zoneId: "quest0_place1",
+  zoneName: "quest0_place1",
+  zoneLocation: "tarkovstreets",
+  zoneType: "Visit",
+  position: {   
+    x: "-42.3085",
+    y: "5.6808",
+    z: "40.7647",
+  },
+  rotation: {
+    x: "0",
+    y: "0",
+    z: "0",
+  },
+  scale: {
+    x: "2",
+    y: "2",
+    z: "2",
+  },
+  }
+
+  {   
+  zoneId: "quest0_place2",
+  zoneName: "quest0_place2",
+  zoneLocation: "tarkovstreets",
+  zoneType: "Visit",
+  position: {   
+    x: "-263.5499",
+    y: "-1.5803",
+    z: "224.0329",
+  },
+  rotation: {
+    x: "0",
+    y: "0",
+    z: "0",
+  },
+  scale: {
+    x: "2",
+    y: "2",
+    z: "2",
+  },
+  }
+
+  {     
+  zoneId: "quest2_place1",
+  zoneName: "quest2_place1",
+  zoneLocation: "laboratory",
+  zoneType: "Visit",
+  position: {   
+    x: "-265.5975",
+    y: "4.6187",
+    z: "-361.8794",
+  },
+  rotation: {
+    x: "0",
+    y: "0",
+    z: "0",
+  },
+  scale: {
+    x: "2",
+    y: "2",
+    z: "2",
+  },
+  }
+
+  {        
+  zoneId: "quest3_place1",
+  zoneName: "quest3_place1",
+  zoneLocation: "laboratory",
+  zoneType: "Visit",
+  position: {   
+    x: "-126.0231",
+    y: "2.887",
+    z: "-309.9232",
+  },
+  rotation: {
+    x: "0",
+    y: "0",
+    z: "0",
+  },
+  scale: {
+    x: "2",
+    y: "2",
+    z: "2",
+  },
+  }
+]
