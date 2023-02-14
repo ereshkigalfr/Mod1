@@ -1,7 +1,7 @@
 {
 	"conditions": {
-		"TGS_Quest2_req": "Survivez et échappez vous du laboratoire",
-		"TGS_Quest2_req2": "Cherchez un ordinateur dévérouillé"
+		"TGS_Quest2_obj": "Survivez et échappez vous du laboratoire",
+		"TGS_Quest2_obj2": "Cherchez un ordinateur dévérouillé"
 
 	},
 	"name": "Prise de contact",

@@ -1,8 +1,8 @@
 {
 	"conditions": {
-		"TGS_Quest3_req": "Trouvez la salle des serveur dans le laboratoire",
-		"TGS_Quest3_req2": "Eliminez 10 raiders",
-		"TGS_Quest3_req3": "Survivez et échappez vous du laboratoire"
+		"TGS_Quest3_obj": "Trouvez la salle des serveur dans le laboratoire",
+		"TGS_Quest3_obj2": "Eliminez 10 raiders",
+		"TGS_Quest3_obj3": "Survivez et échappez vous du laboratoire"
 
 	},
 	"name": "Premier contact",

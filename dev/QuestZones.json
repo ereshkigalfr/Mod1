@@ -1,5 +1,5 @@
 [
-  {
+  { //Pinewood hotel window
   zoneId: "quest0_place1",
   zoneName: "quest0_place1",
   zoneLocation: "tarkovstreets",
@@ -21,7 +21,7 @@
   },
   }
 
-  {   
+  {   //Sewer zone
   zoneId: "quest0_place2",
   zoneName: "quest0_place2",
   zoneLocation: "tarkovstreets",
@@ -43,7 +43,7 @@
   },
   }
 
-  {     
+  {     //Labs unlocked computed
   zoneId: "quest2_place1",
   zoneName: "quest2_place1",
   zoneLocation: "laboratory",
@@ -65,7 +65,7 @@
   },
   }
 
-  {        
+  {        //Labs server room
   zoneId: "quest3_place1",
   zoneName: "quest3_place1",
   zoneLocation: "laboratory",

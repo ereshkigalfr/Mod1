@@ -29,7 +29,6 @@ Name: Unknown contact
 Available at: Fence
 Requirement:
 * Quest Hidden place completed
-* Quest Overpopulation completed
 * PMC Must be level 25
 
 Objectives:

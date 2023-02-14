@@ -1,8 +1,8 @@
 {
 	"conditions": {
-		"TGS_Quest5_req": "Eliminez Gluhkar",
-		"TGS_Quest5_req2": "Récupérer le téléphone crypté",
-		"TGS_Quest5_req3": "Donnez le téléphone à Fence"
+		"TGS_Quest5_obj": "Eliminez Gluhkar",
+		"TGS_Quest5_obj2": "Récupérer le téléphone crypté",
+		"TGS_Quest5_obj3": "Donnez le téléphone à Fence"
 
 	},
 	"name": "Contact inconnu",

@@ -10,7 +10,7 @@
 	"description": "C'est le début d'une nouvelle aventure. Découvrez des secrets bien gardés dans la région de Tarkov et ses environs. Qui allez-vous rencontrer dans vos aventures, et quels seront vos choix ?",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "Hey salut toi! J'ai entendu des rumeurs récemments sur un laboratoire dans lequel il y aurait de l'activité. Il paraît qu'il est localisé sous les rues de tarkov, tu devrais y jeter un oeil. Peut-être que le batiment de la société Terragroup n'est pas présent là bas pour rien ?",
+	"startedMessageText": "Hey salut toi! J'ai entendu des rumeurs récemments sur un laboratoire dans lequel il y aurait de l'activité. Il paraît qu'il est localisé sous les rues de tarkov, tu devrais y jeter un oeil. Peut-être que le batiment de la société Terragroup n'est pas présent là bas pour rien ? Tu devrais aussi chercher des documents qui mentionnerait cette société, il y a surement des informations intéressante!",
 	"successMessageText": "Ce que tu as trouvé est très intéressant! Cette rumeur semble donc vraie ? Ecoute, je connais un gars, il s'appelle Fence, il peut potentiellement t'aider, va le voir!",
 	"location": "5714dc692459777137212e12"
 }

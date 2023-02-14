@@ -1,8 +1,9 @@
 {
 	"conditions": {
-		"TGS_Quest1_req": "Eliminez Gluhkar",
-		"TGS_Quest1_req2": "Récupérer le téléphone crypté",
-		"TGS_Quest1_req3": "Donnez le téléphone à Fence"
+		"TGS_Quest1_obj": "Eliminez Gluhkar",
+		"TGS_Quest1_obj2": "Récupérer le téléphone crypté",
+		"TGS_Quest1_obj3": "Donnez le téléphone à Fence",
+		"TGS_Quest1_obj4": "Echappez vous en vie de la base militaire"
 
 	},
 	"name": "Contact inconnu",
