@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
+    <Authors>Amelia-FR, TerkoizLT</Authors>
+    <Product>Terragroup Knight Preloader Patches</Product>
+    <Company />
+    <PackageProjectUrl>https://github.com/Amelia-FR/Mod1</PackageProjectUrl>
+    <Description>Terragroup Knight</Description>
+    <RepositoryUrl>https://github.com/Amelia-FR/Mod1</RepositoryUrl>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <PackageId>TerragroupKnight.Preloader</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
