@@ -23,195 +23,197 @@
     "completePlayerMessage": "TGS_Quest1 completePlayerMessage",
     "templateId": "TGS_Quest1",
     "rewards": {
-      "Started": [],
-      "Success": [
-        {
-          "value": "30000",
-          "id": "TGS_Quest1_Reward",
-          "type": "Experience",
-          "index": 0
-        },
-        {
-          "value": "1000",
-          "id": "TGS_Quest1_Reward1",
-          "type": "Item",
-          "index": 1,
-          "target": "TGS_Quest1_Reward1_items",
-          "findInRaid": true,
-          "items": [
+        "Started": [],
+        "Success": [
             {
-              "_id": "TGS_Quest1_Reward1_items",
-              "_tpl": "569668774bdc2da2298b4568",
-              "upd": {
-                "StackObjectsCount": 1000
-              }
+                "value": "30000",
+                "id": "TGS_Quest1_Reward",
+                "type": "Experience",
+                "index": 0
+            },
+            {
+                "value": "1000",
+                "id": "TGS_Quest1_Reward1",
+                "type": "Item",
+                "index": 1,
+                "target": "TGS_Quest1_Reward1_items",
+                "findInRaid": true,
+                "items": [
+                    {
+                        "_id": "TGS_Quest1_Reward1_items",
+                        "_tpl": "569668774bdc2da2298b4568",
+                        "upd": {
+                            "StackObjectsCount": 1000
+                        }
+                    }
+                ]
             }
-          ]
-        }
-      ],
-      "Fail": [],
-    "conditions": {
-        "AvailableForFinish": [
-          {
-            "_parent": "CounterCreator",
-            "_props": {
-              "counter": {
-                "conditions": [
-                  {
-                    "_parent": "Kills",
-                    "_props": {
-                      "compareMethod": ">=",
-                      "id": "TGS_Quest1_kill",
-                      "savageRole": [
-                        "bossGluhar"
-                      ],
-                      "target": "Savage",
-                      "value": "1"
-                    }
-                  }
-                ],
-                "id": "TGS_Quest1_cond0"
-              },
-              "id": "TGS_Quest1_obj",
-              "index": 0,
-              "parentId": "",
-              "oneSessionOnly": false,
-              "dynamicLocale": false,
-              "type": "Elimination",
-              "doNotResetIfCounterCompleted": false,
-              "value": "1",
-              "visibilityConditions": []
-            },
-            "dynamicLocale": false
-          },
-          {
-            "_parent": "FindItem",
-            "_props": {
-              "dogtagLevel": 0,
-              "id": "TGS_Quest1_obj2",
-              "index": 1,
-              "maxDurability": 100,
-              "minDurability": 0,
-              "parentId": "",
-              "isEncoded": false,
-              "onlyFoundInRaid": false,
-              "dynamicLocale": false,
-              "target": [
-                "tgs_cryptedphone"
-              ],
-              "countInRaid": false,
-              "value": "1",
-              "visibilityConditions": []
-            },
-            "dynamicLocale": false
-          },
-          {
-            "_parent": "HandoverItem",
-            "_props": {
-              "dogtagLevel": 0,
-              "id": "TGS_Quest1_obj3",
-              "index": 2,
-              "maxDurability": 100,
-              "minDurability": 0,
-              "parentId": "",
-              "isEncoded": false,
-              "onlyFoundInRaid": false,
-              "dynamicLocale": false,
-              "target": [
-                "tgs_cryptedphone"
-              ],
-              "value": "1",
-              "visibilityConditions": [
+        ],
+        "Fail": [],
+        "conditions": {
+            "AvailableForFinish": [
                 {
-                  "_parent": "CompleteCondition",
-                  "_props": {
-                    "id": "TGS_quest1_VisibilityCond0",
-                    "target": "TGS_Quest1_obj2"
-                  }
-                }
-              ]
-            },
-            "dynamicLocale": false
-          },
-          {
-            "_parent": "CounterCreator",
-            "_props": {
-              "counter": {
-                "conditions": [
-                  {
-                    "_parent": "Location",
+                    "_parent": "CounterCreator",
                     "_props": {
-                      "dynamicLocale": false,
-                      "id": "TGS_Quest1_Location",
-                      "target": [
-                        "RezervBase"
-                      ]
-                    }
-                  },
-                  {
-                    "_parent": "ExitStatus",
+                        "counter": {
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "compareMethod": ">=",
+                                        "id": "TGS_Quest1_kill",
+                                        "savageRole": [
+                                            "bossGluhar"
+                                        ],
+                                        "target": "Savage",
+                                        "value": "1"
+                                    }
+                                }
+                            ],
+                            "id": "TGS_Quest1_cond0"
+                        },
+                        "id": "TGS_Quest1_obj",
+                        "index": 0,
+                        "parentId": "",
+                        "oneSessionOnly": false,
+                        "dynamicLocale": false,
+                        "type": "Elimination",
+                        "doNotResetIfCounterCompleted": false,
+                        "value": "1",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "FindItem",
                     "_props": {
-                      "dynamicLocale": false,
-                      "id": "TGS_Quest1_ExitStatus",
-                      "status": [
-                        "Survived"
-                      ]
-                    }
-                  }
-                ],
-                "id": "TGS_Quest1_cond1"
-              },
-              "id": "TGS_Quest1_obj4",
-              "index": 3,
-              "parentId": "",
-              "oneSessionOnly": false,
-              "dynamicLocale": false,
-              "type": "Exploration",
-              "doNotResetIfCounterCompleted": false,
-              "value": "1",
-              "visibilityConditions": [{
-                "_parent": "CompleteCondition",
-                "_props": {
-                  "id": "TGS_quest1_VisibilityCond1",
-                  "target": "TGS_Quest1_obj"
+                        "dogtagLevel": 0,
+                        "id": "TGS_Quest1_obj2",
+                        "index": 1,
+                        "maxDurability": 100,
+                        "minDurability": 0,
+                        "parentId": "",
+                        "isEncoded": false,
+                        "onlyFoundInRaid": false,
+                        "dynamicLocale": false,
+                        "target": [
+                            "tgs_cryptedphone"
+                        ],
+                        "countInRaid": false,
+                        "value": "1",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "HandoverItem",
+                    "_props": {
+                        "dogtagLevel": 0,
+                        "id": "TGS_Quest1_obj3",
+                        "index": 2,
+                        "maxDurability": 100,
+                        "minDurability": 0,
+                        "parentId": "",
+                        "isEncoded": false,
+                        "onlyFoundInRaid": false,
+                        "dynamicLocale": false,
+                        "target": [
+                            "tgs_cryptedphone"
+                        ],
+                        "value": "1",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "id": "TGS_quest1_VisibilityCond0",
+                                    "target": "TGS_Quest1_obj2"
+                                }
+                            }
+                        ]
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "dynamicLocale": false,
+                                        "id": "TGS_Quest1_Location",
+                                        "target": [
+                                            "RezervBase"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "dynamicLocale": false,
+                                        "id": "TGS_Quest1_ExitStatus",
+                                        "status": [
+                                            "Survived"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "id": "TGS_Quest1_cond1"
+                        },
+                        "id": "TGS_Quest1_obj4",
+                        "index": 3,
+                        "parentId": "",
+                        "oneSessionOnly": false,
+                        "dynamicLocale": false,
+                        "type": "Exploration",
+                        "doNotResetIfCounterCompleted": false,
+                        "value": "1",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "id": "TGS_quest1_VisibilityCond1",
+                                    "target": "TGS_Quest1_obj"
+                                }
+                            }
+                        ]
+                    },
+                    "dynamicLocale": false
                 }
-              }]
-            },
-            "dynamicLocale": false
-          }
-        ],
-        "AvailableForStart": [
-          {
-            "_parent": "Level",
-            "_props": {
-              "id": "TGS_quest1_req0",
-              "index": 0,
-              "parentId": "",
-              "dynamicLocale": false,
-              "value": 25,
-              "compareMethod": ">=",
-              "visibilityConditions": []
-            },
-            "dynamicLocale": false
-          },
-          {
-            "_parent": "Quest",
-            "_props": {
-              "id": "TGS_quest1_req1",
-              "index": 1,
-              "parentId": "",
-              "dynamicLocale": false,
-              "target": "TGS_Quest0",
-              "status": [
-                4
-              ],
-              "availableAfter": 0,
-              "visibilityConditions": []
-            },
-            "dynamicLocale": false
-          }
-        ],
-        "Fail": []
+            ],
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "id": "TGS_quest1_req0",
+                        "index": 0,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "value": 25,
+                        "compareMethod": ">=",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "id": "TGS_quest1_req1",
+                        "index": 1,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "target": "TGS_Quest0",
+                        "status": [
+                            4
+                        ],
+                        "availableAfter": 0,
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
         }
     }
 }

@@ -1,15 +1,12 @@
 {
-	"conditions": {
-		"TGS_Quest6_obj": "Eliminez Gluhkar",
-		"TGS_Quest6_obj2": "Récupérer le téléphone crypté",
-		"TGS_Quest6_obj3": "Donnez le téléphone à Fence"
-
-	},
-	"name": "Contact inconnu",
-	"description": "TGS_Quest6_description",
-	"note": "",
-	"failMessageText": "",
-	"startedMessageText": "TGS_Quest6_StartedMail",
-	"successMessageText": "TGS_Quest6_mail",
-	"location": "5b0fc42d86f7744a585f9105"
+    "conditions": {
+        "TGS_Quest6_obj": "Donnez l'arme suivante selon les spécificités: Prototype M16"
+    },
+    "name": "Nouvelle arme",
+    "description": "TGS_Quest6_description",
+    "note": "",
+    "failMessageText": "",
+    "startedMessageText": "TGS_Quest6_StartedMail",
+    "successMessageText": "TGS_Quest6_mail",
+    "location": "5b0fc42d86f7744a585f9105"
 }

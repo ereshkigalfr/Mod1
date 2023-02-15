@@ -113,16 +113,22 @@ Objectives:
 * Find in-raid: M4A1 5.56x45 upper receiver
 
 Rewards:
-* 500 €
+* **On start**:
+    * Add this preset to:
+        * Raiders
+        * TG Raiders
+        * USEC
+        * BEAR
+* 5000 €
 * Receive: Modified M4A1 Upper receiver for 6.5 grendel
 * All of the above parts
 * +0.1 rep
 
 ### 6th quest
 Name: New weapon
-Available at: Terragroup Knight
+Available at: Mechanic
 Requirement:
-* Quest "Weaponry" completed
+* Quest "Weaponry" accepted
 * PMC Must be level 30
 
 Objectives:
@@ -132,6 +138,11 @@ Rewards:
 * +0.02 rep
 * Unlocks craft of the P-M16 weapon at workbench LL2
 * Unlocks purchase of P-16 weapon at Terragroup Knight LL1
+* Adds the P-M16 preset permanently to the followings bots:
+    * TG Raiders
+    * TG Followers
+    * USEC
+    * BEAR
 
 ### 7th quest
 Name: New caliber

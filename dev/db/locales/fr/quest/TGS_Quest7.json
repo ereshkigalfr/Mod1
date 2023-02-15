@@ -1,15 +1,14 @@
 {
-	"conditions": {
-		"TGS_Quest7_obj": "Eliminez Gluhkar",
-		"TGS_Quest7_obj2": "Récupérer le téléphone crypté",
-		"TGS_Quest7_obj3": "Donnez le téléphone à Fence"
-
-	},
-	"name": "Contact inconnu",
-	"description": "TGS_Quest7_description",
-	"note": "",
-	"failMessageText": "",
-	"startedMessageText": "TGS_Quest7_StartedMail",
-	"successMessageText": "TGS_Quest7_mail",
-	"location": "5b0fc42d86f7744a585f9105"
+    "conditions": {
+        "TGS_Quest7_obj": "Entrez dans la zone de test d'armement dans le laboratoire",
+        "TGS_Quest7_obj2": "Trouvez le prototype d'une balle",
+        "TGS_Quest7_obj3": "Donnez le prototype"
+    },
+    "name": "Un autre calibre",
+    "description": "TGS_Quest7_description",
+    "note": "",
+    "failMessageText": "",
+    "startedMessageText": "TGS_Quest7_StartedMail",
+    "successMessageText": "TGS_Quest7_mail",
+    "location": "5b0fc42d86f7744a585f9105"
 }

@@ -23,142 +23,142 @@
     "completePlayerMessage": "TGS_Quest2 completePlayerMessage",
     "templateId": "TGS_Quest2",
     "rewards": {
-      "Started": [],
-      "Success": [
-        {
-          "value": "35000",
-          "id": "TGS_Quest2_Reward",
-          "type": "Experience",
-          "index": 0
-        },
-        {
-          "value": "1500",
-          "id": "TGS_Quest2_Reward1",
-          "type": "Item",
-          "index": 1,
-          "target": "TGS_Quest2_Reward1_items",
-          "findInRaid": true,
-          "items": [
+        "Started": [],
+        "Success": [
             {
-              "_id": "TGS_Quest2_Reward1_items",
-              "_tpl": "569668774bdc2da2298b4568",
-              "upd": {
-                "StackObjectsCount": 1500
-              }
+                "value": "35000",
+                "id": "TGS_Quest2_Reward",
+                "type": "Experience",
+                "index": 0
+            },
+            {
+                "value": "1500",
+                "id": "TGS_Quest2_Reward1",
+                "type": "Item",
+                "index": 1,
+                "target": "TGS_Quest2_Reward1_items",
+                "findInRaid": true,
+                "items": [
+                    {
+                        "_id": "TGS_Quest2_Reward1_items",
+                        "_tpl": "569668774bdc2da2298b4568",
+                        "upd": {
+                            "StackObjectsCount": 1500
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "TGS_Quest2_Reward2",
+                "type": "TraderUnlock",
+                "index": 2,
+                "target": "terragroup_specialist"
             }
-          ]
-        },
-        {
-          "id": "TGS_Quest2_Reward2",
-          "type": "TraderUnlock",
-          "index": 2,
-          "target": "terragroup_specialist"
-        }
-      ],
-      "Fail": [],
-    "conditions": {
-        "AvailableForFinish": [
-          {
-            "_parent": "CounterCreator",
-            "_props": {
-              "counter": {
-                "conditions": [
-                  {
-                    "_parent": "VisitPlace",
-                    "_props": {
-                      "id": "TGS_Quest2_id1",
-                      "target": "quest2_place1",
-                      "value": "1"
-                    }
-                  }
-                ],
-                "id": "TGS_Quest2_cond1"
-              },
-              "id": "TGS_Quest2_obj2",
-              "index": 0,
-              "parentId": "",
-              "oneSessionOnly": true,
-              "dynamicLocale": false,
-              "type": "Exploration",
-              "doNotResetIfCounterCompleted": false,
-              "value": "1",
-              "visibilityConditions": []
-            },
-            "dynamicLocale": false
-          },
-          {
-            "_parent": "CounterCreator",
-            "_props": {
-              "counter": {
-                "conditions": [
-                  {
-                    "_parent": "Location",
-                    "_props": {
-                      "dynamicLocale": false,
-                      "id": "TGS_Quest2_Location",
-                      "target": [
-                        "Laboratory"
-                      ]
-                    }
-                  },
-                  {
-                    "_parent": "ExitStatus",
-                    "_props": {
-                      "dynamicLocale": false,
-                      "id": "TGS_Quest2_ExitStatus",
-                      "status": [
-                        "Survived"
-                      ]
-                    }
-                  }
-                ],
-                "id": "TGS_Quest2_cond1"
-              },
-              "id": "TGS_Quest2_obj",
-              "index": 1,
-              "parentId": "",
-              "oneSessionOnly": false,
-              "dynamicLocale": false,
-              "type": "Exploration",
-              "doNotResetIfCounterCompleted": false,
-              "value": "5",
-              "visibilityConditions": []
-            },
-            "dynamicLocale": false
-          }
         ],
-        "AvailableForStart": [
-          {
-          "_parent": "Level",
-          "_props": {
-            "id": "TGS_quest2_req0",
-            "index": 0,
-            "parentId": "",
-            "dynamicLocale": false,
-            "value": 25,
-            "compareMethod": ">=",
-            "visibilityConditions": []
-          },
-          "dynamicLocale": false
-        },
-        {
-          "_parent": "Quest",
-          "_props": {
-            "id": "TGS_quest2_req1",
-            "index": 1,
-            "parentId": "",
-            "dynamicLocale": false,
-            "target": "TGS_Quest2",
-            "status": [
-              4
+        "Fail": [],
+        "conditions": {
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "conditions": [
+                                {
+                                    "_parent": "VisitPlace",
+                                    "_props": {
+                                        "id": "TGS_Quest2_id1",
+                                        "target": "quest2_place1",
+                                        "value": "1"
+                                    }
+                                }
+                            ],
+                            "id": "TGS_Quest2_cond1"
+                        },
+                        "id": "TGS_Quest2_obj2",
+                        "index": 0,
+                        "parentId": "",
+                        "oneSessionOnly": true,
+                        "dynamicLocale": false,
+                        "type": "Exploration",
+                        "doNotResetIfCounterCompleted": false,
+                        "value": "1",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "dynamicLocale": false,
+                                        "id": "TGS_Quest2_Location",
+                                        "target": [
+                                            "Laboratory"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "dynamicLocale": false,
+                                        "id": "TGS_Quest2_ExitStatus",
+                                        "status": [
+                                            "Survived"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "id": "TGS_Quest2_cond1"
+                        },
+                        "id": "TGS_Quest2_obj",
+                        "index": 1,
+                        "parentId": "",
+                        "oneSessionOnly": false,
+                        "dynamicLocale": false,
+                        "type": "Exploration",
+                        "doNotResetIfCounterCompleted": false,
+                        "value": "5",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
             ],
-            "availableAfter": 7200,
-            "visibilityConditions": []
-          },
-          "dynamicLocale": false
-        }
-      ],
-        "Fail": []
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "id": "TGS_quest2_req0",
+                        "index": 0,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "value": 25,
+                        "compareMethod": ">=",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "id": "TGS_quest2_req1",
+                        "index": 1,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "target": "TGS_Quest2",
+                        "status": [
+                            4
+                        ],
+                        "availableAfter": 7200,
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
         }
     }
 }

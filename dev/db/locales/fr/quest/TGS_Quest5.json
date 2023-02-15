@@ -1,15 +1,31 @@
 {
-	"conditions": {
-		"TGS_Quest5_obj": "Eliminez Gluhkar",
-		"TGS_Quest5_obj2": "Récupérer le téléphone crypté",
-		"TGS_Quest5_obj3": "Donnez le téléphone à Fence"
-
-	},
-	"name": "Contact inconnu",
-	"description": "TGS_Quest5_description",
-	"note": "",
-	"failMessageText": "",
-	"startedMessageText": "TGS_Quest5_StartedMail",
-	"successMessageText": "TGS_Quest5_mail",
-	"location": "5b0fc42d86f7744a585f9105"
+    "conditions": {
+        "TGS_Quest5_obj1": "Trouvez en raid: AR-15 KAC M5 RAS Handguard",
+        "TGS_Quest5_obj2": "Donnez: AR-15 KAC M5 RAS Handguard",
+        "TGS_Quest5_obj3": "Trouvez en raid: AR-15 Rainier Arms Avalanche MOD2 charging handle",
+        "TGS_Quest5_obj4": "Donnez: AR-15 Rainier Arms Avalanche MOD2 charging handle",
+        "TGS_Quest5_obj5": "Trouvez en raid: AR-15 5.56x45 20 inch barrel(rifle length)",
+        "TGS_Quest5_obj6": "Donnez: AR-15 5.56x45 20 inch barrel(rifle length)",
+        "TGS_Quest5_obj7": "Trouvez en raid: AR-15 Colt A2 buffer tube",
+        "TGS_Quest5_obj8": "Donnez: AR-15 Colt A2 buffer tube",
+        "TGS_Quest5_obj9": "Trouvez en raid: Colt USGI A2 fixed stock",
+        "TGS_Quest5_obj10": "Donnez: en raid: Colt USGI A2 fixed stock",
+        "TGS_Quest5_obj11": "Trouvez en raid: 5.56x45 Magpul PMAG 30 GEN M3 StANAG 30-round magazine",
+        "TGS_Quest5_obj12": "Donnez: 5.56x45 Magpul PMAG 30 GEN M3 StANAG 30-round magazine",
+        "TGS_Quest5_obj13": "Trouvez en raid: Hogue OverMolded Rubber Grip (black)",
+        "TGS_Quest5_obj14": "Donnez: Hogue OverMolded Rubber Grip (black)",
+        "TGS_Quest5_obj15": "Trouvez en raid: AR-15 JP Enterprises Gas System-5B",
+        "TGS_Quest5_obj16": "Donnez: AR-15 JP Enterprises Gas System-5B",
+        "TGS_Quest5_obj17": "Trouvez en raid: AR-15 TAA ZK-23 5.56x45 muzzle brake",
+        "TGS_Quest5_obj18": "Donnez: AR-15 TAA ZK-23 5.56x45 muzzle brake",
+        "TGS_Quest5_obj19": "Trouvez en raid: M4A1 5.56x45 upper receiver",
+        "TGS_Quest5_obj20": "Donnez: M4A1 5.56x45 upper receiver"
+    },
+    "name": "Armement",
+    "description": "TGS_Quest5_description",
+    "note": "",
+    "failMessageText": "",
+    "startedMessageText": "TGS_Quest5_StartedMail",
+    "successMessageText": "TGS_Quest5_mail",
+    "location": "5b0fc42d86f7744a585f9105"
 }
