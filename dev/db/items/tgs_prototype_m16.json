@@ -17,7 +17,7 @@
 		"CreditsPrice": 18397,
 		"ItemSound": "weap_ar",
 		"Prefab": {
-			"path": "assets/content/weapons/m4a1/weapon_colt_m4a1_556x45_container.bundle",
+			"path": "assets/content/weapons/m16a4/weapon_colt_m4a1_556x45_container.bundle",
 			"rcid": ""
 		},
 		"UsePrefab": {
