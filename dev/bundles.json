@@ -1,0 +1,9 @@
+{
+    "manifest": [
+        {
+            "key": "assets/content/items/barter/item_eth_coin/item_eth_coin.bundle",
+            "dependencyKeys": [
+            ]
+        }
+    ]
+}
