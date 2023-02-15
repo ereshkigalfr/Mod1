@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using Mono.Cecil;
 
+// ReSharper disable UnusedMember.Global
+
 namespace TGK.Preloader
 {
     public static class PreloaderPatch
