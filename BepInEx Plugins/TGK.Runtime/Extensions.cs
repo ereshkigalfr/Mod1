@@ -1,5 +1,7 @@
 ﻿using System.Reflection;
+using HarmonyLib;
 using TGK.Runtime.Exceptions;
+using TGK.Runtime.Patches;
 
 namespace TGK.Runtime
 {
@@ -20,6 +22,11 @@ namespace TGK.Runtime
             }
 
             return method;
+        }
+
+        public static HarmonyMethod GetLocalPatchMethod(this IRuntimePatch patchClass, string methodName)
+        {
+            return new HarmonyMethod(patchClass.GetType().GetMethod(methodName, BindingFlags.NonPublic | BindingFlags.Static));
         }
     }
 }

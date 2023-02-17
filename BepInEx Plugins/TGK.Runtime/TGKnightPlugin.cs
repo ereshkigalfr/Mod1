@@ -22,6 +22,8 @@ namespace TGK.Runtime
                     new BotSettingsRepoPatches(),
                     new BotFollowerControllerPatches(),
                     new BotBrainClassPatches(),
+                    new BotTacticControllerPatches(),
+                    new KillListVictimPatches(),
                 };
 
                 patchClasses.ExecuteForEach(patchClass =>
@@ -29,6 +31,9 @@ namespace TGK.Runtime
                     Logger.LogInfo($"Applying {patchClass.GetType().Name}");
                     patchClass.ApplyPatches(harmony, Logger);
                 });
+
+                Logger.LogInfo("Updating global bot settings");
+                StaticPatches.UpdateGlobalBotSettings();
             }
             catch (CustomPatchException ex)
             {

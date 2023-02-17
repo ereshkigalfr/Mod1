@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Collections.Generic;
+using System.Reflection;
 using BepInEx.Logging;
 using EFT;
 using HarmonyLib;
@@ -11,33 +12,36 @@ namespace TGK.Runtime.Patches
         public void ApplyPatches(Harmony harmony, ManualLogSource logger)
         {
             var targetClass = typeof(BotSettingsRepoClass);
-            var isBossMethod = targetClass.GetMethodOrThrow("IsBoss", BindingFlags.Public | BindingFlags.Static);
-            var isFollowerMethod = targetClass.GetMethodOrThrow("IsFollower", BindingFlags.Public | BindingFlags.Static);
+            var initMethod = targetClass.GetMethodOrThrow("Init", BindingFlags.Public | BindingFlags.Static);
 
-            harmony.Patch(isBossMethod, prefix: new HarmonyMethod(GetType().GetMethod(nameof(IsBossPrefixPatch), BindingFlags.NonPublic | BindingFlags.Static)));
-            harmony.Patch(isFollowerMethod, prefix: new HarmonyMethod(GetType().GetMethod(nameof(IsFollowerPrefixPatch), BindingFlags.NonPublic | BindingFlags.Static)));
+            harmony.Patch(initMethod, prefix: new HarmonyMethod(GetType().GetMethod(nameof(InitSettingsPrefixPatch), BindingFlags.NonPublic | BindingFlags.Static)));
         }
 
-        private static bool IsBossPrefixPatch(WildSpawnType role, ref bool __result)
+        private static void InitSettingsPrefixPatch(Dictionary<WildSpawnType, BotSettingsValuesClass> ___dictionary_0)
         {
-            if ((int)role == EnumPatchData.WildSpawnTypeEnumData.TG_BossValue)
+            ___dictionary_0.Add(
+                (WildSpawnType)EnumPatchData.WildSpawnTypeEnumData.TG_BossValue,
+                new BotSettingsValuesClass(true, false, false, "ScavRole/Boss"));
+
+            ___dictionary_0.Add(
+                (WildSpawnType)EnumPatchData.WildSpawnTypeEnumData.TG_FollowersValue,
+                new BotSettingsValuesClass(false, true, false, "ScavRole/Follower"));
+
+            ___dictionary_0.Add(
+                (WildSpawnType)EnumPatchData.WildSpawnTypeEnumData.TG_RaidersValue,
+                new BotSettingsValuesClass(false, false, false, "ScavRole/PmcBot"));
+
+            ___dictionary_0.Add(
+                (WildSpawnType)EnumPatchData.WildSpawnTypeEnumData.UNTroopsValue,
+                new BotSettingsValuesClass(false, false, false, EnumPatchData.WildSpawnTypeEnumData.UNTroopsName));
+
+            var method = typeof(BotSettingsRepoClass).GetMethodOrThrow("smethod_0", BindingFlags.NonPublic | BindingFlags.Static);
+
+            method.Invoke(null, new object[]
             {
-                __result = true;
-                return false;
-            }
-
-            return true;
-        }
-
-        private static bool IsFollowerPrefixPatch(WildSpawnType role, ref bool __result)
-        {
-            if ((int)role == EnumPatchData.WildSpawnTypeEnumData.TG_FollowersValue)
-            {
-                __result = true;
-                return false;
-            }
-
-            return true;
+                (WildSpawnType)EnumPatchData.WildSpawnTypeEnumData.TG_BossValue,
+                (WildSpawnType)EnumPatchData.WildSpawnTypeEnumData.TG_FollowersValue,
+            });
         }
     }
 }

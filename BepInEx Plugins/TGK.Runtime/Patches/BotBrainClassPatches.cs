@@ -13,6 +13,7 @@ namespace TGK.Runtime.Patches
             var targetClass = typeof(BotBrainClass);
             var botBrainActivateMethod = targetClass.GetMethodOrThrow("Activate", BindingFlags.Public | BindingFlags.Instance);
 
+            // TODO: Update these HarmonyMethod builders to use the extension method, after testing if it works
             harmony.Patch(
                 botBrainActivateMethod,
                 prefix: new HarmonyMethod(GetType().GetMethod(nameof(BotBrainSetupPrefixPatch), BindingFlags.NonPublic | BindingFlags.Static)),
@@ -32,7 +33,7 @@ namespace TGK.Runtime.Patches
                     __state = (true, originalRoleValue);
                     break;
                 case EnumPatchData.WildSpawnTypeEnumData.TG_RaidersValue:
-                    ___botOwner_0.Profile.Info.Settings.Role = WildSpawnType.pmcBot; // TODO: SPT PMCs now use different settings, maybe we should use something other than pmcBot?
+                    ___botOwner_0.Profile.Info.Settings.Role = WildSpawnType.pmcBot;
                     __state = (true, originalRoleValue);
                     break;
                 case EnumPatchData.WildSpawnTypeEnumData.TG_FollowersValue:
