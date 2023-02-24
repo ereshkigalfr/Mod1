@@ -1,0 +1,480 @@
+{
+    "BuffToAdd": {
+        "tgs_ChemicalBuff": [
+            {
+                "BuffType": "SkillRate",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 180,
+                "Value": 500,
+                "AbsoluteValue": true,
+                "SkillName": "Endurance"
+            },
+            {
+                "BuffType": "SkillRate",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 180,
+                "Value": 500,
+                "AbsoluteValue": true,
+                "SkillName": "Strength"
+            },
+            {
+                "BuffType": "SkillRate",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 180,
+                "Value": 500,
+                "AbsoluteValue": true,
+                "SkillName": "RecoilControl"
+            },
+            {
+                "BuffType": "HealthRate",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 45,
+                "Value": 10,
+                "AbsoluteValue": true,
+                "SkillName": "Health"
+            },
+            {
+                "BuffType": "HydrationRate",
+                "Chance": 1,
+                "Delay": 50,
+                "Duration": 30,
+                "Value": -50,
+                "AbsoluteValue": true,
+                "SkillName": "Endurance"
+            },
+            {
+                "BuffType": "HandsTremor",
+                "Chance": 1,
+                "Delay": 50,
+                "Duration": 300,
+                "Value": 20,
+                "AbsoluteValue": true,
+                "SkillName": "Health"
+            },
+            {
+                "BuffType": "QuantumTunnelling",
+                "Chance": 1,
+                "Delay": 50,
+                "Duration": 120,
+                "Value": 15,
+                "AbsoluteValue": true,
+                "SkillName": "Health"
+            }
+        ],
+        "tgs_ChemicalBuff2": [
+            {
+                "BuffType": "DamageModifier",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 900,
+                "Value": -0.5,
+                "AbsoluteValue": false,
+                "SkillName": ""
+            },
+            {
+                "BuffType": "StaminaRate",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 500,
+                "Value": -10,
+                "AbsoluteValue": true,
+                "SkillName": ""
+            },
+            {
+                "BuffType": "SkillRate",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 650,
+                "Value": -10,
+                "AbsoluteValue": true,
+                "SkillName": "RecoilControl"
+            },
+            {
+                "BuffType": "HealthRate",
+                "Chance": 1,
+                "Delay": 1,
+                "Duration": 60,
+                "Value": 20,
+                "AbsoluteValue": true,
+                "SkillName": "Health"
+            },
+            {
+                "BuffType": "HydrationRate",
+                "Chance": 1,
+                "Delay": 50,
+                "Duration": 320,
+                "Value": -50,
+                "AbsoluteValue": true,
+                "SkillName": "Endurance"
+            },
+            {
+                "BuffType": "HandsTremor",
+                "Chance": 1,
+                "Delay": 50,
+                "Duration": 300,
+                "Value": 20,
+                "AbsoluteValue": true,
+                "SkillName": "Health"
+            },
+            {
+                "BuffType": "QuantumTunnelling",
+                "Chance": 1,
+                "Delay": 50,
+                "Duration": 120,
+                "Value": 15,
+                "AbsoluteValue": true,
+                "SkillName": "Health"
+            },
+            {
+                "BuffType": "Pain",
+                "Chance": 0.25,
+                "Delay": 1,
+                "Duration": 1800,
+                "Value": 0,
+                "AbsoluteValue": false,
+                "SkillName": ""
+            }
+        ]
+    },
+    "WeaponMastery": [
+        {
+            "Name": "M16",
+            "Templates": [
+                "tgs_prototype_m16"
+            ],
+            "Level2": 1000,
+            "Level3": 3000
+        },
+        {
+            "Name": "Bad News",
+            "Templates": [
+                "tgs_338_badnews"
+            ],
+            "Level2": 1000,
+            "Level3": 3000
+        }
+    ],
+    "WoodsForcedLoot": {
+        "Id": "equipment",
+        "data": [
+            {
+                "Id": "equipment",
+                "IsStatic": false,
+                "useGravity": false,
+                "randomRotation": false,
+                "Position": {
+                    "x": -253.936,
+                    "y": 11.02398,
+                    "z": -29.61776
+                },
+                "Rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "IsGroupPosition": false,
+                "GroupPositions": [],
+                "Root": "57482d90c5ef4ce7c077e21f",
+                "Items": [
+                    {
+                        "_id": "730a86c22979e92af3c54921",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 2,
+                            "y": 2,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 1
+                        }
+                    },
+                    {
+                        "_id": "440307a699147ad4005978da",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 3,
+                            "y": 2,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 1
+                        }
+                    },
+                    {
+                        "_id": "5ab0283805cd61b6d075765e",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 4,
+                            "y": 2,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 1
+                        }
+                    },
+                    {
+                        "_id": "026a8d27873ae19e09dd2a14",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 4,
+                            "y": 0,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 1
+                        }
+                    },
+                    {
+                        "_id": "6728940c18f9b6e93a351052",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 2,
+                            "y": 0,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 1
+                        }
+                    },
+                    {
+                        "_id": "57482d90c5ef4ce7c077e21f",
+                        "_tpl": "545cdae64bdc2d39198b4568"
+                    },
+                    {
+                        "_id": "c9a1c11f5246fb01aa0d9fca",
+                        "_tpl": "5fc382a9d724d907e2077dab",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 3,
+                            "y": 4,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 30
+                        }
+                    },
+                    {
+                        "_id": "e6ac0caf47bc1696eeb43c4e",
+                        "_tpl": "5fc382a9d724d907e2077dab",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 2,
+                            "y": 4,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 30
+                        }
+                    },
+                    {
+                        "_id": "8a5ed73aa78dbbd1109088d5",
+                        "_tpl": "5fc382a9d724d907e2077dab",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 4,
+                            "y": 4,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 30
+                        }
+                    },
+                    {
+                        "_id": "524b703103c2517bdba2b6c1",
+                        "_tpl": "55d4b9964bdc2d1d4e8b456e",
+                        "parentId": "ca6f510f191c63c61c59b425",
+                        "slotId": "mod_pistol_grip"
+                    },
+                    {
+                        "_id": "8a5217499fbcbb1c058dfbc7",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 3,
+                            "y": 0,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        }
+                    },
+                    {
+                        "_id": "420998bd67eb3fb2532eaf25",
+                        "_tpl": "tgs_338_badnews_buffer",
+                        "parentId": "ca6f510f191c63c61c59b425",
+                        "slotId": "mod_stock"
+                    },
+                    {
+                        "_id": "72d575c5eb712e9ff928f26e",
+                        "_tpl": "tgs_338_badnews_receiver",
+                        "parentId": "ca6f510f191c63c61c59b425",
+                        "slotId": "mod_reciever"
+                    },
+                    {
+                        "_id": "6b5ae1b39cf0a8f70d46aca7",
+                        "_tpl": "5df8e053bb49d91fb446d6a6",
+                        "parentId": "ca6f510f191c63c61c59b425",
+                        "slotId": "mod_charge"
+                    },
+                    {
+                        "_id": "ddbae99b1a775c6379340259",
+                        "_tpl": "5fc382a9d724d907e2077dab",
+                        "parentId": "ca6f510f191c63c61c59b425",
+                        "slotId": "patron_in_weapon"
+                    },
+                    {
+                        "_id": "6b1243149d83b98245c12161",
+                        "_tpl": "5d44069ca4b9361ebd26fc37",
+                        "parentId": "420998bd67eb3fb2532eaf25",
+                        "slotId": "mod_stock_000"
+                    },
+                    {
+                        "_id": "27975d90be66b4fbb28fbf78",
+                        "_tpl": "5dfa397fb11454561e39246c",
+                        "parentId": "72d575c5eb712e9ff928f26e",
+                        "slotId": "mod_barrel"
+                    },
+                    {
+                        "_id": "a4d6e5e2cfe928a5adfa0e34",
+                        "_tpl": "5df916dfbb49d91fb446d6b9",
+                        "parentId": "72d575c5eb712e9ff928f26e",
+                        "slotId": "mod_handguard"
+                    },
+                    {
+                        "_id": "e483273772b196a9c39a51fd",
+                        "_tpl": "5ba26b17d4351e00367f9bdd",
+                        "parentId": "72d575c5eb712e9ff928f26e",
+                        "slotId": "mod_sight_rear",
+                        "upd": {
+                            "Sight": {
+                                "ScopesCurrentCalibPointIndexes": [
+                                    0
+                                ],
+                                "ScopesSelectedModes": [
+                                    0
+                                ],
+                                "SelectedScope": 0
+                            }
+                        }
+                    },
+                    {
+                        "_id": "834b6438175487ce748dffca",
+                        "_tpl": "5dfa3d45dfc58d14537c20b0",
+                        "parentId": "27975d90be66b4fbb28fbf78",
+                        "slotId": "mod_gas_block"
+                    },
+                    {
+                        "_id": "d921df39693987f4821e0cdb",
+                        "_tpl": "5fb6567747ce63734e3fa1dc",
+                        "parentId": "a4d6e5e2cfe928a5adfa0e34",
+                        "slotId": "mod_sight_front",
+                        "upd": {
+                            "Sight": {
+                                "ScopesCurrentCalibPointIndexes": [
+                                    0
+                                ],
+                                "ScopesSelectedModes": [
+                                    0
+                                ],
+                                "SelectedScope": 0
+                            }
+                        }
+                    },
+                    {
+                        "_id": "ca6f510f191c63c61c59b425",
+                        "_tpl": "tgs_338_badnews",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "upd": {
+                            "SpawnedInSession": true,
+                            "Repairable": {
+                                "MaxDurability": 100,
+                                "Durability": 99.24634
+                            },
+                            "FireMode": {
+                                "FireMode": "single"
+                            }
+                        },
+                        "location": {
+                            "x": 0,
+                            "y": 0,
+                            "r": "Vertical",
+                            "isSearched": true
+                        }
+                    },
+                    {
+                        "_id": "faac8f521abd51fe3be931d9",
+                        "_tpl": "tgs_338_LM_20rnd_mag",
+                        "parentId": "ca6f510f191c63c61c59b425",
+                        "slotId": "mod_magazine",
+                        "upd": {
+
+                        }
+                    },
+                    {
+						"_id": "77505fdec5e91fa8bf6119ae",
+						"_tpl": "tgs_tgBeacon",
+						"parentId": "57482d90c5ef4ce7c077e21f",
+						"slotId": "main",
+						"location": {
+							"x": 2,
+							"y": 5,
+							"r": "Horizontal",
+							"isSearched": true
+						},
+						"upd": {
+							"StackObjectsCount": 1
+						}
+					},
+                    {
+                        "_id": "67d5ba8de14a696b2cb5fe26",
+                        "_tpl": "59db7e1086f77448be30ddf3",
+                        "parentId": "3dc8c0d350c2d1730f356087",
+                        "slotId": "mod_scope",
+                        "upd": {
+                            "Sight": {
+                                "ScopesCurrentCalibPointIndexes": [
+                                    0
+                                ],
+                                "ScopesSelectedModes": [
+                                    0
+                                ],
+                                "SelectedScope": 0
+                            }
+                        }
+                    },
+                    {
+                        "_id": "a152c2793076ebf066603300",
+                        "_tpl": "5bbdb8bdd4351e4502011460",
+                        "parentId": "b17e83d9611debd3a90a7648",
+                        "slotId": "mod_muzzle"
+                    }
+                ]
+            }
+        ]
+    }
+}
