@@ -1,5 +1,5 @@
 {
-    "QuestName": "Unknown Contact",
+    "QuestName": "Research projects",
     "side": "Pmc",
     "_id": "TGS_Quest8",
     "description": "TGS_Quest8 description",
@@ -28,7 +28,38 @@
       "Fail": [],
     "conditions": {
         "AvailableForFinish": [],
-        "AvailableForStart": [],
+        "AvailableForStart": [
+          {
+          "_parent": "Quest",
+          "_props": {
+              "id": "TGS_Quest8_Req1",
+              "index": 0,
+              "parentId": "",
+              "dynamicLocale": false,
+              "target": "TGS_Quest7",
+              "status": [
+                  4
+              ],
+              "availableAfter": 7200,
+              "dispersion": 0,
+              "visibilityConditions": []
+          },
+          "dynamicLocale": false
+      },
+      {
+          "_parent": "Level",
+          "_props": {
+              "id": "TGS_Quest8_Req2",
+              "index": 1,
+              "parentId": "",
+              "dynamicLocale": false,
+              "value": 30,
+              "compareMethod": ">=",
+              "visibilityConditions": []
+          },
+          "dynamicLocale": false
+      }
+    ],
         "Fail": []
         }
     }
