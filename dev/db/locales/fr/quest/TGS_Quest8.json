@@ -1,15 +1,16 @@
 {
 	"conditions": {
-		"TGS_Quest8_obj": "Eliminez Gluhkar",
-		"TGS_Quest8_obj2": "Récupérer le téléphone crypté",
-		"TGS_Quest8_obj3": "Donnez le téléphone à Fence"
+		"TGS_Quest8_obj": "Trouvez en raid: Intelligence folder",
+		"TGS_Quest8_obj1": "Donnez: Intelligence folder",
+		"TGS_Quest8_obj2": "Trouvez en raid: Printer paper",
+		"TGS_Quest8_obj3": "Donnnez: Printer paper"
 
 	},
-	"name": "Contact inconnu",
+	"name": "Research projects",
 	"description": "TGS_Quest8_description",
 	"note": "",
 	"failMessageText": "",
 	"startedMessageText": "TGS_Quest8_StartedMail",
 	"successMessageText": "TGS_Quest8_mail",
-	"location": "5b0fc42d86f7744a585f9105"
+	"location": "Any"
 }

@@ -166,7 +166,7 @@
                         "index": 0,
                         "parentId": "",
                         "dynamicLocale": false,
-                        "value": 25,
+                        "value": 20,
                         "compareMethod": ">=",
                         "visibilityConditions": []
                     },

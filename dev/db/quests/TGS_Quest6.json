@@ -32,7 +32,7 @@
                 "index": 0,
                 "target": "tgs_knight"
             },
-            {   //P-M16 Barter
+            {
                 "id": "TGS_Quest6_Reward2",
                 "type": "AssortmentUnlock",
                 "index": 2,
@@ -47,7 +47,7 @@
                 "loyaltyLevel": 1,
                 "traderId": "tgs_knight"
             },
-            {   //P-M16 Production Scheme
+            {
                 "id": "TGS_Quest6_Reward3",
                 "type": "ProductionScheme",
                 "index": 1,

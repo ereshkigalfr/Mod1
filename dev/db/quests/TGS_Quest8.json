@@ -24,10 +24,140 @@
     "templateId": "TGS_Quest8",
     "rewards": {
       "Started": [],
-      "Success": [],
+      "Success": [
+        {
+            "value": "0.03",
+            "id": "TGS_Quest8_Reward1",
+            "type": "TraderStanding",
+            "index": 0,
+            "target": "tgs_knight"
+        },
+        {
+            "value": 50000,
+            "id": "TGS_Quest8_Reward2",
+            "type": "Experience",
+            "index": 1
+        },
+        {
+            "value": "4000",
+            "id": "TGS_Quest8_Reward3",
+            "type": "Item",
+            "index": 3,
+            "target": "TGS_Quest8_Reward3_items",
+            "findInRaid": true,
+            "items": [
+              {
+                "_id": "TGS_Quest8_Reward3_items",
+                "_tpl": "569668774bdc2da2298b4568",
+                "upd": {
+                  "StackObjectsCount": 4000
+                }
+              }
+            ]
+          }
+      ],
       "Fail": [],
     "conditions": {
-        "AvailableForFinish": [],
+        "AvailableForFinish": [
+            {
+                "_parent": "FindItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj",
+                    "index": 1,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "5c12613b86f7743bbe2c3f76"
+                    ],
+                    "countInRaid": false,
+                    "value": "1",
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "HandoverItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj1",
+                    "index": 2,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "5c12613b86f7743bbe2c3f76"
+                    ],
+                    "value": "1",
+                    "visibilityConditions": [
+                        {
+                            "_parent": "CompleteCondition",
+                            "_props": {
+                                "id": "TGS_Quest8_CompleteCondition",
+                                "target": "TGS_Quest8_obj"
+                            }
+                        }
+                    ]
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "FindItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj2",
+                    "index": 1,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "577e1c9d2459773cd707c525"
+                    ],
+                    "countInRaid": false,
+                    "value": "1",
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "HandoverItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj3",
+                    "index": 2,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "577e1c9d2459773cd707c525"
+                    ],
+                    "value": "1",
+                    "visibilityConditions": [
+                        {
+                            "_parent": "CompleteCondition",
+                            "_props": {
+                                "id": "TGS_Quest8_CompleteCondition2",
+                                "target": "TGS_Quest8_obj2"
+                            }
+                        }
+                    ]
+                },
+                "dynamicLocale": false
+            }
+        ],
         "AvailableForStart": [
           {
           "_parent": "Quest",
