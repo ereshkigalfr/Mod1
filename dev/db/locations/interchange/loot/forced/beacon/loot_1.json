@@ -19,7 +19,7 @@
     "Items": [
         {
             "_id": "beacon_position",
-            "_tpl": "tgs_beacon"
+            "_tpl": "TGS_beacon"
         }
     ]
 }

@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "chemical_position",
-			"_tpl": "tgs_chemical"
+			"_tpl": "TGS_chemical"
 		}
 	]
 }

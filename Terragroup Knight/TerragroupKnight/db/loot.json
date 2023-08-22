@@ -25,7 +25,7 @@
 						"Items": [
 							{
 								"_id": "beacon_position",
-								"_tpl": "tgs_beacon"
+								"_tpl": "TGS_beacon"
 							}
 						]
 					}
@@ -59,7 +59,7 @@
 						"Items": [
 							{
 								"_id": "crafting_intelligence_position",
-								"_tpl": "tgs_grendel_intelligence"
+								"_tpl": "TGS_grendel_intelligence"
 							}
 						]
 					}
@@ -89,7 +89,7 @@
 						"Items": [
 							{
 								"_id": "crafting_intelligence_position2",
-								"_tpl": "tgs_grendel_intelligence"
+								"_tpl": "TGS_grendel_intelligence"
 							}
 						]
 					}
@@ -119,7 +119,7 @@
 						"Items": [
 							{
 								"_id": "crafting_intelligence_position3",
-								"_tpl": "tgs_grendel_intelligence"
+								"_tpl": "TGS_grendel_intelligence"
 							}
 						]
 					}
@@ -149,7 +149,7 @@
 						"Items": [
 							{
 								"_id": "crafting_intelligence_position4",
-								"_tpl": "tgs_grendel_intelligence"
+								"_tpl": "TGS_grendel_intelligence"
 							}
 						]
 					}
@@ -179,7 +179,7 @@
 						"Items": [
 							{
 								"_id": "crafting_intelligence_position5",
-								"_tpl": "tgs_grendel_intelligence"
+								"_tpl": "TGS_grendel_intelligence"
 							}
 						]
 					}
@@ -211,7 +211,7 @@
 						"Items": [
 							{
 								"_id": "chemical_position",
-								"_tpl": "tgs_chemical"
+								"_tpl": "TGS_chemical"
 							}
 						]
 					}
@@ -241,7 +241,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position1",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -271,7 +271,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position10",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -301,7 +301,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position11",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -331,7 +331,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position12",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -361,7 +361,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position13",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -391,7 +391,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position14",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -421,7 +421,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position15",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -451,7 +451,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position16",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -481,7 +481,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position2",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -511,7 +511,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position3",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -541,7 +541,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position4",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -571,7 +571,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position5",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -601,7 +601,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position6",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -631,7 +631,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position7",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -661,7 +661,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position8",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -691,7 +691,7 @@
 						"Items": [
 							{
 								"_id": "jammer_position9",
-								"_tpl": "tgs_jammer"
+								"_tpl": "TGS_jammer"
 							}
 						]
 					}
@@ -778,7 +778,7 @@
 						"Items": [
 							{
 								"_id": "prototype_grendel_pos1",
-								"_tpl": "tgs_65x39mm_grendel_prototype"
+								"_tpl": "TGS_65x39mm_grendel_prototype"
 							}
 						]
 					}

@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "jammer_position5",
-			"_tpl": "tgs_jammer"
+			"_tpl": "TGS_jammer"
 		}
 	]
 }

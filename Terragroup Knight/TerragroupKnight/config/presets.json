@@ -9,7 +9,7 @@
             "_items": [
                 {
                     "_id": "I325213592539838991h1MZ5",
-                    "_tpl": "tgs_prototype_m16",
+                    "_tpl": "TGS_prototype_m16",
                     "upd": {
                         "Repairable": {
                             "MaxDurability": 100,
@@ -28,13 +28,13 @@
                 },
                 {
                     "_id": "I325213598465120866BMVf3",
-                    "_tpl": "tgs_genm3_fde",
+                    "_tpl": "TGS_genm3_fde",
                     "parentId": "I325213592539838991h1MZ5",
                     "slotId": "mod_magazine"
                 },
                 {
                     "_id": "I325213597907248960NSK7M",
-                    "_tpl": "tgs_prototype_m16_upper",
+                    "_tpl": "TGS_prototype_m16_upper",
                     "parentId": "I325213592539838991h1MZ5",
                     "slotId": "mod_reciever"
                 },
@@ -58,7 +58,7 @@
                 },
                 {
                     "_id": "I325213599186079648C5UtE",
-                    "_tpl": "tgs_urx_31_10_handguard",
+                    "_tpl": "TGS_urx_31_10_handguard",
                     "parentId": "I325213597907248960NSK7M",
                     "slotId": "mod_handguard"
                 },
@@ -116,7 +116,7 @@
             "_items": [
                 {
                     "_id": "e87e68fdff0ce1c0aaafc3a6",
-                    "_tpl": "tgs_338_badnews",
+                    "_tpl": "TGS_338_badnews",
                     "upd": {
                         "Repairable": {
                             "MaxDurability": 100,
@@ -135,19 +135,19 @@
                 },
                 {
                     "_id": "fd4358525d0c26ae42293599",
-                    "_tpl": "tgs_338_LM_20rnd_mag",
+                    "_tpl": "TGS_338_LM_20rnd_mag",
                     "parentId": "e87e68fdff0ce1c0aaafc3a6",
                     "slotId": "mod_magazine"
                 },
                 {
                     "_id": "eb5ef4ae775cd80149d6f2d4",
-                    "_tpl": "tgs_338_badnews_buffer",
+                    "_tpl": "TGS_338_badnews_buffer",
                     "parentId": "e87e68fdff0ce1c0aaafc3a6",
                     "slotId": "mod_stock"
                 },
                 {
                     "_id": "b0650192f14e4b02eff711b8",
-                    "_tpl": "tgs_338_badnews_receiver",
+                    "_tpl": "TGS_338_badnews_receiver",
                     "parentId": "e87e68fdff0ce1c0aaafc3a6",
                     "slotId": "mod_reciever"
                 },

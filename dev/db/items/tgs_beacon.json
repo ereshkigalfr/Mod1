@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_beacon",
-	"_name": "tgs_beacon",
+	"_id": "TGS_beacon",
+	"_name": "TGS_beacon",
 	"_parent": "5447e0e74bdc2d3c308b4567",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_beacon",
-		"ShortName": "tgs_beacon",
-		"Description": "tgs_beacon",
+		"Name": "TGS_beacon",
+		"ShortName": "TGS_beacon",
+		"Description": "TGS_beacon",
 		"Weight": 0.5,
 		"BackgroundColor": "red",
 		"Width": 1,

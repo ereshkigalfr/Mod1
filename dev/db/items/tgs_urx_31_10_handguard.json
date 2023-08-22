@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_urx_31_10_handguard",
-	"_name": "tgs_urx_31_10_handguard",
+	"_id": "TGS_urx_31_10_handguard",
+	"_name": "TGS_urx_31_10_handguard",
 	"_parent": "55818a104bdc2db9688b4569",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_urx_31_10_handguard",
-		"ShortName": "tgs_urx_31_10_handguard",
-		"Description": "tgs_urx_31_10_handguard",
+		"Name": "TGS_urx_31_10_handguard",
+		"ShortName": "TGS_urx_31_10_handguard",
+		"Description": "TGS_urx_31_10_handguard",
 		"Weight": 0.32,
 		"BackgroundColor": "violet",
 		"Width": 2,
@@ -63,7 +63,7 @@
 			{
 				"_name": "mod_mount_000",
 				"_id": "5d122e7dd7ad1a07102d6d81",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -84,7 +84,7 @@
 			{
 				"_name": "mod_mount_001",
 				"_id": "5d122e7dd7ad1a07102d6d82",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -105,7 +105,7 @@
 			{
 				"_name": "mod_scope",
 				"_id": "5d122e7dd7ad1a07102d6d83",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -123,7 +123,7 @@
 			{
 				"_name": "mod_foregrip",
 				"_id": "5d122e7dd7ad1a07102d6d84",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -143,7 +143,7 @@
 			{
 				"_name": "mod_sight_front",
 				"_id": "5d122e7dd7ad1a07102d6d85",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -166,7 +166,7 @@
 			{
 				"_name": "mod_tactical_000",
 				"_id": "5d122e7dd7ad1a07102d6d87",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -189,7 +189,7 @@
 			{
 				"_name": "mod_tactical_001",
 				"_id": "5d122e7dd7ad1a07102d6d88",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -220,7 +220,7 @@
 			{
 				"_name": "mod_tactical_002",
 				"_id": "5d122e7dd7ad1a07102d6d89",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{
@@ -251,7 +251,7 @@
 			{
 				"_name": "mod_tactical_003",
 				"_id": "5d122e7dd7ad1a07102d6d8a",
-				"_parent": "tgs_urx_31_10_handguard",
+				"_parent": "TGS_urx_31_10_handguard",
 				"_props": {
 					"filters": [
 						{

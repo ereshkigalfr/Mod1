@@ -1,13 +1,13 @@
 {
 	"conditions": {
-		"sixthQuest_tgs_FirstRequir1": "Hand over the assembled weapon"
+		"sixthQuest_TGS_FirstRequir1": "Hand over the assembled weapon"
 
 	},
 	"name": "TerraGroup Weapon Prototype",
-	"description": "sixthQuest_tgs_description",
+	"description": "sixthQuest_TGS_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "sixthQuest_tgs_StartedMail",
-	"successMessageText": "sixthQuest_tgs_mail",
+	"startedMessageText": "sixthQuest_TGS_StartedMail",
+	"successMessageText": "sixthQuest_TGS_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

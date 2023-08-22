@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_chemical",
-	"_name": "tgs_chemical",
+	"_id": "TGS_chemical",
+	"_name": "TGS_chemical",
 	"_parent": "590c745b86f7743cc433c5f2",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_chemical",
-		"ShortName": "tgs_chemical",
-		"Description": "tgs_chemical",
+		"Name": "TGS_chemical",
+		"ShortName": "TGS_chemical",
+		"Description": "TGS_chemical",
 		"Weight": 0.1,
 		"BackgroundColor": "green",
 		"Width": 1,

@@ -49,13 +49,13 @@ class BotsInit
         BotConfig.presetBatch["UNTroops"] = 60;
 
         //Add Gluhar ssd
-        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("tgs_ssdDrive");
-        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("tgs_ssdDrive");
-        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("tgs_ssdDrive");
-        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("tgs_ssdDrive");
-        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("tgs_ssdDrive");
-        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("tgs_ssdDrive");
-        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("tgs_ssdDrive");
+        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_ssdDrive");
+        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_ssdDrive");
+        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_ssdDrive");
+        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_ssdDrive");
+        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_ssdDrive");
+        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_ssdDrive");
+        bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_ssdDrive");
     }
 
     static createBotEquipment()
@@ -63,17 +63,17 @@ class BotsInit
         const CoreMod = require("../../../CoreMod/src/Core.js");
         //Adding TG_Followers equipment to loadouts
         CoreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "5fc3e272f8b6a877a729eac5", "tg_followers"); //UMP-45
-        CoreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "tgs_prototype_m16", "tg_followers"); // Proto M-16
+        CoreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "TGS_prototype_m16", "tg_followers"); // Proto M-16
         CoreMod.AddEquipmentToLoadout("Holster", "5cadc190ae921500103bb3b6", "tg_followers"); // M9A3
         CoreMod.AddEquipmentToLoadout("Headwear", "5e00c1ad86f774747333222c", "tg_followers"); // Team Exfil black
         CoreMod.AddEquipmentToLoadout("Headwear", "5a154d5cfcdbcb001a3b00da", "tg_followers"); //Fast MT black
 
         //Adding TG_Boss equipment to loadouts
         CoreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "5fc22d7c187fea44d52eda44", "tg_boss"); // MK-18
-        CoreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "tgs_338_badnews", "tg_boss"); // Bad New
+        CoreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "TGS_338_badnews", "tg_boss"); // Bad New
         CoreMod.AddEquipmentToLoadout("SecondPrimaryWeapon", "5e81ebcd8e146c7080625e15", "tg_boss"); // GL40
         CoreMod.AddEquipmentToLoadout("Holster", "5f36a0e5fbf956000b716b65", "tg_boss"); // M45A1
-        CoreMod.AddEquipmentToLoadout("Headwear", "tgs_helmet_prototype", "tg_boss"); // Helmet proto
+        CoreMod.AddEquipmentToLoadout("Headwear", "TGS_helmet_prototype", "tg_boss"); // Helmet proto
         CoreMod.AddEquipmentToLoadout("Headwear", "5f60b34a41e30a4ab12a6947", "tg_boss"); // Caiman
 
         //Adding TG_Raiders equipment to loadouts

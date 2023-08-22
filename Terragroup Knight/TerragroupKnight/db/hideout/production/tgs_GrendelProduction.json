@@ -1,5 +1,5 @@
 {
-	"_id": "tgs_GrendelProduction",
+	"_id": "TGS_GrendelProduction",
 	"areaType": 11,
 	"requirements": [
 		{
@@ -8,7 +8,7 @@
 			"type": "Area"
 		},
 		{
-			"templateId": "tgs_grendel_intelligence",
+			"templateId": "TGS_grendel_intelligence",
 			"count": 1,
 			"isFunctional": false,
 			"type": "Item"
@@ -29,7 +29,7 @@
 	"continuous": false,
 	"productionTime": 10,
 	"boosters": null,
-	"endProduct": "tgs_65x39mm_grendel",
+	"endProduct": "TGS_65x39mm_grendel",
 	"count": 90,
 	"productionLimitCount": 0
 }

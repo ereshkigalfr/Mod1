@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_chemical_meds",
-	"_name": "tgs_chemical_meds",
+	"_id": "TGS_chemical_meds",
+	"_name": "TGS_chemical_meds",
 	"_parent": "5448f3a64bdc2d60728b456a",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_chemical_meds",
-		"ShortName": "tgs_chemical_meds",
-		"Description": "tgs_chemical_meds",
+		"Name": "TGS_chemical_meds",
+		"ShortName": "TGS_chemical_meds",
+		"Description": "TGS_chemical_meds",
 		"Weight": 0.03,
 		"BackgroundColor": "orange",
 		"Width": 1,
@@ -62,7 +62,7 @@
 		"medEffectType": "duringUse",
 		"MaxHpResource": 0,
 		"hpResourceRate": 0,
-		"StimulatorBuffs": "tgs_ChemicalBuff",
+		"StimulatorBuffs": "TGS_ChemicalBuff",
 		"effects_health": {},
 		"effects_damage": [],
 		"Buffs": []

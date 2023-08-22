@@ -6,7 +6,7 @@
     "name": "TGS_Quest4 name",
     "note": "TGS_Quest4 note",
     "questStatus": {},
-    "traderId": "tgs_knight",
+    "traderId": "TGS_knight",
     "location": "any",
     "image": "/files/quest/icon/TGS_quest3_banner.png",
     "type": "Merchant",
@@ -52,7 +52,7 @@
                 "id": "TGS_Quest4_Reward3",
                 "type": "TraderStanding",
                 "index": 2,
-                "target": "tgs_knight"
+                "target": "TGS_knight"
             }
         ],
         "Success": [],
@@ -72,7 +72,7 @@
                         "onlyFoundInRaid": false,
                         "dynamicLocale": false,
                         "target": [
-                            "tgs_jammer"
+                            "TGS_jammer"
                         ],
                         "countInRaid": false,
                         "value": "16",
@@ -93,7 +93,7 @@
                         "onlyFoundInRaid": false,
                         "dynamicLocale": false,
                         "target": [
-                            "tgs_jammer"
+                            "TGS_jammer"
                         ],
                         "value": "16",
                         "visibilityConditions": [
@@ -168,7 +168,7 @@
                         "index": 1,
                         "parentId": "",
                         "dynamicLocale": false,
-                        "target": "tgs_Quest3",
+                        "target": "TGS_Quest3",
                         "status": [
                             4
                         ],

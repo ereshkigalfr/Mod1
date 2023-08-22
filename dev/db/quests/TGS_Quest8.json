@@ -30,7 +30,7 @@
             "id": "TGS_Quest8_Reward1",
             "type": "TraderStanding",
             "index": 0,
-            "target": "tgs_knight"
+            "target": "TGS_knight"
         },
         {
             "value": 50000,
@@ -54,7 +54,26 @@
                 }
               }
             ]
-          }
+          },
+          {
+            "id": "TGS_Quest8_Reward4",
+            "type": "ProductionScheme",
+            "index": 4,
+            "target": "TGS_production_grendel",
+            "unknown": true,
+            "items": [
+                {
+                    "_id": "TGS_Quest8_Reward4_ProdScheme",
+                    "_tpl": "TGS_65x39mm_grendel",
+                    "upd": {
+                        "SpawnedInSession": true,
+                        "StackObjectsCount": 1
+                    }
+                }
+            ],
+            "loyaltyLevel": 2,
+            "traderId": "13"
+        }
       ],
       "Fail": [],
     "conditions": {

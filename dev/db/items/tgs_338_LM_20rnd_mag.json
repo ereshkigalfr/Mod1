@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_338_LM_20rnd_mag",
-	"_name": "tgs_338_LM_20rnd_mag",
+	"_id": "TGS_338_LM_20rnd_mag",
+	"_name": "TGS_338_LM_20rnd_mag",
 	"_parent": "5448bc234bdc2d3c308b4569",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_338_LM_20rnd_mag",
-		"ShortName": "tgs_338_LM_20rnd_mag",
-		"Description": "tgs_338_LM_20rnd_mag",
+		"Name": "TGS_338_LM_20rnd_mag",
+		"ShortName": "TGS_338_LM_20rnd_mag",
+		"Description": "TGS_338_LM_20rnd_mag",
 		"Weight": 0.12,
 		"BackgroundColor": "yellow",
 		"Width": 1,
@@ -81,7 +81,7 @@
 			{
 				"_name": "cartridges",
 				"_id": "5d25a7b88abbc3054f3e60be",
-				"_parent": "tgs_338_LM_20rnd_mag",
+				"_parent": "TGS_338_LM_20rnd_mag",
 				"_max_count": 10,
 				"_props": {
 					"filters": [

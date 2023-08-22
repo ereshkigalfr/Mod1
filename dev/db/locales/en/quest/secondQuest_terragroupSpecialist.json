@@ -1,12 +1,12 @@
 {
 	"conditions": {
-		"secondQuest_tgs_FirstRequir": "Survive and extract from 3 raids in the Laboratory"
+		"secondQuest_TGS_FirstRequir": "Survive and extract from 3 raids in the Laboratory"
 	},
 	"name": "First Meeting",
-	"description": "secondQuest_tgs_description",
+	"description": "secondQuest_TGS_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "secondQuest_tgs_StartedMail",
-	"successMessageText": "secondQuest_tgs_mail",
+	"startedMessageText": "secondQuest_TGS_StartedMail",
+	"successMessageText": "secondQuest_TGS_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

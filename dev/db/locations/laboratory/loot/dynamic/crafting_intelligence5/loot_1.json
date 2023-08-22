@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "crafting_intelligence_position5",
-			"_tpl": "tgs_grendel_intelligence"
+			"_tpl": "TGS_grendel_intelligence"
 		}
 	]
 }

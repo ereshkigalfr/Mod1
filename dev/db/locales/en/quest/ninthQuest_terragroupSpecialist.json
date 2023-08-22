@@ -1,13 +1,13 @@
 {
 	"conditions": {
-		"ninthQuest_tgs_Condition": "Level up the Stress Resistance skill to 30"
+		"ninthQuest_TGS_Condition": "Level up the Stress Resistance skill to 30"
 
 	},
 	"name": "The Dangers of Stress",
-	"description": "ninthQuest_tgs_description",
+	"description": "ninthQuest_TGS_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "ninthQuest_tgs_StartedMail",
-	"successMessageText": "ninthQuest_tgs_mail",
+	"startedMessageText": "ninthQuest_TGS_StartedMail",
+	"successMessageText": "ninthQuest_TGS_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

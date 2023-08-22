@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_338_badnews_receiver",
-	"_name": "tgs_338_badnews_receiver",
+	"_id": "TGS_338_badnews_receiver",
+	"_name": "TGS_338_badnews_receiver",
 	"_parent": "55818a304bdc2db5418b457d",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_338_badnews_receiver",
-		"ShortName": "tgs_338_badnews_receiver",
-		"Description": "tgs_338_badnews_receiver",
+		"Name": "TGS_338_badnews_receiver",
+		"ShortName": "TGS_338_badnews_receiver",
+		"Description": "TGS_338_badnews_receiver",
 		"Weight": 0.65,
 		"BackgroundColor": "blue",
 		"Width": 2,
@@ -63,7 +63,7 @@
 			{
 				"_name": "mod_scope",
 				"_id": "5df8e4080b92095fd441e596",
-				"_parent": "tgs_338_badnews_receiver",
+				"_parent": "TGS_338_badnews_receiver",
 				"_props": {
 					"filters": [
 						{
@@ -124,7 +124,7 @@
 			{
 				"_name": "mod_barrel",
 				"_id": "5df8e4080b92095fd441e597",
-				"_parent": "tgs_338_badnews_receiver",
+				"_parent": "TGS_338_badnews_receiver",
 				"_props": {
 					"filters": [
 						{
@@ -142,7 +142,7 @@
 			{
 				"_name": "mod_handguard",
 				"_id": "5df8e4080b92095fd441e598",
-				"_parent": "tgs_338_badnews_receiver",
+				"_parent": "TGS_338_badnews_receiver",
 				"_props": {
 					"filters": [
 						{
@@ -160,7 +160,7 @@
 			{
 				"_name": "mod_sight_rear",
 				"_id": "5df8e4080b92095fd441e599",
-				"_parent": "tgs_338_badnews_receiver",
+				"_parent": "TGS_338_badnews_receiver",
 				"_props": {
 					"filters": [
 						{

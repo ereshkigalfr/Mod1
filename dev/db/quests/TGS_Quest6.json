@@ -30,7 +30,7 @@
                 "id": "TGS_Quest6_Reward1",
                 "type": "TraderStanding",
                 "index": 0,
-                "target": "tgs_knight"
+                "target": "TGS_knight"
             },
             {
                 "id": "TGS_Quest6_Reward2",
@@ -45,18 +45,18 @@
                     }
                 ],
                 "loyaltyLevel": 1,
-                "traderId": "tgs_knight"
+                "traderId": "TGS_knight"
             },
             {
                 "id": "TGS_Quest6_Reward3",
                 "type": "ProductionScheme",
                 "index": 1,
-                "target": "63d3d445ca44b3432c0baa12",
+                "target": "TGS_production_pm16",
                 "unknown": true,
                 "items": [
                     {
-                        "_id": "63d3d445ca44b3432c0baa12",
-                        "_tpl": "5c052f6886f7746b1e3db148",
+                        "_id": "TGS_Quest6_Reward3_ProdScheme",
+                        "_tpl": "TGS_prototype_m16",
                         "upd": {
                             "SpawnedInSession": true,
                             "StackObjectsCount": 1
@@ -78,7 +78,7 @@
                         "parentId": "",
                         "dynamicLocale": false,
                         "target": [
-                            "tgs_prototype_m16"
+                            "TGS_prototype_m16"
                         ],
                         "value": "1",
                         "visibilityConditions": [],

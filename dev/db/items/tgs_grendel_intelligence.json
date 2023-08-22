@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_grendel_intelligence",
-	"_name": "tgs_grendel_intelligence",
+	"_id": "TGS_grendel_intelligence",
+	"_name": "TGS_grendel_intelligence",
 	"_parent": "5448ecbe4bdc2d60728b4568",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_grendel_intelligence",
-		"ShortName": "tgs_grendel_intelligence",
-		"Description": "tgs_grendel_intelligence",
+		"Name": "TGS_grendel_intelligence",
+		"ShortName": "TGS_grendel_intelligence",
+		"Description": "TGS_grendel_intelligence",
 		"Weight": 0.20,
 		"BackgroundColor": "violet",
 		"Width": 2,

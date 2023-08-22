@@ -1,23 +1,23 @@
 {
 	"conditions": {
-		"fifthQuest_tgs_FirstRequir1": "Find in raid M4A1 Assault Rifle",
-		"fifthQuest_tgs_FirstRequir2": "Find in raid Colt A2 grip",
-		"fifthQuest_tgs_FirstRequir3": "Find in raid PMAG GEN M3 30 FDE",
-		"fifthQuest_tgs_FirstRequir4": "Find in raid Upper receiver Colt M4A1",
-		"fifthQuest_tgs_FirstRequir5": "Find in raid Colt buffer tube",
-		"fifthQuest_tgs_FirstRequir6": "Find in raid Colt AR-15 charging handle for AR-15",
-		"fifthQuest_tgs_FirstRequir7": "Find in raid 18inch AR-15 5,56x45",
-		"fifthQuest_tgs_FirstRequir8": "Find in raid URX 3.1 10,75inch",
-		"fifthQuest_tgs_FirstRequir9": "Find in raid AR-15 Carry Handle",
-		"fifthQuest_tgs_FirstRequir10": "Find in raid High Standard M4SS Stock",
-		"fifthQuest_tgs_FirstRequir11": "Find in raid MK12 Low Profile Gas Block",
-		"fifthQuest_tgs_FirstRequir12": "Survive and extract from the Laboratory"
+		"fifthQuest_TGS_FirstRequir1": "Find in raid M4A1 Assault Rifle",
+		"fifthQuest_TGS_FirstRequir2": "Find in raid Colt A2 grip",
+		"fifthQuest_TGS_FirstRequir3": "Find in raid PMAG GEN M3 30 FDE",
+		"fifthQuest_TGS_FirstRequir4": "Find in raid Upper receiver Colt M4A1",
+		"fifthQuest_TGS_FirstRequir5": "Find in raid Colt buffer tube",
+		"fifthQuest_TGS_FirstRequir6": "Find in raid Colt AR-15 charging handle for AR-15",
+		"fifthQuest_TGS_FirstRequir7": "Find in raid 18inch AR-15 5,56x45",
+		"fifthQuest_TGS_FirstRequir8": "Find in raid URX 3.1 10,75inch",
+		"fifthQuest_TGS_FirstRequir9": "Find in raid AR-15 Carry Handle",
+		"fifthQuest_TGS_FirstRequir10": "Find in raid High Standard M4SS Stock",
+		"fifthQuest_TGS_FirstRequir11": "Find in raid MK12 Low Profile Gas Block",
+		"fifthQuest_TGS_FirstRequir12": "Survive and extract from the Laboratory"
 	},
 	"name": "Weaponry",
-	"description": "fifthQuest_tgs_description",
+	"description": "fifthQuest_TGS_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "fifthQuest_tgs_StartedMail",
-	"successMessageText": "fifthQuest_tgs_mail",
+	"startedMessageText": "fifthQuest_TGS_StartedMail",
+	"successMessageText": "fifthQuest_TGS_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

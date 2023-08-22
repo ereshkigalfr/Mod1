@@ -6,7 +6,7 @@
     "name": "TGS_Quest3 name",
     "note": "TGS_Quest3 note",
     "questStatus": {},
-    "traderId": "tgs_knight",
+    "traderId": "TGS_knight",
     "location": "any",
     "image": "/files/quest/icon/TGS_quest3_banner.png",
     "type": "Merchant",
@@ -52,7 +52,7 @@
                 "id": "TGS_Quest3_Reward3",
                 "type": "TraderStanding",
                 "index": 2,
-                "target": "tgs_knight"
+                "target": "TGS_knight"
             }
         ],
         "Success": [],

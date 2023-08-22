@@ -97,7 +97,7 @@
                         "onlyFoundInRaid": false,
                         "dynamicLocale": false,
                         "target": [
-                            "tgs_cryptedphone"
+                            "TGS_cryptedphone"
                         ],
                         "countInRaid": false,
                         "value": "1",
@@ -118,7 +118,7 @@
                         "onlyFoundInRaid": false,
                         "dynamicLocale": false,
                         "target": [
-                            "tgs_cryptedphone"
+                            "TGS_cryptedphone"
                         ],
                         "value": "1",
                         "visibilityConditions": [

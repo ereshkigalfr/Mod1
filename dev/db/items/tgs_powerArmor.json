@@ -1,12 +1,12 @@
 {
-	"_id": "tgs_powerArmor",
-	"_name": "tgs_powerArmor",
+	"_id": "TGS_powerArmor",
+	"_name": "TGS_powerArmor",
 	"_parent": "5448e54d4bdc2dcc718b4568",
 	"_type": "Item",
 	"_props": {
-		"Name": "tgs_powerArmor",
-		"ShortName": "tgs_powerArmor",
-		"Description": "tgs_powerArmor",
+		"Name": "TGS_powerArmor",
+		"ShortName": "TGS_powerArmor",
+		"Description": "TGS_powerArmor",
 		"Weight": 22.8,
 		"BackgroundColor": "orange",
 		"Width": 4,

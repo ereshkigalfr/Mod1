@@ -76,7 +76,7 @@
 	"Items": [
 		{
 			"_id": "prototype_grendel_pos",
-			"_tpl": "tgs_65x39mm_grendel_prototype"
+			"_tpl": "TGS_65x39mm_grendel_prototype"
 		}
 	]
 }

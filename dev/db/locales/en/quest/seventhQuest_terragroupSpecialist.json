@@ -1,15 +1,15 @@
 {
 	"conditions": {
-		"seventhQuest_tgs_FindItem": "Find the 6.5x39mm GRENDEL ammo prototype",
-		"seventhQuest_tgs_Handover": "Hand over the ammo prototype to The Specialist",
-		"seventhQuest_tgs_seventhRequir1": "Survive and extract from the Laboratory"
+		"seventhQuest_TGS_FindItem": "Find the 6.5x39mm GRENDEL ammo prototype",
+		"seventhQuest_TGS_Handover": "Hand over the ammo prototype to The Specialist",
+		"seventhQuest_TGS_seventhRequir1": "Survive and extract from the Laboratory"
 
 	},
 	"name": "A Beautiful Caliber",
-	"description": "seventhQuest_tgs_description",
+	"description": "seventhQuest_TGS_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "seventhQuest_tgs_StartedMail",
-	"successMessageText": "seventhQuest_tgs_mail",
+	"startedMessageText": "seventhQuest_TGS_StartedMail",
+	"successMessageText": "seventhQuest_TGS_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

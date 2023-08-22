@@ -1,6 +1,6 @@
 {
-    "_id": "tgs_chemical_meds2",
-    "_name": "tgs_chemical_meds2",
+    "_id": "TGS_chemical_meds2",
+    "_name": "TGS_chemical_meds2",
     "_parent": "5448f3a64bdc2d60728b456a",
     "_type": "Item",
     "_props": {
@@ -64,7 +64,7 @@
         "medEffectType": "duringUse",
         "MaxHpResource": 0,
         "hpResourceRate": 0,
-        "StimulatorBuffs": "tgs_ChemicalBuff2",
+        "StimulatorBuffs": "TGS_ChemicalBuff2",
         "effects_health": [],
         "effects_damage": []
     },

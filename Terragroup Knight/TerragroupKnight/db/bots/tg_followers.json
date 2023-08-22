@@ -120,7 +120,7 @@
                 "5c0e655586f774045612eeb2",
                 "5b44d0de86f774503d30cba8",
                 "5ca21c6986f77479963115a7",
-                "tgs_armor_prototype"
+                "TGS_armor_prototype"
             ],
             "Eyewear": [
                 "5aa2b986e5b5b00014028f4c"
@@ -154,8 +154,8 @@
             "SpecialLoot": [],
             "Pockets": [
                 "5c94bbff86f7747ee735c08f",
-                "tgs_chemical_meds",
-                "tgs_chemical_meds2",
+                "TGS_chemical_meds",
+                "TGS_chemical_meds2",
                 "5fca13ca637ee0341a484f46",
                 "5c0e531d86f7747fa23f4d42",
                 "5c0e531286f7747fa54205c2",
@@ -200,7 +200,7 @@
                 "5a3c16fe86f77452b62de32a",
                 "5efb0e16aeb21837e749c7ff",
                 "5c0d56a986f774449d5de529",
-                "tgs_65x39mm_grendel"
+                "TGS_65x39mm_grendel"
             ]
         }
     },

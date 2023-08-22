@@ -6,7 +6,7 @@
     "name": "TGS_Quest7 name",
     "note": "TGS_Quest7 note",
     "questStatus": {},
-    "traderId": "tgs_knight",
+    "traderId": "TGS_knight",
     "location": "any",
     "image": "/files/quest/icon/616d993bc8c5ad2ab30ff6ba.png",
     "type": "Merchant",
@@ -36,7 +36,7 @@
                 "id": "TGS_Quest7_Reward2",
                 "type": "TraderStanding",
                 "index": 2,
-                "target": "tgs_knight"
+                "target": "TGS_knight"
             },
             {
               "value": "2500",
@@ -100,7 +100,7 @@
                         "onlyFoundInRaid": false,
                         "dynamicLocale": false,
                         "target": [
-                            "tgs_65x39mm_grendel_prototype"
+                            "TGS_65x39mm_grendel_prototype"
                         ],
                         "countInRaid": false,
                         "value": "1",
@@ -121,7 +121,7 @@
                         "onlyFoundInRaid": false,
                         "dynamicLocale": false,
                         "target": [
-                            "tgs_65x39mm_grendel_prototype"
+                            "TGS_65x39mm_grendel_prototype"
                         ],
                         "value": "1",
                         "visibilityConditions": [

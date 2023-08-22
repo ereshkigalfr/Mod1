@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "labs_man_keycard",
-			"_tpl": "tgs_manager_keycard"
+			"_tpl": "TGS_manager_keycard"
 		}
 	]
 }

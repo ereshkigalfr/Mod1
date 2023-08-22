@@ -1,6 +1,6 @@
 {
-	"_id": "tgs_cryptedphone",
-	"_name": "tgs_cryptedphone",
+	"_id": "TGS_cryptedphone",
+	"_name": "TGS_cryptedphone",
 	"_parent": "57864a66245977548f04a81f",
 	"_type": "Item",
 	"_props": {
