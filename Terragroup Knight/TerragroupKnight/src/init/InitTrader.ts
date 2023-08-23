@@ -18,12 +18,10 @@ import { Money } from "@spt-aki/models/enums/Money";
 import { Traders } from "@spt-aki/models/enums/Traders";
 import { HashUtil } from "@spt-aki/utils/HashUtil";
 
-class SampleTrader implements IPreAkiLoadMod, IPostDBLoadMod
+export class InitTrader implements IPreAkiLoadMod, IPostDBLoadMod
 {
     private mod: string
     private logger: ILogger
-    private traderHelper: TraderHelper
-    private fluentTraderAssortHeper: FluentAssortConstructor
 
     constructor() {
         this.mod = "13AddTrader"; // Set name of mod so we can log it to console later
@@ -45,12 +43,6 @@ class SampleTrader implements IPreAkiLoadMod, IPostDBLoadMod
         const hashUtil: HashUtil = container.resolve<HashUtil>("HashUtil");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
-
-        // Create helper class and use it to register our traders image/icon + set its stock refresh time
-        this.traderHelper = new TraderHelper();
-        this.fluentTraderAssortHeper = new FluentAssortConstructor(hashUtil, this.logger);
-        this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "cat.jpg");
-        this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, 3600);
 
         // Add trader to trader enum
         Traders[baseJson._id] = baseJson._id;
@@ -128,4 +120,4 @@ class SampleTrader implements IPreAkiLoadMod, IPostDBLoadMod
     }
 }
 
-module.exports = { mod: new SampleTrader() }
+module.exports = { mod: new InitTrader() }

@@ -1,10 +1,9 @@
 {
 	"interchange": {
-		"forced": [
+		"spawnpointsForced": [
 			{
-				"Id": "beacon",
-				"data": [
-					{
+				"locationId": "beacon",
+				"template":	{
 						"Id": "beacon",
 						"IsStatic": false,
 						"useGravity": false,
@@ -29,7 +28,6 @@
 							}
 						]
 					}
-				]
 			}
 		]
 	},
