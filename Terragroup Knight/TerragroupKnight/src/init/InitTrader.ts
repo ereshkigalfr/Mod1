@@ -1,8 +1,6 @@
 import { DependencyContainer } from "tsyringe";
 
 // SPT types
-import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { ConfigServer } from "@spt-aki/servers/ConfigServer";
@@ -16,32 +14,25 @@ import { TraderHelper } from "../helpers/traderHelpers";
 
 
 // TGS Types
-import { TGSTraderBase } from "../../db/templates/TGS_knight/base.json";
-import { TGSTraderAssorts } from "../../db/templates/TGS_knight/assort.json";
-import { TGSTraderQuestsUnlocks } from "../../db/templates/TGS_knight/questassort.json"
-import { config } from "../../config/config.json"
+import * as TGSTraderBase from "../../db/templates/TGS_knight/base.json";
+import * as TGSTraderAssorts from "../../db/templates/TGS_knight/assort.json";
+import * as TGSTraderQuestsUnlocks from "../../db/templates/TGS_knight/questassort.json"
+import * as config from "../../config/config.json"
 
-export class InitTrader implements IPreAkiLoadMod, IPostDBLoadMod
+export class InitTrader
 {
     private traderHelper: TraderHelper
 
-    /**
-     * Some work needs to be done prior to SPT code being loaded, registering the profile image + setting trader update time inside the trader config json
-     * @param container Dependency container
-     */
+
     public preAkiLoad(container: DependencyContainer): void
     {
 
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         this.traderHelper = new TraderHelper();
         // Add trader to trader enum
-        Traders[TGSTraderBase._id] = TGSTraderBase._id;
+        Traders["TGS_knight"] = "TGS_knight";
     }
     
-    /**
-     * Majority of trader-related work occurs after the aki database has been loaded but prior to SPT code being run
-     * @param container Dependency container
-     */
     public postDBLoad(container: DependencyContainer): void
     {
         //Get everything we need as variables
@@ -66,4 +57,4 @@ export class InitTrader implements IPreAkiLoadMod, IPostDBLoadMod
     }
 }
 
-module.exports = { mod: new InitTrader() }
+module.exports = InitTrader;

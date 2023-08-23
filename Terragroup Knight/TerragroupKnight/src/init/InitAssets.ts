@@ -1,17 +1,15 @@
 import { DependencyContainer } from "tsyringe";
 
 import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
-import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
 import { ImageRouter } from "@spt-aki/routers/ImageRouter";
 import { VFS } from "@spt-aki/utils/VFS"
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
 //TGS Imports
-import { config } from "../../config/config.json"
+import * as config from "../../config/config.json"
 
 
-export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
+export class InitAssets
 {
 
     public preAkiLoad(container: DependencyContainer): void
@@ -46,4 +44,4 @@ export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
 
 }
 
-module.exports = InitAssets
+module.exports = InitAssets;

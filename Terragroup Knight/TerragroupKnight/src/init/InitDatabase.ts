@@ -1,7 +1,6 @@
 import { DependencyContainer } from "tsyringe";
 
 //SPT Imports
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
 import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import { CustomItemService } from "@spt-aki/services/mod/CustomItemService";
@@ -9,23 +8,22 @@ import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
 
 //TGS Imports
-import { TGSItems } from "../../db/templates/items.json";
-import { TGSQuests } from "../../db/templates/quests.json";
-import { TGSMapsLoot } from "../../db/templates/loot.json";
-import { TGSLocales } from "../../db/templates/locales.json";
-import { TGSHideoutProductions } from "../../db/templates/productions.json";
-import { TGSPresets } from "../../config/presets.json";
-import { TGSValues } from "../../config/values.json";
-import { config } from "../../config/config.json";
+import * as TGSItems from "../../db/templates/items.json";
+import * as TGSQuests from "../../db/templates/quests.json";
+import * as TGSMapsLoot from "../../db/templates/loot.json";
+import * as TGSLocales from "../../db/templates/locales.json";
+import * as TGSHideoutProductions from "../../db/templates/productions.json";
+import * as TGSPresets from "../../config/presets.json";
+import * as TGSValues from "../../config/values.json";
+import * as config from "../../config/config.json";
 
-export class InitDatabase implements IPostDBLoadMod
+export class InitDatabase
 {
     
     public postDBLoad(container: DependencyContainer): void 
     {
         //Get everything we need as variables
         const MainDatabase = container.resolve<DatabaseServer>("DatabaseServer");
-        const CustomItem = container.resolve<CustomItemService>("CustomItemService");
         const logger = container.resolve<ILogger>("WinstonLogger");
         const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const ServerDatabase = MainDatabase.getTables();
@@ -41,7 +39,7 @@ export class InitDatabase implements IPostDBLoadMod
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new items in the database")};
         for (let i in TGSItems)
         {
-            CustomItem.createItemFromClone(TGSItems[i]);
+           items[TGSItems[i]]._id = TGSItems[i]
         }
 
         //Adding new quests to the database by looping through my already made json file
@@ -129,4 +127,4 @@ export class InitDatabase implements IPostDBLoadMod
     }
 }
 
-module.exports = { mod: new InitDatabase() }
+module.exports = InitDatabase;
