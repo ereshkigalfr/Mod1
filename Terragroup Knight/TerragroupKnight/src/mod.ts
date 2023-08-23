@@ -27,16 +27,18 @@ class main implements IPostDBLoadMod
         const logger = container.resolve<ILogger>("WinstonLogger");
         //Start all scripts that adds something to the database
         if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting assets initialization")}
-        InitAssets
+        new InitAssets().postDBLoad
+        new InitAssets().preAkiLoad
 
         if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting trader initialization")}
-        InitTrader
+        new InitTrader().postDBLoad
+        new InitTrader().preAkiLoad
         
         if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting database initialization")}
-        InitDatabase
+        new InitDatabase().postDBLoad
 
         if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting bots initialization")}
-        InitBots
+        //InitBots
 
         
     }

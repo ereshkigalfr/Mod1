@@ -23,7 +23,6 @@ export class InitDatabase implements IPostDBLoadMod
         this.config = require("../../config/config.json")
     }
 
-    private logger: ILogger
     private config: Object
     
     public postDBLoad(container: DependencyContainer): void 
