@@ -203,7 +203,7 @@ Objectives:
 * Kill 50 raiders on Laboratory
 
 Rewards:
-* +0.02 rep
+* 15.000 €
 * Receive Tasmanian Tiger SK plate carrier (Multicam black)
 
 ### 11th quest
