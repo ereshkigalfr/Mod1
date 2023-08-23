@@ -1,9 +1,0 @@
-{
-	"name": "Terragroup Knight",
-	"author": "Amelia",
-	"version": "1.0.0",
-	"akiVersion": "*.*.*",
-	"license": "AGPL-3.0",
-	"dependencies": {},
-	"main": "package.js"
-}
