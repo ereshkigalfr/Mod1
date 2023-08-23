@@ -1,8 +1,14 @@
 {
-    "HydratationRate": 3,
-    "EnergyRate": 3,
-    "hpRate": 2,
-    "raidsChance": 10,
-    "TG_Boss SpawnChance":45,
-    "DevelopmentMode": true
+    "Gameplay":{
+        "HydratationRate": 3,
+        "EnergyRate": 3,
+        "hpRate": 2,
+        "raidsChance": 10,
+        "TG_Boss SpawnChance":45
+    },
+    "Other":{
+        "Extra logging": true
+    }
+    
+    
 }
