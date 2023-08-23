@@ -1,4 +1,21 @@
-### SeelesItemPack
-这是一个供我个人使用的物品包，可能包括但不限于调试代码/不稳定/过期内容，如需下载请自行承担可能导致的错误以及风险。
-此条目用于反向同步测试。
-# 代理测试
+# Welcome to the Terragroup Knight mod readme.
+
+## What do the mod ?
+
+## What now ?
+
+## Known bugs :
+
+
+## Requires:
+* https://hub.sp-tarkov.com/files/file/914-m16a4-remake/
+
+## Special thanks
+* **Carl**
+For the terragroup specialist top for raiders and dogtags
+
+* **Terkoiz**
+For client patches on assembly file
+
+* **HiddenCirno**
+For TS conversion and some bundles
