@@ -1,10 +1,10 @@
 {
-    "name": "TGK-PT",
+    "name": "TerragroupKnight",
     "version": "1.0.0",
-    "main": "src/mod.js",
-    "license": "VHIAccess",
-    "author": "HiddenCirno",
-    "akiVersion": "3.5.0",
+    "main": "src/main.ts",
+    "license": "AGPL-3.0",
+    "author": "Ereshkigal,Terkoiz,HiddenCirno",
+    "akiVersion": "3.7.0",
     "scripts": {
         "setup:environment": "npm i",
         "build:unzipped": "copyfiles -e \"./node_modules/**/*.*\" -e \"./dist/**/*.*\" -e \"./package-lock.json\" -e \"./tsconfig.json\" -e \"./README.txt\" -e \"./mod.code-workspace\" \"./**/*.*\" ./dist",
