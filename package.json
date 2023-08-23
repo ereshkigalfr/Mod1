@@ -1,5 +1,12 @@
 {
   "dependencies": {
-    "vfs": "^0.2.2"
+    "atomically": "^1.7.0",
+    "fs": "^0.0.1-security",
+    "json-fixer": "1.6.10",
+    "node-forge": "0.10.0",
+    "node-powershell": "4.0.0",
+    "os-locale": "^5.0.0",
+    "proper-lockfile": "^4.1.2",
+    "ws": "^7.4.6"
   }
 }

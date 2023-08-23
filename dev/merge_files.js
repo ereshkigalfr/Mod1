@@ -19,21 +19,46 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-var VFS = require("vfs")
+var vfs = require("./vfs")
+var JsonUtil = require("./JsonUtil")
 
 "use strict";
 
 class Merging
 {
-    constructor()
-    {
-        mergeFiles()
-    }
-
     static mergeFiles()
     {
         const mod = require("../Terragroup Knight/TerragroupKnight/package.json");
-        const db = Merging.LoopThroughThatBith(`./db/`);
+        const db = Merging.LoopThroughThatBith("./dev/db/");
+
+        //Merge items
+        let newItem = {}
+        for (const item in db.items)
+        {
+            newItem[item] = JsonUtil.deserialize(vfs.readFile(db.items[item]));
+            
+        }
+        vfs.writeFile("./dev/output/items.json", JsonUtil.serialize(newItem, true));
+
+        //Merge quests
+        let newQuest = {}
+        for (const quest in db.quests)
+        {
+            newQuest[quest] = JsonUtil.deserialize(vfs.readFile(db.quests[quest]));
+            
+        }
+
+        vfs.writeFile("./dev/output/quests.json", JsonUtil.serialize(newQuest, true));
+
+        //Merge qproductions
+        let newProd = {}
+        for (const production in db.hideout.productions)
+        {
+            newProd[production] = JsonUtil.deserialize(vfs.readFile(db.hideout.productions[production]));
+            
+        }
+
+        vfs.writeFile("./dev/output/productions.json", JsonUtil.serialize(newProd, true));
 
         let localeOneFile = {};
         //Adding translations
@@ -48,14 +73,14 @@ class Merging
                     localeOneFile[lang][cats][data] = db.locales[lang][cats][data];
                     if (typeof db.locales[lang][cats][data] === "string")
                     {
-                        const toAdd = JsonUtil.deserialize(VFS.readFile(db.locales[lang][cats][data]));
+                        const toAdd = JsonUtil.deserialize(vfs.readFile(db.locales[lang][cats][data]));
                         localeOneFile[lang][cats][data] = toAdd;
                     }
                     else if (typeof db.locales[lang][cats][data] === "object")
                     {
                         for (let extraNode in db.locales[lang][cats][data])
                         {
-                            const toAddExtra = JsonUtil.deserialize(VFS.readFile(db.locales[lang][cats][data][extraNode]));
+                            const toAddExtra = JsonUtil.deserialize(vfs.readFile(db.locales[lang][cats][data][extraNode]));
                             localeOneFile[lang][cats][data][extraNode] = toAdd;
                         }
                     }
@@ -63,7 +88,7 @@ class Merging
             }
         }
 
-        VFS.writeFile("./locales.json", JsonUtil.serialize(localeOneFile, true));
+        vfs.writeFile("./dev/output/locales.json", JsonUtil.serialize(localeOneFile, true));
 
         let FuckThatMessyStructure = {};
         let oneFile = {};
@@ -82,12 +107,12 @@ class Merging
                     {
                         for (let lootData in db.locations[map][loot][type][lootNode])
                         {
-                            let loots = JsonUtil.deserialize(VFS.readFile(db.locations[map][loot][type][lootNode][lootData]));
+                            let loots = JsonUtil.deserialize(vfs.readFile(db.locations[map][loot][type][lootNode][lootData]));
                             FuckThatMessyStructure = {
                                 "Id": loots.Id,
                                 "data": [loots]
                             };
-                            VFS.writeFile("./loot.json", JsonUtil.serialize(oneFile, true));
+                            vfs.writeFile("./dev/output/loot.json", JsonUtil.serialize(oneFile, true));
                             oneFile[map][type].push(FuckThatMessyStructure);
                         }
                     }
@@ -101,11 +126,11 @@ class Merging
         }
 
 
-        VFS.writeFile("./loot.json", JsonUtil.serialize(oneFile, true));
+        vfs.writeFile("./dev/output/loot.json", JsonUtil.serialize(oneFile, true));
 
     }
     static LoopThroughThatBith(filepath)
-    {
+    {   
         const fs = require("fs");
         let baseNode = {};
         let directories = this.getDirList(filepath);
@@ -149,5 +174,5 @@ class Merging
     }
 
 }
-
+Merging.mergeFiles()
 module.exports = Merging;

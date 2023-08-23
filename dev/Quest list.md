@@ -13,11 +13,11 @@ Name: Hidden place
 Available at: Skier
 Requirement:
 * Overpopulation completed
-* Lvl 25
+* Lvl 20
 
 Objectives:
 * Find clues about a secret terragroup laboratory on streets (near sewer extraction)
-* Find a place to have a loot beyond the streets of tarkov snipers to the north
+* Find a place to have a look beyond the streets of tarkov snipers to the north
 * Find documents mentionning terragroup activity x5
 
 Rewards:
@@ -29,6 +29,7 @@ Name: Unknown contact
 Available at: Fence
 Requirement:
 * Quest Hidden place completed
+* Quest Overpopulation completed
 * PMC Must be level 25
 
 Objectives:
@@ -113,22 +114,16 @@ Objectives:
 * Find in-raid: M4A1 5.56x45 upper receiver
 
 Rewards:
-* **On start**:
-    * Add this preset to:
-        * Raiders
-        * TG Raiders
-        * USEC
-        * BEAR
-* 5000 €
+* 500 €
 * Receive: Modified M4A1 Upper receiver for 6.5 grendel
 * All of the above parts
 * +0.1 rep
 
 ### 6th quest
 Name: New weapon
-Available at: Mechanic
+Available at: Terragroup Knight
 Requirement:
-* Quest "Weaponry" accepted
+* Quest "Weaponry" completed
 * PMC Must be level 30
 
 Objectives:
@@ -138,11 +133,6 @@ Rewards:
 * +0.02 rep
 * Unlocks craft of the P-M16 weapon at workbench LL2
 * Unlocks purchase of P-16 weapon at Terragroup Knight LL1
-* Adds the P-M16 preset permanently to the followings bots:
-    * TG Raiders
-    * TG Followers
-    * USEC
-    * BEAR
 
 ### 7th quest
 Name: New caliber
@@ -171,7 +161,9 @@ Requirement:
 
 Objectives:
 * Find in raid: Intelligence folder
+* Hand over: Intelligence folder
 * Find in raid: Printer paper
+* Hand over: Printer paper
 
 Rewards:
 * +0.03 rep

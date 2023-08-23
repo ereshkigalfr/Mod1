@@ -25,7 +25,7 @@
     "rewards": {
         "Started": [],
         "Success": [
-            { //This is supposed to be the P-M16 Weapon, but i need to do the preset for it
+            {
                 "value": "1",
                 "id": "TGS_Quest5_Reward1",
                 "type": "Item",

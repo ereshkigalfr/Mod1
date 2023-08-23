@@ -1,0 +1,783 @@
+{
+	"en": {
+		"interface": {
+			"Terragroup": "TerraG"
+		},
+		"mail": {
+			"eightQuest_terragroupSpecialist_description": "This is a crucial moment for the Specialist's research: what you do now will decide everything, in both the short-term, and the long-term. Will you be able to save the Laboratory?",
+			"eightQuest_terragroupSpecialist_mail": "Hell! That's perfect! You saved the Laboratory equipment and the research! Bought me the time I need to look into their servers and finish off what I can. Come see me later, dodger- I've still got some work for you.",
+			"eightQuest_terragroupSpecialist_StartedMail": "Alright, this is getting bad- they've caught onto us. They're planning on sending mercs to stop us in our tracks by having them go scorched earth on the Laboratory- documents, servers, the whole nine yards. You've got to go in there and make sure they don't get the chance. Get moving, dodger!",
+			"eleventhQuest_terragroupSpecialist_description": "You’ve managed to prevent the mercenaries from recovering and destroying TerraGroup intel and equipment so you won’t be hearing about them for a while. They’re going to have to prepare, but so are you. Give yourself a breather, and prepare for the worst. You’re going to have to reenergize yourself for the upcoming fights. You’re ready? That’s good. Now, the folks at TerraGroup have been preparing very specific stocks... ",
+			"eleventhQuest_terragroupSpecialist_mail": "Well done boy, this will prevent them from finding the crates and utilizing them! It might save us some trouble down the line. Now, I still have a job for you, so come see me whenever you have the time! ",
+			"eleventhQuest_terragroupSpecialist_StartedMail": "So my boy, I managed to get some information about stocks of experimental drugs hidden in a cache at the mall. Apparently, they were planning to test the drugs on the local population. Intel states that it’s located in some sort of armory, with some MS2000 Markers in the crates so they can be transported. I need you to find out where the crates are located, remove the markers, and report back to me! ",
+			"fifthQuest_terragroupSpecialist_description": "It's starting to get interesting. New syringes have started to crop up containing unknown stimulants, with positive effects that seem promising. It might be enough for TerraGroup to stay afloat- maybe there'll be a time where they'll have more weaponry prototypes, too?",
+			"fifthQuest_terragroupSpecialist_mail": "Thanks for finding me these weapon parts, dodger. Go ahead and assemble the rifle and hand it over- I'll modify it according to plan. In the meantime, there are some files from TerraGroups to... pan over.",
+			"fifthQuest_terragroupSpecialist_StartedMail": "Good work, dodger- listen to me, carefully. I need you to bring me a particular weapon- a Colt M4A1 with a 20inch barrel, a Colt buffer tube and a Colt charging handle, a High Standard M4SS Stock, a tan PMAG M3 30 FDE magazine, a colt A2 pistol grip, a URX 3.1 10,75inch handguard, a low-profile MK12 gas block, and that it all comes from the Laboratory. It'd be great if all of it came from there- then I'd be certain it's all compatible with what I want to do. Get moving, buddy!",
+			"firstQuest_terragroupSpecialist_description": "I heard that some encrypted data from TerraGroup had been stolen by a certain someone hiding out with his buddies in the old Federal State Reserve Agency base. I bet there's some good information on it that could be sold for the right price, but... I won't bore you with the details. Get to work, killer.",
+			"firstQuest_terragroupSpecialist_mail": "I was able to decrypt part of that encrypted data you found on Gluhar. It mentions a former USEC operator working under TerraGroup who's looking for a reliable pair of hands. Considering you're confident, you should take a look at it- apparently, his hideout isn't far from the entrance of some hidden-away laboratory. He might have some valuable equipment lying around.",
+			"firstQuest_terragroupSpecialist_StartedMail": "Alright, listen up, killer. Gluhar and his lackeys are well-armed and well-prepared- and they're expecting trouble. They're over in the old Federal State Reserve Agency base, and tend to patrol around the barracks. You need to put them down and find an encrypted drive on one of them. Kill them, and bring me that damn encrypted drive!",
+			"fourthQuest_terragroupSpecialist_description": "You thought you'd get out of there unscathed? Well, you can dream, but... it seems like he wants to send you to the grave with this one. Don't believe that it's without risk- everything you do, touch, or breathe on this job will have an impact on your body. Take care, and above all else, take... adequate precautions.",
+			"fourthQuest_terragroupSpecialist_mail": "Whoa! I didn't believe for a second that you'd make it there, let alone make it back. You wore the mask from start to finish, didn't you? Hand it over, so I can get it properly contained and start taking a look at it- and come see me, when you have time. I've still got work for you.",
+			"fourthQuest_terragroupSpecialist_StartedMail": "Perfect, you're back! See, those eggheads down in TerraGroup's laboratories were working on some sort of new material. Their database is too large and too well-protected for me to learn anything about it in the short term, so... you've got some leg-work to do. Find yourself a gas mask, and get moving. Don't take the mask off until the stuff's left your hands.",
+			"ninthQuest_terragroupSpecialist_description": "Expect the unexpected. It's time to take one small leap into the secrets of TerraGroup- there's still a lot to discover, at all. Don't hesitate, and prepare yourself to undergo significant pressure, exertion and stress. Your life and livelihood is at stake.",
+			"ninthQuest_terragroupSpecialist_mail": "Ready, dodger? Perfect, because that's the end of your fun. I've prepared something for you- try to make good use of it?",
+			"ninthQuest_terragroupSpecialist_StartedMail": "Hey, dodger. Finished something for you- go ahead and take it. I don't have a job for you yet, so take advantage of your new-found freetime and prepare yourself. I've made some interesting discoveries, so come back soon and I might be able to tell you what to do.",
+			"secondQuest_terragroupSpecialist_description": "Despite how hard it was to decrypt the data, Fence's contacts made short work of it. Thanks to them, you've gotten into contact with that ex-USEC operator- but, now he wants you to prove your worth to him. You're going to need to get your hands dirty.",
+			"secondQuest_terragroupSpecialist_mail": "There you are again! I'm surprised you pulled that off- at least you don't seem like you'll get yourself killed by a bunch of flies. I still need you, so hold on a second: this is important. I have a few more... missions, if you'll take them: and don't worry, I have a good reward in mind.",
+			"secondQuest_terragroupSpecialist_StartedMail": "So, dodger, it was you who managed to decrypt my drive? Interesting! You look like too much of a bruiser to have pulled that off without some help- so, you're going to show me that you've got some wits. You know what's hidden away not too far from here- so, you're going to go in there, and fight your way out. Three times. Get the lead out, we don't have all day!",
+			"seventhQuest_terragroupSpecialist_description": "Now that you've got your hands on your new rifle, you need to find a way to obtain its ammunition. If it was tested in-house by TerraGroup, then maybe there's some in the Laboratory? The Specialist seems to believe it.",
+			"seventhQuest_terragroupSpecialist_mail": "Whoa! You really found them? Well played! Knew I could count on you- so, listen: I'm going to give you a few for the moment, but not much. Come back later, and I should be able to make more.",
+			"seventhQuest_terragroupSpecialist_StartedMail": "Listen, if you want me to make rounds for your new toy, you're going to have to do some legwork. Go down into the Laboratory and find the rounds they were using with the prototype rifle. I don't know where they were stored, so I can't really tell you much more- but try to be logical in your searching, alright?",
+			"sixthQuest_terragroupSpecialist_description": "Finally, things are getting serious. The Specialist is putting the finishing touches on a prototype AR-pattern rifle that was meant to be manufactured by TerraGroup and tested in this self-same Laboratory, but... you still lack the most important part: ammunition. Try not to misplace the rifle, would you?",
+			"sixthQuest_terragroupSpecialist_mail": "And... here! The job's done. I've reassembled the prototype- an M4A1 converted to 6.5x39mm Grendel in-house, but... we don't have the ammunition. Try not to lose it! I don't have what it takes to assemble another right now.",
+			"sixthQuest_terragroupSpecialist_StartedMail": "Pass the rifle over, and I can sort out the conversion.",
+			"tenthQuest_terragroupSpecialist_description": "You thought you were quiet the last time you prevented the TerraGroup raid on the Lab. Turns out, you’re wrong. This is only the beginning of a bitter struggle to keep you from getting your hands on confidential Lab intel, and you angered them. ",
+			"tenthQuest_terragroupSpecialist_failed": "Great, they managed to seize some of the equipment and you didn’t stop them. We just lost some valuable information and assets from TerraGroup that we could have utilized. You’re a damn bother to me! ",
+			"tenthQuest_terragroupSpecialist_mail": "Well done boy, you’ve done a good job again. Here, I managed to get my hands on some prototype armor the scientists were working on while I was still employed under TerraGroup. Take good care of it, it’s the only one I have in stock... ",
+			"tenthQuest_terragroupSpecialist_StartedMail": "Hey boy! Listen here, we have a problem on our hands. I just saw a large group of mercenaries enter the Lab. I think they’re back once again to either destroy TerraGroup property or take it for themselves to prevent us from getting our hands on it. Appropriate. Here, take this gear and go defend the Lab. Kill all the mercenaries there before they can leave with any goods, and hurry the hell up! Ah, wait a minute… there’s word that they’re also planning to test some sort of dangerous new gas, so better you be wearing a gas mask as a precaution, lest you end up dead from the gas. ",
+			"thirdQuest_terragroupSpecialist_description": "You've proven your worth to him, but this is only the beginning. It's time to give it your all- did you really think that TerraGroups abandoned their lab outright? Well... you're wrong.",
+			"thirdQuest_terragroupSpecialist_mail": "Congratulations! Those jammers were doing some nasty work, but thanks to your efforts, I've got the wiggle-room I needed to get into and around TerraGroup's systems. Together, we can make a hell of a profit- and I'll be able to prepare for you some stuff that was intended for some of their Special Forces contractors. They should allow you to get a leg up on others looking to unearth the secrets of TerraGroup.",
+			"thirdQuest_terragroupSpecialist_StartedMail": "So, buddy, you're back- ready for a mission? Perfect. It turns out that I could get external access to TerraGroup's servers, but those spooks managed to lock them down tight with jammers. You're going to go in there and get rid of them- so bring a good kit with you and pack a lunch: you're gonna' need it. I should be able to use those jammers for other things, if you bring them back, to get started.",
+			"twelfthQuest_terragroupSpecialist_description": "It's time to put your talents to the test. Will you be able to repel them and survive? Or will you succumb and suffer the consequences?",
+			"twelfthQuest_terragroupSpecialist_failedMail": "...",
+			"twelfthQuest_terragroupSpecialist_mail": "Good, you made it through. Nice gun you picked up, they're well-equipped.",
+			"twelfthQuest_terragroupSpecialist_StartedMail": "Now listen to me. Mercenaries have been shot by scavs in the woods. There must be equipment left where they died, find them and retrieve that equipment. Be careful, Terragroup soldiers are most likely looking for them, so be careful, they're not kidding. Don't hesitate to use the weapon you might find!"
+		},
+		"quest": {
+			"eightQuest_terragroupSpecialist": {
+				"conditions": {
+					"eightQuest_TGS_Req1": "Eliminate 15 Raiders in the Laboratory with the P-M4A1 assault rifle in a single raid",
+					"eightQuest_TGS_FirstRequir": "Survive and extract from the Laboratory"
+				},
+				"name": "Preservation",
+				"description": "eightQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "eightQuest_TGS_StartedMail",
+				"successMessageText": "eightQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"eleventhQuest_terragroupSpecialist": {
+				"conditions": {
+					"eleventhQuest_TGS_FindItem": "Find the crate and collect the marker at the Interchange",
+					"eleventhQuest_TGS_Handover": "Hand over the marker from the crate"
+				},
+				"name": "Life-size tests",
+				"description": "eleventhQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "eleventhQuest_TGS_StartedMail",
+				"successMessageText": "eleventhQuest_TGS_mail",
+				"location": "5714dbc024597771384a510d"
+			},
+			"fifthQuest_terragroupSpecialist": {
+				"conditions": {
+					"fifthQuest_TGS_FirstRequir1": "Find in raid M4A1 Assault Rifle",
+					"fifthQuest_TGS_FirstRequir2": "Find in raid Colt A2 grip",
+					"fifthQuest_TGS_FirstRequir3": "Find in raid PMAG GEN M3 30 FDE",
+					"fifthQuest_TGS_FirstRequir4": "Find in raid Upper receiver Colt M4A1",
+					"fifthQuest_TGS_FirstRequir5": "Find in raid Colt buffer tube",
+					"fifthQuest_TGS_FirstRequir6": "Find in raid Colt AR-15 charging handle for AR-15",
+					"fifthQuest_TGS_FirstRequir7": "Find in raid 18inch AR-15 5,56x45",
+					"fifthQuest_TGS_FirstRequir8": "Find in raid URX 3.1 10,75inch",
+					"fifthQuest_TGS_FirstRequir9": "Find in raid AR-15 Carry Handle",
+					"fifthQuest_TGS_FirstRequir10": "Find in raid High Standard M4SS Stock",
+					"fifthQuest_TGS_FirstRequir11": "Find in raid MK12 Low Profile Gas Block",
+					"fifthQuest_TGS_FirstRequir12": "Survive and extract from the Laboratory"
+				},
+				"name": "Weaponry",
+				"description": "fifthQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "fifthQuest_TGS_StartedMail",
+				"successMessageText": "fifthQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"firstQuest_terragroupSpecialist": {
+				"conditions": {
+					"firstQuest_TGS_FirstRequir": "Find and eliminate Gluhar",
+					"firstQuest_TGS_FirstRequir2": "Find and eliminate an assault guard",
+					"firstQuest_TGS_FirstRequir3": "Find and eliminate a scout guard",
+					"firstQuest_TGS_FirstRequir4": "Find and eliminate a security guard",
+					"firstQuest_TGS_FindItem": "Find the encrypted device",
+					"firstQuest_TGS_Handover": "Hand over the encrypted device"
+				},
+				"name": "Laboratory Mysteries",
+				"description": "firstQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "firstQuest_TGS_StartedMail",
+				"successMessageText": "firstQuest_TGS_mail",
+				"location": "5704e5fad2720bc05b8b4567"
+			},
+			"fourthQuest_terragroupSpecialist": {
+				"conditions": {
+					"fourthQuest_TGS_FirstRequir1": "Find the chemical container",
+					"fourthQuest_TGS_FirstRequir2": "Hand over the chemical container",
+					"fourthQuest_TGS_FirstRequir3": "Survive and leave the area while wearing a GP-5 gasmask"
+				},
+				"name": "A New Material",
+				"description": "fourthQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "fourthQuest_TGS_StartedMail",
+				"successMessageText": "fourthQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"ninthQuest_terragroupSpecialist": {
+				"conditions": {
+					"ninthQuest_TGS_Condition": "Level up the Stress Resistance skill to 30"
+				},
+				"name": "The Dangers of Stress",
+				"description": "ninthQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "ninthQuest_TGS_StartedMail",
+				"successMessageText": "ninthQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"secondQuest_terragroupSpecialist": {
+				"conditions": {
+					"secondQuest_TGS_FirstRequir": "Survive and extract from 3 raids in the Laboratory"
+				},
+				"name": "First Meeting",
+				"description": "secondQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "secondQuest_TGS_StartedMail",
+				"successMessageText": "secondQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"seventhQuest_terragroupSpecialist": {
+				"conditions": {
+					"seventhQuest_TGS_FindItem": "Find the 6.5x39mm GRENDEL ammo prototype",
+					"seventhQuest_TGS_Handover": "Hand over the ammo prototype to The Specialist",
+					"seventhQuest_TGS_seventhRequir1": "Survive and extract from the Laboratory"
+				},
+				"name": "A Beautiful Caliber",
+				"description": "seventhQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "seventhQuest_TGS_StartedMail",
+				"successMessageText": "seventhQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"sixthQuest_terragroupSpecialist": {
+				"conditions": {
+					"sixthQuest_TGS_FirstRequir1": "Hand over the assembled weapon"
+				},
+				"name": "TerraGroup Weapon Prototype",
+				"description": "sixthQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "sixthQuest_TGS_StartedMail",
+				"successMessageText": "sixthQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"tenthQuest_terragroupSpecialist": {
+				"conditions": {
+					"tenthQuest_TGS_Req1": "Kill 30 raiders in the Lab. You must be wearing a GP-5 gasmask",
+					"tenthQuest_TGS_FirstRequir": "Survive in the Lab for at least 10 minutes and extract",
+					"tenthQuest_TGS_FailCounter": "Do not die or extract under 10 minutes in the Lab"
+				},
+				"name": "Night raid",
+				"description": "tenthQuest_TGS_description",
+				"note": "",
+				"failMessageText": "tenthQuest_TGS_failed",
+				"startedMessageText": "tenthQuest_TGS_StartedMail",
+				"successMessageText": "tenthQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"thirdQuest_terragroupSpecialist": {
+				"conditions": {
+					"thirdQuest_TGS_FirstRequir1": "Remove the electronics jammers from the servers",
+					"thirdQuest_TGS_FirstRequir2": "Hand over the electronics jammers",
+					"thirdQuest_TGS_FirstRequir3": "Survive and extract from the Laboratory"
+				},
+				"name": "Restarting the System",
+				"description": "thirdQuest_TGS_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "thirdQuest_TGS_StartedMail",
+				"successMessageText": "thirdQuest_TGS_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"twelfthQuest_terragroupSpecialist": {
+				"conditions": {
+					"twelfthQuest_TGS_FirstRequir3": "Find the dead raider GPS device.",
+					"twelfthQuest_TGS_FirstRequir": "Kill 30 raiders in Woods with the dead raider equipment.",
+					"twelfthQuest_TGS_FirstRequir2": "Survive on Woods."
+				},
+				"name": "We got some bad news",
+				"description": "twelfthQuest_TGS_description",
+				"note": "",
+				"failMessageText": "twelfthQuest_TGS_failedMail",
+				"startedMessageText": "twelfthQuest_TGS_StartedMail",
+				"successMessageText": "twelfthQuest_TGS_mail",
+				"location": "5714dbc024597771384a510d"
+			}
+		},
+		"templates": {
+			"barrel_ar15_m16_18in": {
+				"Name": "18'' barrel for AR-15 and compatible 5.56x45 (rifle length)",
+				"ShortName": "18'' M16 5.56x45",
+				"Description": "A barrel for AR-15 based weapons for 5.56x45 NATO ammo, 18 inch long. Rifle-length gas system."
+			},
+			"barrel_ar15_m16_20in": {
+				"Name": "20'' barrel for AR-15 and compatible 5.56x45 (rifle length)",
+				"ShortName": "20'' M16 5.56x45",
+				"Description": "A barrel for AR-15 based weapons for 5.56x45 NATO ammo, 20 inch long. Rifle-length gas system."
+			},
+			"handguard_ar15_colt_a1_carbine": {
+				"Name": "Colt USGI A1 shortened handguard for AR-15 and compatibles",
+				"ShortName": "USGI A1 HG Sh.",
+				"Description": "Shortened version of the USGI A1 handguard that was used on M16A1-based carbines."
+			},
+			"handguard_ar15_colt_usgi_a1": {
+				"Name": "Colt USGI A1 handguard for AR-15 and compatibles",
+				"ShortName": "USGI A1 HG",
+				"Description": "The legendary \"triangular\" handguard, most closely associated with the Vietnam era."
+			},
+			"handguard_ar15_colt_usgi_a2": {
+				"Name": "Colt USGI A2 handguard for AR-15 and compatibles",
+				"ShortName": "USGI A2 HG",
+				"Description": "Standard service handguard for M16A2."
+			},
+			"handguard_ar15_kac_m5_ras": {
+				"Name": "Knight's Armament KAC M5 RAS handguard for AR-15 and compatibles",
+				"ShortName": "M5 RAS",
+				"Description": "Knight's Armament KAC M5 RAS is a standard service handguard for M16A4. Outdated by modern standards, it gets its job done nevertheless."
+			},
+			"mag_stanag_colt_ar15_std_556x45_20": {
+				"Name": "5.56x45 Colt AR-15 STANAG 20-round magazine",
+				"ShortName": "STANAG 20-rnd",
+				"Description": "A 20-round metal Colt AR-15 magazine was designed before the STANAG 4179 standard for 5.56x45 ammo, but it still can be fitted in any weapon that is compatible with STANAG magazines."
+			},
+			"mount_all_mla_rail_mount": {
+				"Name": "Moonlight Arms Carry Handle scope mount",
+				"ShortName": "Carry Handle mount",
+				"Description": "Custom-made carry handle scope mount."
+			},
+			"muzzle_ar15_colt_xm16e1_556x45": {
+				"Name": "Colt XM16E1 5.56x45 Flash hider for AR-15",
+				"ShortName": "XM16E1 FH",
+				"Description": "A modern replica of a XM16E1 flash hider that can be mounted on modern barrels. 3-prong flash hiders were replaced early in Vietnam War due to their tendency to get caught on vegetation."
+			},
+			"pistolgrip_ar15_colt_a1": {
+				"Name": "Colt A1 AR-15 pistol grip",
+				"ShortName": "A1 Pistol",
+				"Description": "Colt A1 polymer pistol grip can be installed on any weapon compatible with AR-15 grips. A1 grip was made of older and less durable polymers, but due to the lack of the finger groove, it is almost universally considered superior to its supposed \"improved\" version."
+			},
+			"reciever_ar15_colt_m16a1_std": {
+				"Name": "Upper receiver Colt M16A1 5.56x45 for M16A1 assault rifle",
+				"ShortName": "M16A1 Upper",
+				"Description": "A modern replica of a M16A1 upper receiver, artificially aged to make it look more authentic. Only a select few modern scopes can be installed on this upper without modification."
+			},
+			"sight_rear_ar15_colt_m16a1_rear_sight_std": {
+				"Name": "Colt M16A1 Rearsight aperture",
+				"ShortName": "M16A1 Rear",
+				"Description": "Original Colt M16 rear flip aperture used on M16 and M16A1 models.."
+			},
+			"stock_ar15_colt_car15": {
+				"Name": "Colt 4-position collapsible stock for AR-15 and compatibles",
+				"ShortName": "CAR Collaps.",
+				"Description": "Third generation collapsible stock was standard for M16-based carbines, including the M4 carbines until 2001."
+			},
+			"stock_ar15_colt_usgi_a1": {
+				"Name": "Colt USGI A1 fixed stock for AR-15 and compatibles",
+				"ShortName": "USGI A1 Fixed",
+				"Description": "A modern replica of a M16A1 stock. Unlike its improved version, A1 stock is slightly shorter and doesn't feature checkering on the buttplate nor a toolkit and overall is more fragile due to the use of less advanced polymers."
+			},
+			"stock_ar15_colt_usgi_a2": {
+				"Name": "Colt USGI A2 fixed stock for AR-15 and compatibles",
+				"ShortName": "USGI A2 Fixed",
+				"Description": "Standard service stock for M16A2 and M16A4."
+			},
+			"terragroupSpecialist_338_badnews": {
+				"Name": "\"Bad News\" .338 Lapua Magnum",
+				"ShortName": "\"Bad News\"",
+				"Description": "The “Bad News” in .338 Lapua has become a signature rifle for Noreen Firearms. The rifle was originally designed with the intent of taking a well-known large caliber, and being able to send it downrange accurately, further than any other semi-automatic rifle on the market. Now, with the Bad News Gen. II, we’ve taken a rifle that was already a long-distance powerhouse, and completely upgraded it. With new upgraded receivers, a new gas block, and a mean looking hand-guard, the new Bad News takes everything you loved from the first gen, and made it even better. We took a “signature rifle”, and turned it into a masterpiece."
+			},
+			"terragroupSpecialist_338_badnews_receiver": {
+				"Name": "\"Bad News\" Receiver",
+				"ShortName": "Receiver \"Bad News\"",
+				"Description": "A receiver specially made for \"Bad News\" rifle in .338 Lapua Magnum cartridge."
+			},
+			"terragroupSpecialist_338_lapuamagnum": {
+				"Name": ".338 Lapua Magnum Cartridge",
+				"ShortName": ".338 Lapua Magnum",
+				"Description": "The .338 Lapua Magnum (8.6×70mm or 8.58×70mm) is a rimless, bottlenecked, centerfire rifle cartridge. It was developed during the 1980s as a high-powered, long-range cartridge for military snipers. It was used in the War in Afghanistan and the Iraq War. As a result of this, it became more widely available. In addition to its military role, it is increasingly used by hunters and civilian long-range shooting enthusiasts. The .338 Lapua Magnum is capable of taking down any game animal, though its suitability for some dangerous game (Cape buffalo, hippopotamus, white rhinoceros, and elephant) is arguable, unless accompanied by a larger \"backup\" calibre: \"There is a huge difference between calibres that will kill an elephant and those that can be relied upon to stop one.\""
+			},
+			"terragroupSpecialist_338_LM_20rnd_mag": {
+				"Name": "10 Rounds mag .338 Lapua Magnum",
+				"ShortName": ".338 LM 10rnd",
+				"Description": "A 10round magazine specially made for the rifle \"Bad News\" with .338 Lapua Magnum cartridge."
+			},
+			"terragroupSpecialist_65x39mm_grendel": {
+				"Name": "6,5x39mm GRENDEL",
+				"ShortName": "Grendel",
+				"Description": "Cardrige 6,5x39mm GRENDEL",
+				"casingName": "6,5x39 mm Grendel"
+			},
+			"terragroupSpecialist_65x39mm_grendel_prototype": {
+				"Name": "6,5x39mm GRENDEL bullet prototype",
+				"ShortName": "Grendel",
+				"Description": "This is a bullet prototype of 6.5x39mm GRENDEL ammo. They are made by the terragroup laboratory.",
+				"casingName": "6,5x39 mm Grendel"
+			},
+			"terragroupSpecialist_armor_prototype": {
+				"Name": "A prototype of a plate carrier vest LBT 6094A",
+				"ShortName": "P-LBT6094A",
+				"Description": "A simple and minimalist vest plate holder that can be equipped with a vest. This prototype was designed in the terragroup laboratories and given as equipment to the terragroup special forces."
+			},
+			"terragroupSpecialist_beacon": {
+				"Name": "MS2000 Marker",
+				"ShortName": "MS2000",
+				"Description": "The marker is used during nighttime operations. It emits signal in the IR region which are visible through NVGs. Uses special filter when operating in the IR mode, if the filter is removed, it appears as a bright flash in the visible spectrum. In the extended mode operates with a blue flash."
+			},
+			"terragroupSpecialist_Blaze_Dogtags": {
+				"Name": "Blaze Dogtags",
+				"ShortName": "TG Dogtag",
+				"Description": "This is the dogtag of the soldier Blaze, who is working for Terragroup Labs. This is a high valuable item that can be used as a proof that you killed the soldier. Blaze was well known in the mercenaries as very experienced and smart. Maybe not smart enough for you."
+			},
+			"terragroupSpecialist_chemical": {
+				"Name": "Chemical container",
+				"ShortName": "ChemCont",
+				"Description": "Hermetic container for storing various chemicals. Do not open this container for any reasons."
+			},
+			"terragroupSpecialist_chemical_meds": {
+				"Name": "Chemical injector",
+				"ShortName": "Chem. Inj.",
+				"Description": "Sterile desposable syringe with a dose of high toxic chemicals , efects of this chemical are still unknow. What we are sure is they will give you a really bad time if you use it."
+			},
+			"terragroupSpecialist_chemical_meds2": {
+				"Name": "Experimental Chemical injector",
+				"ShortName": "Exp. Chem. Inj.",
+				"Description": "Sterile desposable syringe with a dose of high toxic chemicals , efects of this chemical are still unknow. What we are sure is they will give you a really bad time if you use it."
+			},
+			"terragroupSpecialist_ethCoin": {
+				"Name": "Ethereum",
+				"ShortName": "ETH",
+				"Description": "This is a coin of Ethereum. It is equal to the value of 1 Ethereum."
+			},
+			"terragroupSpecialist_genm3_fde": {
+				"Name": "PMAG GEN M3 26 6.5x39 GRENDEL 26-round magazine prototype",
+				"ShortName": "P-GEN M3 26",
+				"Description": "A 26-round polymer Magpul PMAG GEN M3 26 magazine prototype, for 6.5x39 ammunition designed to be used with the P-M4A1."
+			},
+			"terragroupSpecialist_grendel_intelligence": {
+				"Name": "Crafting plans for GRENDEL cardrige",
+				"ShortName": "Plans.",
+				"Description": "Some crafting plans made by The Specialist for crafting 6.5x39mm GRENDEL cardriges."
+			},
+			"terragroupSpecialist_jammer": {
+				"Name": "Electronic jammer",
+				"ShortName": "Jammer",
+				"Description": "Assembled electronic jammer. Emetting electric waves into the connected network for creating huge dysfunction in the system."
+			},
+			"terragroupSpecialist_manager_keycard": {
+				"Name": "Lab. Carte magnétique du manager",
+				"ShortName": "Lab. CMM",
+				"Description": "Une carte magnétique provenant du manager du laboratoire. Elle permet d'ouvrir tous les accès à carte magnétique du site."
+			},
+			"terragroupSpecialist_powerArmor": {
+				"Name": "Armor vest prototype Redut",
+				"ShortName": "P-Redut",
+				"Description": "A powered and resistant prototype armor, it offers excellent protection against bullets. This prototype was designed in the terragroup laboratories and donated as equipment to the terragroup special forces"
+			},
+			"terragroupSpecialist_prototype_m16": {
+				"Name": "Assault rifle prototype Colt M4A1 6.5x39mm",
+				"ShortName": "P-M4A1",
+				"Description": "A prototype of the Colt M4A1 - an assault rifle (carbine), designed in the USA on the basis of AR-15 platform for 6.5x39mm GRENDEL cartridge. It was developed primarily for use by vehicle operators and fireteams, who required a more compact and lighter weapon than a standard full-length rifle, but using the same ordnance. However, US SOCOM (United States Special Operations Command) was soon to adopt the M4A1 for all subordinate units, followed by general introduction of M4A1 into service in the US Army and Marine Corps. "
+			},
+			"terragroupSpecialist_prototype_m16_stock": {
+				"Name": "Colt buffer tube",
+				"ShortName": "CST",
+				"Description": "Colt Receiver Extension Buffer Tube, 4-position, Mil-Spec diameter will fit any AR-15-based carbine."
+			},
+			"terragroupSpecialist_prototype_m16_upper": {
+				"Name": "Upper receiver Colt M4A1 5.56x45 for Prototype M4A1 assault rifle",
+				"ShortName": "P-M4A1 Upper",
+				"Description": "Upper receiver for M4A1 assault rifle manufactured by Colt. Equipped with a mound for attaching additional devices."
+			},
+			"terragroupSpecialist_ssdDrive": {
+				"Name": "Crypted SSD",
+				"ShortName": "SSD",
+				"Description": "Solid State Drive (SSD). Used for data storage with a better read and reading speed. He seems to be crypted and no one seems to know how to access to his datas."
+			},
+			"terragroupSpecialist_tgBeacon": {
+				"Name": "Terragroup GPS",
+				"ShortName": "TG GPS",
+				"Description": "This GPS device is used to locate Terragroup assault members positions. It isn't as precise as an advanced GPS device for avoiding hacking and members positions leaking."
+			},
+			"terragroupSpecialist_urx_31_10_handguard": {
+				"Name": "URX 3.1 10.75\" handguard for AR15",
+				"ShortName": "URX 3.1 10.75\"",
+				"Description": "Knights Armament URX 3.1 handguard for AR-15 equipped with a unique interface for installation of additional devices and accessories."
+			},
+			"weapon_colt_m16a4_556x45": {
+				"Name": "Colt M16A4 5.56x45 assault rifle",
+				"ShortName": "M16A4",
+				"Description": "M16A4 is the latest version of the famous M16 rifle. Just like its predecessor, M16A2, A4 is a 3-round burst rifle. Initially adopted as the main service rifle in 1998 by US Army and US Marine Corp, it was phased out in favor of its smaller variant, M4A1, in 2015."
+			}
+		},
+		"trading": {
+			"TerraGroup_Specialist": {
+				"FullName": "TerraGroup Specialist",
+				"FirstName": "Sergei Mikailov",
+				"Nickname": "The Specialist",
+				"Location": "TerraGroup Laboratory",
+				"Description": "A guard from TerraGroup who's been set up at the Laboratory. He knows a lot about the goings-on of that place, but in turn, not many people have any information on him, or knows who he is."
+			}
+		}
+	},
+	"fr": {
+		"interface": {
+			"Terragroup": "TerraG"
+		},
+		"mail": {
+			"TGS_Quest0_description": "C'est le début d'une nouvelle aventure. Découvrez des secrets bien gardés dans la région de Tarkov et ses environs. Qui allez-vous rencontrer dans vos aventures, et quels seront vos choix ?",
+			"TGS_Quest0_StartedMail": "Hey salut toi! J'ai entendu des rumeurs récemments sur un laboratoire dans lequel il y aurait de l'activité. Il paraît qu'il est localisé sous les rues de tarkov, tu devrais y jeter un oeil. Peut-être que le batiment de la société Terragroup n'est pas présent là bas pour rien ? Tu devrais aussi chercher des documents qui mentionnerait cette société, il y a surement des informations intéressante!",
+			"TGS_Quest0_SuccessMail": "Ce que tu as trouvé est très intéressant! Cette rumeur semble donc vraie ? Ecoute, je connais un gars, il s'appelle Fence, il peut potentiellement t'aider, va le voir!"
+		},
+		"quest": {
+			"TGS_Quest0": {
+				"conditions": {
+					"TGS_Quest0_obj": "Cherchez des indices concernant un laboratoire caché en dessous des rues de Tarkov.",
+					"TGS_Quest0_obj2": "Cherchez un endroit qui surplombe la zone nord des rues de Tarkov",
+					"TGS_Quest0_obj3": "Trouvez dans un raid: Documents TerraGroup \"Blue Folders\"",
+					"TGS_Quest0_obj4": "Donnez: Documents TerraGroup \"Blue Folders\""
+				},
+				"name": "Emplacement caché",
+				"description": "TGS_Quest0_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest0_StartedMail",
+				"successMessageText": "TGS_Quest0_SuccessMail",
+				"location": "5714dc692459777137212e12"
+			},
+			"TGS_Quest1": {
+				"conditions": {
+					"TGS_Quest1_obj": "Eliminez Gluhkar",
+					"TGS_Quest1_obj2": "Récupérer le téléphone crypté",
+					"TGS_Quest1_obj3": "Donnez le téléphone à Fence",
+					"TGS_Quest1_obj4": "Echappez vous en vie de la base militaire"
+				},
+				"name": "Contact inconnu",
+				"description": "TGS_Quest1_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest1_StartedMail",
+				"successMessageText": "TGS_Quest1_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest10": {
+				"conditions": {
+					"TGS_Quest10_obj": "Eliminez Gluhkar",
+					"TGS_Quest10_obj2": "Récupérer le téléphone crypté",
+					"TGS_Quest10_obj3": "Donnez le téléphone à Fence"
+				},
+				"name": "Contact inconnu",
+				"description": "TGS_Quest10_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest10_StartedMail",
+				"successMessageText": "TGS_Quest10_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest11": {
+				"conditions": {
+					"TGS_Quest11_obj": "Eliminez Gluhkar",
+					"TGS_Quest11_obj2": "Récupérer le téléphone crypté",
+					"TGS_Quest11_obj3": "Donnez le téléphone à Fence"
+				},
+				"name": "Contact inconnu",
+				"description": "TGS_Quest11_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest11_StartedMail",
+				"successMessageText": "TGS_Quest11_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest12": {
+				"conditions": {
+					"TGS_Quest12_obj": "Eliminez Gluhkar",
+					"TGS_Quest12_obj2": "Récupérer le téléphone crypté",
+					"TGS_Quest12_obj3": "Donnez le téléphone à Fence"
+				},
+				"name": "Contact inconnu",
+				"description": "TGS_Quest12_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest12_StartedMail",
+				"successMessageText": "TGS_Quest12_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest2": {
+				"conditions": {
+					"TGS_Quest2_obj": "Survivez et échappez vous du laboratoire",
+					"TGS_Quest2_obj2": "Cherchez un ordinateur dévérouillé"
+				},
+				"name": "Prise de contact",
+				"description": "TGS_Quest2_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest2_StartedMail",
+				"successMessageText": "TGS_Quest2_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest3": {
+				"conditions": {
+					"TGS_Quest3_obj": "Trouvez la salle des serveur dans le laboratoire",
+					"TGS_Quest3_obj2": "Eliminez 10 raiders",
+					"TGS_Quest3_obj3": "Survivez et échappez vous du laboratoire dans le même raid"
+				},
+				"name": "Premier contact",
+				"description": "TGS_Quest3_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest3_StartedMail",
+				"successMessageText": "TGS_Quest3_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest4": {
+				"conditions": {
+					"TGS_Quest4_obj": "Retirez les brouilleurs electroniques des serveurs",
+					"TGS_Quest4_obj2": "Donnez les brouilleurs",
+					"TGS_Quest4_obj3": "Echappez-vous en vie du laboratoire"
+				},
+				"name": "Le début d'une relation",
+				"description": "TGS_Quest4_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest4_StartedMail",
+				"successMessageText": "TGS_Quest4_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest5": {
+				"conditions": {
+					"TGS_Quest5_obj1": "Trouvez en raid: AR-15 KAC M5 RAS Handguard",
+					"TGS_Quest5_obj2": "Donnez: AR-15 KAC M5 RAS Handguard",
+					"TGS_Quest5_obj3": "Trouvez en raid: AR-15 Rainier Arms Avalanche MOD2 charging handle",
+					"TGS_Quest5_obj4": "Donnez: AR-15 Rainier Arms Avalanche MOD2 charging handle",
+					"TGS_Quest5_obj5": "Trouvez en raid: AR-15 5.56x45 20 inch barrel(rifle length)",
+					"TGS_Quest5_obj6": "Donnez: AR-15 5.56x45 20 inch barrel(rifle length)",
+					"TGS_Quest5_obj7": "Trouvez en raid: AR-15 Colt A2 buffer tube",
+					"TGS_Quest5_obj8": "Donnez: AR-15 Colt A2 buffer tube",
+					"TGS_Quest5_obj9": "Trouvez en raid: Colt USGI A2 fixed stock",
+					"TGS_Quest5_obj10": "Donnez: en raid: Colt USGI A2 fixed stock",
+					"TGS_Quest5_obj11": "Trouvez en raid: 5.56x45 Magpul PMAG 30 GEN M3 StANAG 30-round magazine",
+					"TGS_Quest5_obj12": "Donnez: 5.56x45 Magpul PMAG 30 GEN M3 StANAG 30-round magazine",
+					"TGS_Quest5_obj13": "Trouvez en raid: Hogue OverMolded Rubber Grip (black)",
+					"TGS_Quest5_obj14": "Donnez: Hogue OverMolded Rubber Grip (black)",
+					"TGS_Quest5_obj15": "Trouvez en raid: AR-15 JP Enterprises Gas System-5B",
+					"TGS_Quest5_obj16": "Donnez: AR-15 JP Enterprises Gas System-5B",
+					"TGS_Quest5_obj17": "Trouvez en raid: AR-15 TAA ZK-23 5.56x45 muzzle brake",
+					"TGS_Quest5_obj18": "Donnez: AR-15 TAA ZK-23 5.56x45 muzzle brake",
+					"TGS_Quest5_obj19": "Trouvez en raid: M4A1 5.56x45 upper receiver",
+					"TGS_Quest5_obj20": "Donnez: M4A1 5.56x45 upper receiver"
+				},
+				"name": "Armement",
+				"description": "TGS_Quest5_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest5_StartedMail",
+				"successMessageText": "TGS_Quest5_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest6": {
+				"conditions": {
+					"TGS_Quest6_obj": "Donnez l'arme suivante selon les spécificités: Prototype M16"
+				},
+				"name": "Nouvelle arme",
+				"description": "TGS_Quest6_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest6_StartedMail",
+				"successMessageText": "TGS_Quest6_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest7": {
+				"conditions": {
+					"TGS_Quest7_obj": "Entrez dans la zone de test d'armement dans le laboratoire",
+					"TGS_Quest7_obj2": "Trouvez le prototype d'une balle",
+					"TGS_Quest7_obj3": "Donnez le prototype"
+				},
+				"name": "Un autre calibre",
+				"description": "TGS_Quest7_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest7_StartedMail",
+				"successMessageText": "TGS_Quest7_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			},
+			"TGS_Quest8": {
+				"conditions": {
+					"TGS_Quest8_obj": "Trouvez en raid: Intelligence folder",
+					"TGS_Quest8_obj1": "Donnez: Intelligence folder",
+					"TGS_Quest8_obj2": "Trouvez en raid: Printer paper",
+					"TGS_Quest8_obj3": "Donnnez: Printer paper"
+				},
+				"name": "Research projects",
+				"description": "TGS_Quest8_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest8_StartedMail",
+				"successMessageText": "TGS_Quest8_mail",
+				"location": "Any"
+			},
+			"TGS_Quest9": {
+				"conditions": {
+					"TGS_Quest9_obj": "Eliminez Gluhkar",
+					"TGS_Quest9_obj2": "Récupérer le téléphone crypté",
+					"TGS_Quest9_obj3": "Donnez le téléphone à Fence"
+				},
+				"name": "Contact inconnu",
+				"description": "TGS_Quest9_description",
+				"note": "",
+				"failMessageText": "",
+				"startedMessageText": "TGS_Quest9_StartedMail",
+				"successMessageText": "TGS_Quest9_mail",
+				"location": "5b0fc42d86f7744a585f9105"
+			}
+		},
+		"templates": {
+			"tgs_338_badnews": {
+				"Name": "\"Bad News\" .338 Lapua Magnum",
+				"ShortName": "\"Bad News\"",
+				"Description": "Fusil \"Bad News\" en calibre .338 Lapua Magnum part Noreen Firearms. Ce fusil est redoutable par son calibre et sa puissance de pénétration. Il en fait un excellent fusil."
+			},
+			"tgs_338_badnews_receiver": {
+				"Name": "Boitier supérieur .338 Lapua Magnum",
+				"ShortName": "B.Sup \"Bad News\"",
+				"Description": "Un boitier supérieur conçu spécialement pour le fusil \"Bad News\" en .338 Lapua Magnum."
+			},
+			"tgs_338_lapuamagnum": {
+				"Name": ".338 Lapua Magnum",
+				"ShortName": ".338 Lapua Magnum",
+				"Description": "Le .338 Lapua Magnum est une munition d'usage militaire de calibre 8,58 × 70 mm pour les fusils de précision. C'est une munition conçue pour un usage : antipersonnel , mais également utilisable en antimatériel, pour des véhicules légers ou du matériel sensible. De nombreuses armes utilisent ce type de munition : le fusil Accuracy International AWM, le FN Ballista, Le McMillan Tac-338 et bien d'autres. "
+			},
+			"tgs_338_LM_20rnd_mag": {
+				"Name": "Chargeur de 10 balles .338 Lapua Magnum",
+				"ShortName": ".338 LM 10rnd",
+				"Description": "Un chargeur de 10 cartouches conçu spécialement pour le fusil \"Bad News\" en .338 Lapua Magnum."
+			},
+			"tgs_65x39mm_grendel": {
+				"Name": "6,5x39mm GRENDEL",
+				"ShortName": "Grendel",
+				"Description": "Cartouche 6,5x39mm GRENDEL",
+				"casingName": "6,5x39 mm Grendel"
+			},
+			"tgs_65x39mm_grendel_prototype": {
+				"Name": "Prototype de balle 6,5x39mm GRENDEL",
+				"ShortName": "Grendel",
+				"Description": "Ceci est un prototype de cartouche 6,5x39mm GRENDEL produite par les laboratoires terragroup.",
+				"casingName": "6,5x39 mm Grendel"
+			},
+			"tgs_armor_prototype": {
+				"Name": "Un prototype de gilet porte plaque LBT 6094A",
+				"ShortName": "LBT6094A",
+				"Description": "Un simple et minimaliste gilet porte plaque équipable avec un gilet. Ce prototype a été conçu dans les laboratoires terragroup et donné en équipement aux forces spéciales terragroup."
+			},
+			"tgs_beacon": {
+				"Name": "Balise MS2000",
+				"ShortName": "MS2000",
+				"Description": "Cette balise est utilisée pendant les opérations de nuit. Elle émet des signaux dans le spectre de l’infrarouge (IR) qui ne sont visibles que par le biais de jumelles de vision nocturnes (JVN). Elle utilise un filtre spécial pour émettre en IR, si le filtre est retiré, la balise émet un flash lumineux dans le spectre visible. En mode d'utilisation prolongée elle émet un flash bleu."
+			},
+			"tgs_Blaze_Dogtags": {
+				"Name": "Plaques TerraGroup - Blaze",
+				"ShortName": "Plaques TG",
+				"Description": "Ce sont les plaques du soldat Blaze, hautement reconnu dans les rangs de mercenaires du laboratoire TerraGroup. Ces plaques ont une grande valeur, et peut servir comme preuves de sa mort. Il paraît qu'il était très doué et expérimenter sur le terrain, il était également très intelligent."
+			},
+			"tgs_chemical": {
+				"Name": "Conteneur de produits chimiques",
+				"ShortName": "ContChim",
+				"Description": "Conteneur hermétique contenant un produit chimique hautement toxique. N'ouvrir ce conteneur sous aucun prétexte !"
+			},
+			"tgs_chemical_meds": {
+				"Name": "Injecteur chimique",
+				"ShortName": "Inj. Chim.",
+				"Description": "Seringue stérile jetable comprenant une dose de produit hautement chimique, les effets de ce produit sont encore inconnus, mais ils ne seront certainement pas sans lourdes conséquences."
+			},
+			"tgs_chemical_meds2": {
+				"Name": "Injecteur chimique expérimental",
+				"ShortName": "Inj. Chim. Exp.",
+				"Description": "Seringue stérile jetable comprenant une dose de produit hautement chimique, les effets de ce produit sont encore inconnus, mais ils ne seront certainement pas sans lourdes conséquences."
+			},
+			"tgs_ethCoin": {
+				"Name": "Ethereum",
+				"ShortName": "ETH",
+				"Description": "C'est une pièce d'Ethereum, symbolisant la valeur totale de 1 Ethereum."
+			},
+			"tgs_genm3_fde": {
+				"Name": "Prototype de chargeur STANAG PMAG GEN M3 26 6,5x39 26 coups",
+				"ShortName": "P-GEN M3 26",
+				"Description": "Un prototype de chargeur polymère Magpul PMAG GEN M3 26 coups, pour cartouches en 6,5x39."
+			},
+			"tgs_grendel_intelligence": {
+				"Name": "Plans de confection cartouche GRENDEL",
+				"ShortName": "Docs.",
+				"Description": "Des plans rédigés par le spécialiste permettant la confection de cartouches 6,5x39mm GRENDEL."
+			},
+			"tgs_jammer": {
+				"Name": "Brouilleur électronique",
+				"ShortName": "Brouilleur",
+				"Description": "Brouilleur électronique assemblé. Il émet des pulsions électriques dans un réseau afin d'y créer des disfonctionnements importants."
+			},
+			"tgs_manager_keycard": {
+				"Name": "Lab. Carte magnétique du manager",
+				"ShortName": "Lab. CMM",
+				"Description": "Une carte magnétique provenant du manager du laboratoire. Elle permet d'ouvrir tous les accès à carte magnétique du site."
+			},
+			"tgs_powerArmor": {
+				"Name": "Un prototype d'armure REDUT",
+				"ShortName": "P-Redut",
+				"Description": "Un simple et minimaliste gilet porte plaque équipable avec un gilet. Ce prototype a été conçu dans les laboratoires terragroup et donné en équipement aux forces spéciales terragroup."
+			},
+			"tgs_prototype_m16": {
+				"Name": "Prototype de fusil d'assaut Colt M16A3 6,5x39mm",
+				"ShortName": "P-M16A3",
+				"Description": "Fusil d'assaut (carabine) Colt M16A3, conçu aux États-Unis sur la base de la plateforme AR-15 et la cartouche de 6,5x39mm Grendel. Il a été développé principalement pour être utilisé par les conducteurs de véhicules et les unités de combat, nécessitant une arme plus compacte et légère qu'un fusil standard, mais utilisant les mêmes munitions. Cependant, l'US SOCOM (Commandement des opérations spéciales des États-Unis) a rapidement adopté le M4A1 pour toutes les unités adjointes, suivi de l'incorporation générale du M4A1 dans l'US Army et dans le corps des Marines."
+			},
+			"tgs_prototype_m16_stock": {
+				"Name": "Tube de crosse Colt",
+				"ShortName": "CST",
+				"Description": "Tube de crosse télescopique Colt 4 positions de diamètre Mil-Spec utilisable sur toutes les carabines de type AR-15."
+			},
+			"tgs_prototype_m16_upper": {
+				"Name": "Boitier supérieur Colt M4A1 5,56x45 pour fusil d'assaut M4A1",
+				"ShortName": "B.Sup M4A1",
+				"Description": "Boitier supérieur pour fusil d'assaut M4A1 produit par Colt. Équipé d'un rail Picatinny pour l'installation d'accessoires supplémentaires."
+			},
+			"tgs_scrap_metal": {
+				"Name": "Pièces détachées d'arme",
+				"ShortName": "Pièces dét.",
+				"Description": "Un large éventail de pièce détachées d'armes nécessaires au remplacement des pièces cassées ou à la production d'armes artisanales."
+			},
+			"tgs_ssdDrive": {
+				"Name": "SSD Crypté",
+				"ShortName": "SSD",
+				"Description": "Solid State Drive (SSD). Utilisé pour stocker des données, avec lecture et écriture améliorées. Il semble crypté et personne ne connait le moyen de le déchiffré..."
+			},
+			"tgs_tgBeacon": {
+				"Name": "GPS Terragroup",
+				"ShortName": "GPS TG",
+				"Description": "Cette balise est utilisée afin de localisé les membres des groupes d'assault de Terragroup. Elle ne permet cependant que d'avoir un emplacement approximatif de cette balise GPS, et non précis."
+			},
+			"tgs_urx_31_10_handguard": {
+				"Name": "Garde-main URX 3.1 10,75\" pour AR-15",
+				"ShortName": "URX 3.1 10,75\"",
+				"Description": "Garde-main Knights Armament URX 3.1 pour AR-15 équipé d'une interface unique pour l'installation d'équipements et accessoires supplémentaires."
+			}
+		},
+		"trading": {
+			"tgs_knight": {
+				"FullName": "Terragroup Knight",
+				"FirstName": "Sergei Mikailov",
+				"Nickname": "Tarragroup Knight",
+				"Location": "Laboratoire terragroup",
+				"Description": "Ancien garde des forces spéciales du laboratoire terragroup, il connait les lieux comme sa poche et tout ce qu'il s'y passait. Cependant nous n'avons aucune info sur lui, il est inconnu de tous."
+			}
+		}
+	}
+}
