@@ -9,7 +9,6 @@ import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 // New trader settings
 import { Money } from "@spt-aki/models/enums/Money";
 import { Traders } from "@spt-aki/models/enums/Traders";
-import { HashUtil } from "@spt-aki/utils/HashUtil";
 import { TraderHelper } from "../helpers/traderHelpers";
 
 

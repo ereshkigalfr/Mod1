@@ -3,7 +3,6 @@ import { DependencyContainer } from "tsyringe";
 // SPT types
 import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
 import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
 //Get all initialization scripts

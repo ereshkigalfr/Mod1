@@ -3,7 +3,6 @@ import { DependencyContainer } from "tsyringe";
 //SPT Imports
 import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import { CustomItemService } from "@spt-aki/services/mod/CustomItemService";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
 
