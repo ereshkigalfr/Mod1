@@ -1,5 +1,5 @@
 {
-    "QuestName": "Unknown Contact",
+    "QuestName": "Night raid",
     "side": "Pmc",
     "_id": "TGS_Quest9",
     "description": "TGS_Quest9 description",
@@ -9,7 +9,7 @@
     "traderId": "5ac3b934156ae10c4430e83c",
     "location": "any",
     "image": "/files/quest/icon/5ae4a74386f7744748710d72.jpg",
-    "type": "Merchant",
+    "type": "PickUp",
     "isKey": false,
     "restartable": false,
     "instantComplete": false,
@@ -23,13 +23,165 @@
     "completePlayerMessage": "TGS_Quest9 completePlayerMessage",
     "templateId": "TGS_Quest9",
     "rewards": {
-      "Started": [],
-      "Success": [],
-      "Fail": [],
-    "conditions": {
-        "AvailableForFinish": [],
-        "AvailableForStart": [],
-        "Fail": []
+        "Started": [],
+        "Success": [
+            {
+                "value": "0.05",
+                "id": "TGS_Quest9_Reward1",
+                "type": "TraderStanding",
+                "index": 0,
+                "target": "TGS_knight"
+            },
+            {
+                "value": 50000,
+                "id": "TGS_Quest9_Reward2",
+                "type": "Experience",
+                "index": 1
+            },
+            {
+                "value": "4000",
+                "id": "TGS_Quest9_Reward3",
+                "type": "Item",
+                "index": 2,
+                "target": "TGS_Quest9_Reward3_items",
+                "findInRaid": true,
+                "items": [
+                    {
+                        "_id": "TGS_Quest9_Reward3_items",
+                        "_tpl": "569668774bdc2da2298b4568",
+                        "upd": {
+                            "StackObjectsCount": 4000
+                        }
+                    }
+                ]
+            }
+        ],
+        "Fail": [
+            {
+                "value": "-0.05",
+                "id": "TGS_Quest9_Fail1",
+                "type": "TraderStanding",
+                "index": 0,
+                "target": "TGS_knight"
+            }
+        ],
+        "conditions": {
+            "AvailableForFinish": [
+              {
+                "_parent": "CounterCreator",
+                "_props": {
+                    "counter": {
+                        "conditions": [
+                            {
+                                "_parent": "Kills",
+                                "_props": {
+                                    "compareMethod": ">=",
+                                    "id": "TGS_Quest9_Kills",
+                                    "target": "TG_Raiders",
+                                    "value": "10"
+                                }
+                            }
+                        ],
+                        "id": "TGS_Quest9_Cond1"
+                    },
+                    "id": "TGS_Quest9_obj1",
+                    "index": 1,
+                    "parentId": "",
+                    "oneSessionOnly": false,
+                    "dynamicLocale": false,
+                    "type": "Elimination",
+                    "doNotResetIfCounterCompleted": false,
+                    "value": "20",
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "CounterCreator",
+                "_props": {
+                    "counter": {
+                        "conditions": [
+                            {
+                                "_parent": "ExitStatus",
+                                "_props": {
+                                    "id": "TGS_Quest9_ExitStatus",
+                                    "status": [
+                                        "Survived"
+                                    ]
+                                }
+                            },
+                            {
+                                "_parent": "Location",
+                                "_props": {
+                                    "id": "TGS_Quest9_Location",
+                                    "target": [
+                                        "laboratory"
+                                    ]
+                                }
+                            }
+                        ],
+                        "id": "TGS_Quest9_Cond2"
+                    },
+                    "id": "TGS_Quest9_obj2",
+                    "index": 2,
+                    "parentId": "",
+                    "oneSessionOnly": false,
+                    "dynamicLocale": false,
+                    "type": "Completion",
+                    "doNotResetIfCounterCompleted": false,
+                    "value": "1",
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            }
+            ],
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "id": "TGS_Quest9_Req1",
+                        "index": 0,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "target": "TGS_Quest9",
+                        "status": [
+                            4
+                        ],
+                        "availableAfter": 43200,
+                        "dispersion": 0,
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "id": "TGS_Quest9_Req2",
+                        "index": 1,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "value": 30,
+                        "compareMethod": ">=",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": [
+                {
+                    "_parent": "Time",
+                    "_props": {
+                        "id": "TGS_Quest9_Req3",
+                        "index": 1,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "value": 86400,
+                        "compareMethod": ">=",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ]
         }
     }
 }
