@@ -36,7 +36,7 @@ export class InitDatabase
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new items in the database")};
         for (let i in TGSItems)
         {
-           items[TGSItems[i]]._id = TGSItems[i]
+            items[TGSItems[i]] = TGSItems[i];
         }
 
         //Adding new quests to the database by looping through my already made json file
@@ -50,9 +50,9 @@ export class InitDatabase
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new locales in the database")};
         for (const lang in TGSLocales)
         {
-            for (const node1 in TGSLocales[lang])
+            if(lang != "default")
             {
-                Object.assign(locales[lang][node1], TGSLocales[lang][node1]);
+                Object.assign(locales[lang], TGSLocales[lang]);
             }
         }
 

@@ -1,0 +1,16 @@
+{
+	"conditions": {
+		"TGS_Quest0_obj": "Cherchez des indices concernant un laboratoire caché en dessous des rues de Tarkov.",
+		"TGS_Quest0_obj2": "Cherchez un endroit qui surplombe la zone nord des rues de Tarkov",
+		"TGS_Quest0_obj3": "Trouvez dans un raid: Documents TerraGroup \"Blue Folders\"",
+		"TGS_Quest0_obj4": "Donnez: Documents TerraGroup \"Blue Folders\""
+
+	},
+	"name": "Emplacement caché",
+	"description": "TGS_Quest0_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "TGS_Quest0_StartedMail",
+	"successMessageText": "TGS_Quest0_SuccessMail",
+	"location": "5714dc692459777137212e12"
+}

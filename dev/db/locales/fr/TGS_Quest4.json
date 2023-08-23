@@ -1,0 +1,15 @@
+{
+	"conditions": {
+		"TGS_Quest4_obj": "Retirez les brouilleurs electroniques des serveurs",
+		"TGS_Quest4_obj2": "Donnez les brouilleurs",
+		"TGS_Quest4_obj3": "Echappez-vous en vie du laboratoire"
+
+	},
+	"name": "Le début d'une relation",
+	"description": "TGS_Quest4_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "TGS_Quest4_StartedMail",
+	"successMessageText": "TGS_Quest4_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

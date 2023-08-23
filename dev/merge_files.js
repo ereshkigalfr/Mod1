@@ -65,27 +65,7 @@ class Merging
         for (let lang in db.locales)
         {
             localeOneFile[lang] = db.locales[lang];
-            for (let cats in db.locales[lang])
-            {
-                localeOneFile[lang][cats] = db.locales[lang][cats];
-                for (let data in db.locales[lang][cats])
-                {
-                    localeOneFile[lang][cats][data] = db.locales[lang][cats][data];
-                    if (typeof db.locales[lang][cats][data] === "string")
-                    {
-                        const toAdd = JsonUtil.deserialize(vfs.readFile(db.locales[lang][cats][data]));
-                        localeOneFile[lang][cats][data] = toAdd;
-                    }
-                    else if (typeof db.locales[lang][cats][data] === "object")
-                    {
-                        for (let extraNode in db.locales[lang][cats][data])
-                        {
-                            const toAddExtra = JsonUtil.deserialize(vfs.readFile(db.locales[lang][cats][data][extraNode]));
-                            localeOneFile[lang][cats][data][extraNode] = toAdd;
-                        }
-                    }
-                }
-            }
+           
         }
 
         vfs.writeFile("./dev/output/locales.json", JsonUtil.serialize(localeOneFile, true));
