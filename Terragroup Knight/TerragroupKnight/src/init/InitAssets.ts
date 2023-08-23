@@ -5,14 +5,12 @@ import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
 import { ImageRouter } from "@spt-aki/routers/ImageRouter";
 import { VFS } from "@spt-aki/utils/VFS"
 
+//TGS Imports
+import { config } from "../../config/config.json"
+
 
 export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
 {
-
-    constructor() {
-        this.config = require("../../config/config.json")
-    }
-
     private config: Object
 
     public preAkiLoad(container: DependencyContainer): void
@@ -24,7 +22,7 @@ export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
         const imageFilepath = `./${preAkiModLoader.getModPath("TerragroupKnight")}res/trader`;
 
         //Adding trader assets to the game
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Adding trader pic to the game")}
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Adding trader pic to the game")}
         imageRouter.addRoute("/files/trader/avatar/TGS_Trader", `${imageFilepath}/TGS_Trader.png`);
     }
 
@@ -38,7 +36,7 @@ export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
         const TGSQuestBannersList = VFS.getFiles(TGSAssetsPath);
 
         //Add quest images
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Adding quests banner to the game")}
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Adding quests banner to the game")}
         for (const banner of TGSQuestBannersList) {
             const filename = VFS.stripExtension(banner);
             imageRouter.addRoute(`/files/quest/icon/${filename}`, `${TGSAssetsPath}${banner}`);

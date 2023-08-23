@@ -19,15 +19,10 @@ import { TraderHelper } from "../helpers/traderHelpers";
 import { TGSTraderBase } from "../../db/templates/TGS_knight/base.json";
 import { TGSTraderAssorts } from "../../db/templates/TGS_knight/assort.json";
 import { TGSTraderQuestsUnlocks } from "../../db/templates/TGS_knight/questassort.json"
+import { config } from "../../config/config.json"
 
 export class InitTrader implements IPreAkiLoadMod, IPostDBLoadMod
 {
-
-    constructor() {
-        this.config = require("../../config/config.json")
-    }
-
-    private config: Object
     private traderHelper: TraderHelper
 
     /**
@@ -56,7 +51,7 @@ export class InitTrader implements IPreAkiLoadMod, IPostDBLoadMod
         const ServerDatabase = MainDatabase.getTables();
         
 
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Adding new trader in database")};
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new trader in database")};
         this.traderHelper.addTraderToDb(TGSTraderBase, ServerDatabase, JsonUtil);
 
         //Maybe do assorts generation by there ? I need to think about it
@@ -65,7 +60,7 @@ export class InitTrader implements IPreAkiLoadMod, IPostDBLoadMod
         */
 
         //Adding assorts unlocks of quests
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Adding quests unlocks to trader")};
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Adding quests unlocks to trader")};
         //I also need to do those and rethink them
 
     }
