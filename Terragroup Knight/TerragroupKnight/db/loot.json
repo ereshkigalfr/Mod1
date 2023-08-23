@@ -44,13 +44,13 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -262.6048,
-							"y": 4.932813,
-							"z": -323.5055
+							"x": -262.5802,
+							"y": 4.6373,
+							"z": -323.6582
 						},
 						"Rotation": {
 							"x": 0,
-							"y": 0,
+							"y": 85,
 							"z": 0
 						},
 						"IsGroupPosition": false,
@@ -74,13 +74,13 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -262.5956,
-							"y": 3.73168,
-							"z": -323.5056
+							"x": -262.5802,
+							"y": 4.9973,
+							"z": -323.6582
 						},
 						"Rotation": {
 							"x": 0,
-							"y": 0,
+							"y": 85,
 							"z": 0
 						},
 						"IsGroupPosition": false,
@@ -104,13 +104,13 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -262.5945,
-							"y": 5.040301,
-							"z": -323.5056
+							"x": -262.5802,
+							"y": 5.3973,
+							"z": -323.6582
 						},
 						"Rotation": {
 							"x": 0,
-							"y": 0,
+							"y": 85,
 							"z": 0
 						},
 						"IsGroupPosition": false,
@@ -134,13 +134,13 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -262.6016,
-							"y": 5.433016,
-							"z": -323.5055
+							"x": -262.5802,
+							"y": 5.7973,
+							"z": -323.6582
 						},
 						"Rotation": {
 							"x": 0,
-							"y": 0,
+							"y": 85,
 							"z": 0
 						},
 						"IsGroupPosition": false,
@@ -164,9 +164,9 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": 253.5691,
-							"y": 5.34582,
-							"z": -321.2131
+							"x": -262.5802,
+							"y": 4.2373,
+							"z": -323.6582
 						},
 						"Rotation": {
 							"x": 0,
@@ -196,13 +196,13 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -172.2698,
-							"y": 0.8565582,
-							"z": -371.3095
+							"x": -172.2145,
+							"y": 0.0659,
+							"z": -370.2152
 						},
 						"Rotation": {
-							"x": 90,
-							"y": 0,
+							"x": 0,
+							"y": 70,
 							"z": 0
 						},
 						"IsGroupPosition": false,
@@ -226,12 +226,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -33.8026,
-							"y": 3.222335,
-							"z": -322.227
+							"x": -133.8058,
+							"y": 3.2329,
+							"z": -322.265
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -256,12 +256,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.932,
-							"y": 3.243078,
-							"z": -300.829
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -300.8486
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -286,12 +286,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.9456,
-							"y": 3.251916,
-							"z": -297.613
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -297.6284
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -316,12 +316,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.9904,
-							"y": 3.222259,
-							"z": -294.397
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -294.4082
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -346,12 +346,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -133.7966,
-							"y": 3.212458,
-							"z": -304.046
+							"x": -133.8558,
+							"y": 3.2329,
+							"z": -294.4082
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -376,12 +376,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -133.8179,
-							"y": 3.245856,
-							"z": -300.829
+							"x": -133.8558,
+							"y": 3.2329,
+							"z": -297.6284
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -406,12 +406,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -133.8312,
-							"y": 3.242409,
-							"z": -297.613
+							"x": -133.8558,
+							"y": 3.2329,
+							"z": -300.8486
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -436,12 +436,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -133.8559,
-							"y": 3.254027,
-							"z": -294.397
+							"x": -133.8558,
+							"y": 3.2329,
+							"z": -304.0588
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -466,12 +466,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -33.8382,
-							"y": 3.249387,
-							"z": -319.01
+							"x": -133.8058,
+							"y": 3.2329,
+							"z": -319.0448
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -496,12 +496,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -133.827,
-							"y": 3.239788,
-							"z": -315.794
+							"x": -133.8058,
+							"y": 3.2329,
+							"z": -315.8246
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -526,12 +526,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -133.8716,
-							"y": 3.225063,
-							"z": -312.578
+							"x": -133.8058,
+							"y": 3.2329,
+							"z": -312.6144
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -556,12 +556,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.9224,
-							"y": 3.237691,
-							"z": -322.227
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -312.6144
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -586,12 +586,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.9468,
-							"y": 3.244419,
-							"z": -319.01
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -315.8146
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -616,12 +616,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.9394,
-							"y": 3.240253,
-							"z": -315.794
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -319.0148
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -646,12 +646,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.954,
-							"y": 3.229982,
-							"z": -312.578
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -322.265
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -676,12 +676,12 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -122.9421,
-							"y": 3.2555562,
-							"z": -304.046
+							"x": -122.9555,
+							"y": 3.2329,
+							"z": -304.0588
 						},
 						"Rotation": {
-							"x": 90,
+							"x": 0,
 							"y": 0,
 							"z": 0
 						},
@@ -698,6 +698,36 @@
 				]
 			},
 			{
+				"Id": "chemical_container",
+				"data": [
+					{
+						"Id": "chemical_container",
+						"IsStatic": false,
+						"useGravity": false,
+						"randomRotation": false,
+						"Position": {
+							"x": -162.7915,
+							"y": 4.7855,
+							"z": -342.5674
+						},
+						"Rotation": {
+							"x": 0,
+							"y": 120,
+							"z": 0
+						},
+						"IsGroupPosition": false,
+						"GroupPositions": [],
+						"Root": "labs_man_keycard",
+						"Items": [
+							{
+								"_id": "labs_man_keycard",
+								"_tpl": "TGS_manager_keycard"
+							}
+						]
+					}
+				]
+			},
+			{
 				"Id": "prototype_grendel",
 				"data": [
 					{
@@ -706,14 +736,14 @@
 						"useGravity": false,
 						"randomRotation": false,
 						"Position": {
-							"x": -180.7688,
-							"y": 1.976062,
-							"z": -309.0442
+							"x": -180.7568,
+							"y": 1.9813,
+							"z": -309.0392
 						},
 						"Rotation": {
-							"x": 0,
-							"y": 20,
-							"z": 0
+							"x": 0.0152,
+							"y": 32.1579,
+							"z": 72.8192
 						},
 						"IsGroupPosition": true,
 						"GroupPositions": [
@@ -721,63 +751,63 @@
 								"Name": "groupPosition[0]",
 								"Weight": 33,
 								"Position": {
-									"x": -180.7688,
-									"y": 1.976062,
-									"z": -309.0442
+									"x": -180.7568,
+									"y": 1.9813,
+									"z": -309.0392
 								},
 								"Rotation": {
-									"x": 0,
-									"y": 20,
-									"z": 0
+									"x": 0.0152,
+									"y": 32.1579,
+									"z": 72.8192
 								}
 							},
 							{
 								"Name": "groupPosition[1]",
 								"Weight": 33,
 								"Position": {
-									"x": -183.4344,
-									"y": 1.980508,
-									"z": -308.9846
+									"x": -183.4438,
+									"y": 1.6313,
+									"z": -308.9623
 								},
 								"Rotation": {
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": 0.0178,
+									"y": 330.6618,
+									"z": 91.5901
 								}
 							},
 							{
 								"Name": "groupPosition[2]",
 								"Weight": 33,
 								"Position": {
-									"x": -184.9846,
-									"y": 1.1971864,
-									"z": -308.9854
+									"x": -184.9839,
+									"y": 1.7713,
+									"z": -308.9623
 								},
 								"Rotation": {
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": 1.5178,
+									"y": 330.6618,
+									"z": 91.5901
 								}
 							},
 							{
 								"Name": "groupPosition[3]",
 								"Weight": 33,
 								"Position": {
-									"x": -185.4891,
-									"y": 1.97575757,
-									"z": -313.0262
+									"x": -184.7721,
+									"y": 1.3186,
+									"z": -316.6297
 								},
 								"Rotation": {
-									"x": 0,
-									"y": 0,
-									"z": 0
+									"x": 0.0203,
+									"y": 221.7965,
+									"z": 354.8344
 								}
 							}
 						],
-						"Root": "prototype_grendel_pos1",
+						"Root": "prototype_grendel_pos",
 						"Items": [
 							{
-								"_id": "prototype_grendel_pos1",
+								"_id": "prototype_grendel_pos",
 								"_tpl": "TGS_65x39mm_grendel_prototype"
 							}
 						]
