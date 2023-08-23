@@ -1,12 +1,13 @@
 {
-  "_id": "terragroup_specialist",
+  "_id": "TGS_knight",
   "availableInRaid": false,
-  "avatar": "/files/trader/avatar/terragroup_specialist.png",
+  "avatar": "/files/trader/avatar/TGS_TraderPic.png",
   "balance_dol": 700000,
   "balance_eur": 1000000,
   "balance_rub": 7000000,
   "buyer_up": false,
   "currency": "EUR",
+  "medic": false,
   "customization_seller": false,
   "discount": 0,
   "discount_end": 0,
@@ -34,7 +35,7 @@
       "exchange_price_coef": 0,
       "heal_price_coef": 0,
       "insurance_price_coef": 80,
-      "minLevel": 35,
+      "minLevel": 25,
       "minSalesSum": 0,
       "minStanding": 0,
       "repair_price_coef": 0
@@ -44,7 +45,7 @@
       "exchange_price_coef": 0,
       "heal_price_coef": 0,
       "insurance_price_coef": 60,
-      "minLevel": 38,
+      "minLevel": 30,
       "minSalesSum": 0,
       "minStanding": 0.3,
       "repair_price_coef": 0
@@ -54,7 +55,7 @@
       "exchange_price_coef": 0,
       "heal_price_coef": 0,
       "insurance_price_coef": 50,
-      "minLevel": 42,
+      "minLevel": 35,
       "minSalesSum": 550000,
       "minStanding": 0.9,
       "repair_price_coef": 0
@@ -64,16 +65,15 @@
       "exchange_price_coef": 0,
       "heal_price_coef": 0,
       "insurance_price_coef": 50,
-      "minLevel": 47,
+      "minLevel": 40,
       "minSalesSum": 1000000,
       "minStanding": 1.5,
       "repair_price_coef": 0
     }
   ],
-  "medic": false,
-  "name": "Тадеуш",
+  "name": "Sergei Mikailov",
   "nextResupply": 1675674945,
-  "nickname": "Peacekeeper",
+  "nickname": "Terragroup Specialist",
   "repair": {
     "availability": true,
     "currency_coefficient": 3,
@@ -114,5 +114,5 @@
     "5b5f764186f77447ec5d7714"
   ],
   "surname": "Пилсудский",
-  "unlockedByDefault": true
+  "unlockedByDefault": false
 }
