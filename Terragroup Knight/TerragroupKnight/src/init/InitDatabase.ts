@@ -5,7 +5,6 @@ import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
-
 //TGS Imports
 import * as TGSItems from "../../db/templates/items.json";
 import * as TGSQuests from "../../db/templates/quests.json";
@@ -18,8 +17,7 @@ import * as config from "../../config/config.json";
 
 export class InitDatabase
 {
-    
-    public postDBLoad(container: DependencyContainer): void 
+    static postDBLoad(container: DependencyContainer)
     {
         //Get everything we need as variables
         const MainDatabase = container.resolve<DatabaseServer>("DatabaseServer");
@@ -125,5 +123,3 @@ export class InitDatabase
 
     }
 }
-
-module.exports = InitDatabase;

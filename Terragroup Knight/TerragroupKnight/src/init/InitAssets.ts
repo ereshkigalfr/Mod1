@@ -8,11 +8,9 @@ import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 //TGS Imports
 import * as config from "../../config/config.json"
 
-
 export class InitAssets
 {
-
-    public preAkiLoad(container: DependencyContainer): void
+    static preAkiLoad(container: DependencyContainer)
     {
         const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
         const imageRouter = container.resolve<ImageRouter>("ImageRouter")
@@ -24,7 +22,7 @@ export class InitAssets
         imageRouter.addRoute("/files/trader/avatar/TGS_Trader", `${imageFilepath}/TGS_Trader.png`);
     }
 
-    public postDBLoad(container: DependencyContainer): void
+    static postDBLoad(container: DependencyContainer)
     {
         const logger = container.resolve<ILogger>("WinstonLogger");
         const imageRouter = container.resolve<ImageRouter>("ImageRouter")
@@ -40,8 +38,4 @@ export class InitAssets
             imageRouter.addRoute(`/files/quest/icon/${filename}`, `${TGSAssetsPath}${banner}`);
         }
     }
-
-
 }
-
-module.exports = InitAssets;
