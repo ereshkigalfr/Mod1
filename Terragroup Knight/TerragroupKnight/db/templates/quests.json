@@ -1,0 +1,2178 @@
+{
+    "firstQuest_tgs":{
+        "_id": "firstQuest_tgs",
+        "traderId": "579dc571d53a0658a154fbec",
+        "location": "5704e5fad2720bc05b8b4567",
+        "image": "/files/quest/icon/firstQuest_terragroupSpecialist.png",
+        "type": "Elimination",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "50000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "id": "firstQuest_tgs_TraderUnlock",
+                    "type": "TraderUnlock",
+                    "index": 1
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "35",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "firstQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "59ca2eb686f77445a80ed049",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": "firstQuest_tgs_questRequir"
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Elimination",
+                        "counter": {
+                            "id": "firstQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "Savage",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "savageRole": [
+                                            "bossGluhar"
+                                        ],
+                                        "id": "firstQuest_tgs_condition"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 0,
+                        "parentId": "",
+                        "id": "firstQuest_tgs_FirstRequir"
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Elimination",
+                        "counter": {
+                            "id": "firstQuest_tgs_counter2",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "Savage",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "savageRole": [
+                                            "followerGluharAssault"
+                                        ],
+                                        "id": "firstQuest_tgs_condition2"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 1,
+                        "parentId": "",
+                        "id": "firstQuest_tgs_FirstRequir2"
+                    }
+                },
+                    {
+                        "_parent": "CounterCreator",
+                        "_props": {
+                            "value": "1",
+                            "type": "Elimination",
+                            "counter": {
+                                "id": "firstQuest_tgs_counter3",
+                                "conditions": [
+                                    {
+                                        "_parent": "Kills",
+                                        "_props": {
+                                            "target": "Savage",
+                                            "compareMethod": ">=",
+                                            "value": "1",
+                                            "savageRole": [
+                                                "followerGluharScout"
+                                            ],
+                                            "id": "firstQuest_tgs_condition3"
+                                        }
+                                    }
+                                ]
+                            },
+                            "index": 2,
+                            "parentId": "",
+                            "id": "firstQuest_tgs_FirstRequir3"
+                        }
+                    },
+                        {
+                            "_parent": "CounterCreator",
+                            "_props": {
+                                "value": "1",
+                                "type": "Elimination",
+                                "counter": {
+                                    "id": "firstQuest_tgs_counter4",
+                                    "conditions": [
+                                        {
+                                            "_parent": "Kills",
+                                            "_props": {
+                                                "target": "Savage",
+                                                "compareMethod": ">=",
+                                                "value": "1",
+                                                "savageRole": [
+                                                    "followerGluharSecurity"
+                                                ],
+                                                "id": "firstQuest_tgs_condition4"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "index": 3,
+                                "parentId": "",
+                                "id": "firstQuest_tgs_FirstRequir4"
+                            }
+                        },
+                        {
+                            "_parent": "FindItem",
+                            "_props": {
+                                "target": [
+                                    "tgs_ssdDrive"
+                                ],
+                                "value": "1",
+                                "minDurability": 0,
+                                "index": 4,
+                                "parentId": "",
+                                "id": "firstQuest_tgs_FindItem"
+                            }
+                        },
+                        {
+                            "_parent": "HandoverItem",
+                            "_props": {
+                                "target": [
+                                    "tgs_ssdDrive"
+                                ],
+                                "value": "1",
+                                "minDurability": 0,
+                                "index": 5,
+                                "parentId": "",
+                                "id": "firstQuest_tgs_Handover",
+                                "visibilityConditions": [
+                                    {
+                                        "_parent": "CompleteCondition",
+                                        "_props": {
+                                            "target": "firstQuest_tgs_FindItem",
+                                            "id": "firstQuest_tgs_condition5"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+            ],
+            "Fail": []
+        }
+    },
+    "secondQuest_tgs":{
+        "_id": "secondQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/secondQuest_terragroupSpecialist.png",
+        "type": "Exploration",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "40000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.05",
+                    "id": "secondQuest_tgs_secondReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "35",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "secondQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "firstQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": "secondtQuest_tgs_questRequir"
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "3",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "secondQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "secondQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "secondQuest_tgs_exitStatus"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 0,
+                        "parentId": "",
+                        "id": "secondQuest_tgs_FirstRequir"
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "thirdQuest_tgs":{
+        "_id": "thirdQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/thirdQuest_terragroupSpecialist.png",
+        "type": "PickUp",
+        "isKey": false,
+        "restartable": true,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "45000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.05",
+                    "id": "thirdQuest_tgs_secondReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                },
+                {
+                    "target": "thirdQuest_tgs_thirdReward_id",
+                    "value": "2000",
+                    "id": "thirdQuest_tgs_thirdReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "thirdQuest_tgs_thirdReward_id",
+                            "_tpl": "569668774bdc2da2298b4568",
+                            "upd": {
+                                "StackObjectsCount": 2000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "36",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "thirdQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "secondQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "tgs_jammer"
+                        ],
+                        "value": "16",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "thirdQuest_tgs_FirstRequir1"
+                    }
+                },
+                {
+                    "_parent": "HandoverItem",
+                    "_props": {
+                        "target": [
+                            "tgs_jammer"
+                        ],
+                        "value": "16",
+                        "index": 1,
+                        "parentId": "",
+                        "id": "thirdQuest_tgs_FirstRequir2",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "target": "thirdQuest_tgs_FirstRequir1",
+                                    "id": "thirdQuest_tgs_condition1"
+                                }
+                            }
+                        ],
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "thirdQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "thirdQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "thirdQuest_tgs_exitStatus"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 2,
+                        "parentId": "",
+                        "id": "thirdQuest_tgs_FirstRequir3"
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "fourthQuest_tgs":{
+        "_id": "fourthQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/fourthQuest_terragroupSpecialist.png",
+        "type": "PickUp",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "48500",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.07",
+                    "id": "fourthQuest_tgs_secondReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                },
+                {
+                    "target": "fourthQuest_tgs_fourthReward_id",
+                    "value": "2000",
+                    "id": "fourthQuest_tgs_fourthReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "fourthQuest_tgs_fourthReward_id",
+                            "_tpl": "569668774bdc2da2298b4568",
+                            "upd": {
+                                "StackObjectsCount": 2000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "36",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "fourthQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "thirdQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "tgs_chemical"
+                        ],
+                        "value": "1",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "fourthQuest_tgs_FirstRequir1"
+                    }
+                },
+                {
+                    "_parent": "HandoverItem",
+                    "_props": {
+                        "target": [
+                            "tgs_chemical"
+                        ],
+                        "value": "1",
+                        "index": 1,
+                        "parentId": "",
+                        "id": "fourthQuest_tgs_FirstRequir2",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "target": "fourthQuest_tgs_FirstRequir1",
+                                    "id": "fourthQuest_tgs_condition1"
+                                }
+                            },
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "target": "fourthQuest_tgs_FirstRequir3",
+                                    "id": "fourthQuest_tgs_condition2"
+                                }
+                            }
+                        ],
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "fourthQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "fourthQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "fourthQuest_tgs_exitStatus"
+                                    }
+                                },
+                                {
+                                    "_parent": "Equipment",
+                                    "_props": {
+                                        "equipmentInclusive": [
+                                            [
+                                                "5b432c305acfc40019478128"
+                                            ]
+                                        ],
+                                        "id": "fourthQuest_tgs_equipmentCondition"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 2,
+                        "parentId": "",
+                        "id": "fourthQuest_tgs_FirstRequir3"
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "fifthQuest_tgs":{
+        "_id": "fifthQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/fifthQuest_terragroupSpecialist.png",
+        "type": "PickUp",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [
+                {
+                    "target": "fifthQuest_tgs_StartingGear_id",
+                    "value": "3",
+                    "id": "fifthQuest_tgs_StartingGear",
+                    "type": "Item",
+                    "index": 0,
+                    "items": [
+                        {
+                            "_id": "fifthQuest_tgs_StartingGear_id",
+                            "_tpl": "tgs_chemical_meds",
+                            "upd": {
+                                "StackObjectsCount": 1
+                            }
+                        },
+                        {
+                            "_id": "fifthQuest_tgs_StartingGear_id2",
+                            "_tpl": "tgs_chemical_meds",
+                            "upd": {
+                                "StackObjectsCount": 1
+                            }
+                        },
+                        {
+                            "_id": "fifthQuest_tgs_StartingGear_id3",
+                            "_tpl": "tgs_chemical_meds",
+                            "upd": {
+                                "StackObjectsCount": 1
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Success": [
+                {
+                    "value": "50000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.1",
+                    "id": "fifthQuest_tgs_secondReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                },
+                {
+                    "target": "fifthQuest_tgs_fifthReward_id",
+                    "value": "1",
+                    "id": "fifthQuest_tgs_fifthReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "fifthQuest_tgs_fifthReward_id",
+                            "_tpl": "5c12613b86f7743bbe2c3f76",
+                            "upd": {
+                                "StackObjectsCount": 1
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "37",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "fourthQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "5447a9cd4bdc2dbd208b4567"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 0,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir1"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "55d4b9964bdc2d1d4e8b456e"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 1,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir2"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "5d1340b3d7ad1a0b52682ed7"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 2,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir3"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "55d355e64bdc2d962f8b4569"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 3,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir4"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "5649be884bdc2d79388b4577"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 4,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir5"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "55d44fd14bdc2d962f8b456e"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 5,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir6"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "5d440b93a4b9364276578d4b"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 6,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir7"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "5d122e7bd7ad1a07102d6d7f"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 7,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir8"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "5ae30bad5acfc400185c2dc4"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 8,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir9"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "55d4ae6c4bdc2d8b2f8b456e"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 9,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir10"
+                    }
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "56eabcd4d2720b66698b4574"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "maxDurability": 0,
+                        "dogtagLevel": 0,
+                        "onlyFoundInRaid": true,
+                        "index": 10,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir11"
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "fifthQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "fifthQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "fifthQuest_tgs_exitStatus"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 11,
+                        "parentId": "",
+                        "id": "fifthQuest_tgs_FirstRequir12"
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "sixthQuest_tgs":{
+        "_id": "sixthQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/sixthQuest_terragroupSpecialist.png",
+        "type": "WeaponAssembly",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "15000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "I420159131552960383bJNeU",
+                    "value": "1",
+                    "id": "sixthQuest_tgs_sixthReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "I420159131552960383bJNeU",
+                            "_tpl": "tgs_prototype_m16"
+                        },
+                        {
+                            "_id": "I420159131700245643sRrFu",
+                            "_tpl": "55d4b9964bdc2d1d4e8b456e",
+                            "parentId": "I420159131552960383bJNeU",
+                            "slotId": "mod_pistol_grip"
+                        },
+                        {
+                            "_id": "I420159137525857529DLQUx",
+                            "_tpl": "tgs_genm3_fde",
+                            "parentId": "I420159131552960383bJNeU",
+                            "slotId": "mod_magazine"
+                        },
+                        {
+                            "_id": "I420159134107655402ohUAe",
+                            "_tpl": "tgs_prototype_m16_upper",
+                            "parentId": "I420159131552960383bJNeU",
+                            "slotId": "mod_reciever"
+                        },
+                        {
+                            "_id": "I420159134579387646fkFls",
+                            "_tpl": "5649be884bdc2d79388b4577",
+                            "parentId": "I420159131552960383bJNeU",
+                            "slotId": "mod_stock"
+                        },
+                        {
+                            "_id": "I420159132778267158BPbcY",
+                            "_tpl": "5b2240bf5acfc40dc528af69",
+                            "parentId": "I420159131552960383bJNeU",
+                            "slotId": "mod_charge"
+                        },
+                        {
+                            "_id": "I420159136907410564UEwvE",
+                            "_tpl": "5d440b93a4b9364276578d4b",
+                            "parentId": "I420159134107655402ohUAe",
+                            "slotId": "mod_barrel"
+                        },
+                        {
+                            "_id": "I420159139839117006ZkAAw",
+                            "_tpl": "tgs_urx_31_10_handguard",
+                            "parentId": "I420159134107655402ohUAe",
+                            "slotId": "mod_handguard"
+                        },
+                        {
+                            "_id": "I420159131301490810Mx84b",
+                            "_tpl": "5ae30bad5acfc400185c2dc4",
+                            "parentId": "I420159134107655402ohUAe",
+                            "slotId": "mod_sight_rear"
+                        },
+                        {
+                            "_id": "I420159139701012469YPoVH",
+                            "_tpl": "55d4ae6c4bdc2d8b2f8b456e",
+                            "parentId": "I420159134579387646fkFls",
+                            "slotId": "mod_stock_000"
+                        },
+                        {
+                            "_id": "I420159137931070242zkSbQ",
+                            "_tpl": "544a38634bdc2d58388b4568",
+                            "parentId": "I420159136907410564UEwvE",
+                            "slotId": "mod_muzzle"
+                        },
+                        {
+                            "_id": "I420159134936615249oWHiy",
+                            "_tpl": "5ae30e795acfc408fb139a0b",
+                            "parentId": "I420159136907410564UEwvE",
+                            "slotId": "mod_gas_block"
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "37",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "sixthQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "fifthQuest_tgs",
+                        "status": [
+                            4
+                        ],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "WeaponAssembly",
+                    "_props": {
+                        "target": [
+                            "5447a9cd4bdc2dbd208b4567"
+                        ],
+                        "value": "1",
+                        "durability": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "ergonomics": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "baseAccuracy": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "recoil": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "muzzleVelocity": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "weight": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "magazineCapacity": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "width": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "height": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "effectiveDistance": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "emptyTacticalSlot": {
+                            "value": 0,
+                            "compareMethod": ">="
+                        },
+                        "hasItemFromCategory": [],
+                        "containsItems": [
+                            "55d4b9964bdc2d1d4e8b456e",
+                            "5d1340b3d7ad1a0b52682ed7",
+                            "55d355e64bdc2d962f8b4569",
+                            "5649be884bdc2d79388b4577",
+                            "55d44fd14bdc2d962f8b456e",
+                            "5d440b93a4b9364276578d4b",
+                            "5d122e7bd7ad1a07102d6d7f",
+                            "5ae30bad5acfc400185c2dc4",
+                            "55d4ae6c4bdc2d8b2f8b456e",
+                            "56eabcd4d2720b66698b4574"
+                        ],
+                        "index": 0,
+                        "parentId": "",
+                        "id": "sixthQuest_tgs_FirstRequir1"
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "seventhQuest_tgs":{
+        "_id": "seventhQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/seventhQuest_terragroupSpecialist.png",
+        "type": "PickUp",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "53500",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.03",
+                    "id": "seventhQuest_tgs_secondReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                },
+                {
+                    "target": "seventhQuest_tgs_seventhReward_id",
+                    "value": "1500",
+                    "id": "seventhQuest_tgs_seventhReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "seventhQuest_tgs_seventhReward_id",
+                            "_tpl": "569668774bdc2da2298b4568",
+                            "upd": {
+                                "StackObjectsCount": 1500
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "tgs_ammo",
+                    "id": "seventhQuest_tgs_assortUnlock",
+                    "type": "AssortmentUnlock",
+                    "index": 3,
+                    "loyaltyLevel": 2,
+                    "traderId": "terragroup_specialist",
+                    "items": [
+                        {
+                            "_id": "tgs_ammo",
+                            "_tpl": "tgs_65x39mm_grendel"
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "38",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "seventhQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "sixthQuest_tgs",
+                        "status": [
+                            4
+                        ],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "tgs_65x39mm_grendel_prototype"
+                        ],
+                        "value": "1",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "seventhQuest_tgs_FindItem"
+                    }
+                },
+                {
+                    "_parent": "HandoverItem",
+                    "_props": {
+                        "target": [
+                            "tgs_65x39mm_grendel_prototype"
+                        ],
+                        "value": "1",
+                        "minDurability": 0,
+                        "index": 1,
+                        "parentId": "",
+                        "id": "seventhQuest_tgs_Handover",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "target": "seventhQuest_tgs_FindItem",
+                                    "id": "seventhQuest_tgs_condition1"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "seventhQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "seventhQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "seventhQuest_tgs_exitStatus"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 2,
+                        "parentId": "",
+                        "id": "seventhQuest_tgs_seventhRequir1"
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "eightQuest_tgs":{
+        "_id": "eightQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/eightQuest_terragroupSpecialist.png",
+        "type": "Elimination",
+        "isKey": false,
+        "restartable": true,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [
+                {
+                    "target": "eightQuest_tgs_StartingGear_id",
+                    "value": "30",
+                    "id": "eightQuest_tgs_StartingGear",
+                    "type": "Item",
+                    "index": 0,
+                    "items": [
+                        {
+                            "_id": "eightQuest_tgs_StartingGear_id",
+                            "_tpl": "tgs_65x39mm_grendel",
+                            "upd": {
+                                "StackObjectsCount": 30
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Success": [
+                {
+                    "value": "65000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.08",
+                    "id": "eightQuest_tgs_eightReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                },
+                {
+                    "target": "eightQuest_tgs_eightReward_id",
+                    "value": "5",
+                    "id": "eightQuest_tgs_eightReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "eightQuest_tgs_eightReward_id",
+                            "_tpl": "tgs_grendel_intelligence"
+                        },
+                        {
+                            "_id": "eightQuest_tgs_eightReward_id2",
+                            "_tpl": "tgs_grendel_intelligence"
+                        },
+                        {
+                            "_id": "eightQuest_tgs_eightReward_id3",
+                            "_tpl": "tgs_grendel_intelligence"
+                        },
+                        {
+                            "_id": "eightQuest_tgs_eightReward_id4",
+                            "_tpl": "tgs_grendel_intelligence"
+                        },
+                        {
+                            "_id": "eightQuest_tgs_eightReward_id5",
+                            "_tpl": "tgs_grendel_intelligence"
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "38",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "eightQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "seventhQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "15",
+                        "type": "Elimination",
+                        "counter": {
+                            "id": "eightQuest_tgs_counter1",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "save": "pmcBot_counter",
+                                        "form_id": "QuestManager-QuestSubConditionAddForm_pmcBot",
+                                        "token": "tgs_token",
+                                        "id": "eightQuest_tgs_condition1"
+                                    }
+                                },
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "Terragroup",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "weapon": [
+                                            "tgs_prototype_m16"
+                                        ],
+                                        "resetOnSessionEnd": true,
+                                        "id": "eightQuest_tgs_condition2"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 0,
+                        "parentId": "",
+                        "id": "eightQuest_tgs_Req1"
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "eightQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "eightQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "eightQuest_tgs_exitStatus"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 1,
+                        "parentId": "",
+                        "id": "eightQuest_tgs_FirstRequir"
+                    }
+                }
+            ],
+            "Fail": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Exploration",
+                        "counter": {
+                            "id": "5c0d4f46d09282029f539215",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Killed",
+                                            "Left",
+                                            "MissingInAction"
+                                        ],
+                                        "id": "5c13990686f7743b056e2aab"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "5c13992486f774365a69cc4e"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 0,
+                        "parentId": "",
+                        "id": "5c0d4f46d09282029f539216"
+                    }
+                }
+            ]
+        }
+    },
+    "ninthQuest_tgs":{
+        "_id": "ninthQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/ninthQuest_terragroupSpecialist.png",
+        "type": "Skill",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": false,
+        "rewards": {
+            "Started": [
+                {
+                    "target": "ninthQuest_tgs_StartingGear_id",
+                    "value": "3",
+                    "id": "ninthQuest_tgs_StartingGear",
+                    "type": "Item",
+                    "index": 0,
+                    "items": [
+                        {
+                            "_id": "ninthQuest_tgs_StartingGear_id",
+                            "_tpl": "tgs_genm3_fde"
+                        },
+                        {
+                            "_id": "ninthQuest_tgs_StartingGear_id2",
+                            "_tpl": "tgs_genm3_fde"
+                        },
+                        {
+                            "_id": "ninthQuest_tgs_StartingGear_id3",
+                            "_tpl": "tgs_genm3_fde"
+                        }
+                    ]
+                }
+            ],
+            "Success": [
+                {
+                    "value": "45000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "ninthQuest_tgs_Reward",
+                    "value": "90",
+                    "id": "ninthQuest_tgs_RewardGear",
+                    "type": "Item",
+                    "index": 1,
+                    "items": [
+                        {
+                            "_id": "ninthQuest_tgs_Reward",
+                            "_tpl": "tgs_65x39mm_grendel",
+                            "upd":{
+                                "StackObjectsCount": 90
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "38",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "ninthQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "eightQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "Skill",
+                    "_props": {
+                        "target": "StressResistance",
+                        "compareMethod": ">=",
+                        "value": "30",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "ninthQuest_tgs_Condition"
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "tenthQuest_tgs":{
+        "_id": "tenthQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Laboratory",
+        "image": "/files/quest/icon/tenthQuest_terragroupSpecialist.png",
+        "type": "Elimination",
+        "isKey": false,
+        "restartable": true,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [
+                {
+                    "target": "tenthQuest_tgs_StartingGear_id",
+                    "value": "3",
+                    "id": "tenthQuest_tgs_StartingGear",
+                    "type": "Item",
+                    "index": 0,
+                    "items": [
+                        {
+                            "_id": "tenthQuest_tgs_StartingGear_id",
+                            "_tpl": "tgs_genm3_fde"
+                        },
+                        {
+                            "_id": "tenthQuest_tgs_StartingGear_id2",
+                            "_tpl": "tgs_genm3_fde"
+                        },
+                        {
+                            "_id": "tenthQuest_tgs_StartingGear_id3",
+                            "_tpl": "tgs_genm3_fde"
+                        }
+                    ]
+                },
+                {
+                    "target": "tenthQuest_tgs_StartingGear_id2",
+                    "value": "78",
+                    "id": "tenthQuest_tgs_StartingGear2",
+                    "type": "Item",
+                    "index": 1,
+                    "items": [
+                        {
+                            "_id": "tenthQuest_tgs_StartingGear_id2",
+                            "_tpl": "tgs_65x39mm_grendel"
+                        }
+                    ]
+                },
+                {
+                    "target": "tenthQuest_tgs_tenthReward_id3",
+                    "value": "1",
+                    "id": "tenthQuest_tgs_tenthReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "tenthQuest_tgs_tenthReward_id3",
+                            "_tpl": "tgs_prototype_m16",
+                            "upd": {
+                                "Repairable": {
+                                    "MaxDurability": 100,
+                                    "Durability": 100
+                                },
+                                "FireMode": {
+                                    "FireMode": "single"
+                                }
+                            }
+                        },
+                        {
+                            "_id": "I325213594839007040rYNTa",
+                            "_tpl": "55d4b9964bdc2d1d4e8b456e",
+                            "parentId": "tenthQuest_tgs_tenthReward_id3",
+                            "slotId": "mod_pistol_grip"
+                        },
+                        {
+                            "_id": "I325213598465120866BMVf3",
+                            "_tpl": "tgs_genm3_fde",
+                            "parentId": "tenthQuest_tgs_tenthReward_id3",
+                            "slotId": "mod_magazine"
+                        },
+                        {
+                            "_id": "I325213597907248960NSK7M",
+                            "_tpl": "tgs_prototype_m16_upper",
+                            "parentId": "tenthQuest_tgs_tenthReward_id3",
+                            "slotId": "mod_reciever"
+                        },
+                        {
+                            "_id": "I325213595449818789SSEcl",
+                            "_tpl": "5649be884bdc2d79388b4577",
+                            "parentId": "tenthQuest_tgs_tenthReward_id3",
+                            "slotId": "mod_stock"
+                        },
+                        {
+                            "_id": "I325213599233820579WEM2l",
+                            "_tpl": "55d44fd14bdc2d962f8b456e",
+                            "parentId": "tenthQuest_tgs_tenthReward_id3",
+                            "slotId": "mod_charge"
+                        },
+                        {
+                            "_id": "I325213597779777591fq09K",
+                            "_tpl": "5d440b93a4b9364276578d4b",
+                            "parentId": "I325213597907248960NSK7M",
+                            "slotId": "mod_barrel"
+                        },
+                        {
+                            "_id": "I325213599186079648C5UtE",
+                            "_tpl": "tgs_urx_31_10_handguard",
+                            "parentId": "I325213597907248960NSK7M",
+                            "slotId": "mod_handguard"
+                        },
+                        {
+                            "_id": "I325213594918338035Hvu7y",
+                            "_tpl": "5ae30bad5acfc400185c2dc4",
+                            "parentId": "I325213597907248960NSK7M",
+                            "slotId": "mod_sight_rear",
+                            "upd": {
+                                "Sight": {
+                                    "SelectedSightMode": 0
+                                }
+                            }
+                        },
+                        {
+                            "_id": "I325213596946395760aVLvZ",
+                            "_tpl": "55d4ae6c4bdc2d8b2f8b456e",
+                            "parentId": "I325213595449818789SSEcl",
+                            "slotId": "mod_stock_000"
+                        },
+                        {
+                            "_id": "I325213595515961465VoHvm",
+                            "_tpl": "5b3a16655acfc40016387a2a",
+                            "parentId": "I325213597779777591fq09K",
+                            "slotId": "mod_muzzle"
+                        },
+                        {
+                            "_id": "I325213593581917007hFjK3",
+                            "_tpl": "5ae30e795acfc408fb139a0b",
+                            "parentId": "I325213597779777591fq09K",
+                            "slotId": "mod_gas_block"
+                        },
+                        {
+                            "_id": "I325213599483575245MKKCB",
+                            "_tpl": "5c1cdd512e22161b267d91ae",
+                            "parentId": "I325213594918338035Hvu7y",
+                            "slotId": "mod_scope",
+                            "upd": {
+                                "Sight": {
+                                    "SelectedSightMode": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Success": [
+                {
+                    "value": "58500",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.01",
+                    "id": "tenthQuest_tgs_tenthReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                },
+                {
+                    "target": "tenthQuest_tgs_Reward",
+                    "value": "1",
+                    "id": "tenthQuest_tgs_RewardId",
+                    "type": "Item",
+                    "index": 0,
+                    "items": [
+                        {
+                            "_id": "tenthQuest_tgs_Reward",
+                            "_tpl": "tgs_armor_prototype"
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "40",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "tenthQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "ninthQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "30",
+                        "type": "Elimination",
+                        "counter": {
+                            "id": "tenthQuest_tgs_counter1",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "save": "pmcBot_counter2",
+                                        "form_id": "QuestManager-QuestSubConditionAddForm_pmcBot2",
+                                        "token": "tgs_token2",
+                                        "id": "tenthQuest_tgs_condition1"
+                                    }
+                                },
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "Terragroup",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "equipmentInclusive": [
+                                            [
+                                                "5b432c305acfc40019478128"
+                                            ]
+                                        ],
+                                        "resetOnSessionEnd": true,
+                                        "id": "tenthQuest_tgs_condition2"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 0,
+                        "parentId": "",
+                        "id": "tenthQuest_tgs_Req1"
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "tenthQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "tenthQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "equipmentInclusive": [
+                                            [
+                                                "5b432c305acfc40019478128"
+                                            ]
+                                        ],
+                                        "time": {
+                                            "compareMethod": ">",
+                                            "value": 600
+                                        },
+                                        "id": "tenthQuest_tgs_exitStatus"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 1,
+                        "parentId": "",
+                        "id": "tenthQuest_tgs_FirstRequir"
+                    }
+                }
+            ],
+            "Fail": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Elimination",
+                        "counter": {
+                            "id": "tenthQuest_tgs_FailCounterId",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Killed",
+                                            "Left",
+                                            "MissingInAction"
+                                        ],
+                                        "id": "tenthQuest_tgs_FailCondition1"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "laboratory"
+                                        ],
+                                        "id": "tenthQuest_tgs_FailCondition3"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 0,
+                        "parentId": "",
+                        "id": "tenthQuest_tgs_FailCounter"
+                    }
+                }			
+            ]
+        }
+    },
+    "eleventhQuest_tgs":{
+        "_id": "eleventhQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "Interchange",
+        "image": "/files/quest/icon/eleventhQuest_terragroupSpecialist.png",
+        "type": "Discover",
+        "isKey": false,
+        "restartable": true,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "50000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.01",
+                    "id": "eleventhQuest_tgs_eleventhReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "value": "40",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "eleventhQuest_tgs_levelRequir"
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "tenthQuest_tgs",
+                        "status": [4],
+                        "index": 1,
+                        "parentId": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "tgs_beacon"
+                        ],
+                        "value": "1",
+                        "index": 0,
+                        "parentId": "",
+                        "id": "eleventhQuest_tgs_FindItem"
+                    }
+                },
+                {
+                    "_parent": "HandoverItem",
+                    "_props": {
+                        "target": [
+                            "tgs_beacon"
+                        ],
+                        "value": "1",
+                        "index": 1,
+                        "parentId": "",
+                        "id": "eleventhQuest_tgs_Handover",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "target": "eleventhQuest_tgs_FindItem",
+                                    "id": "eleventhQuest_tgs_condition1"
+                                }
+                            }
+                        ],
+                        "onlyFoundInRaid": true
+                    }
+                }
+            ],
+            "Fail": []
+        }
+    },
+    "twelfthQuest_tgs":{
+        "_id": "twelfthQuest_tgs",
+        "traderId": "terragroup_specialist",
+        "location": "5704e3c2d2720bac5b8b4567",
+        "image": "/files/quest/icon/twelfthQuest_terragroupSpecialist.png",
+        "type": "Elimination",
+        "isKey": false,
+        "restartable": false,
+        "min_level": 0,
+        "canShowNotificationsInGame": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "50000",
+                    "id": "ExperienceID",
+                    "type": "Experience",
+                    "index": 0
+                },
+                {
+                    "target": "terragroup_specialist",
+                    "value": "0.03",
+                    "id": "StandingReward",
+                    "type": "TraderStanding",
+                    "index": 1
+                },
+                {
+                    "target": "twelfthQuest_tgs_thirdReward_id",
+                    "value": "5000",
+                    "id": "MoneyReward",
+                    "type": "Item",
+                    "index": 2,
+                    "items": [
+                        {
+                            "_id": "twelfthQuest_tgs_thirdReward_id",
+                            "_tpl": "569668774bdc2da2298b4568",
+                            "upd": {
+                                "StackObjectsCount": 2000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "target": "eleventhQuest_tgs",
+                        "status": [
+                            4
+                        ],
+                        "index": 1,
+                        "parentId": "",
+                        "id": "twelfthQuest_tgs_questRequir"
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "target": [
+                            "tgs_tgBeacon"
+                        ],
+                        "value": "1",
+                        "index": 0,
+                        "parentId": "",
+                        "onlyFoundInRaid": true,
+                        "id": "twelfthQuest_tgs_FirstRequir3"
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "30",
+                        "type": "Elimination",
+                        "counter": {
+                            "id": "twelfthQuest_tgs_counter",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "Terragroup",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "weapon": [
+                                            "tgs_338_badnews"
+                                        ],
+                                        "id": "twelfthQuest_tgs_condition"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Woods"
+                                        ],
+                                        "id": "twelfthQuest_tgs_condition1"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 1,
+                        "parentId": "",
+                        "id": "twelfthQuest_tgs_FirstRequir"
+                    }
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Completion",
+                        "counter": {
+                            "id": "twelfthQuest_tgs_counter1",
+                            "conditions": [
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Woods"
+                                        ],
+                                        "id": "twelfthQuest_tgs_location"
+                                    }
+                                },
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "twelfthQuest_tgs_exitStatus"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 2,
+                        "parentId": "",
+                        "id": "twelfthQuest_tgs_FirstRequir2"
+                    }
+                }
+            ],
+            "Fail": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "value": "1",
+                        "type": "Elimination",
+                        "counter": {
+                            "id": "tenthQuest_tgs_FailCounterId",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Killed",
+                                            "Left",
+                                            "MissingInAction"
+                                        ],
+                                        "id": "tenthQuest_tgs_FailCondition2"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Woods"
+                                        ],
+                                        "id": "tenthQuest_tgs_FailCondition3"
+                                    }
+                                }
+                            ]
+                        },
+                        "index": 0,
+                        "parentId": "",
+                        "id": "tenthQuest_tgs_FailCounter"
+                    }
+                }
+            ]
+        }
+    }
+}
