@@ -64,7 +64,7 @@ export class InitTrader implements IPreAkiLoadMod, IPostDBLoadMod
         blabla assort
         */
 
-        //Adding assorts unlocks of quests there
+        //Adding assorts unlocks of quests
         if(this.config["Other"]["Extra logging"]){logger.info("TGK:Adding quests unlocks to trader")};
         //I also need to do those and rethink them
 
