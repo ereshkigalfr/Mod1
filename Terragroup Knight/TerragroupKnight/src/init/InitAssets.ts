@@ -1,9 +1,11 @@
 import { DependencyContainer } from "tsyringe";
 
+import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
 import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
 import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
 import { ImageRouter } from "@spt-aki/routers/ImageRouter";
 import { VFS } from "@spt-aki/utils/VFS"
+import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
 //TGS Imports
 import { config } from "../../config/config.json"
@@ -11,12 +13,10 @@ import { config } from "../../config/config.json"
 
 export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
 {
-    private config: Object
 
     public preAkiLoad(container: DependencyContainer): void
     {
-        const configServer = container.resolve<ConfigServer>("ConfigServer");
-        const preAkiModLoader = container.resolve("PreAkiModLoader");
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
         const imageRouter = container.resolve<ImageRouter>("ImageRouter")
         const logger = container.resolve<ILogger>("WinstonLogger");
         const imageFilepath = `./${preAkiModLoader.getModPath("TerragroupKnight")}res/trader`;
@@ -30,7 +30,7 @@ export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
     {
         const logger = container.resolve<ILogger>("WinstonLogger");
         const imageRouter = container.resolve<ImageRouter>("ImageRouter")
-        const preAkiModLoader = container.resolve("PreAkiModLoader");
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
         const VFS = container.resolve<VFS>("VFS");
         const TGSAssetsPath = `./${preAkiModLoader.getModPath("TerragroupKnight")}res`;
         const TGSQuestBannersList = VFS.getFiles(TGSAssetsPath);
@@ -46,4 +46,4 @@ export class InitAssets implements IPostDBLoadMod, IPostDBLoadMod
 
 }
 
-module.exports = { mod: new InitAssets() }
+module.exports = InitAssets

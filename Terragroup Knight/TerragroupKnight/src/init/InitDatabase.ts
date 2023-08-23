@@ -16,7 +16,7 @@ import { TGSLocales } from "../../db/templates/locales.json";
 import { TGSHideoutProductions } from "../../db/templates/productions.json";
 import { TGSPresets } from "../../config/presets.json";
 import { TGSValues } from "../../config/values.json";
-import { config } from "../../config/config.json"
+import { config } from "../../config/config.json";
 
 export class InitDatabase implements IPostDBLoadMod
 {

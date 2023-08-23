@@ -9,40 +9,29 @@ import { InitAssets } from "./init/InitAssets";
 import { InitDatabase } from "./init/InitDatabase";
 //import { InitBots } from "./init/InitBots";
 import { InitTrader } from "./init/InitTrader";
-
+import { config } from "../config/config.json";
 
 class main implements IPostDBLoadMod
 {
-    private config: Object;
-    private logger: ILogger;
-    private InitAssets: InitAssets;
-    private InitDatabase: InitDatabase;
-    //private InitBots: InitBots;
-    private InitTrader: InitTrader;
-
-    constructor() {
-        this.config = require("../config/config.json")
-        this.InitAssets = new InitAssets();
-        this.InitTrader = new InitTrader();
-        this.InitDatabase = new InitDatabase();
-    }
-    
     
     public postDBLoad(container: DependencyContainer): void {
         const logger = container.resolve<ILogger>("WinstonLogger");
+        const initAssets = new InitAssets();
+        const initTrader = new InitTrader();
+        const initDatabase = new InitDatabase();
         //Start all scripts that adds something to the database
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting assets initialization")}
-        this.InitAssets.postDBLoad(container)
-        this.InitAssets.preAkiLoad(container)
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting assets initialization")}
+        initAssets.postDBLoad(container);
+        initAssets.preAkiLoad(container);
 
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting trader initialization")}
-        this.InitTrader.postDBLoad(container)
-        this.InitTrader.preAkiLoad(container)
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting trader initialization")}
+        initTrader.postDBLoad(container);
+        initTrader.preAkiLoad(container);
         
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting database initialization")}
-        this.InitDatabase.postDBLoad(container)
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting database initialization")}
+        initDatabase.postDBLoad(container);
 
-        if(this.config["Other"]["Extra logging"]){logger.info("TGK:Starting bots initialization")}
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting bots initialization")}
         //InitBots
 
         
