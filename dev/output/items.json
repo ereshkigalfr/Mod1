@@ -1,5 +1,5 @@
 {
-	"tgs_338_badnews": {
+	"TGS_338_badnews": {
 		"_id": "TGS_338_badnews",
 		"_name": "TGS_338_badnews",
 		"_parent": "5447b6194bdc2d67278b4567",
@@ -253,7 +253,7 @@
 		},
 		"_proto": "5447a9cd4bdc2dbd208b4567"
 	},
-	"tgs_338_badnews_buffer": {
+	"TGS_338_badnews_buffer": {
 		"_id": "TGS_338_badnews_buffer",
 		"_name": "TGS_338_badnews_buffer",
 		"_parent": "55818a594bdc2db9688b456a",
@@ -357,7 +357,7 @@
 		},
 		"_proto": "5649b2314bdc2d79388b4576"
 	},
-	"tgs_338_badnews_receiver": {
+	"TGS_338_badnews_receiver": {
 		"_id": "TGS_338_badnews_receiver",
 		"_name": "TGS_338_badnews_receiver",
 		"_parent": "55818a304bdc2db5418b457d",
@@ -562,7 +562,7 @@
 		},
 		"_proto": "55d355e64bdc2d962f8b4569"
 	},
-	"tgs_338_LM_20rnd_mag": {
+	"TGS_338_LM_20rnd_mag": {
 		"_id": "TGS_338_LM_20rnd_mag",
 		"_name": "TGS_338_LM_20rnd_mag",
 		"_parent": "5448bc234bdc2d3c308b4569",
@@ -673,7 +673,7 @@
 		},
 		"_proto": "559ba5b34bdc2d1f1a8b4582"
 	},
-	"tgs_65x39mm_grendel": {
+	"TGS_65x39mm_grendel": {
 		"_id": "TGS_65x39mm_grendel",
 		"_name": "TGS_65x39mm_grendel",
 		"_parent": "5485a8684bdc2da71d8b4567",
@@ -781,7 +781,7 @@
 		},
 		"_proto": "54527ac44bdc2d36668b4567"
 	},
-	"tgs_65x39mm_grendel_prototype": {
+	"TGS_65x39mm_grendel_prototype": {
 		"_id": "TGS_65x39mm_grendel_prototype",
 		"_name": "TGS_65x39mm_grendel_prototype",
 		"_parent": "5485a8684bdc2da71d8b4567",
@@ -889,7 +889,7 @@
 		},
 		"_proto": "54527ac44bdc2d36668b4567"
 	},
-	"tgs_armor_prototype": {
+	"TGS_armor_prototype": {
 		"_id": "TGS_armor_prototype",
 		"_name": "TGS_armor_prototype",
 		"_parent": "5448e54d4bdc2dcc718b4568",
@@ -983,7 +983,7 @@
 		},
 		"_proto": "545cdb794bdc2d3a198b456a"
 	},
-	"tgs_beacon": {
+	"TGS_beacon": {
 		"_id": "TGS_beacon",
 		"_name": "TGS_beacon",
 		"_parent": "5447e0e74bdc2d3c308b4567",
@@ -1048,7 +1048,7 @@
 		},
 		"_proto": "544fb5454bdc2df8738b456a"
 	},
-	"tgs_Blaze_Dogtags": {
+	"TGS_Blaze_Dogtags": {
 		"_id": "TGS_Blaze_Dogtags",
 		"_name": "TGS_Blaze_Dogtags",
 		"_parent": "590c745b86f7743cc433c5f2",
@@ -1114,7 +1114,7 @@
 		},
 		"_proto": "544fb5454bdc2df8738b456a"
 	},
-	"tgs_chemical": {
+	"TGS_chemical": {
 		"_id": "TGS_chemical",
 		"_name": "TGS_chemical",
 		"_parent": "590c745b86f7743cc433c5f2",
@@ -1180,7 +1180,7 @@
 		},
 		"_proto": "59e3606886f77417674759a5"
 	},
-	"tgs_chemical_meds": {
+	"TGS_chemical_meds": {
 		"_id": "TGS_chemical_meds",
 		"_name": "TGS_chemical_meds",
 		"_parent": "5448f3a64bdc2d60728b456a",
@@ -1251,7 +1251,7 @@
 		},
 		"_proto": "544fb3f34bdc2d03748b456a"
 	},
-	"tgs_chemical_meds2": {
+	"TGS_chemical_meds2": {
 		"_id": "TGS_chemical_meds2",
 		"_name": "TGS_chemical_meds2",
 		"_parent": "5448f3a64bdc2d60728b456a",
@@ -1323,7 +1323,7 @@
 		},
 		"_proto": "544fb3f34bdc2d03748b456a"
 	},
-	"tgs_cryptedphone": {
+	"TGS_cryptedphone": {
 		"_id": "TGS_cryptedphone",
 		"_name": "TGS_cryptedphone",
 		"_parent": "57864a66245977548f04a81f",
@@ -1388,7 +1388,7 @@
 		},
 		"_proto": "56742c324bdc2d150f8b456d"
 	},
-	"tgs_ethCoin": {
+	"TGS_ethCoin": {
 		"_id": "TGS_ethCoin",
 		"_name": "item_barter_valuable_eth",
 		"_parent": "57864a3d24597754843f8721",
@@ -1454,7 +1454,7 @@
 		"_proto": "573474f924597738002c6174",
 		"_type": "Item"
 	},
-	"tgs_genm3_fde": {
+	"TGS_genm3_fde": {
 		"_id": "TGS_genm3_fde",
 		"_name": "TGS_genm3_fde",
 		"_parent": "5448bc234bdc2d3c308b4569",
@@ -1562,7 +1562,7 @@
 		},
 		"_proto": "55802d5f4bdc2dac148b458e"
 	},
-	"tgs_grendel_intelligence": {
+	"TGS_grendel_intelligence": {
 		"_id": "TGS_grendel_intelligence",
 		"_name": "TGS_grendel_intelligence",
 		"_parent": "5448ecbe4bdc2d60728b4568",
@@ -1627,7 +1627,7 @@
 		},
 		"_proto": "56742c324bdc2d150f8b456d"
 	},
-	"tgs_jammer": {
+	"TGS_jammer": {
 		"_id": "TGS_jammer",
 		"_name": "TGS_jammer",
 		"_parent": "5447e0e74bdc2d3c308b4567",
@@ -1696,7 +1696,7 @@
 		},
 		"_proto": "544fb5454bdc2df8738b456a"
 	},
-	"tgs_manager_keycard": {
+	"TGS_manager_keycard": {
 		"_id": "TGS_manager_keycard",
 		"_name": "TGS_manager_keycard",
 		"_parent": "5c164d2286f774194c5e69fa",
@@ -1760,7 +1760,7 @@
 		},
 		"_proto": "5448ba0b4bdc2d02308b456c"
 	},
-	"tgs_nutsBottle": {
+	"TGS_nutsBottle": {
 		"_id": "TGS_nutsBottle",
 		"_name": "TGS_nutsBottle",
 		"_parent": "590c745b86f7743cc433c5f2",
@@ -1826,7 +1826,7 @@
 		},
 		"_proto": "573475fb24597737fb1379e1"
 	},
-	"tgs_powerArmor": {
+	"TGS_powerArmor": {
 		"_id": "TGS_powerArmor",
 		"_name": "TGS_powerArmor",
 		"_parent": "5448e54d4bdc2dcc718b4568",
@@ -1925,7 +1925,7 @@
 		},
 		"_proto": "545cdb794bdc2d3a198b456a"
 	},
-	"tgs_prototype_m16": {
+	"TGS_prototype_m16": {
 		"_id": "TGS_prototype_m16",
 		"_name": "P-M16A4",
 		"_parent": "5447b5f14bdc2d61278b4567",
@@ -2181,7 +2181,7 @@
 			"ManualBoltCatch": false
 		}
 	},
-	"tgs_scrap_metal": {
+	"TGS_scrap_metal": {
 		"_id": "TGS_scrap_metal",
 		"_name": "TGS_scrap_metal",
 		"_parent": "590c745b86f7743cc433c5f2",
@@ -2247,7 +2247,7 @@
 		},
 		"_proto": "573476d324597737da2adc13"
 	},
-	"tgs_urx_31_10_handguard": {
+	"TGS_urx_31_10_handguard": {
 		"_id": "TGS_urx_31_10_handguard",
 		"_name": "TGS_urx_31_10_handguard",
 		"_parent": "55818a104bdc2db9688b4569",
