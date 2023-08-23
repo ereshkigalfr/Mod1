@@ -4,12 +4,12 @@
 	"useGravity": false,
 	"randomRotation": false,
 	"Position": {
-		"x": -122.9224,
-		"y": 3.237691,
-		"z": -322.227
+		"x": -122.9555,
+		"y": 3.2329,
+		"z": -312.6144
 	},
 	"Rotation": {
-		"x": 90,
+		"x": 0,
 		"y": 0,
 		"z": 0
 	},
@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "jammer_position5",
-			"_tpl": "tgs_jammer"
+			"_tpl": "TGS_jammer"
 		}
 	]
 }

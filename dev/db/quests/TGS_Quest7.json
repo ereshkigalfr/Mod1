@@ -1,0 +1,175 @@
+{
+    "QuestName": "New caliber",
+    "side": "Pmc",
+    "_id": "TGS_Quest7",
+    "description": "TGS_Quest7 description",
+    "name": "TGS_Quest7 name",
+    "note": "TGS_Quest7 note",
+    "questStatus": {},
+    "traderId": "TGS_knight",
+    "location": "any",
+    "image": "/files/quest/icon/616d993bc8c5ad2ab30ff6ba.png",
+    "type": "Merchant",
+    "isKey": false,
+    "restartable": false,
+    "instantComplete": false,
+    "secretQuest": false,
+    "failMessageText": "TGS_Quest7 failMessageText",
+    "startedMessageText": "TGS_Quest7 startedMessageText",
+    "successMessageText": "TGS_Quest7 successMessageText",
+    "canShowNotificationsInGame": true,
+    "acceptPlayerMessage": "TGS_Quest7 acceptPlayerMessage",
+    "changeQuestMessageText": "TGS_Quest7 changeQuestMessageText",
+    "completePlayerMessage": "TGS_Quest7 completePlayerMessage",
+    "templateId": "TGS_Quest7",
+    "rewards": {
+        "Started": [],
+        "Success": [
+            {
+                "value": 45000,
+                "id": "TGS_Quest7_Reward1",
+                "type": "Experience",
+                "index": 1
+            },
+            {
+                "value": "0.03",
+                "id": "TGS_Quest7_Reward2",
+                "type": "TraderStanding",
+                "index": 2,
+                "target": "TGS_knight"
+            },
+            {
+              "value": "2500",
+              "id": "TGS_Quest7_Reward3",
+              "type": "Item",
+              "index": 3,
+              "target": "TGS_Quest7_Reward3_items",
+              "findInRaid": true,
+              "items": [
+                {
+                  "_id": "TGS_Quest7_Reward3_items",
+                  "_tpl": "569668774bdc2da2298b4568",
+                  "upd": {
+                    "StackObjectsCount": 2500
+                  }
+                }
+              ]
+            }
+        ],
+        "Fail": [],
+        "conditions": {
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "conditions": [
+                                {
+                                    "_parent": "VisitPlace",
+                                    "_props": {
+                                        "id": "TGS_Quest7_VisitPlace",
+                                        "target": "quest_zone_keeper7_saferoom",
+                                        "value": "1"
+                                    }
+                                }
+                            ],
+                            "id": "TGS_Quest7_Cond1"
+                        },
+                        "id": "TGS_Quest7_obj",
+                        "index": 0,
+                        "parentId": "",
+                        "oneSessionOnly": false,
+                        "dynamicLocale": false,
+                        "type": "Discover",
+                        "doNotResetIfCounterCompleted": false,
+                        "value": "1",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "dogtagLevel": 0,
+                        "id": "TGS_Quest7_obj2",
+                        "index": 1,
+                        "maxDurability": 100,
+                        "minDurability": 0,
+                        "parentId": "",
+                        "isEncoded": false,
+                        "onlyFoundInRaid": false,
+                        "dynamicLocale": false,
+                        "target": [
+                            "TGS_65x39mm_grendel_prototype"
+                        ],
+                        "countInRaid": false,
+                        "value": "1",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "HandoverItem",
+                    "_props": {
+                        "dogtagLevel": 0,
+                        "id": "TGS_Quest7_obj3",
+                        "index": 2,
+                        "maxDurability": 100,
+                        "minDurability": 0,
+                        "parentId": "",
+                        "isEncoded": false,
+                        "onlyFoundInRaid": false,
+                        "dynamicLocale": false,
+                        "target": [
+                            "TGS_65x39mm_grendel_prototype"
+                        ],
+                        "value": "1",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "id": "TGS_Quest7_CompleteCondition",
+                                    "target": "TGS_Quest7_obj2"
+                                }
+                            }
+                        ]
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "id": "TGS_Quest7_Req1",
+                        "index": 0,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "target": "TGS_Quest6",
+                        "status": [
+                            4
+                        ],
+                        "availableAfter": 0,
+                        "dispersion": 0,
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "id": "TGS_Quest7_Req2",
+                        "index": 0,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "value": 30,
+                        "compareMethod": ">=",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        }
+    }
+}

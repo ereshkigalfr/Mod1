@@ -1,15 +1,15 @@
-{
+{   
 	"Id": "jammer_2",
 	"IsStatic": false,
 	"useGravity": false,
 	"randomRotation": false,
 	"Position": {
-		"x": -33.8382,
-		"y": 3.249387,
-		"z": -319.01
+		"x": -133.8058,
+		"y": 3.2329,
+		"z": -319.0448
 	},
 	"Rotation": {
-		"x": 90,
+		"x": 0,
 		"y": 0,
 		"z": 0
 	},
@@ -19,7 +19,7 @@
 	"Items": [
 		{
 			"_id": "jammer_position2",
-			"_tpl": "tgs_jammer"
+			"_tpl": "TGS_jammer"
 		}
 	]
 }

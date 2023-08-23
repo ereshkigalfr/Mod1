@@ -1,17 +1,17 @@
 {
 	"conditions": {
-		"firstQuest_tgs_FirstRequir": "Find and eliminate Gluhar",
-		"firstQuest_tgs_FirstRequir2": "Find and eliminate an assault guard",
-		"firstQuest_tgs_FirstRequir3": "Find and eliminate a scout guard",
-		"firstQuest_tgs_FirstRequir4": "Find and eliminate a security guard",
-		"firstQuest_tgs_FindItem": "Find the encrypted device",
-		"firstQuest_tgs_Handover": "Hand over the encrypted device"
+		"firstQuest_TGS_FirstRequir": "Find and eliminate Gluhar",
+		"firstQuest_TGS_FirstRequir2": "Find and eliminate an assault guard",
+		"firstQuest_TGS_FirstRequir3": "Find and eliminate a scout guard",
+		"firstQuest_TGS_FirstRequir4": "Find and eliminate a security guard",
+		"firstQuest_TGS_FindItem": "Find the encrypted device",
+		"firstQuest_TGS_Handover": "Hand over the encrypted device"
 	},
 	"name": "Laboratory Mysteries",
-	"description": "firstQuest_tgs_description",
+	"description": "firstQuest_TGS_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "firstQuest_tgs_StartedMail",
-	"successMessageText": "firstQuest_tgs_mail",
+	"startedMessageText": "firstQuest_TGS_StartedMail",
+	"successMessageText": "firstQuest_TGS_mail",
 	"location": "5704e5fad2720bc05b8b4567"
 }

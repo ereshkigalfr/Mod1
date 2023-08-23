@@ -1,0 +1,215 @@
+{
+    "QuestName": "Research projects",
+    "side": "Pmc",
+    "_id": "TGS_Quest8",
+    "description": "TGS_Quest8 description",
+    "name": "TGS_Quest8 name",
+    "note": "TGS_Quest8 note",
+    "questStatus": {},
+    "traderId": "5ac3b934156ae10c4430e83c",
+    "location": "any",
+    "image": "/files/quest/icon/5ae4a74386f7744748710d72.jpg",
+    "type": "Merchant",
+    "isKey": false,
+    "restartable": false,
+    "instantComplete": false,
+    "secretQuest": false,
+    "failMessageText": "TGS_Quest8 failMessageText",
+    "startedMessageText": "TGS_Quest8 startedMessageText",
+    "successMessageText": "TGS_Quest8 successMessageText",
+    "canShowNotificationsInGame": true,
+    "acceptPlayerMessage": "TGS_Quest8 acceptPlayerMessage",
+    "changeQuestMessageText": "TGS_Quest8 changeQuestMessageText",
+    "completePlayerMessage": "TGS_Quest8 completePlayerMessage",
+    "templateId": "TGS_Quest8",
+    "rewards": {
+      "Started": [],
+      "Success": [
+        {
+            "value": "0.03",
+            "id": "TGS_Quest8_Reward1",
+            "type": "TraderStanding",
+            "index": 0,
+            "target": "TGS_knight"
+        },
+        {
+            "value": 50000,
+            "id": "TGS_Quest8_Reward2",
+            "type": "Experience",
+            "index": 1
+        },
+        {
+            "value": "4000",
+            "id": "TGS_Quest8_Reward3",
+            "type": "Item",
+            "index": 3,
+            "target": "TGS_Quest8_Reward3_items",
+            "findInRaid": true,
+            "items": [
+              {
+                "_id": "TGS_Quest8_Reward3_items",
+                "_tpl": "569668774bdc2da2298b4568",
+                "upd": {
+                  "StackObjectsCount": 4000
+                }
+              }
+            ]
+          },
+          {
+            "id": "TGS_Quest8_Reward4",
+            "type": "ProductionScheme",
+            "index": 4,
+            "target": "TGS_production_grendel",
+            "unknown": true,
+            "items": [
+                {
+                    "_id": "TGS_Quest8_Reward4_ProdScheme",
+                    "_tpl": "TGS_65x39mm_grendel",
+                    "upd": {
+                        "SpawnedInSession": true,
+                        "StackObjectsCount": 1
+                    }
+                }
+            ],
+            "loyaltyLevel": 2,
+            "traderId": "13"
+        }
+      ],
+      "Fail": [],
+    "conditions": {
+        "AvailableForFinish": [
+            {
+                "_parent": "FindItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj",
+                    "index": 1,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "5c12613b86f7743bbe2c3f76"
+                    ],
+                    "countInRaid": false,
+                    "value": "1",
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "HandoverItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj1",
+                    "index": 2,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "5c12613b86f7743bbe2c3f76"
+                    ],
+                    "value": "1",
+                    "visibilityConditions": [
+                        {
+                            "_parent": "CompleteCondition",
+                            "_props": {
+                                "id": "TGS_Quest8_CompleteCondition",
+                                "target": "TGS_Quest8_obj"
+                            }
+                        }
+                    ]
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "FindItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj2",
+                    "index": 1,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "577e1c9d2459773cd707c525"
+                    ],
+                    "countInRaid": false,
+                    "value": "1",
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "HandoverItem",
+                "_props": {
+                    "dogtagLevel": 0,
+                    "id": "TGS_Quest8_obj3",
+                    "index": 2,
+                    "maxDurability": 100,
+                    "minDurability": 0,
+                    "parentId": "",
+                    "isEncoded": false,
+                    "onlyFoundInRaid": false,
+                    "dynamicLocale": false,
+                    "target": [
+                        "577e1c9d2459773cd707c525"
+                    ],
+                    "value": "1",
+                    "visibilityConditions": [
+                        {
+                            "_parent": "CompleteCondition",
+                            "_props": {
+                                "id": "TGS_Quest8_CompleteCondition2",
+                                "target": "TGS_Quest8_obj2"
+                            }
+                        }
+                    ]
+                },
+                "dynamicLocale": false
+            }
+        ],
+        "AvailableForStart": [
+          {
+          "_parent": "Quest",
+          "_props": {
+              "id": "TGS_Quest8_Req1",
+              "index": 0,
+              "parentId": "",
+              "dynamicLocale": false,
+              "target": "TGS_Quest7",
+              "status": [
+                  4
+              ],
+              "availableAfter": 7200,
+              "dispersion": 0,
+              "visibilityConditions": []
+          },
+          "dynamicLocale": false
+      },
+      {
+          "_parent": "Level",
+          "_props": {
+              "id": "TGS_Quest8_Req2",
+              "index": 1,
+              "parentId": "",
+              "dynamicLocale": false,
+              "value": 30,
+              "compareMethod": ">=",
+              "visibilityConditions": []
+          },
+          "dynamicLocale": false
+      }
+    ],
+        "Fail": []
+        }
+    }
+}

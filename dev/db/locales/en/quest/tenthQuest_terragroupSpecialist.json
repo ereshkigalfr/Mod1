@@ -1,14 +1,14 @@
 {
 	"conditions": {
-		"tenthQuest_tgs_Req1": "Kill 30 raiders in the Lab. You must be wearing a GP-5 gasmask",
-		"tenthQuest_tgs_FirstRequir": "Survive in the Lab for at least 10 minutes and extract",
-		"tenthQuest_tgs_FailCounter": "Do not die or extract under 10 minutes in the Lab"
+		"tenthQuest_TGS_Req1": "Kill 30 raiders in the Lab. You must be wearing a GP-5 gasmask",
+		"tenthQuest_TGS_FirstRequir": "Survive in the Lab for at least 10 minutes and extract",
+		"tenthQuest_TGS_FailCounter": "Do not die or extract under 10 minutes in the Lab"
 	},
 	"name": "Night raid",
-	"description": "tenthQuest_tgs_description",
+	"description": "tenthQuest_TGS_description",
 	"note": "",
-	"failMessageText": "tenthQuest_tgs_failed",
-	"startedMessageText": "tenthQuest_tgs_StartedMail",
-	"successMessageText": "tenthQuest_tgs_mail",
+	"failMessageText": "tenthQuest_TGS_failed",
+	"startedMessageText": "tenthQuest_TGS_StartedMail",
+	"successMessageText": "tenthQuest_TGS_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }

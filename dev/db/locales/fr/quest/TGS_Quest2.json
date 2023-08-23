@@ -1,0 +1,14 @@
+{
+	"conditions": {
+		"TGS_Quest2_obj": "Survivez et échappez vous du laboratoire",
+		"TGS_Quest2_obj2": "Cherchez un ordinateur dévérouillé"
+
+	},
+	"name": "Prise de contact",
+	"description": "TGS_Quest2_description",
+	"note": "",
+	"failMessageText": "",
+	"startedMessageText": "TGS_Quest2_StartedMail",
+	"successMessageText": "TGS_Quest2_mail",
+	"location": "5b0fc42d86f7744a585f9105"
+}

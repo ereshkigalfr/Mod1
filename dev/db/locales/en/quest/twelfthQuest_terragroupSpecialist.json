@@ -1,14 +1,14 @@
 {
 	"conditions": {
-		"twelfthQuest_tgs_FirstRequir3": "Find the dead raider GPS device.",
-		"twelfthQuest_tgs_FirstRequir": "Kill 30 raiders in Woods with the dead raider equipment.",
-		"twelfthQuest_tgs_FirstRequir2": "Survive on Woods."
+		"twelfthQuest_TGS_FirstRequir3": "Find the dead raider GPS device.",
+		"twelfthQuest_TGS_FirstRequir": "Kill 30 raiders in Woods with the dead raider equipment.",
+		"twelfthQuest_TGS_FirstRequir2": "Survive on Woods."
 	},
 	"name": "We got some bad news",
-	"description": "twelfthQuest_tgs_description",
+	"description": "twelfthQuest_TGS_description",
 	"note": "",
-	"failMessageText": "twelfthQuest_tgs_failedMail",
-	"startedMessageText": "twelfthQuest_tgs_StartedMail",
-	"successMessageText": "twelfthQuest_tgs_mail",
+	"failMessageText": "twelfthQuest_TGS_failedMail",
+	"startedMessageText": "twelfthQuest_TGS_StartedMail",
+	"successMessageText": "twelfthQuest_TGS_mail",
 	"location": "5714dbc024597771384a510d"
 }

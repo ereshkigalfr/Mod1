@@ -1,0 +1,184 @@
+{
+    "QuestName": "Beginning of a relation",
+    "side": "Pmc",
+    "_id": "TGS_Quest4",
+    "description": "TGS_Quest4 description",
+    "name": "TGS_Quest4 name",
+    "note": "TGS_Quest4 note",
+    "questStatus": {},
+    "traderId": "TGS_knight",
+    "location": "any",
+    "image": "/files/quest/icon/TGS_quest3_banner.png",
+    "type": "Merchant",
+    "isKey": false,
+    "restartable": false,
+    "instantComplete": false,
+    "secretQuest": false,
+    "failMessageText": "TGS_Quest4 failMessageText",
+    "startedMessageText": "TGS_Quest4 startedMessageText",
+    "successMessageText": "TGS_Quest4 successMessageText",
+    "canShowNotificationsInGame": true,
+    "acceptPlayerMessage": "TGS_Quest4 acceptPlayerMessage",
+    "changeQuestMessageText": "TGS_Quest4 changeQuestMessageText",
+    "completePlayerMessage": "TGS_Quest4 completePlayerMessage",
+    "templateId": "TGS_Quest4",
+    "rewards": {
+        "Started": [
+            {
+                "value": "38500",
+                "id": "TGS_Quest4_Reward1",
+                "type": "Experience",
+                "index": 0
+            },
+            {
+                "value": "2500",
+                "id": "TGS_Quest4_Reward2",
+                "type": "Item",
+                "index": 1,
+                "target": "TGS_Quest4_Reward2_items",
+                "findInRaid": true,
+                "items": [
+                    {
+                        "_id": "TGS_Quest4_Reward2_items",
+                        "_tpl": "5696686a4bdc2da3298b456a",
+                        "upd": {
+                            "StackObjectsCount": 2500
+                        }
+                    }
+                ]
+            },
+            {
+                "value": "0.05",
+                "id": "TGS_Quest4_Reward3",
+                "type": "TraderStanding",
+                "index": 2,
+                "target": "TGS_knight"
+            }
+        ],
+        "Success": [],
+        "Fail": [],
+        "conditions": {
+            "AvailableForFinish": [
+                {
+                    "_parent": "FindItem",
+                    "_props": {
+                        "dogtagLevel": 0,
+                        "id": "TGS_Quest4_obj",
+                        "index": 0,
+                        "maxDurability": 100,
+                        "minDurability": 0,
+                        "parentId": "",
+                        "isEncoded": false,
+                        "onlyFoundInRaid": false,
+                        "dynamicLocale": false,
+                        "target": [
+                            "TGS_jammer"
+                        ],
+                        "countInRaid": false,
+                        "value": "16",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "HandoverItem",
+                    "_props": {
+                        "dogtagLevel": 0,
+                        "id": "TGS_Quest4_obj2",
+                        "index": 1,
+                        "maxDurability": 100,
+                        "minDurability": 0,
+                        "parentId": "",
+                        "isEncoded": false,
+                        "onlyFoundInRaid": false,
+                        "dynamicLocale": false,
+                        "target": [
+                            "TGS_jammer"
+                        ],
+                        "value": "16",
+                        "visibilityConditions": [
+                            {
+                                "_parent": "CompleteCondition",
+                                "_props": {
+                                    "id": "TGS_quest4_VisibilityCond0",
+                                    "target": "TGS_Quest4_obj"
+                                }
+                            }
+                        ]
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "id": "TGS_Quest4_ExitStatus",
+                                        "status": [
+                                            "Survived"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "id": "TGS_Quest4_Location",
+                                        "target": [
+                                            "laboratory"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "id": "TGS_Quest4_Cond"
+                        },
+                        "id": "TGS_Quest4_obj3",
+                        "index": 2,
+                        "parentId": "",
+                        "oneSessionOnly": false,
+                        "dynamicLocale": false,
+                        "type": "Exploration",
+                        "doNotResetIfCounterCompleted": false,
+                        "value": "1",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "id": "TGS_Quest4_req1",
+                        "index": 0,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "value": 28,
+                        "compareMethod": ">=",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "id": "TGS_Quest4_req2",
+                        "index": 1,
+                        "parentId": "",
+                        "dynamicLocale": false,
+                        "target": "TGS_Quest3",
+                        "status": [
+                            4
+                        ],
+                        "availableAfter": 0,
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        }
+    }
+}

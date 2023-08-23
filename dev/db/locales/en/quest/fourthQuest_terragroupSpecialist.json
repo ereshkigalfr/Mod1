@@ -1,14 +1,14 @@
 {
 	"conditions": {
-		"fourthQuest_tgs_FirstRequir1": "Find the chemical container",
-		"fourthQuest_tgs_FirstRequir2": "Hand over the chemical container",
-		"fourthQuest_tgs_FirstRequir3": "Survive and leave the area while wearing a GP-5 gasmask"
+		"fourthQuest_TGS_FirstRequir1": "Find the chemical container",
+		"fourthQuest_TGS_FirstRequir2": "Hand over the chemical container",
+		"fourthQuest_TGS_FirstRequir3": "Survive and leave the area while wearing a GP-5 gasmask"
 	},
 	"name": "A New Material",
-	"description": "fourthQuest_tgs_description",
+	"description": "fourthQuest_TGS_description",
 	"note": "",
 	"failMessageText": "",
-	"startedMessageText": "fourthQuest_tgs_StartedMail",
-	"successMessageText": "fourthQuest_tgs_mail",
+	"startedMessageText": "fourthQuest_TGS_StartedMail",
+	"successMessageText": "fourthQuest_TGS_mail",
 	"location": "5b0fc42d86f7744a585f9105"
 }
