@@ -38,13 +38,5 @@ export class CoreMod {
      * @param {String} category The category of the item https://docs.sp-tarkov.com/#resources/other.md
      * @param {Number} price The price in RUB of the item on the flea
      */
-    static CreateHandbookItem(templates, id, category, price)
-    {
-        const handbook = templates.handbook;
-        handbook.Items.push({
-            "Id": id,
-            "ParentId": category,
-            "Price": price
-        });
-    }
+
 }

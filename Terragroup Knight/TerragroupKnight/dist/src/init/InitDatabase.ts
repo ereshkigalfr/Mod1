@@ -26,6 +26,7 @@ export class InitDatabase
         const logger = container.resolve<ILogger>("WinstonLogger");
         const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const ServerDatabase = MainDatabase.getTables();
+        const handbook = ServerDatabase.templates.handbook;
         const items = ServerDatabase.templates.items;
         const quests = ServerDatabase.templates.quests;
         const customization = ServerDatabase.templates.customization;
@@ -43,7 +44,11 @@ export class InitDatabase
             {
                 let item = TGSItems[i]
                 items[item] = item;
-                CoreMod.CreateHandbookItem(ServerDatabase.templates, i, item._parent, item._props.CreditsPrice)
+                handbook.Items.push({
+                    "Id": i,
+                    "ParentId": item._parent,
+                    "Price": item._props.CreditsPrice
+                });
             }
         }
 
