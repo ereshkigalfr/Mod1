@@ -103,7 +103,7 @@ export class InitDatabase
         {
             if(foo != "default")
             {
-             Object.assign(globals.ItemPresets, TGSPresets[foo]);
+                Object.assign(globals.ItemPresets, TGSPresets[foo]);
             }
         }
 
@@ -121,13 +121,16 @@ export class InitDatabase
         //Adding loot to the maps
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new loots place on maps")};
         //Needs to be worked on, structure changed since the last mod
-        for(const lootMaps in TGSMapsLoot)
-        {  
-            for(const lootCat in TGSMapsLoot[lootMaps])
-            {
-                for(const catArray in TGSMapsLoot[lootMaps][lootCat])
-                {
-                    maps[lootMaps].loot[lootCat].push(TGSMapsLoot[lootMaps][lootCat][catArray]);
+        for (const lootMaps in TGSMapsLoot) {
+            if(lootMaps != "default"){
+                for (const lootCat in TGSMapsLoot[lootMaps]) {
+                    if(lootCat != "default")
+                    {
+                        for (const catArray in TGSMapsLoot[lootMaps][lootCat]) {
+                            
+                            maps[lootMaps].looseLoot[lootCat].push(TGSMapsLoot[lootMaps][lootCat][catArray]);
+                        }
+                    }
                 }
             }
         }

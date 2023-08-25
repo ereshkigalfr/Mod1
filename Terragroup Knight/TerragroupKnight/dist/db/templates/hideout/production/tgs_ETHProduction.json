@@ -1,0 +1,11 @@
+{
+	"_id": "tgs_ETHProduction",
+	"areaType": 20,
+	"requirements": [],
+	"productionTime": 99580,
+	"boosters": null,
+	"endProduct": "tgs_ethCoin",
+	"continuous": true,
+	"count": 1,
+	"productionLimitCount": 5
+}

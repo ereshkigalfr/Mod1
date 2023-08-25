@@ -89,8 +89,9 @@ class Merging
                         {
                             let loots = JsonUtil.deserialize(vfs.readFile(db.locations[map][loot][type][lootNode][lootData]));
                             FuckThatMessyStructure = {
-                                "Id": loots.Id,
-                                "data": [loots]
+                                "locationId": loots.Id,
+                                "probability": 1,
+                                "template": loots
                             };
                             vfs.writeFile("./dev/output/loot.json", JsonUtil.serialize(oneFile, true));
                             oneFile[map][type].push(FuckThatMessyStructure);

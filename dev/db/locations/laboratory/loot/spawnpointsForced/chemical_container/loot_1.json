@@ -1,0 +1,25 @@
+{
+	"Id": "chemical_container",
+	"IsStatic": false,
+	"useGravity": false,
+	"randomRotation": false,
+	"Position": {   
+		"x": -172.2145,
+		"y": 0.0659,
+		"z": -370.2152
+	},
+	"Rotation": {
+		"x": 0,
+		"y": 70,
+		"z": 0
+	},
+	"IsGroupPosition": false,
+	"GroupPositions": [],
+	"Root": "chemical_position",
+	"Items": [
+		{
+			"_id": "chemical_position",
+			"_tpl": "TGS_chemical"
+		}
+	]
+}

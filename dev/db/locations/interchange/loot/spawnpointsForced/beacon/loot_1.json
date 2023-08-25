@@ -1,0 +1,25 @@
+{
+    "Id": "beacon",
+    "IsStatic": false,
+    "useGravity": false,
+    "randomRotation": false,
+    "Position": {
+        "x": -18.72782,
+        "y": 27.9612,
+        "z": -40.4078
+    },
+    "Rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 45
+    },
+    "IsGroupPosition": false,
+    "GroupPositions": [],
+    "Root": "beacon_position",
+    "Items": [
+        {
+            "_id": "beacon_position",
+            "_tpl": "TGS_beacon"
+        }
+    ]
+}
