@@ -2,6 +2,7 @@
 	"_id": "TGS_grendel_intelligence",
 	"_name": "TGS_grendel_intelligence",
 	"_parent": "5448ecbe4bdc2d60728b4568",
+	"_handbook":"5b47574386f77428ca22b2f1",
 	"_type": "Item",
 	"_props": {
 		"Name": "TGS_grendel_intelligence",

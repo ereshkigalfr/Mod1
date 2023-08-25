@@ -2,6 +2,7 @@
 	"_id": "TGS_prototype_m16",
 	"_name": "P-M16A4",
 	"_parent": "5447b5f14bdc2d61278b4567",
+	"_handbook":"5b5f78fc86f77409407a7f90",
 	"_type": "Item",
 	"_props": {
 		"Name": "P-M16A4",

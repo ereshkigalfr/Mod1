@@ -2,6 +2,7 @@
 	"_id": "TGS_338_badnews",
 	"_name": "TGS_338_badnews",
 	"_parent": "5447b6194bdc2d67278b4567",
+	"_handbook":"5b5f791486f774093f2ed3be",
 	"_type": "Item",
 	"_props": {
 		"Name": "TGS_338_badnews",

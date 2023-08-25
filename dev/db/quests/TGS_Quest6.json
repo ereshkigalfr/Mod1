@@ -67,114 +67,114 @@
                 "traderId": "13"
             }
         ],
-        "Fail": [],
-        "conditions": {
-            "AvailableForFinish": [
-                {
-                    "_parent": "WeaponAssembly",
-                    "_props": {
-                        "id": "TGS_Quest6_obj",
-                        "index": 0,
-                        "parentId": "",
-                        "dynamicLocale": false,
-                        "target": [
-                            "TGS_prototype_m16"
-                        ],
-                        "value": "1",
-                        "visibilityConditions": [],
-                        "baseAccuracy": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "durability": {
-                            "compareMethod": ">=",
-                            "value": 60
-                        },
-                        "effectiveDistance": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "emptyTacticalSlot": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "ergonomics": {
-                            "compareMethod": ">=",
-                            "value": "0"
-                        },
-                        "height": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "magazineCapacity": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "muzzleVelocity": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "recoil": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "weight": {
-                            "compareMethod": ">=",
-                            "value": "1"
-                        },
-                        "width": {
-                            "compareMethod": ">=",
-                            "value": 0
-                        },
-                        "containsItems": [
-                            "handguard_ar15_kac_m5_ras",
-                            "5f633ff5c444ce7e3c30a006",
-                            "barrel_ar15_m16_20in",
-                            "5a33ca0fc4a282000d72292f",
-                            "stock_ar15_colt_usgi_a2",
-                            "5aaa5dfee5b5b000140293d3",
-                            "57c55efc2459772d2c6271e7",
-                            "5d00ec68d7ad1a04a067e5be",
-                            "612e0e55a112697a4b3a66e7",
-                            "55d355e64bdc2d962f8b4569"
-                        ],
-                        "hasItemFromCategory": []
-                    },
-                    "dynamicLocale": false
-                }
-            ],
-            "AvailableForStart": [
-                {
-                    "_parent": "Level",
-                    "_props": {
-                        "id": "TGS_Quest6_Req1",
-                        "index": 0,
-                        "parentId": "",
-                        "dynamicLocale": false,
-                        "value": 30,
+        "Fail": []
+    },
+    "conditions": {
+        "AvailableForFinish": [
+            {
+                "_parent": "WeaponAssembly",
+                "_props": {
+                    "id": "TGS_Quest6_obj",
+                    "index": 0,
+                    "parentId": "",
+                    "dynamicLocale": false,
+                    "target": [
+                        "TGS_prototype_m16"
+                    ],
+                    "value": "1",
+                    "visibilityConditions": [],
+                    "baseAccuracy": {
                         "compareMethod": ">=",
-                        "visibilityConditions": []
+                        "value": 0
                     },
-                    "dynamicLocale": false
+                    "durability": {
+                        "compareMethod": ">=",
+                        "value": 60
+                    },
+                    "effectiveDistance": {
+                        "compareMethod": ">=",
+                        "value": 0
+                    },
+                    "emptyTacticalSlot": {
+                        "compareMethod": ">=",
+                        "value": 0
+                    },
+                    "ergonomics": {
+                        "compareMethod": ">=",
+                        "value": "0"
+                    },
+                    "height": {
+                        "compareMethod": ">=",
+                        "value": 0
+                    },
+                    "magazineCapacity": {
+                        "compareMethod": ">=",
+                        "value": 0
+                    },
+                    "muzzleVelocity": {
+                        "compareMethod": ">=",
+                        "value": 0
+                    },
+                    "recoil": {
+                        "compareMethod": ">=",
+                        "value": 0
+                    },
+                    "weight": {
+                        "compareMethod": ">=",
+                        "value": "1"
+                    },
+                    "width": {
+                        "compareMethod": ">=",
+                        "value": 0
+                    },
+                    "containsItems": [
+                        "handguard_ar15_kac_m5_ras",
+                        "5f633ff5c444ce7e3c30a006",
+                        "barrel_ar15_m16_20in",
+                        "5a33ca0fc4a282000d72292f",
+                        "stock_ar15_colt_usgi_a2",
+                        "5aaa5dfee5b5b000140293d3",
+                        "57c55efc2459772d2c6271e7",
+                        "5d00ec68d7ad1a04a067e5be",
+                        "612e0e55a112697a4b3a66e7",
+                        "55d355e64bdc2d962f8b4569"
+                    ],
+                    "hasItemFromCategory": []
                 },
-                {
-                    "_parent": "Quest",
-                    "_props": {
-                        "id": "TGS_Quest6_Req2",
-                        "index": 1,
-                        "parentId": "",
-                        "dynamicLocale": false,
-                        "target": "TGS_Quest5",
-                        "status": [
-                            2
-                        ],
-                        "availableAfter": 0,
-                        "visibilityConditions": []
-                    },
-                    "dynamicLocale": false
-                }
-            ],
-            "Fail": []
-        }
+                "dynamicLocale": false
+            }
+        ],
+        "AvailableForStart": [
+            {
+                "_parent": "Level",
+                "_props": {
+                    "id": "TGS_Quest6_Req1",
+                    "index": 0,
+                    "parentId": "",
+                    "dynamicLocale": false,
+                    "value": 30,
+                    "compareMethod": ">=",
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            },
+            {
+                "_parent": "Quest",
+                "_props": {
+                    "id": "TGS_Quest6_Req2",
+                    "index": 1,
+                    "parentId": "",
+                    "dynamicLocale": false,
+                    "target": "TGS_Quest5",
+                    "status": [
+                        2
+                    ],
+                    "availableAfter": 0,
+                    "visibilityConditions": []
+                },
+                "dynamicLocale": false
+            }
+        ],
+        "Fail": []
     }
 }

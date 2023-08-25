@@ -40,10 +40,10 @@ export class InitDatabase
             if(i != "default")
             {
                 let item = TGSItems[i]
-                items[item] = item;
+                items[i] = item;
                 handbook.Items.push({
                     "Id": i,
-                    "ParentId": item._parent,
+                    "ParentId": item._handbook,
                     "Price": item._props.CreditsPrice
                 });
             }
@@ -53,7 +53,10 @@ export class InitDatabase
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new quests in the database")};
         for (const quest in TGSQuests)
         {
-            quests[TGSQuests[quest]._id] = TGSQuests[quest];
+            if(quest != "default")
+            {
+                quests[TGSQuests[quest]._id] = TGSQuests[quest];
+            }
         }
 
         //Adding new locales to the database by looping through my already made json file

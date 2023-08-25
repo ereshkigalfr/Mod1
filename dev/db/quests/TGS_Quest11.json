@@ -23,13 +23,13 @@
     "completePlayerMessage": "TGS_Quest11 completePlayerMessage",
     "templateId": "TGS_Quest11",
     "rewards": {
-      "Started": [],
-      "Success": [],
-      "Fail": [],
+        "Started": [],
+        "Success": [],
+        "Fail": []
+    },
     "conditions": {
         "AvailableForFinish": [],
         "AvailableForStart": [],
         "Fail": []
-        }
     }
 }

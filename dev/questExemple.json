@@ -1,39 +1,37 @@
 {
-
-"TGS_Quest1": {
-    "QuestName": "name",
-    "side": "Pmc",
-    "_id": "questID",
-    "description": "questID description",
-    "name": "questID name",
-    "note": "questID note",
-    "questStatus": {},
-    "traderId": "5ac3b934156ae10c4430e83c",
-    "location": "any",
-    "image": "/files/quest/icon/imageID.jpg",
-    "type": "Merchant",
-    "isKey": false,
-    "restartable": false,
-    "instantComplete": false,
-    "secretQuest": false,
-    "failMessageText": "questID failMessageText",
-    "startedMessageText": "questID startedMessageText",
-    "successMessageText": "questID successMessageText",
-    "canShowNotificationsInGame": true,
-    "acceptPlayerMessage": "questID acceptPlayerMessage",
-    "changeQuestMessageText": "questID changeQuestMessageText",
-    "completePlayerMessage": "questID completePlayerMessage",
-    "templateId": "questID",
-    "rewards": {
-      "Started": [],
-      "Success": [],
-      "Fail": [],
-    "conditions": {
-        "AvailableForFinish": [],
-        "AvailableForStart": [],
-        "Fail": []
+    "TGS_Quest1": {
+        "QuestName": "name",
+        "side": "Pmc",
+        "_id": "questID",
+        "description": "questID description",
+        "name": "questID name",
+        "note": "questID note",
+        "questStatus": {},
+        "traderId": "5ac3b934156ae10c4430e83c",
+        "location": "any",
+        "image": "/files/quest/icon/imageID.jpg",
+        "type": "Merchant",
+        "isKey": false,
+        "restartable": false,
+        "instantComplete": false,
+        "secretQuest": false,
+        "failMessageText": "questID failMessageText",
+        "startedMessageText": "questID startedMessageText",
+        "successMessageText": "questID successMessageText",
+        "canShowNotificationsInGame": true,
+        "acceptPlayerMessage": "questID acceptPlayerMessage",
+        "changeQuestMessageText": "questID changeQuestMessageText",
+        "completePlayerMessage": "questID completePlayerMessage",
+        "templateId": "questID",
+        "rewards": {
+            "Started": [],
+            "Success": [],
+            "Fail": []
+        },
+        "conditions": {
+            "AvailableForFinish": [],
+            "AvailableForStart": [],
+            "Fail": []
         }
     }
-  }
-
 }

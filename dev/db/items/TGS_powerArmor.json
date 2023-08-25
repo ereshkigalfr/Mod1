@@ -2,6 +2,7 @@
 	"_id": "TGS_powerArmor",
 	"_name": "TGS_powerArmor",
 	"_parent": "5448e54d4bdc2dcc718b4568",
+	"_handbook":"5b5f701386f774093f2ecf0f",
 	"_type": "Item",
 	"_props": {
 		"Name": "TGS_powerArmor",

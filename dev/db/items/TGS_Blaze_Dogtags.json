@@ -2,6 +2,7 @@
 	"_id": "TGS_Blaze_Dogtags",
 	"_name": "TGS_Blaze_Dogtags",
 	"_parent": "590c745b86f7743cc433c5f2",
+	"_handbook":"5b47574386f77428ca22b2f4",
 	"_type": "Item",
 	"_props": {
 		"Name": "Blaze dogtag",

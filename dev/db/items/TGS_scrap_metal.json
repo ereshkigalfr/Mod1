@@ -2,6 +2,7 @@
 	"_id": "TGS_scrap_metal",
 	"_name": "TGS_scrap_metal",
 	"_parent": "590c745b86f7743cc433c5f2",
+	"_handbook":"5b47574386f77428ca22b2ee",
 	"_type": "Item",
 	"_props": {
 		"Name": "TGS_scrap_metal",

@@ -2,6 +2,7 @@
     "_id": "TGS_ethCoin",
     "_name": "item_barter_valuable_eth",
     "_parent": "57864a3d24597754843f8721",
+    "_handbook":"5b47574386f77428ca22b2f1",
     "_props": {
         "AllowSpawnOnLocations": [],
         "AnimationVariantsNumber": 0,

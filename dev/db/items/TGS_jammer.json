@@ -2,6 +2,7 @@
 "_id": "TGS_jammer",
 "_name": "TGS_jammer",
 "_parent": "5447e0e74bdc2d3c308b4567",
+"_handbook":"5b47574386f77428ca22b345",
 "_type": "Item",
 "_props": {
 	"Name": "TGS_jammer",

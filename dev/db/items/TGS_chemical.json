@@ -2,6 +2,7 @@
 	"_id": "TGS_chemical",
 	"_name": "TGS_chemical",
 	"_parent": "590c745b86f7743cc433c5f2",
+	"_handbook":"5b47574386f77428ca22b341",
 	"_type": "Item",
 	"_props": {
 		"Name": "TGS_chemical",

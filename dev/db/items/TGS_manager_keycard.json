@@ -2,6 +2,7 @@
 	"_id": "TGS_manager_keycard",
 	"_name": "TGS_manager_keycard",
 	"_parent": "5c164d2286f774194c5e69fa",
+	"_handbook":"5c518ed586f774119a772aee",
 	"_type": "Item",
 	"_props": {
 		"Name": "TGS_manager_keycard",
