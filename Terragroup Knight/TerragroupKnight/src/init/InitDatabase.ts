@@ -6,14 +6,14 @@ import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
 //TGS Imports
-import * as TGSItems from "../../db/templates/items.json";
-import * as TGSQuests from "../../db/templates/quests.json";
-import * as TGSMapsLoot from "../../db/templates/loot.json";
-import * as TGSLocales from "../../db/templates/locales.json";
-import * as TGSHideoutProductions from "../../db/templates/productions.json";
-import * as TGSPresets from "../../config/presets.json";
-import * as TGSValues from "../../config/values.json";
-import * as config from "../../config/config.json";
+const TGSItems = require("../../db/templates/items.json");
+const TGSQuests = require("../../db/templates/quests.json");
+const TGSMapsLoot = require("../../db/templates/loot.json");
+const TGSLocales = require("../../db/templates/locales.json");
+const TGSHideoutProductions = require("../../db/templates/productions.json");
+const TGSPresets = require("../../config/presets.json");
+const TGSValues = require("../../config/values.json");
+const config = require("../../config/config.json");
 
 export class InitDatabase
 {
@@ -37,8 +37,6 @@ export class InitDatabase
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new items in the database")};
         for (let i in TGSItems)
         {
-            if(i != "default")
-            {
                 let item = TGSItems[i]
                 items[i] = item;
                 handbook.Items.push({
@@ -46,27 +44,20 @@ export class InitDatabase
                     "ParentId": item._handbook,
                     "Price": item._props.CreditsPrice
                 });
-            }
         }
 
         //Adding new quests to the database by looping through my already made json file
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new quests in the database")};
         for (const quest in TGSQuests)
         {
-            if(quest != "default")
-            {
                 quests[TGSQuests[quest]._id] = TGSQuests[quest];
-            }
         }
 
         //Adding new locales to the database by looping through my already made json file
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new locales in the database")};
         for (const lang in TGSLocales)
         {
-            if(lang != "default")
-            {
-                Object.assign(locales[lang], TGSLocales[lang]);
-            }
+            Object.assign(locales[lang], TGSLocales[lang]);
         }
 
         
@@ -107,10 +98,7 @@ export class InitDatabase
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new presets in globals")};
         for (const foo in TGSPresets)
         {
-            if(foo != "default")
-            {
-                Object.assign(globals.ItemPresets, TGSPresets[foo]);
-            }
+            Object.assign(globals.ItemPresets, TGSPresets[foo]);
         }
 
         //Add new stims
@@ -126,18 +114,12 @@ export class InitDatabase
 
         //Adding loot to the maps
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new loots place on maps")};
-        //Needs to be worked on, structure changed since the last mod
         for (const lootMaps in TGSMapsLoot) {
-            if(lootMaps != "default"){
                 for (const lootCat in TGSMapsLoot[lootMaps]) {
-                    if(lootCat != "default")
-                    {
                         for (const catArray in TGSMapsLoot[lootMaps][lootCat]) {
                             
                             maps[lootMaps].looseLoot[lootCat].push(TGSMapsLoot[lootMaps][lootCat][catArray]);
                         }
-                    }
-                }
             }
         }
 

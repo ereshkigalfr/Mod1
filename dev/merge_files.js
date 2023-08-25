@@ -64,7 +64,12 @@ class Merging
         //Adding translations
         for (let lang in db.locales)
         {
-            localeOneFile[lang] = db.locales[lang];
+            for(const node in db.locales[lang]){
+                console.log(db.locales[lang])
+                localeOneFile[lang][node] = JsonUtil.deserialize(vfs.readFile(db.locales[lang][node]))
+            }
+            
+            //localeOneFile[lang] = vfs.readFile(db.locales[lang]);
            
         }
 
