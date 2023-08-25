@@ -15,6 +15,8 @@ import * as TGSPresets from "../../config/presets.json";
 import * as TGSValues from "../../config/values.json";
 import * as config from "../../config/config.json";
 
+import { CoreMod } from "../CoreMod"
+
 export class InitDatabase
 {
     static postDBLoad(container: DependencyContainer)
@@ -31,12 +33,18 @@ export class InitDatabase
         const productions = ServerDatabase.hideout.production;
         const globals = ServerDatabase.globals;
         const maps = ServerDatabase.locations
+        
 
         //Adding new items to the database by looping through my already made json file
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new items in the database")};
         for (let i in TGSItems)
         {
-            items[TGSItems[i]] = TGSItems[i];
+            if(i != "default")
+            {
+                let item = TGSItems[i]
+                items[item] = item;
+                CoreMod.CreateHandbookItem(ServerDatabase.templates, i, item._parent, item._props.CreditsPrice)
+            }
         }
 
         //Adding new quests to the database by looping through my already made json file
@@ -93,18 +101,21 @@ export class InitDatabase
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new presets in globals")};
         for (const foo in TGSPresets)
         {
-            Object.assign(globals.ItemPresets, TGSPresets[foo]);
+            if(foo != "default")
+            {
+             Object.assign(globals.ItemPresets, TGSPresets[foo]);
+            }
         }
 
         //Add new stims
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new stims in globals")};
-        Object.assign(global["config"]["Health"]["Effects"]["Stimulator"]["Buffs"], TGSValues.BuffToAdd);
+        Object.assign(globals["config"]["Health"]["Effects"]["Stimulator"]["Buffs"], TGSValues.BuffToAdd);
 
         //Add new weapons masteries
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new weapons masteries in globals")};
         for (const mastery in TGSValues.WeaponMastery)
         {
-            global["config"]["Mastering"].push(TGSValues.WeaponMastery[mastery]);
+            globals["config"]["Mastering"].push(TGSValues.WeaponMastery[mastery]);
         }
 
         //Adding loot to the maps

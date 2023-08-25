@@ -22,10 +22,8 @@ import { VFS } from "@spt-aki/utils/VFS"
 import { NotificationSendHelper } from "@spt-aki/helpers/NotificationSendHelper";
 import { NotifierHelper } from "@spt-aki/helpers/NotifierHelper";
 import { QuestHelper } from "@spt-aki/helpers/QuestHelper";
-import { ImporterUtil } from "@spt-aki/utils/ImporterUtil"
 import { BundleLoader } from "@spt-aki/loaders/BundleLoader";
 
-@injectable()
 export class CoreMod {
     constructor(
         @inject("WinstonLogger") protected logger: ILogger,
@@ -40,9 +38,9 @@ export class CoreMod {
      * @param {String} category The category of the item https://docs.sp-tarkov.com/#resources/other.md
      * @param {Number} price The price in RUB of the item on the flea
      */
-    public CreateHandbookItem(id, category, price)
+    static CreateHandbookItem(templates, id, category, price)
     {
-        const handbook = this.databaseServer.getTables().templates.handbook;
+        const handbook = templates.handbook;
         handbook.Items.push({
             "Id": id,
             "ParentId": category,
