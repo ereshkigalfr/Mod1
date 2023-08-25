@@ -35,7 +35,10 @@ export class InitTrader
         
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new trader in database")};
-        //Traders[TGSTraderBase._id] = 
+        Traders[TGSTraderBase._id].base = TGSTraderBase;
+        Traders[TGSTraderBase._id].questassort = TGSTraderQuestsUnlocks;
+        Traders[TGSTraderBase._id].assort = TGSTraderAssorts
+
 
         //Maybe do assorts generation by there ? I need to think about it
         /*
