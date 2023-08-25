@@ -15,8 +15,6 @@ import * as TGSPresets from "../../config/presets.json";
 import * as TGSValues from "../../config/values.json";
 import * as config from "../../config/config.json";
 
-import { CoreMod } from "../CoreMod"
-
 export class InitDatabase
 {
     static postDBLoad(container: DependencyContainer)
@@ -43,7 +41,6 @@ export class InitDatabase
             {
                 let item = TGSItems[i]
                 items[item] = item;
-                console.log(i)
                 handbook.Items.push({
                     "Id": i,
                     "ParentId": item._parent,
@@ -96,12 +93,13 @@ export class InitDatabase
         customization[NewSuit2._id] = NewSuit2;
 
         //Adding new hideout productions to the database
+        
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new hideout productions in the database")};
         for (const prod in TGSHideoutProductions)
         {
             productions.push(TGSHideoutProductions[prod])
         }
-
+        
         //Making changes to the globals
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new presets in globals")};
         for (const foo in TGSPresets)
