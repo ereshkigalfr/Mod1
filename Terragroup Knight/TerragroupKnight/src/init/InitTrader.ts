@@ -1,3 +1,25 @@
+/*
+エレシュキガル
+*/
+
+/*
+    Terragroup Knight mod.
+    Copyright (C) 2023  Ereshkigal
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 import { DependencyContainer } from "tsyringe";
 
 // SPT types
@@ -17,6 +39,7 @@ import { TraderHelper } from "../helpers/traderHelpers";
 const TGSTraderBase = require("../../db/TGS_knight/base.json");
 const TGSTraderAssorts = require("../../db/TGS_knight/assort.json");
 const TGSTraderQuestsUnlocks = require("../../db/TGS_knight/questassort.json");
+const TGSTraderDialogues = require("../../db/TGS_knight/dialogue.json")
 import * as config from "../../config/config.json"
 
 export class InitTrader
@@ -38,6 +61,7 @@ export class InitTrader
         const ServerDatabase = MainDatabase.getTables();
         const Traders = ServerDatabase.traders
         
+        
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new trader in database")};
         traderConfig.updateTime.push({"traderId":TGSTraderBase._id,"seconds":3600})
@@ -45,17 +69,12 @@ export class InitTrader
         Traders[TGSTraderBase._id].base = TGSTraderBase;
         Traders[TGSTraderBase._id].questassort = TGSTraderQuestsUnlocks;
         Traders[TGSTraderBase._id].assort = TGSTraderAssorts
+        Traders[TGSTraderBase._id].dialogue = TGSTraderDialogues
         
-
-
         //Maybe do assorts generation by there ? I need to think about it
         /*
         blabla assort
         */
-
-        //Adding assorts unlocks of quests
-        if(config["Other"]["Extra logging"]){logger.info("TGK:Adding quests unlocks to trader")};
-        //I also need to do those and rethink them
 
     }
 }
