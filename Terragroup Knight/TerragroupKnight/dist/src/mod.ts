@@ -1,3 +1,25 @@
+/*
+エレシュキガル
+*/
+
+/*
+    Terragroup Knight mod.
+    Copyright (C) 2023  Ereshkigal
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 import { DependencyContainer } from "tsyringe";
 
 // SPT types
@@ -11,6 +33,7 @@ import { InitDatabase } from "./init/InitDatabase";
 //import { InitBots } from "./init/InitBots";
 import { InitTrader } from "./init/InitTrader";
 import * as config from "../config/config.json";
+import { InitBots } from "./init/InitBots";
 
 
 
@@ -19,17 +42,17 @@ class main implements IPostDBLoadMod, IPreAkiLoadMod
 
     public preAkiLoad(container: DependencyContainer): void
     {
+        const logger = container.resolve<ILogger>("WinstonLogger");
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki assets initialization")}
         InitAssets.preAkiLoad(container);
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki trader initialization")}
         InitTrader.preAkiLoad(container);
     }
     
     public postDBLoad(container: DependencyContainer): void
     {
         const logger = container.resolve<ILogger>("WinstonLogger");
-        //Start all scripts that adds something to the database
-        /*if(config["Other"]["Extra logging"]){logger.info("TGK:Starting assets initialization")}
-        InitAssets.postDBLoad(container);*/
-    
+        //Start all scripts that adds something to the database    
         if(config["Other"]["Extra logging"]){logger.info("TGK:Starting trader initialization")}
         InitTrader.postDBLoad(container);
                 
@@ -37,7 +60,7 @@ class main implements IPostDBLoadMod, IPreAkiLoadMod
         InitDatabase.postDBLoad(container);
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Starting bots initialization")}
-        //InitBots
+        InitBots.initAll(container);
 
     }
 }

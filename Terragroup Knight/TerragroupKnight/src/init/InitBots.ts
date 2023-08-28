@@ -66,7 +66,7 @@ export class InitBots
             boss.BossChance = 60;
         }
 
-        if(config["Other"]["Extra logging"]){logger.info("Adding new boss to maps")};
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new boss to maps")};
         //Adding the new boss to the spawnlist of labs
         const newBoss = configValues.newBoss;
         newBoss.BossChance = config.Gameplay["TG_Boss SpawnChance"]
@@ -74,6 +74,7 @@ export class InitBots
         maps["laboratory"].base.BossLocationSpawn.push(newBoss);
 
         //Lets add some spawns
+        /*
         InitBots.AddNewSpawnPoint(maps, "Spawn1", "laboratory", -263.587, 0.01103304, -390.5421, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
         InitBots.AddNewSpawnPoint(maps, "Spawn2", "laboratory", -245.7945, 0.02383833, -380.219, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
         InitBots.AddNewSpawnPoint(maps, "Spawn3", "laboratory", -249.6365, 4.104155, -379.0071, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
@@ -83,7 +84,7 @@ export class InitBots
         InitBots.AddNewSpawnPoint(maps, "Spawn7", "laboratory", -260.9297, 4.117605, -366.114, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
         InitBots.AddNewSpawnPoint(maps, "Spawn8", "laboratory", -251.4255, 4.098026, -318.5574, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
         InitBots.AddNewSpawnPoint(maps, "Spawn9", "laboratory", -258.5861, 4.098026, -318.506, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-
+        */
     }
 
     static AddNewSpawnPoint(maps, id, map, x, y, z, rot, sides, categories, BotZone)
