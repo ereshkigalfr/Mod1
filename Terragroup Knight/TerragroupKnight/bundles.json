@@ -33,97 +33,39 @@
             "dependencyKeys": [
                 "shaders",
                 "cubemaps",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
-		{
+        {
             "key": "AddGearUntar/ArmoredVests/gen4_untar_textures.bundle",
             "dependencyKeys": []
         },
-		{
+        {
             "key": "AddGearUntar/ArmoredVests/gen4_untar_mob_mesh.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"AddGearUntar/ArmoredVests/gen4_untar_textures.bundle",
+                "AddGearUntar/ArmoredVests/gen4_untar_textures.bundle",
                 "shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle",
-				"assets/content/characters/character/skeleton.bundle"
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/characters/character/skeleton.bundle"
             ]
         },
-		{
+        {
             "key": "AddGearUntar/Headgear/ulach_untar_textures.bundle",
             "dependencyKeys": []
         },
-		{
+        {
             "key": "AddGearUntar/Headgear/ulach_untar.bundle",
             "dependencyKeys": [
                 "cubemaps",
                 "shaders",
-				"AddGearUntar/Headgear/ulach_untar_textures.bundle",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "AddGearUntar/Headgear/ulach_untar_textures.bundle",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "assets/content/items/barter/item_eth_coin/item_eth_coin.bundle",
-            "dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
-        },
-        {
-            "key": "string",
-			"dependencyKeys": [
-            ]
+            "dependencyKeys": []
         }
-
     ]
-
 }
