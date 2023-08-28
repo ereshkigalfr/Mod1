@@ -1,37 +1,35 @@
 {
-    "_id": "5d5c1f25d582a5479d4ec458",
-    "areaType": 10,
+    "_id": "tgs_GrendelProduction",
+    "areaType": 11,
     "requirements": [
-      {
-        "areaType": 10,
-        "requiredLevel": 2,
-        "type": "Area"
-      },
-      {
-        "templateId": "56dff3afd2720bba668b4567",
-        "count": 200,
-        "isFunctional": false,
-        "isEncoded": false,
-        "type": "Item"
-      },
-      {
-        "templateId": "57347c5b245977448d35f6e1",
-        "count": 2,
-        "isFunctional": false,
-        "isEncoded": false,
-        "type": "Item"
-      },
-      {
-        "templateId": "5d40425986f7743185265461",
-        "type": "Tool"
-      }
+        {
+            "areaType": 10,
+            "requiredLevel": 3,
+            "type": "Area"
+        },
+        {
+            "templateId": "tgs_grendel_intelligence",
+            "count": 1,
+            "isFunctional": false,
+            "type": "Item"
+        },
+        {
+            "templateId": "590c5a7286f7747884343aea",
+            "count": 1,
+            "isFunctional": false,
+            "type": "Item"
+        },
+        {
+            "templateId": "5d6fc78386f77449d825f9dc",
+            "count": 1,
+            "isFunctional": false,
+            "type": "Item"
+        }
     ],
-    "productionTime": 19900,
-    "needFuelForAllProductionTime": false,
-    "locked": false,
-    "endProduct": "56dff2ced2720bb4668b4567",
     "continuous": false,
-    "count": 320,
-    "productionLimitCount": 0,
-    "isEncoded": false
-  }
+    "productionTime": 10,
+    "boosters": null,
+    "endProduct": "tgs_65x39mm_grendel",
+    "count": 90,
+    "productionLimitCount": 0
+}
