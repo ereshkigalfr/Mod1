@@ -1,0 +1,16 @@
+{
+    "newBoss": {
+        "BossName": "TG_Boss",
+        "BossChance": 0,
+        "BossZone": "BotZoneFloor1,BotZoneFloor2,BotZoneBasement",
+        "BossPlayer": false,
+        "BossDifficult": "impossible",
+        "BossEscortType": "TG_Followers",
+        "BossEscortDifficult": "impossible",
+        "BossEscortAmount": "5",
+        "Time": 1,
+        "TriggerId": "",
+        "TriggerName": "none",
+        "Delay": 15
+    }
+}

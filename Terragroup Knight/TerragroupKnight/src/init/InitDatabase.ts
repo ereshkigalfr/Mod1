@@ -33,8 +33,8 @@ const TGSQuests = require("../../db/quests.json");
 const TGSMapsLoot = require("../../db/loot.json");
 const TGSLocales = require("../../db/locales.json");
 const TGSHideoutProductions = require("../../db/productions.json");
-const TGSPresets = require("../../config/presets.json");
-const TGSValues = require("../../config/values.json");
+const TGSPresets = require("../../data/presets.json");
+const TGSGlobals = require("../../config/globals.json");
 const config = require("../../config/config.json");
 
 export class InitDatabase
@@ -126,13 +126,13 @@ export class InitDatabase
 
         //Add new stims
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new stims in globals")};
-        Object.assign(globals["config"]["Health"]["Effects"]["Stimulator"]["Buffs"], TGSValues.BuffToAdd);
+        Object.assign(globals["config"]["Health"]["Effects"]["Stimulator"]["Buffs"], TGSGlobals.Buffs);
 
         //Add new weapons masteries
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new weapons masteries in globals")};
-        for (const mastery in TGSValues.WeaponMastery)
+        for (const mastery in TGSGlobals.WeaponMastery)
         {
-            globals["config"]["Mastering"].push(TGSValues.WeaponMastery[mastery]);
+            globals["config"]["Mastering"].push(TGSGlobals.WeaponMastery[mastery]);
         }
 
         //Adding loot to the maps

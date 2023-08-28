@@ -1,163 +1,4 @@
 {
-    "BuffToAdd": {
-        "TGS_ChemicalBuff": [
-            {
-                "BuffType": "SkillRate",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 180,
-                "Value": 500,
-                "AbsoluteValue": true,
-                "SkillName": "Endurance"
-            },
-            {
-                "BuffType": "SkillRate",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 180,
-                "Value": 500,
-                "AbsoluteValue": true,
-                "SkillName": "Strength"
-            },
-            {
-                "BuffType": "SkillRate",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 180,
-                "Value": 500,
-                "AbsoluteValue": true,
-                "SkillName": "RecoilControl"
-            },
-            {
-                "BuffType": "HealthRate",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 45,
-                "Value": 10,
-                "AbsoluteValue": true,
-                "SkillName": "Health"
-            },
-            {
-                "BuffType": "HydrationRate",
-                "Chance": 1,
-                "Delay": 50,
-                "Duration": 30,
-                "Value": -50,
-                "AbsoluteValue": true,
-                "SkillName": "Endurance"
-            },
-            {
-                "BuffType": "HandsTremor",
-                "Chance": 1,
-                "Delay": 50,
-                "Duration": 300,
-                "Value": 20,
-                "AbsoluteValue": true,
-                "SkillName": "Health"
-            },
-            {
-                "BuffType": "QuantumTunnelling",
-                "Chance": 1,
-                "Delay": 50,
-                "Duration": 120,
-                "Value": 15,
-                "AbsoluteValue": true,
-                "SkillName": "Health"
-            }
-        ],
-        "TGS_ChemicalBuff2": [
-            {
-                "BuffType": "DamageModifier",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 900,
-                "Value": -0.5,
-                "AbsoluteValue": false,
-                "SkillName": ""
-            },
-            {
-                "BuffType": "StaminaRate",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 500,
-                "Value": -10,
-                "AbsoluteValue": true,
-                "SkillName": ""
-            },
-            {
-                "BuffType": "SkillRate",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 650,
-                "Value": -10,
-                "AbsoluteValue": true,
-                "SkillName": "RecoilControl"
-            },
-            {
-                "BuffType": "HealthRate",
-                "Chance": 1,
-                "Delay": 1,
-                "Duration": 60,
-                "Value": 20,
-                "AbsoluteValue": true,
-                "SkillName": "Health"
-            },
-            {
-                "BuffType": "HydrationRate",
-                "Chance": 1,
-                "Delay": 50,
-                "Duration": 320,
-                "Value": -50,
-                "AbsoluteValue": true,
-                "SkillName": "Endurance"
-            },
-            {
-                "BuffType": "HandsTremor",
-                "Chance": 1,
-                "Delay": 50,
-                "Duration": 300,
-                "Value": 20,
-                "AbsoluteValue": true,
-                "SkillName": "Health"
-            },
-            {
-                "BuffType": "QuantumTunnelling",
-                "Chance": 1,
-                "Delay": 50,
-                "Duration": 120,
-                "Value": 15,
-                "AbsoluteValue": true,
-                "SkillName": "Health"
-            },
-            {
-                "BuffType": "Pain",
-                "Chance": 0.25,
-                "Delay": 1,
-                "Duration": 1800,
-                "Value": 0,
-                "AbsoluteValue": false,
-                "SkillName": ""
-            }
-        ]
-    },
-    "WeaponMastery": [
-        {
-            "Name": "M16",
-            "Templates": [
-                "TGS_prototype_m16"
-            ],
-            "Level2": 1000,
-            "Level3": 3000
-        },
-        {
-            "Name": "Bad News",
-            "Templates": [
-                "TGS_338_badnews"
-            ],
-            "Level2": 1000,
-            "Level3": 3000
-        }
-    ],
     "WoodsForcedLoot": {
         "Id": "equipment",
         "data": [
@@ -431,25 +272,23 @@
                         "_tpl": "TGS_338_LM_20rnd_mag",
                         "parentId": "ca6f510f191c63c61c59b425",
                         "slotId": "mod_magazine",
-                        "upd": {
-
-                        }
+                        "upd": {}
                     },
                     {
-						"_id": "77505fdec5e91fa8bf6119ae",
-						"_tpl": "TGS_tgBeacon",
-						"parentId": "57482d90c5ef4ce7c077e21f",
-						"slotId": "main",
-						"location": {
-							"x": 2,
-							"y": 5,
-							"r": "Horizontal",
-							"isSearched": true
-						},
-						"upd": {
-							"StackObjectsCount": 1
-						}
-					},
+                        "_id": "77505fdec5e91fa8bf6119ae",
+                        "_tpl": "TGS_tgBeacon",
+                        "parentId": "57482d90c5ef4ce7c077e21f",
+                        "slotId": "main",
+                        "location": {
+                            "x": 2,
+                            "y": 5,
+                            "r": "Horizontal",
+                            "isSearched": true
+                        },
+                        "upd": {
+                            "StackObjectsCount": 1
+                        }
+                    },
                     {
                         "_id": "67d5ba8de14a696b2cb5fe26",
                         "_tpl": "59db7e1086f77448be30ddf3",
@@ -476,19 +315,5 @@
                 ]
             }
         ]
-    },
-    "newBoss": {
-        "BossName": "TG_Boss",
-        "BossChance": 0,
-        "BossZone": "BotZoneFloor1,BotZoneFloor2,BotZoneBasement",
-        "BossPlayer": false,
-        "BossDifficult": "impossible",
-        "BossEscortType": "TG_Followers",
-        "BossEscortDifficult": "impossible",
-        "BossEscortAmount": "5",
-        "Time": 1,
-        "TriggerId": "",
-        "TriggerName": "none",
-        "Delay": 15
     }
 }
