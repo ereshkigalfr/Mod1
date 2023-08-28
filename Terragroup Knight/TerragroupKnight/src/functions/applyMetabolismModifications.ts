@@ -39,7 +39,7 @@ export class applyMetabolismModifications
     static apply(profile, sessionID)
     {
         const config = require("../../config/config.json");
-        const CoreMod = require("../../../CoreMod/src/Core.js");
+        const CoreMod = require("../core/coremod");
         //Metabolism additions
         const templateProfile = this.DatabaseServer.getTables().templates.profiles.Standard.bear.character;
         let metabolismProgress = 0

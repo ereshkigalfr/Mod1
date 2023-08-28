@@ -82,7 +82,6 @@ export class InitDatabase
             Object.assign(locales[lang], TGSLocales[lang]);
         }
 
-        
         //Adding suits to customization database
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new customization items in the database")};
         const NewSuit = JsonUtil.clone(customization["5d1f56f186f7744bcb0acd1a"]);
@@ -138,13 +137,12 @@ export class InitDatabase
         //Adding loot to the maps
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new loots place on maps")};
         for (const lootMaps in TGSMapsLoot) {
-                for (const lootCat in TGSMapsLoot[lootMaps]) {
-                        for (const catArray in TGSMapsLoot[lootMaps][lootCat]) {
-                            
-                            maps[lootMaps].looseLoot[lootCat].push(TGSMapsLoot[lootMaps][lootCat][catArray]);
-                        }
+            for (const lootCat in TGSMapsLoot[lootMaps]) {
+                for (const catArray in TGSMapsLoot[lootMaps][lootCat]) {
+                    
+                    maps[lootMaps].looseLoot[lootCat].push(TGSMapsLoot[lootMaps][lootCat][catArray]);
+                }
             }
         }
-
     }
 }

@@ -38,5 +38,7 @@ export class InitCallbacks
     static lockLabs()
     {}
 
+    static customLoog()
+    {}
     
 }

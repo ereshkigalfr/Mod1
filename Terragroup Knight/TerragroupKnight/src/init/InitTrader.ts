@@ -26,7 +26,7 @@ import { DependencyContainer } from "tsyringe";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import { ITraderConfig, UpdateTime } from "@spt-aki/models/spt/config/ITraderConfig";
+import { ITraderConfig } from "@spt-aki/models/spt/config/ITraderConfig";
 import { ConfigServer } from "@spt-aki/servers/ConfigServer";
 import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
 
@@ -62,8 +62,6 @@ export class InitTrader
         const ServerDatabase = MainDatabase.getTables();
         const Traders = ServerDatabase.traders
         
-        
-
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new trader in database")};
         traderConfig.updateTime.push({"traderId":TGSTraderBase._id,"seconds":3600})
         Traders[TGSTraderBase._id] = {}
