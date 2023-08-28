@@ -27,9 +27,12 @@ import { HashUtil } from "@spt-aki/utils/HashUtil";
 @injectable()
 
 
-export class checkLabslock
+export class applyMetabolismModifications
 {
-    constructor()
+    constructor(
+        @inject("DatabaseServer") protected databaseServer: DatabaseServer,
+        @inject("WinstonLogger") private logger: ILogger
+    )
     {}
 
 
@@ -38,7 +41,7 @@ export class checkLabslock
         const config = require("../../config/config.json");
         const CoreMod = require("../../../CoreMod/src/Core.js");
         //Metabolism additions
-        const templateProfile = DatabaseServer.tables.templates.profiles.Standard.bear.character;
+        const templateProfile = this.DatabaseServer.getTables().templates.profiles.Standard.bear.character;
         let metabolismProgress = 0
         if(profile.Skills && profile.Skills.Common)
         {

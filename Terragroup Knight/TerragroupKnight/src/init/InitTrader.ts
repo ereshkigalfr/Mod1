@@ -30,6 +30,7 @@ import { ITraderConfig, UpdateTime } from "@spt-aki/models/spt/config/ITraderCon
 import { ConfigServer } from "@spt-aki/servers/ConfigServer";
 import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
 
+
 // New trader settings
 import { Money } from "@spt-aki/models/enums/Money";
 import { Traders } from "@spt-aki/models/enums/Traders";
@@ -39,8 +40,8 @@ import { TraderHelper } from "../helpers/traderHelpers";
 const TGSTraderBase = require("../../db/TGS_knight/base.json");
 const TGSTraderAssorts = require("../../db/TGS_knight/assort.json");
 const TGSTraderQuestsUnlocks = require("../../db/TGS_knight/questassort.json");
-const TGSTraderDialogues = require("../../db/TGS_knight/dialogue.json")
-import * as config from "../../config/config.json"
+const TGSTraderDialogues = require("../../db/TGS_knight/dialogue.json");
+import * as config from "../../config/config.json";
 
 export class InitTrader
 {

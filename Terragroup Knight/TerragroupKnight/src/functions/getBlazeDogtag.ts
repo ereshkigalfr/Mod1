@@ -30,7 +30,7 @@ import { HashUtil } from "@spt-aki/utils/HashUtil";
 export class getBlazeDogtag
 {
     constructor(
-        @inject("HashUtil") protected hashUtil: HashUtil,
+        @inject("HashUtil") protected hashUtil: HashUtil
     )
     {}
 

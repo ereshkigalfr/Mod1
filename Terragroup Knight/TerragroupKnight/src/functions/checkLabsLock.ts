@@ -22,38 +22,52 @@
 
 import { inject, injectable } from "tsyringe";
 
-import { HashUtil } from "@spt-aki/utils/HashUtil";
+//SPT Imports
+import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
+import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
+
+const config = require("../../config/config.json");
 
 @injectable()
 
-
-export class checkLabslock
+export class checkLabsLock
 {
-    constructor()
+    constructor(
+        @inject("DatabaseServer") protected databaseServer: DatabaseServer,
+        @inject("WinstonLogger") private logger: ILogger
+    )
     {}
 
 
     static check(profile)
     {
+        const ServerDatabase = this.databaseServer.getTables();
+        const maps = ServerDatabase.locations
+
         if (!profile.TradersInfo )
         {
-            DatabaseServer.tables.locations["laboratory"].base.Locked = true;
+            maps["laboratory"].base.Locked = true;
+            if(config["Other"]["Extra logging"]){this.logger.info('TGK: No trader data, locking labs')}
         }
         else
         {
             if (!profile.TradersInfo["terragroup_specialist"])
             {
-                DatabaseServer.tables.locations["laboratory"].base.Locked = true;
+                maps["laboratory"].base.Locked = true;
+                if(config["Other"]["Extra logging"]){this.logger.info('TGK: Trader not existing, locking labs')}
             }
             else
             {
                 if (!profile.TradersInfo["terragroup_specialist"].unlocked)
                 {
-                    DatabaseServer.tables.locations["laboratory"].base.Locked = true;
+                    maps["laboratory"].base.Locked = true;
+                    if(config["Other"]["Extra logging"]){this.logger.info('TGK: Trader locked, locking labs')}
                 }
                 else
                 {
-                    DatabaseServer.tables.locations["laboratory"].base.Locked = false;
+                    maps["laboratory"].base.Locked = false;
+                    if(config["Other"]["Extra logging"]){this.logger.info('TGK: Trader unlock, free labs!!')}
                 }
             }
         }

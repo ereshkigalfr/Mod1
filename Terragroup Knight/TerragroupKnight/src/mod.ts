@@ -26,14 +26,15 @@ import { DependencyContainer } from "tsyringe";
 import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
 import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-
-//Get all initialization scripts
+import { BotGenerator } from "@spt-aki/generators/BotGenerator";
+//TGS Imports
 import { InitAssets } from "./init/InitAssets";
 import { InitDatabase } from "./init/InitDatabase";
-//import { InitBots } from "./init/InitBots";
-import { InitTrader } from "./init/InitTrader";
-import * as config from "../config/config.json";
 import { InitBots } from "./init/InitBots";
+import { InitBots } from "./init/InitBots";
+import { InitTrader } from "./init/InitTrader";
+import { TGS_GenerateBot } from "../functions/generateBot";
+import * as config from "../config/config.json";
 
 
 
@@ -43,10 +44,13 @@ class main implements IPostDBLoadMod, IPreAkiLoadMod
     public preAkiLoad(container: DependencyContainer): void
     {
         const logger = container.resolve<ILogger>("WinstonLogger");
+        const BotGenerator = container.resolve<BotGenerator>("BotGenerator");
         if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki assets initialization")}
         InitAssets.preAkiLoad(container);
         if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki trader initialization")}
         InitTrader.preAkiLoad(container);
+        //Replacing AKI Fucntions
+        BotGenerator.generateBot = TGS_GenerateBot.generateMyOwnBot
     }
     
     public postDBLoad(container: DependencyContainer): void

@@ -29,7 +29,10 @@ import { HashUtil } from "@spt-aki/utils/HashUtil";
 
 export class applyHealthModifications
 {
-    constructor()
+    constructor(
+        @inject("DatabaseServer") protected databaseServer: DatabaseServer,
+        @inject("WinstonLogger") private logger: ILogger
+    )
     {}
 
 
@@ -37,7 +40,7 @@ export class applyHealthModifications
     {
         const config = require("../../config/config.json");
         const CoreMod = require("../../../CoreMod/src/Core.js");
-        const templateProfile = DatabaseServer.tables.templates.profiles.Standard.bear.character;
+        const templateProfile = this.DatabaseServer.getTables().templates.profiles.Standard.bear.character;
         let healthLevel = 0;
         let healthProgression = 0;
         let pmcBones = [];
