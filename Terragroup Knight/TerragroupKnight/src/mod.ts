@@ -19,17 +19,17 @@ class main implements IPostDBLoadMod, IPreAkiLoadMod
 
     public preAkiLoad(container: DependencyContainer): void
     {
+        const logger = container.resolve<ILogger>("WinstonLogger");
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki assets initialization")}
         InitAssets.preAkiLoad(container);
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki trader initialization")}
         InitTrader.preAkiLoad(container);
     }
     
     public postDBLoad(container: DependencyContainer): void
     {
         const logger = container.resolve<ILogger>("WinstonLogger");
-        //Start all scripts that adds something to the database
-        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting assets initialization")}
-        InitAssets.postDBLoad(container);
-    
+        //Start all scripts that adds something to the database    
         if(config["Other"]["Extra logging"]){logger.info("TGK:Starting trader initialization")}
         InitTrader.postDBLoad(container);
                 

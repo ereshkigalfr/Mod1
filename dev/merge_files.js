@@ -60,12 +60,14 @@ class Merging
 
         vfs.writeFile("./dev/output/productions.json", JsonUtil.serialize(newProd, true));
 
-        let localeOneFile = {};
+        let localeOneFile = {}
         //Adding translations
         for (let lang in db.locales)
         {
+            localeOneFile[lang] = {}
             for(const node in db.locales[lang]){
-                console.log(db.locales[lang])
+                console.log(node)
+                localeOneFile[lang][node] = node
                 localeOneFile[lang][node] = JsonUtil.deserialize(vfs.readFile(db.locales[lang][node]))
             }
             
