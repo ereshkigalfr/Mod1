@@ -6,6 +6,9 @@
 
 ## Known bugs :
 
+## Incompatible mods:
+- Realism
+
 ## Special thanks
 * **Carl**
 For the terragroup specialist top for raiders and dogtags
