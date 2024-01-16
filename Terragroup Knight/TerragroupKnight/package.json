@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "main": "src/mod.js",
     "license": "AGPL-3.0",
-    "author": "Ereshkigal,Terkoiz,HiddenCirno",
-    "akiVersion": "3.7.0",
+    "author": "Ereshkigal",
+    "akiVersion": "3.7.6",
     "scripts": {
         "setup": "npm i",
         "build": "node ./packageBuild.ts"

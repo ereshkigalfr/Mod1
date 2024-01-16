@@ -27,24 +27,25 @@ import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import { ITraderConfig } from "@spt-aki/models/spt/config/ITraderConfig";
+import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
 import { ConfigServer } from "@spt-aki/servers/ConfigServer";
 import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
-
 
 // New trader settings
 import { Money } from "@spt-aki/models/enums/Money";
 import { Traders } from "@spt-aki/models/enums/Traders";
-import { TraderHelper } from "../helpers/traderHelpers";
 
 // TGS Types
 const TGSTraderBase = require("../../db/TGS_knight/base.json");
 const TGSTraderAssorts = require("../../db/TGS_knight/assort.json");
 const TGSTraderQuestsUnlocks = require("../../db/TGS_knight/questassort.json");
 const TGSTraderDialogues = require("../../db/TGS_knight/dialogue.json");
+
 import * as config from "../../config/config.json";
 
 export class InitTrader
 {
+
     static preAkiLoad(container: DependencyContainer)
     {
         // Add trader to trader enum
@@ -58,17 +59,20 @@ export class InitTrader
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const logger = container.resolve<ILogger>("WinstonLogger");
         const traderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
+        const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
         const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const ServerDatabase = MainDatabase.getTables();
         const Traders = ServerDatabase.traders
         
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new trader in database")};
         traderConfig.updateTime.push({"traderId":TGSTraderBase._id,"seconds":3600})
-        Traders[TGSTraderBase._id] = {}
+        Traders[TGSTraderBase._id] = Traders.ragfair
         Traders[TGSTraderBase._id].base = TGSTraderBase;
         Traders[TGSTraderBase._id].questassort = TGSTraderQuestsUnlocks;
         Traders[TGSTraderBase._id].assort = TGSTraderAssorts
         Traders[TGSTraderBase._id].dialogue = TGSTraderDialogues
+        ragfairConfig.traders[TGSTraderBase._id] = true;
+        
         
         //Maybe do assorts generation by there ? I need to think about it
         /*

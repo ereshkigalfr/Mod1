@@ -75,10 +75,10 @@ export class InitBots
         }
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new boss to maps")};
+        
         //Adding the new boss to the spawnlist of labs
         const newBoss = configBots.newBoss;
         newBoss.BossChance = config.Gameplay["TG_Boss SpawnChance"]
-
         maps["laboratory"].base.BossLocationSpawn.push(newBoss);
 
         //Lets add some spawns

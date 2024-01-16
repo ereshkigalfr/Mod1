@@ -133,7 +133,7 @@ export class InitDatabase
         {
             globals["config"]["Mastering"].push(TGSGlobals.WeaponMastery[mastery]);
         }
-        
+        /*
         //Adding loot to the maps
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new loots place on maps")};
         for (const lootMaps in TGSMapsLoot) {
@@ -143,6 +143,6 @@ export class InitDatabase
                     maps[lootMaps].looseLoot[lootCat].push(TGSMapsLoot[lootMaps][lootCat][catArray]);
                 }
             }
-        }
+        }*/
     }
 }

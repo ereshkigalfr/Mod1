@@ -36,8 +36,6 @@ import { InitTrader } from "./init/InitTrader";
 import { TGS_GenerateBot } from "../src/functions/generateBot";
 import * as config from "../config/config.json";
 
-
-
 class main implements IPostDBLoadMod, IPreAkiLoadMod
 {
 
