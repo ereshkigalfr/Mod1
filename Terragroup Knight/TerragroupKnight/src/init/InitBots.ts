@@ -4,7 +4,7 @@
 
 /*
     Terragroup Knight mod.
-    Copyright (C) 2023  Ereshkigal
+    Copyright (C) 2024 Ereshkigal
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
@@ -63,6 +63,7 @@ export class InitBots
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Replacing default raiders with custom one")};
         //Replacing all regular raiders on labs by TG raiders
+       
         for (const bosses in maps["laboratory"].base.BossLocationSpawn)
         {
             let boss = maps["laboratory"].base.BossLocationSpawn[bosses];

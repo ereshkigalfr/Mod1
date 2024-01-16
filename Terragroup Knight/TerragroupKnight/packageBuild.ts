@@ -16,7 +16,7 @@ const minimatch = require('minimatch');
 const { author, name:packageName, version } = require("./package.json");
 
 // Generate the name of the package, stripping out all non-alphanumeric characters in the 'author' and 'name'.
-const modName = `${author.replace(/[^a-z0-9]/gi, "")}-${packageName.replace(/[^a-z0-9]/gi, "")}-${version}`;
+const modName = `${packageName.replace(/[^a-z0-9]/gi, "")}-${version}`;
 console.log(`Generated package name: ${modName}`);
 
 // Delete the old build directory and compressed package file.
@@ -52,12 +52,14 @@ fs.copySync(__dirname, path.normalize(`${__dirname}/../~${modName}`), {filter: (
     return !shouldExclude;
 },});
 
+
 fs.moveSync(path.normalize(`${__dirname}/../~${modName}`), path.normalize(`${__dirname}/${modName}`), { overwrite: true });
 fs.copySync(path.normalize(`${__dirname}/${modName}`), path.normalize(`${__dirname}/dist`));
 console.log("Build files copied.");
 
 // Compress the files for easy distribution. The compressed file is saved into the dist directory. When uncompressed we
 // need to be sure that it includes a directory that the user can easily copy into their game mods directory.
+
 zip({
     source: modName,
     destination: `dist/${modName}.zip`,

@@ -4,7 +4,7 @@
 
 /*
     Terragroup Knight mod.
-    Copyright (C) 2023  Ereshkigal
+    Copyright (C) 2024 Ereshkigal
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
@@ -133,7 +133,7 @@ export class InitDatabase
         {
             globals["config"]["Mastering"].push(TGSGlobals.WeaponMastery[mastery]);
         }
-
+        
         //Adding loot to the maps
         if(config["Other"]["Extra logging"]){logger.info("TGK:Creating new loots place on maps")};
         for (const lootMaps in TGSMapsLoot) {
