@@ -55,10 +55,10 @@ export class InitBots
 
         //Adding all the bots types
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding all bots types to database")};
-        bots.types["tg_boss"] = TGSBotBoss;
-        bots.types["tg_followers"] = TGSBotFollower;
-        bots.types["tg_raiders"] = TGSBotRaider;
-        bots.types["untroops"] = TGSBotUN;
+        bots.types["TG_Boss"] = TGSBotBoss;
+        bots.types["TG_Followers"] = TGSBotFollower;
+        bots.types["TG_Raiders"] = TGSBotRaider;
+        bots.types["UNtroops"] = TGSBotUN;
 
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Replacing default raiders with custom one")};

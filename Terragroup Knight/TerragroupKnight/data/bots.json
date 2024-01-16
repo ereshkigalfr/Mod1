@@ -11,7 +11,7 @@
         "BossEscortAmount": "5",
         "Time": 1,
         "TriggerId": "",
-        "TriggerName": "none",
+        "TriggerName": "",
         "Delay": 15
     }
 }
