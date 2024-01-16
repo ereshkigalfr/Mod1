@@ -34,7 +34,7 @@ const TGSMapsLoot = require("../../db/loot.json");
 const TGSLocales = require("../../db/locales.json");
 const TGSHideoutProductions = require("../../db/productions.json");
 const TGSPresets = require("../../data/presets.json");
-const TGSGlobals = require("../../config/globals.json");
+const TGSGlobals = require("../../data/globals.json");
 const config = require("../../config/config.json");
 
 export class InitDatabase

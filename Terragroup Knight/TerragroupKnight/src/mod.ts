@@ -31,9 +31,9 @@ import { BotGenerator } from "@spt-aki/generators/BotGenerator";
 import { InitAssets } from "./init/InitAssets";
 import { InitDatabase } from "./init/InitDatabase";
 import { InitBots } from "./init/InitBots";
-import { InitBots } from "./init/InitBots";
+import { InitCallbacks } from "./init/InitCallbacks";
 import { InitTrader } from "./init/InitTrader";
-import { TGS_GenerateBot } from "../functions/generateBot";
+import { TGS_GenerateBot } from "../src/functions/generateBot";
 import * as config from "../config/config.json";
 
 

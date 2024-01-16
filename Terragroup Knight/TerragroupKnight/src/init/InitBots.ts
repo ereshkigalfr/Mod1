@@ -30,7 +30,7 @@ import { ConfigServer } from "@spt-aki/servers/ConfigServer";
 import { IBotConfig } from "@spt-aki/models/spt/config/IBotConfig";
 
 //TGS Types
-import { coreMod } from "src/core/coremod";
+//import { coreMod } from "../../src/core/coremod";
 import * as config from "../../config/config.json"
 import * as configBots from "../../data/bots.json"
 import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
@@ -70,6 +70,7 @@ export class InitBots
             boss.BossEscortType = "TG_Raiders";
             boss.BossEscortAmount = "2,3,3,5,1,1,5,2,2,3,4";
             boss.BossDifficult = "impossible";
+            
             boss.BossChance = 60;
         }
 
@@ -101,7 +102,7 @@ export class InitBots
         BotConfig.presetBatch["TG_Boss"] = 1;
         BotConfig.presetBatch["TG_Followers"] = 60;
         BotConfig.presetBatch["UNTroops"] = 60;
-        
+        /*
         //Adding TG_Followers equipment to loadouts
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "5fc3e272f8b6a877a729eac5", "tg_followers"); //UMP-45
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "tgs_prototype_m16", "tg_followers"); // Proto M-16
@@ -139,7 +140,7 @@ export class InitBots
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "5e870397991fd70db46995c8", "tg_raiders"); // Mossberg
         coreMod.AddEquipmentToLoadout("Holster", "5a7ae0c351dfba0017554310", "tg_raiders"); // Glock17
         coreMod.AddEquipmentToLoadout("Holster", "5b1fa9b25acfc40018633c01", "tg_raiders"); // Glock18C
-        coreMod.AddEquipmentToLoadout("Holster", "56d59856d2720bd8418b456a", "tg_raiders"); //P226
+        coreMod.AddEquipmentToLoadout("Holster", "56d59856d2720bd8418b456a", "tg_raiders"); //P226*/
     }
 }
 
