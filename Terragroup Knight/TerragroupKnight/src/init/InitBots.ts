@@ -69,9 +69,8 @@ export class InitBots
             let boss = maps["laboratory"].base.BossLocationSpawn[bosses];
             boss.BossName = "TG_Raiders";
             boss.BossEscortType = "TG_Raiders";
-            boss.BossEscortAmount = "2,3,3,5,1,1,5,2,2,3,4";
+            boss.BossEscortAmount = "3,4,2,1,1,2,3,4,5,2,3,3,4";
             boss.BossDifficult = "impossible";
-            
             boss.BossChance = 60;
         }
 
@@ -103,6 +102,7 @@ export class InitBots
         BotConfig.presetBatch["TG_Boss"] = 1;
         BotConfig.presetBatch["TG_Followers"] = 60;
         BotConfig.presetBatch["UNTroops"] = 60;
+        
         /*
         //Adding TG_Followers equipment to loadouts
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "5fc3e272f8b6a877a729eac5", "tg_followers"); //UMP-45
