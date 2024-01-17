@@ -9,11 +9,11 @@
         "hands": [
             "5d1f5b3f86f7744bcd1345a2"
         ],
-        "head": [
-            "5fdb4139e4ed5b5ea251e4ed",
-            "5fdb5950f5264a66150d1c6e",
-            "5cde96047d6c8b20b577f016"
-        ],
+        "head": {
+            "5fdb4139e4ed5b5ea251e4ed": 1,
+            "5fdb5950f5264a66150d1c6e": 1,
+            "5cde96047d6c8b20b577f016": 1
+        },
         "voice": [
             "Usec_1",
             "Usec_2",
@@ -2066,36 +2066,38 @@
         }
     },
     "health": {
-        "BodyParts": {
-            "Chest": {
-                "max": 175,
-                "min": 175
-            },
-            "Head": {
-                "max": 60,
-                "min": 60
-            },
-            "LeftArm": {
-                "max": 125,
-                "min": 125
-            },
-            "LeftLeg": {
-                "max": 125,
-                "min": 125
-            },
-            "RightArm": {
-                "max": 125,
-                "min": 125
-            },
-            "RightLeg": {
-                "max": 125,
-                "min": 125
-            },
-            "Stomach": {
-                "max": 175,
-                "min": 175
+        "BodyParts": [
+            {
+                "Chest": {
+                    "max": 175,
+                    "min": 175
+                },
+                "Head": {
+                    "max": 60,
+                    "min": 60
+                },
+                "LeftArm": {
+                    "max": 125,
+                    "min": 125
+                },
+                "LeftLeg": {
+                    "max": 125,
+                    "min": 125
+                },
+                "RightArm": {
+                    "max": 125,
+                    "min": 125
+                },
+                "RightLeg": {
+                    "max": 125,
+                    "min": 125
+                },
+                "Stomach": {
+                    "max": 175,
+                    "min": 175
+                }
             }
-        },
+        ],
         "Energy": {
             "max": 150,
             "min": 150
@@ -2110,51 +2112,52 @@
         }
     },
     "inventory": {
+        "Ammo":{},
         "equipment": {
-            "ArmBand": [],
-            "ArmorVest": [
-                "tgs_armor_prototype"
-            ],
-            "Backpack": [
-                "5b44c6ae86f7742d1627baea",
-                "5c0e774286f77468413cc5b2",
-                "545cdae64bdc2d39198b4568",
-                "5e4abc6786f77406812bd572",
-                "5d5d940f86f7742797262046"
-            ],
-            "Earpiece": [
-                "5645bcc04bdc2d363b8b4572",
-                "5aa2ba71e5b5b000137b758f",
-                "5b432b965acfc47a8774094e",
-                "5c165d832e2216398b5a7e36",
-                "5e4d34ca86f774264f758330",
-                "5f60cd6cf2bcbb675b00dac6"
-            ],
-            "Eyewear": [
-                "5d5fca1ea4b93635fd598c07"
-            ],
-            "FaceCover": [
-                "5ab8f39486f7745cd93a1cca"
-            ],
-            "FirstPrimaryWeapon": [],
-            "Headwear": [],
-            "Holster": [],
-            "Pockets": [
-                "5af99e9186f7747c447120b8"
-            ],
-            "Scabbard": [],
-            "SecondPrimaryWeapon": [],
-            "SecuredContainer": [
-                "5857a8bc2459772bad15db29"
-            ],
-            "TacticalVest": [
-                "5d5d87f786f77427997cfaef",
-                "5c0e746986f7741453628fe5",
-                "5f5f41f56760b4138443b352",
-                "5e9db13186f7742f845ee9d3",
-                "5ab8dab586f77441cd04f2a2",
-                "5df8a42886f77412640e2e75"
-            ]
+            "ArmBand": {},
+            "ArmorVest": {
+                "tgs_armor_prototype": 1
+            },
+            "Backpack": {
+                "5b44c6ae86f7742d1627baea": 1,
+                "5c0e774286f77468413cc5b2": 1,
+                "545cdae64bdc2d39198b4568": 1,
+                "5e4abc6786f77406812bd572": 1,
+                "5d5d940f86f7742797262046": 1
+            },
+            "Earpiece": {
+                "5645bcc04bdc2d363b8b4572": 1,
+                "5aa2ba71e5b5b000137b758f": 1,
+                "5b432b965acfc47a8774094e": 1,
+                "5c165d832e2216398b5a7e36": 1,
+                "5e4d34ca86f774264f758330": 1,
+                "5f60cd6cf2bcbb675b00dac6": 1
+            },
+            "Eyewear": {
+                "5d5fca1ea4b93635fd598c07": 1
+            },
+            "FaceCover": {
+                "5ab8f39486f7745cd93a1cca": 1
+            },
+            "FirstPrimaryWeapon": {"tgs_prototype_m16":1},
+            "Headwear": {},
+            "Holster": {},
+            "Pockets": {
+                "5af99e9186f7747c447120b8": 1
+            },
+            "Scabbard": {},
+            "SecondPrimaryWeapon": {},
+            "SecuredContainer": {
+                "5857a8bc2459772bad15db29": 1
+            },
+            "TacticalVest": {
+                "5d5d87f786f77427997cfaef": 1,
+                "5c0e746986f7741453628fe5": 1,
+                "5f5f41f56760b4138443b352": 1,
+                "5e9db13186f7742f845ee9d3": 1,
+                "5ab8dab586f77441cd04f2a2": 1,
+                "5df8a42886f77412640e2e75": 1
+            }
         },
         "items": {
             "Backpack": [

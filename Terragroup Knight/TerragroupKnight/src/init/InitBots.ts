@@ -55,10 +55,10 @@ export class InitBots
 
         //Adding all the bots types
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding all bots types to database")};
-        bots.types["TG_Boss"] = TGSBotBoss;
-        bots.types["TG_Followers"] = TGSBotFollower;
-        bots.types["TG_Raiders"] = TGSBotRaider;
-        bots.types["UNtroops"] = TGSBotUN;
+        bots.types["tg_boss"] = TGSBotBoss;
+        bots.types["tg_followers"] = TGSBotFollower;
+        bots.types["tg_raiders"] = TGSBotRaider;
+        bots.types["untroops"] = TGSBotUN;
 
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Replacing default raiders with custom one")};
@@ -71,7 +71,7 @@ export class InitBots
             boss.BossEscortType = "TG_Raiders";
             boss.BossEscortAmount = "3,4,2,1,1,2,3,4,5,2,3,3,4";
             boss.BossDifficult = "impossible";
-            boss.BossChance = 60;
+            boss.BossChance = 55;
         }
 
         if(config["Other"]["Extra logging"]){logger.info("TGK:Adding new boss to maps")};
@@ -97,21 +97,39 @@ export class InitBots
         //Adding custom items to bosses
         bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_cryptedphone");
 
-        //Add bots preset
+        //Add bots configs
+        
         BotConfig.presetBatch["TG_Raiders"] = 120;
+        BotConfig.lootNValue["tg_raiders"] = 2;
+        BotConfig.itemSpawnLimits["tg_raiders"] = {};
+        BotConfig.equipment["tg_raiders"] = configBots.botEquipmentStuff;
+        BotConfig.durability["tg_raiders"] = configBots.durabilityStuff;
         BotConfig.presetBatch["TG_Boss"] = 1;
+        BotConfig.lootNValue["tg_boss"] = 1;
+        BotConfig.itemSpawnLimits["tg_boss"] = {};
+        BotConfig.equipment["tg_boss"] = configBots.botEquipmentStuff;
+        BotConfig.durability["tg_boss"] = configBots.durabilityStuff;
         BotConfig.presetBatch["TG_Followers"] = 60;
+        BotConfig.lootNValue["tg_followers"] = 60;
+        BotConfig.itemSpawnLimits["tg_followers"] = {};
+        BotConfig.equipment["tg_followers"] = configBots.botEquipmentStuff;
+        BotConfig.durability["tg_followers"] = configBots.durabilityStuff;
         BotConfig.presetBatch["UNTroops"] = 60;
+        BotConfig.lootNValue["untroops"] = 60;
+        BotConfig.itemSpawnLimits["untroops"] = {};
+        BotConfig.equipment["untroops"] = configBots.botEquipmentStuff;
+        BotConfig.durability["untroops"] = configBots.durabilityStuff;
+        
         
         /*
-        //Adding TG_Followers equipment to loadouts
+        //Adding tg_followers equipment to loadouts
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "5fc3e272f8b6a877a729eac5", "tg_followers"); //UMP-45
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "tgs_prototype_m16", "tg_followers"); // Proto M-16
         coreMod.AddEquipmentToLoadout("Holster", "5cadc190ae921500103bb3b6", "tg_followers"); // M9A3
         coreMod.AddEquipmentToLoadout("Headwear", "5e00c1ad86f774747333222c", "tg_followers"); // Team Exfil black
         coreMod.AddEquipmentToLoadout("Headwear", "5a154d5cfcdbcb001a3b00da", "tg_followers"); //Fast MT black
 
-        //Adding TG_Boss equipment to loadouts
+        //Adding tg_boss equipment to loadouts
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "5fc22d7c187fea44d52eda44", "tg_boss"); // MK-18
         coreMod.AddEquipmentToLoadout("FirstPrimaryWeapon", "tgs_338_badnews", "tg_boss"); // Bad New
         coreMod.AddEquipmentToLoadout("SecondPrimaryWeapon", "5e81ebcd8e146c7080625e15", "tg_boss"); // GL40
@@ -119,7 +137,7 @@ export class InitBots
         coreMod.AddEquipmentToLoadout("Headwear", "tgs_helmet_prototype", "tg_boss"); // Helmet proto
         coreMod.AddEquipmentToLoadout("Headwear", "5f60b34a41e30a4ab12a6947", "tg_boss"); // Caiman
 
-        //Adding TG_Raiders equipment to loadouts
+        //Adding tg_raiders equipment to loadouts
         coreMod.AddEquipmentToLoadout("Headwear", "5ea17ca01412a1425304d1c0", "tg_raiders"); // Bastion
         coreMod.AddEquipmentToLoadout("Headwear", "5e4bfc1586f774264f7582d3", "tg_raiders"); // Gallet helmet
         coreMod.AddEquipmentToLoadout("Headwear", "5b40e1525acfc4771e1c6611", "tg_raiders"); // Ulach IIIA black

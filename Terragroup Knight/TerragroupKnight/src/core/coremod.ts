@@ -71,67 +71,52 @@ export class coreMod
      * @param {String} id The id of The equipment to add
      * @param {String} bot The role of The bot to modify ex. "pmcbot"
      */
-    static AddEquipmentToLoadout(type, id, bot)
-    {
+    static AddEquipmentToLoadout(type, id, bot) {
         const items = DatabaseServer.tables.templates.items;
         const bots = DatabaseServer.tables.bots.types;
 
         bots[bot].inventory.equipment[type].push(id);
 
-        if(items[id] && items[id]._props && items[id]._props.Slots)
-        {
-            for (const slots in items[id]._props.Slots)
-            {
-                if (!bots[bot].inventory.mods[id])
-                {
+        if (items[id] && items[id]._props && items[id]._props.Slots) {
+            for (const slots in items[id]._props.Slots) {
+                if (!bots[bot].inventory.mods[id]) {
                     bots[bot].inventory.mods[id] = new Object();
                 }
                 let slot = items[id]._props.Slots[slots];
                 bots[bot].inventory.mods[id][slot._name] = slot._props.filters[0].Filter;
 
-                for (const FirstFilters in slot._props.filters[0].Filter)
-                {
+                for (const FirstFilters in slot._props.filters[0].Filter) {
                     let id2 = slot._props.filters[0].Filter[FirstFilters];
 
                     //We need to add mags
-                    if (items[id2]._parent === "5448bc234bdc2d3c308b4569")
-                    {
-                        if (!bots[bot].inventory.mods[id2])
-                        {
+                    if (items[id2]._parent === "5448bc234bdc2d3c308b4569") {
+                        if (!bots[bot].inventory.mods[id2]) {
                             bots[bot].inventory.mods[id2] = new Object();
                         }
                         let mag = items[id2];
                         bots[bot].inventory.mods[id2][mag._props.Cartridges[0]._name] = mag._props.Cartridges[0]._props.filters[0].Filter;
                     }
 
-                    for (const slots2 in items[id2]._props.Slots)
-                    {
-                        if (!bots[bot].inventory.mods[id2])
-                        {
+                    for (const slots2 in items[id2]._props.Slots) {
+                        if (!bots[bot].inventory.mods[id2]) {
                             bots[bot].inventory.mods[id2] = new Object();
                         }
                         let slot2 = items[id2]._props.Slots[slots2];
                         bots[bot].inventory.mods[id2][slot2._name] = slot2._props.filters[0].Filter;
 
-                        for (const SecondFilters in slot2._props.filters[0].Filter)
-                        {
+                        for (const SecondFilters in slot2._props.filters[0].Filter) {
                             let id3 = slot2._props.filters[0].Filter[SecondFilters];
-                            for (const slots3 in items[id3]._props.Slots)
-                            {
-                                if (!bots[bot].inventory.mods[id3])
-                                {
+                            for (const slots3 in items[id3]._props.Slots) {
+                                if (!bots[bot].inventory.mods[id3]) {
                                     bots[bot].inventory.mods[id3] = new Object();
                                 }
                                 let slot3 = items[id3]._props.Slots[slots3];
                                 bots[bot].inventory.mods[id3][slot3._name] = slot3._props.filters[0].Filter;
 
-                                for (const ThirdFilters in slot3._props.filters[0].Filter)
-                                {
+                                for (const ThirdFilters in slot3._props.filters[0].Filter) {
                                     let id4 = slot3._props.filters[0].Filter[ThirdFilters];
-                                    for (const slots4 in items[id4]._props.Slots)
-                                    {
-                                        if (!bots[bot].inventory.mods[id4])
-                                        {
+                                    for (const slots4 in items[id4]._props.Slots) {
+                                        if (!bots[bot].inventory.mods[id4]) {
                                             bots[bot].inventory.mods[id4] = new Object();
                                         }
                                         let slot4 = items[id4]._props.Slots[slots4];

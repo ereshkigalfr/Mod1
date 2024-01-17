@@ -13,5 +13,28 @@
         "TriggerId": "",
         "TriggerName": "",
         "Delay": 15
+    },
+    "botEquipmentStuff": {
+        "nvgIsActiveChanceDayPercent": 10,
+        "nvgIsActiveChanceNightPercent": 90,
+        "faceShieldIsActiveChancePercent": 100,
+        "lightIsActiveDayChancePercent": 45,
+        "lightIsActiveNightChancePercent": 95,
+        "laserIsActiveChancePercent": 95,
+        "forceStock": true
+    },
+    "durabilityStuff":{
+        "armor": {
+            "maxDelta": 10,
+            "minDelta": 0,
+            "minLimitPercent": 15
+        },
+        "weapon": {
+            "lowestMax": 60,
+            "highestMax": 100,
+            "maxDelta": 10,
+            "minDelta": 0,
+            "minLimitPercent": 15
+        }
     }
 }
