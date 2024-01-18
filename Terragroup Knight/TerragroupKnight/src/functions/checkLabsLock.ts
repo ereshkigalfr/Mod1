@@ -20,54 +20,51 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { inject, injectable } from "tsyringe";
+import { DependencyContainer } from "tsyringe";
 
-//SPT Imports
+// SPT types
+import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
+import { ConfigServer } from "@spt-aki/servers/ConfigServer";
+import { IBotConfig } from "@spt-aki/models/spt/config/IBotConfig";
 
-const config = require("../../config/config.json");
-
-@injectable()
+//TGS Types
+import * as config from "../../config/config.json"
 
 export class checkLabsLock
 {
-    constructor(
-        @inject("DatabaseServer") protected databaseServer: DatabaseServer,
-        @inject("WinstonLogger") private logger: ILogger
-    )
-    {}
-
-
-    static check(profile)
+    static check(container: DependencyContainer, profile)
     {
-        const ServerDatabase = this.databaseServer.getTables();
+        const MainDatabase = container.resolve<DatabaseServer>("DatabaseServer");
+        const logger = container.resolve<ILogger>("WinstonLogger");
+        const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        const ServerDatabase = MainDatabase.getTables();
         const maps = ServerDatabase.locations
 
-        if (!profile.TradersInfo )
+        if (!profile || !profile.TradersInfo )
         {
             maps["laboratory"].base.Locked = true;
-            if(config["Other"]["Extra logging"]){this.logger.info('TGK: No trader data, locking labs')}
+            if(config["Other"]["Extra logging"]){logger.info('TGK: No trader data, locking labs')}
         }
         else
         {
-            if (!profile.TradersInfo["terragroup_specialist"])
+            if (!profile.TradersInfo["TGS_knight"])
             {
                 maps["laboratory"].base.Locked = true;
-                if(config["Other"]["Extra logging"]){this.logger.info('TGK: Trader not existing, locking labs')}
+                if(config["Other"]["Extra logging"]){logger.info('TGK: Trader not existing, locking labs')}
             }
             else
             {
-                if (!profile.TradersInfo["terragroup_specialist"].unlocked)
+                if (!profile.TradersInfo["TGS_knight"].unlocked)
                 {
                     maps["laboratory"].base.Locked = true;
-                    if(config["Other"]["Extra logging"]){this.logger.info('TGK: Trader locked, locking labs')}
+                    if(config["Other"]["Extra logging"]){logger.info('TGK: Trader locked, locking labs')}
                 }
                 else
                 {
                     maps["laboratory"].base.Locked = false;
-                    if(config["Other"]["Extra logging"]){this.logger.info('TGK: Trader unlock, free labs!!')}
+                    if(config["Other"]["Extra logging"]){logger.info('TGK: Trader unlock, free labs!!')}
                 }
             }
         }

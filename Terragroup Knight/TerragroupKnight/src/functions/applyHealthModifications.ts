@@ -19,67 +19,88 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+import { DependencyContainer } from "tsyringe";
 
-import { inject, injectable } from "tsyringe";
+// SPT types
+import { VFS } from "@spt-aki/utils/VFS";
+import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
+//TGS Types
 
-import { HashUtil } from "@spt-aki/utils/HashUtil";
+import { coreMod } from "../../src/core/coremod";
+let data = require("../../data/donottouchever.json")
+const config = require("../../config/config.json");
 
-@injectable()
+export class applyHealthModifications {
 
+    static apply(container: DependencyContainer, profile, sessionid) {
+        const vfs = container.resolve<VFS>("VFS");
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
+        const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        //Let's first backup the profile initial health
+        if (profile) {
+            data[sessionid].Health = profile.Health
 
-export class applyHealthModifications
-{
-    constructor(
-        @inject("DatabaseServer") protected databaseServer: DatabaseServer,
-        @inject("WinstonLogger") private logger: ILogger
-    )
-    {}
+            let healthLevel = 0;
+            let healthProgression = 0;
+            let pmcBones = [];
+            if (profile.Skills && profile.Skills.Common) {
+                healthProgression = profile.Skills.Common.find(x => x.Id === "Health").Progress;
+            }
 
+            if (profile.Health && profile.Health.BodyParts) {
+                pmcBones = profile.Health.BodyParts;
+            }
 
-    static apply(profile, sessionID)
-    {
-        const config = require("../../config/config.json");
-        const CoreMod = require("../../../CoreMod/src/Core.js");
-        const templateProfile = this.DatabaseServer.getTables().templates.profiles.Standard.bear.character;
-        let healthLevel = 0;
-        let healthProgression = 0;
+            //Calculate health level properly
+            if (healthProgression >= 100) {
+                healthLevel = Math.floor(healthProgression / 100);
+            }
+
+            const HealthPerc = (Math.round(healthLevel * config.Gameplay.hpRate));
+
+            for (const bone in pmcBones) {
+                let boneMaximum = profile.Health.BodyParts[bone].Health.Maximum;
+                let boneCurrent = pmcBones[bone].Health.Current;
+
+                if (boneCurrent === boneMaximum) {
+                    profile.Health.BodyParts[bone].Health.Maximum = coreMod.percentageCalculation(boneMaximum, HealthPerc);
+                    profile.Health.BodyParts[bone].Health.Current = profile.Health.BodyParts[bone].Health.Maximum;
+                }
+                else {
+                    profile.Health.BodyParts[bone].Health.Maximum = coreMod.percentageCalculation(boneMaximum, HealthPerc);
+                }
+
+                profile.Health.BodyParts[bone] = pmcBones[bone];
+            }
+        }
+
+        //Saving the file
+        vfs.writeFile(`./${preAkiModLoader.getModPath("TerragroupKnight")}data/donottouchever.json`, JsonUtil.serialize(data, true), false, false)
+    }
+
+    static restore(container: DependencyContainer, profile, sessionid) {
+        const vfs = container.resolve<VFS>("VFS");
+        const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
         let pmcBones = [];
-        if(profile.Skills && profile.Skills.Common)
-        {
-            healthProgression = profile.Skills.Common.find(x => x.Id === "Health").Progress;
-        }
 
-        if(profile.Health && profile.Health.BodyParts)
-        {
-            pmcBones = profile.Health.BodyParts;
-        }
-
-        //Calculate health level properly
-        if (healthProgression >= 100)
-        {
-            healthLevel = Math.floor(healthProgression / 100);
-        }
-
-        const HealthPerc = (Math.round(healthLevel * config.hpRate));
-
-        for (const bone in pmcBones)
-        {
-            let boneMaximum = templateProfile.Health.BodyParts[bone].Health.Maximum;
-            let boneCurrent = pmcBones[bone].Health.Current;
-
-            if (boneCurrent === boneMaximum)
-            {
-                profile.Health.BodyParts[bone].Health.Maximum = CoreMod.percentageCalculation(boneMaximum, HealthPerc);
-                profile.Health.BodyParts[bone].Health.Current = profile.Health.BodyParts[bone].Health.Maximum;
-            }
-            else
-            {
-                profile.Health.BodyParts[bone].Health.Maximum = CoreMod.percentageCalculation(boneMaximum, HealthPerc);
+        if (data[sessionid].Health) {
+            if (profile.Health && profile.Health.BodyParts) {
+                pmcBones = profile.Health.BodyParts;
             }
 
-            profile.Health.BodyParts[bone] = pmcBones[bone];
-        }
+            for (const bone in pmcBones) {
 
-        SaveServer.profiles[sessionID].characters.pmc = profile;
+                profile.Health.BodyParts[bone].Health.Maximum = data[sessionid].Health.BodyParts[bone].Health.Maximum;
+
+            }
+        }
+        //Empty the data array again
+        if (data[sessionid].Health) {
+            data[sessionid].Health = {}
+        }
+        //Saving the file
+        vfs.writeFile(`./${preAkiModLoader.getModPath("TerragroupKnight")}data/donottouchever.json`, JsonUtil.serialize(data, true), false, false)
     }
 }

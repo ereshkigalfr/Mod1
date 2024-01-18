@@ -20,17 +20,47 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { inject, injectable } from "tsyringe";
+//SPT Imports
+import { DependencyContainer } from "tsyringe";
 
+import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
+import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 
 //TGS Imports
+let data = require("../../data/donottouchever.json")
 const config = require("../../config/config.json");
+
+//import { coreMod } from "../../src/core/coremod";
+let infoToSend = null
 
 export class raiderInvasion
 {
-    constructor()
-    {}
+    static invade(container: DependencyContainer,info)
+    {
+        const Logger = container.resolve<ILogger>("WinstonLogger");
+        
+        for (const bot in info.conditions){
+            info.conditions[bot].Role = "pmcBot"
+            info.conditions[bot].Difficulty = "impossible"
+        }
+        infoToSend = info
 
-    static invade()
-    {}
+        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("########################################################## YOU ARE BEING RAIDED ############################################################", "white", "redBG");
+        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
+    }
+
+    static canInvade(container: DependencyContainer,profile){
+        let bool = false
+
+        return bool
+    }
+
+    static newOutput(){
+        return infoToSend
+    }
 }

@@ -64,9 +64,9 @@ export class InitBots
         if(config["Other"]["Extra logging"]){logger.info("TGK:Replacing default raiders with custom one")};
         //Replacing all regular raiders on labs by TG raiders
        
-        for (const bosses in maps["laboratory"].base.BossLocationSpawn)
+        for (const bosses in maps.laboratory.base.BossLocationSpawn)
         {
-            let boss = maps["laboratory"].base.BossLocationSpawn[bosses];
+            let boss = maps.laboratory.base.BossLocationSpawn[bosses];
             boss.BossName = "TG_Raiders";
             boss.BossEscortType = "TG_Raiders";
             boss.BossEscortAmount = "3,4,2,1,1,2,3,4,5,2,3,3,4";
@@ -79,7 +79,7 @@ export class InitBots
         //Adding the new boss to the spawnlist of labs
         const newBoss = configBots.newBoss;
         newBoss.BossChance = config.Gameplay["TG_Boss SpawnChance"]
-        maps["laboratory"].base.BossLocationSpawn.push(newBoss);
+        maps.laboratory.base.BossLocationSpawn.push(newBoss);
 
         //Lets add some spawns
         /*
@@ -109,6 +109,8 @@ export class InitBots
         BotConfig.itemSpawnLimits["tg_boss"] = {};
         BotConfig.equipment["tg_boss"] = configBots.botEquipmentStuff;
         BotConfig.durability["tg_boss"] = configBots.durabilityStuff;
+        //3.8 stuff
+        //BotConfig.botRolesWithDogTags.push("tg_boss")
         BotConfig.presetBatch["TG_Followers"] = 60;
         BotConfig.lootNValue["tg_followers"] = 60;
         BotConfig.itemSpawnLimits["tg_followers"] = {};

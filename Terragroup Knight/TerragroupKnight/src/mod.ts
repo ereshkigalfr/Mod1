@@ -47,8 +47,13 @@ class main implements IPostDBLoadMod, IPreAkiLoadMod
         InitAssets.preAkiLoad(container);
         if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki trader initialization")}
         InitTrader.preAkiLoad(container);
+        if(config["Other"]["Extra logging"]){logger.info("TGK:Starting preAki callbacks initialization")}
+        InitCallbacks.initAll(container);
         //Replacing AKI Fucntions
-        BotGenerator.generateBot = TGS_GenerateBot.generateMyOwnBot
+        /*
+        container.register<TGS_GenerateBot>("TGS_GenerateBot", TGS_GenerateBot);
+        container.register("BotCallbacks", {useToken: "TGS_GenerateBot"});*/
+
     }
     
     public postDBLoad(container: DependencyContainer): void

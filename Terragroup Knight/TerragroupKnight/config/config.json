@@ -1,9 +1,10 @@
 {
     "Gameplay": {
-        "HydratationRate": 3,
         "EnergyRate": 3,
         "hpRate": 2,
+        "HydratationRate": 3,
         "raidsChance": 10,
+        "raidsCooldown": 3,
         "TG_Boss SpawnChance": 100
     },
     "Other": {
