@@ -45,12 +45,20 @@ export class dataFileGenerator {
             data[sessionid] = { "Health": {}, "Hydratation": {}, "Energy": {}, "Info": {} }
             data[sessionid].Info.RaidsCooldown = 0
             data[sessionid].Info.IsRaided = false
+            data[sessionid].Info.CurrentRaidResult = null
 
             //Saving data the file
             vfs.writeFile(`./${preAkiModLoader.getModPath("TerragroupKnight")}data/donottouchever.json`, JsonUtil.serialize(data, true), false, false)
+
         }
+    }
 
+    static saveFile(container: DependencyContainer, data) {
+        const vfs = container.resolve<VFS>("VFS");
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
+        const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
 
-
+        //Saving data the file
+        vfs.writeFile(`./${preAkiModLoader.getModPath("TerragroupKnight")}data/donottouchever.json`, JsonUtil.serialize(data, true), false, false)
     }
 }

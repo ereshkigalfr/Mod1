@@ -34,6 +34,7 @@ import { IBotConfig } from "@spt-aki/models/spt/config/IBotConfig";
 import * as config from "../../config/config.json"
 import * as configBots from "../../data/bots.json"
 import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
+import { coreMod } from "src/core/coremod";
 
 const TGSBotBoss = require("../../db/bots/tg_boss.json");
 const TGSBotFollower = require("../../db/bots/tg_followers.json");
@@ -82,17 +83,17 @@ export class InitBots
         maps.laboratory.base.BossLocationSpawn.push(newBoss);
 
         //Lets add some spawns
-        /*
-        InitBots.AddNewSpawnPoint(maps, "Spawn1", "laboratory", -263.587, 0.01103304, -390.5421, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn2", "laboratory", -245.7945, 0.02383833, -380.219, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn3", "laboratory", -249.6365, 4.104155, -379.0071, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn4", "laboratory", -245.6283, 4.104156, -379.9973, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn5", "laboratory", -253.2756, 4.117604, -361.4047, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn6", "laboratory", -255.1729, 4.117605, -367.925, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn7", "laboratory", -260.9297, 4.117605, -366.114, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn8", "laboratory", -251.4255, 4.098026, -318.5574, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        InitBots.AddNewSpawnPoint(maps, "Spawn9", "laboratory", -258.5861, 4.098026, -318.506, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
-        */
+        
+        coreMod.AddNewSpawnPoint(maps, "Spawn1", "laboratory", -263.587, 0.01103304, -390.5421, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn2", "laboratory", -245.7945, 0.02383833, -380.219, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn3", "laboratory", -249.6365, 4.104155, -379.0071, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn4", "laboratory", -245.6283, 4.104156, -379.9973, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn5", "laboratory", -253.2756, 4.117604, -361.4047, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn6", "laboratory", -255.1729, 4.117605, -367.925, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn7", "laboratory", -260.9297, 4.117605, -366.114, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn8", "laboratory", -251.4255, 4.098026, -318.5574, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        coreMod.AddNewSpawnPoint(maps, "Spawn9", "laboratory", -258.5861, 4.098026, -318.506, 0, ["Terragroup"], ["Bot"], "BotZoneMain");
+        
 
         //Adding custom items to bosses
         bots.types["bossgluhar"].inventory.items.SpecialLoot.push("TGS_cryptedphone");

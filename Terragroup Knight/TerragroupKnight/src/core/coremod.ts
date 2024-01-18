@@ -20,15 +20,17 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { inject, injectable } from "tsyringe";
+import { DependencyContainer } from "tsyringe";
 
-import { HashUtil } from "@spt-aki/utils/HashUtil";
+//SPT Imports
+import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
+import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 
-@injectable()
+
 
 export class coreMod
 {
-    constructor(){}
     
     static AddNewSpawnPoint(maps, id, map, x, y, z, rot, sides, categories, BotZone)
     {

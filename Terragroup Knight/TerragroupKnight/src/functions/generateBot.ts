@@ -1,14 +1,42 @@
 /*
 エレシュキガル
 */
-import { LauncherCallbacks } from "@spt-aki/callbacks/LauncherCallbacks";
-import { LauncherController } from "@spt-aki/controllers/LauncherController";
-import { IEmptyRequestData } from "@spt-aki/models/eft/common/IEmptyRequestData";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { SaveServer } from "@spt-aki/servers/SaveServer";
-import { HttpResponseUtil } from "@spt-aki/utils/HttpResponseUtil";
-import { Watermark } from "@spt-aki/utils/Watermark";
 import { inject, injectable } from "tsyringe";
+
+import { BotInventoryGenerator } from "@spt-aki/generators/BotInventoryGenerator";
+import { BotLevelGenerator } from "@spt-aki/generators/BotLevelGenerator";
+import { BotDifficultyHelper } from "@spt-aki/helpers/BotDifficultyHelper";
+import { BotHelper } from "@spt-aki/helpers/BotHelper";
+import { ProfileHelper } from "@spt-aki/helpers/ProfileHelper";
+import { WeightedRandomHelper } from "@spt-aki/helpers/WeightedRandomHelper";
+import {
+    Common,
+    Health as PmcHealth,
+    IBaseJsonSkills,
+    IBaseSkill,
+    IBotBase,
+    Info,
+    Skills as botSkills,
+} from "@spt-aki/models/eft/common/tables/IBotBase";
+import { Appearance, Health, IBotType } from "@spt-aki/models/eft/common/tables/IBotType";
+import { Item, Upd } from "@spt-aki/models/eft/common/tables/IItem";
+import { BaseClasses } from "@spt-aki/models/enums/BaseClasses";
+import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
+import { MemberCategory } from "@spt-aki/models/enums/MemberCategory";
+import { BotGenerationDetails } from "@spt-aki/models/spt/bots/BotGenerationDetails";
+import { IBotConfig } from "@spt-aki/models/spt/config/IBotConfig";
+import { IPmcConfig } from "@spt-aki/models/spt/config/IPmcConfig";
+import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
+import { ConfigServer } from "@spt-aki/servers/ConfigServer";
+import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
+import { BotEquipmentFilterService } from "@spt-aki/services/BotEquipmentFilterService";
+import { LocalisationService } from "@spt-aki/services/LocalisationService";
+import { SeasonalEventService } from "@spt-aki/services/SeasonalEventService";
+import { HashUtil } from "@spt-aki/utils/HashUtil";
+import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { RandomUtil } from "@spt-aki/utils/RandomUtil";
+import { TimeUtil } from "@spt-aki/utils/TimeUtil";
+
 
 //TGS Imports
 import { getBlazeDogtag } from "./getBlazeDogtag";
@@ -17,6 +45,8 @@ import { getBlazeDogtag } from "./getBlazeDogtag";
 
 export class TGS_GenerateBot extends BotCallbacks
 {
+
+    
 
     public override generateBot(
         sessionId: string,

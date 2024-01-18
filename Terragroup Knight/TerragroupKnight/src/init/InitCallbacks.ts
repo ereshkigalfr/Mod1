@@ -28,7 +28,11 @@ import type { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import type { DynamicRouterModService } from "@spt-aki/services/mod/dynamicRouter/DynamicRouterModService";
 import type { StaticRouterModService } from "@spt-aki/services/mod/staticRouter/StaticRouterModService";
 import { GameController } from "@spt-aki/controllers/GameController";
+import { BotController } from "@spt-aki/controllers/BotController";
 import { ProfileController } from "@spt-aki/controllers/ProfileController";
+import { SaveServer } from "@spt-aki/servers/SaveServer";
+import { HttpResponseUtil } from "@spt-aki/utils/HttpResponseUtil";
+
 
 
 //TGS Imports
@@ -38,6 +42,7 @@ import { applyHealthModifications } from "../functions/applyHealthModifications"
 import { applyMetabolismModifications } from "../functions/applyMetabolismModifications";
 import { dataFileGenerator } from "../functions/dataFileGenerator";
 
+const config = require("../../config/config.json");
 
 export class InitCallbacks {
 
@@ -45,7 +50,10 @@ export class InitCallbacks {
         const logger = container.resolve<ILogger>("WinstonLogger");
         const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");
         const staticRouterModService = container.resolve<StaticRouterModService>("StaticRouterModService");
+        const httpResponse = container.resolve<HttpResponseUtil>("HttpResponseUtil");
+        const botController = container.resolve<BotController>("BotController");
         const profileController = container.resolve<ProfileController>("ProfileController");
+        const saveServer = container.resolve<SaveServer>("SaveServer");
 
 
 
@@ -55,9 +63,9 @@ export class InitCallbacks {
                 {
                     url: "/client/game/keepalive",
                     action: (url, info, sessionId, output) => {
-                        logger.info("client/game/keepalive callback from TGS called")
-                        let profile = profileController.getCompleteProfile(sessionId)
-                        checkLabsLock.check(container, profile[0])
+                        logger.info("/client/game/keepalive callback from TGS called");
+                        let profile = profileController.getCompleteProfile(sessionId);
+                        checkLabsLock.check(container, profile[0]);
 
                         return output;
                     }
@@ -72,12 +80,12 @@ export class InitCallbacks {
                 {
                     url: "/client/game/start",
                     action: (url, info, sessionId, output) => {
-                        logger.info("client/game/start callback from TGS called")
-                        dataFileGenerator.createFiles(container,sessionId)
-                        let profile = profileController.getCompleteProfile(sessionId)
-                        checkLabsLock.check(container, profile[0])
-                        applyHealthModifications.apply(container, profile[0], sessionId)
-                        applyMetabolismModifications.apply(container, profile[0], sessionId)
+                        logger.info("/client/game/start callback from TGS called");
+                        dataFileGenerator.createFiles(container, sessionId);
+                        let profile = profileController.getCompleteProfile(sessionId);
+                        checkLabsLock.check(container, profile[0]);
+                        applyHealthModifications.apply(container, profile[0], sessionId);
+                        applyMetabolismModifications.apply(container, profile[0], sessionId);
 
                         return output;
                     }
@@ -92,10 +100,10 @@ export class InitCallbacks {
                 {
                     url: "/client/game/logout",
                     action: (url, info, sessionId, output) => {
-                        logger.info("client/game/logout callback from TGS called")
-                        let profile = profileController.getCompleteProfile(sessionId)
-                        applyHealthModifications.restore(container, profile[0], sessionId)
-                        applyMetabolismModifications.restore(container, profile[0], sessionId)
+                        logger.info("/client/game/logout callback from TGS called");
+                        let profile = profileController.getCompleteProfile(sessionId);
+                        applyHealthModifications.restore(container, profile[0], sessionId);
+                        applyMetabolismModifications.restore(container, profile[0], sessionId);
                         return output;
                     }
                 }
@@ -108,15 +116,35 @@ export class InitCallbacks {
                 {
                     url: "/client/game/bot/generate",
                     action: (url, info, sessionId, output) => {
-                        logger.info("client/game/bot/degenerate callback from TGS called")
-                        let profile = profileController.getCompleteProfile(sessionId)
-                        raiderInvasion.invade(container, info)
-                        info = raiderInvasion.newOutput()
-                        /*if (raiderInvasion.canInvade(container,profile[0])) {
-                            raiderInvasion.invade(container, output)
-                            if(raiderInvasion.newOutput()){
-                            info = raiderInvasion.newOutput()}
-                        }*/
+                        logger.info("/client/game/bot/degenerate callback from TGS called");
+                        let profile = saveServer.getProfile(sessionId);
+
+                        if (raiderInvasion.canInvade(container, profile, sessionId, info)) {
+                            if (raiderInvasion.newOutput()) {
+                                info = raiderInvasion.newOutput();
+                            }
+                        }
+                        return httpResponse.getBody(botController.generate(sessionId, info));
+                    }
+                }
+            ],
+            "aki"
+        );
+
+        staticRouterModService.registerStaticRouter(
+            "StaticTGSrouteMatchEnd",
+            [
+                {
+                    url: "/client/match/offline/end",
+                    action: (url, info, sessionId, output) => {
+                        logger.info("/client/match/offline/end callback from TGS called")
+                        let data = require("../../data/donottouchever.json")
+                        if (data[sessionId].Info.IsRaided = true) {
+                            data[sessionId].Info.IsRaided = false;
+                            data[sessionId].Info.RaidsCooldown = config.Gameplay.raidsCooldown;
+                            data[sessionId].Info.CurrentRaidResult = null
+                            dataFileGenerator.saveFile(container, data);
+                        }
                         return output;
                     }
                 }

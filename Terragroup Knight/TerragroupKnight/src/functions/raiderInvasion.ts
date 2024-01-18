@@ -24,43 +24,94 @@
 import { DependencyContainer } from "tsyringe";
 
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { QuestHelper } from "@spt-aki/helpers/QuestHelper";
+import { RandomUtil } from "@spt-aki/utils/RandomUtil";
 
 //TGS Imports
-let data = require("../../data/donottouchever.json")
+const data = require("../../data/donottouchever.json")
 const config = require("../../config/config.json");
+import { dataFileGenerator } from "../functions/dataFileGenerator";
 
-//import { coreMod } from "../../src/core/coremod";
 let infoToSend = null
 
-export class raiderInvasion
-{
-    static invade(container: DependencyContainer,info)
-    {
+export class raiderInvasion {
+    static invade(container: DependencyContainer, info, sessionid) {
         const Logger = container.resolve<ILogger>("WinstonLogger");
-        
-        for (const bot in info.conditions){
+
+        for (const bot in info.conditions) {
             info.conditions[bot].Role = "pmcBot"
             info.conditions[bot].Difficulty = "impossible"
         }
         infoToSend = info
 
-        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
-        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
-        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
-        Logger.logWithColor("########################################################## YOU ARE BEING RAIDED ############################################################", "white", "redBG");
-        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
-        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
-        Logger.logWithColor("############################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("########################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("########################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("########################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("######################################################## YOU ARE BEING RAIDED ##########################################################", "white", "redBG");
+        Logger.logWithColor("########################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("########################################################################################################################################", "white", "redBG");
+        Logger.logWithColor("########################################################################################################################################", "white", "redBG");
+
+        data[sessionid].Info.IsRaided = true
+        dataFileGenerator.saveFile(container, data)
+
     }
 
-    static canInvade(container: DependencyContainer,profile){
-        let bool = false
+    static canInvade(container: DependencyContainer, profile, sessionid, info) {
+        const questHelper = container.resolve<QuestHelper>("QuestHelper");
+        const randomUtil = container.resolve<RandomUtil>("RandomUtil");
+        const pmcProfile = profile.characters.pmc;
+        const mapName = profile.inraid.location.toLowerCase();
+        let bool = false;
+        //Check if the player is currently being raided
+        if (data[sessionid].Info.IsRaided == true) {
+            bool = true;
+            //Also i shouldn't roll the raid everytime bot/generate is triggered
+        } else if (data[sessionid].Info.CurrentRaidResult == false) {
+            bool = false;
+        } else {
+               //If quest 'First contact' is completed and raids cooldown is OFF, can be raided
+            if (questHelper.getQuestStatus(pmcProfile, "TGS_Quest3") == 4 && data[sessionid].Info.RaidsCooldown == 0) {
+                //Roll a number to see if the player is lucky or not, if lucky, he's getting raided, otherwhise, no raid
+                if (randomUtil.getIntEx(100) <= config.Gameplay.raidsChance) {
+                    bool = true;
+                }
+                else {
+                    bool = false;
+                }
+            }
+            //If quest 'First contact' is locked, raids can't happen.
+            else if (questHelper.getQuestStatus(pmcProfile, "TGS_Quest3") == 0) {
+                bool = false;
+            }
+            //If quest "First contact" is completed but raids cooldown is still ON, raids can't happen
+            else if (questHelper.getQuestStatus(pmcProfile, "TGS_Quest3") == 4 && data[sessionid].Info.RaidsCooldown >= 1) {
+                bool = false;
+            }
+            //Force invasion on that specific quest
+            if (questHelper.getQuestStatus(pmcProfile, "TGS_Quest15") && mapName == "woods") {
+                bool = true;
+            }
+        }
+     
 
+        //Should keep raiding for the entire raid, so i keep the isRaided to true and save it to the data file
+        if (bool == true) {
+            this.invade(container, info, sessionid);
+            data[sessionid].Info.IsRaided == true;
+            data[sessionid].Info.CurrentRaidResult == true;
+            dataFileGenerator.saveFile(container, data);
+        }
+        if (data[sessionid].Info.CurrentRaidResult == false) { }
+        else if (bool == false) {
+            data[sessionid].Info.CurrentRaidResult == false;
+            dataFileGenerator.saveFile(container, data);
+        }
         return bool
     }
 
-    static newOutput(){
+    static newOutput() {
+
         return infoToSend
     }
 }
