@@ -61,4 +61,13 @@ export class dataFileGenerator {
         //Saving data the file
         vfs.writeFile(`./${preAkiModLoader.getModPath("TerragroupKnight")}data/donottouchever.json`, JsonUtil.serialize(data, true), false, false)
     }
+
+    static saveAnyFile(container: DependencyContainer,boop){
+        const vfs = container.resolve<VFS>("VFS");
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
+        const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+
+        //Saving data the file
+        vfs.writeFile(`./${preAkiModLoader.getModPath("TerragroupKnight")}data/test.json`, JsonUtil.serialize(boop, true), false, false)
+    }
 }

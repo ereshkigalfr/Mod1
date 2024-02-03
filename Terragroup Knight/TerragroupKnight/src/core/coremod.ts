@@ -73,11 +73,25 @@ export class coreMod
      * @param {String} id The id of The equipment to add
      * @param {String} bot The role of The bot to modify ex. "pmcbot"
      */
-    static AddEquipmentToLoadout(type, id, bot) {
-        const items = DatabaseServer.tables.templates.items;
-        const bots = DatabaseServer.tables.bots.types;
 
-        bots[bot].inventory.equipment[type].push(id);
+    static AddEquipmentFromPreset(container: DependencyContainer,preset, bot){
+        const MainDatabase = container.resolve<DatabaseServer>("DatabaseServer");
+        const ServerDatabase = MainDatabase.getTables();
+
+
+
+
+
+        
+    }
+    static AddEquipmentToLoadout(container: DependencyContainer,type, id, bot, weight) {
+        const MainDatabase = container.resolve<DatabaseServer>("DatabaseServer");
+        const ServerDatabase = MainDatabase.getTables();
+        const items = ServerDatabase.templates.items;
+        const bots = ServerDatabase.bots.types;
+
+        bots[bot].inventory.equipment[type][id] = weight
+        //bots[bot].inventory.equipment[type].push(id);
 
         if (items[id] && items[id]._props && items[id]._props.Slots) {
             for (const slots in items[id]._props.Slots) {

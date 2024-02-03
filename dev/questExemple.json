@@ -1,37 +1,37 @@
 {
     "TGS_Quest1": {
-        "QuestName": "name",
-        "side": "Pmc",
-        "_id": "questID",
-        "description": "questID description",
-        "name": "questID name",
-        "note": "questID note",
-        "questStatus": {},
-        "traderId": "5ac3b934156ae10c4430e83c",
-        "location": "any",
-        "image": "/files/quest/icon/imageID.jpg",
-        "type": "Merchant",
-        "isKey": false,
-        "restartable": false,
-        "instantComplete": false,
-        "secretQuest": false,
-        "failMessageText": "questID failMessageText",
-        "startedMessageText": "questID startedMessageText",
-        "successMessageText": "questID successMessageText",
-        "canShowNotificationsInGame": true,
-        "acceptPlayerMessage": "questID acceptPlayerMessage",
-        "changeQuestMessageText": "questID changeQuestMessageText",
-        "completePlayerMessage": "questID completePlayerMessage",
-        "templateId": "questID",
-        "rewards": {
-            "Started": [],
-            "Success": [],
-            "Fail": []
-        },
-        "conditions": {
-            "AvailableForFinish": [],
-            "AvailableForStart": [],
-            "Fail": []
-        }
+      "QuestName": "name",
+      "side": "Pmc",
+      "_id": "TGS_Quest1",
+      "description": "TGS_Quest1 description",
+      "name": "TGS_Quest1 name",
+      "note": "TGS_Quest1 note",
+      "questStatus": {},
+      "traderId": "54cb50c76803fa8b248b4571",
+      "location": "any",
+      "image": "/files/quest/icon/596b465486f77457ca186188.jpg",
+      "type": "Elimination",
+      "isKey": false,
+      "restartable": false,
+      "instantComplete": false,
+      "secretQuest": false,
+      "failMessageText": "TGS_Quest1 failMessageText",
+      "startedMessageText": "TGS_Quest1 startedMessageText",
+      "successMessageText": "TGS_Quest1 successMessageText",
+      "canShowNotificationsInGame": true,
+      "acceptPlayerMessage": "TGS_Quest1 acceptPlayerMessage",
+      "changeQuestMessageText": "TGS_Quest1 changeQuestMessageText",
+      "completePlayerMessage": "TGS_Quest1 completePlayerMessage",    
+      "templateId": "TGS_Quest1",
+      "rewards": {
+        "Fail": [],
+        "Started": [],
+        "Success": []
+      },
+      "conditions": {
+        "AvailableForFinish": [],
+        "AvailableForStart": [],
+        "Fail": []
+      }
     }
-}
+  }

@@ -39,7 +39,7 @@ export class raiderInvasion {
         const Logger = container.resolve<ILogger>("WinstonLogger");
 
         for (const bot in info.conditions) {
-            info.conditions[bot].Role = "pmcBot"
+            info.conditions[bot].Role = "TG_Raiders"
             info.conditions[bot].Difficulty = "impossible"
         }
         infoToSend = info
